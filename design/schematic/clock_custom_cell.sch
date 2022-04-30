@@ -1,3 +1,9 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
 N 290 -280 322.5 -280 { lab=#net1}
 N 1045 -280 1070 -280 { lab=phi1}
 N 1175 -280 1200 -280 { lab=phi1_b}
