@@ -43,8 +43,8 @@ N 970 -410 970 -280 { lab=q}
 N 90 -280 410 -280 { lab=p}
 N 650 -280 970 -280 { lab=q}
 C {devices/lab_pin.sym} 490 -130 0 0 {name=l3 sig_type=std_logic lab=clk}
-C {devices/lab_pin.sym} 690 -230 2 0 {name=l5 sig_type=std_logic lab=inn}
-C {devices/lab_pin.sym} 370 -230 0 0 {name=l4 sig_type=std_logic lab=inp}
+C {devices/lab_pin.sym} 690 -230 2 0 {name=l5 sig_type=std_logic lab=in}
+C {devices/lab_pin.sym} 370 -230 0 0 {name=l4 sig_type=std_logic lab=ip}
 C {sky130_fd_pr/nfet_01v8.sym} 510 -130 0 0 {name=M1
 L=0.15
 W=1
@@ -221,8 +221,8 @@ C {devices/lab_pin.sym} 530 -80 0 1 {name=l1 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 90 -280 0 0 {name=l23 sig_type=std_logic lab=p}
 C {devices/lab_wire.sym} 970 -280 0 1 {name=l24 sig_type=std_logic lab=q}
 C {devices/ipin.sym} 90 -160 0 0 {name=p1 lab=clk}
-C {devices/ipin.sym} 90 -140 0 0 {name=p2 lab=inp}
-C {devices/ipin.sym} 90 -120 0 0 {name=p3 lab=inn
+C {devices/ipin.sym} 90 -140 0 0 {name=p2 lab=ip}
+C {devices/ipin.sym} 90 -120 0 0 {name=p3 lab=in
 }
 C {devices/opin.sym} 80 -100 0 0 {name=p4 lab=s_b}
 C {devices/opin.sym} 80 -80 0 0 {name=p5 lab=r_b}

@@ -17,16 +17,16 @@ N 400 -210 400 -200 { lab=s_b}
 N 380 -140 400 -140 { lab=r_b}
 N 400 -140 400 -130 { lab=r_b}
 C {devices/ipin.sym} 90 -160 0 0 {name=p1 lab=clk}
-C {devices/ipin.sym} 90 -140 0 0 {name=p2 lab=inp}
-C {devices/ipin.sym} 90 -120 0 0 {name=p3 lab=inn
+C {devices/ipin.sym} 90 -140 0 0 {name=p2 lab=ip}
+C {devices/ipin.sym} 90 -120 0 0 {name=p3 lab=in
 }
 C {devices/opin.sym} 80 -100 0 0 {name=p4 lab=outp}
 C {devices/opin.sym} 80 -80 0 0 {name=p5 lab=outn}
 C {comparator_core_small.sym} 260 -100 0 0 {name=x1 VDD=VDD VSS=GND}
 C {sky130_stdcells/buf_2.sym} 490 -210 0 0 {name=x2 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_2.sym} 490 -130 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 260 -140 0 0 {name=l1 sig_type=std_logic lab=inn}
-C {devices/lab_pin.sym} 260 -200 0 0 {name=l2 sig_type=std_logic lab=inp}
+C {devices/lab_pin.sym} 260 -140 0 0 {name=l1 sig_type=std_logic lab=in}
+C {devices/lab_pin.sym} 260 -200 0 0 {name=l2 sig_type=std_logic lab=ip}
 C {devices/lab_wire.sym} 435 -210 0 0 {name=l4 sig_type=std_logic lab=s_b}
 C {devices/lab_wire.sym} 435 -130 0 0 {name=l5 sig_type=std_logic lab=r_b}
 C {devices/lab_wire.sym} 600 -210 0 0 {name=l6 sig_type=std_logic lab=s_b_buf}

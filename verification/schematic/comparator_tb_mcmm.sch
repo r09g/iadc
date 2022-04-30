@@ -10,18 +10,18 @@ N 70 -250 70 -220 { lab=cm}
 N 70 -250 100 -250 { lab=cm}
 N 70 -220 70 -190 { lab=cm}
 N 70 -190 160 -190 { lab=cm}
-N 220 -190 270 -190 { lab=inn}
+N 220 -190 270 -190 { lab=in}
 N 200 -480 200 -460 { lab=clk}
 N 330 -175 330 -150 { lab=clk}
 N 390 -250 580 -250 { lab=outn}
-N 160 -250 270 -250 { lab=inp}
+N 160 -250 270 -250 { lab=ip}
 N 390 -190 500 -190 { lab=outp}
 C {devices/vsource.sym} 30 -150 0 0 {name=V1 value=0.9}
 C {devices/gnd.sym} 30 -120 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 120 -430 0 0 {name=V4 value=1.8}
 C {devices/gnd.sym} 120 -400 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 260 -250 0 0 {name=l4 sig_type=std_logic lab=inp}
-C {devices/lab_wire.sym} 260 -190 0 0 {name=l5 sig_type=std_logic lab=inn}
+C {devices/lab_wire.sym} 260 -250 0 0 {name=l4 sig_type=std_logic lab=ip}
+C {devices/lab_wire.sym} 260 -190 0 0 {name=l5 sig_type=std_logic lab=in}
 C {devices/vdd.sym} 120 -460 0 0 {name=l6 lab=VDD}
 C {devices/vsource.sym} 200 -430 0 0 {name=V5 value="DC 0 PULSE(0 1.8 1n 0.1n 0.1n 4.9n 10n)"}
 C {devices/gnd.sym} 200 -400 0 0 {name=l7 lab=GND}

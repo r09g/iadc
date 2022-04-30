@@ -310,7 +310,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 140 -170 2 1 {name=l24 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 140 -440 3 1 {name=l25 sig_type=std_logic lab=i_bias}
-C {devices/opin.sym} 1070 -640 0 0 {name=p6 lab=i_bias}
+C {devices/ipin.sym} 1080 -630 0 0 {name=p6 lab=i_bias}
 C {devices/ngspice_probe.sym} 270 -170 2 1 {name=r11}
 C {devices/ngspice_get_value.sym} 140 -220 0 0 {name=r15 node="i(@m.xm7.msky130_fd_pr__nfet_01v8[id])"
 descr="id="}

@@ -2,7 +2,7 @@ v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=subcircuit
 format="@name @pinlist @C_CMFB @C_COMP @VDD @VSS @symname"
-template="name=x1 C_CMFB=50 C_COMP=350 VDD=VDD VSS=GND"
+template="name=x1 C_CMFB=50 C_COMP=350 VDD=VDD VSS=VSS"
 extra="VDD VSS"
 }
 V {}
@@ -11,8 +11,8 @@ E {}
 L 4 20 -150 20 -10 {}
 L 4 0 -110 20 -110 {}
 L 4 0 -50 20 -50 {}
-L 4 100 -110 120 -110 {}
 L 4 100 -50 120 -50 {}
+L 4 100 -110 120 -110 {}
 L 4 20 -150 100 -120 {}
 L 4 100 -120 100 -40 {}
 L 4 20 -10 100 -40 {}
@@ -28,22 +28,22 @@ L 4 82.5 -50 90 -50 {}
 L 4 86.25 -53.75 86.25 -46.25 {}
 L 4 82.5 -110 90 -110 {}
 B 5 37.5 -162.5 42.5 -157.5 {name=i_bias dir=in }
-B 5 -2.5 -112.5 2.5 -107.5 {name=inp dir=in }
-B 5 -2.5 -52.5 2.5 -47.5 {name=inn dir=in }
+B 5 -2.5 -112.5 2.5 -107.5 {name=ip dir=in }
+B 5 -2.5 -52.5 2.5 -47.5 {name=in dir=in }
 B 5 57.5 -162.5 62.5 -157.5 {name=phi1 dir=in }
 B 5 47.5 -2.5 52.5 2.5 {name=phi1_b dir=in }
 B 5 77.5 -162.5 82.5 -157.5 {name=phi2 dir=in }
 B 5 67.5 -2.5 72.5 2.5 {name=phi2_b dir=in }
-B 5 117.5 -112.5 122.5 -107.5 {name=opp dir=out }
-B 5 117.5 -52.5 122.5 -47.5 {name=opn dir=out }
+B 5 117.5 -52.5 122.5 -47.5 {name=op dir=out }
+B 5 117.5 -112.5 122.5 -107.5 {name=on dir=out }
 T {@symname} 77.5 -25 0 0 0.2 0.2 {}
 T {@name} 77.5 -12.5 0 0 0.2 0.2 {}
 T {i_bias} 40 -160 1 0 0.2 0.2 {}
-T {inp} 0 -125 0 0 0.2 0.2 {}
-T {inn} 0 -50 0 0 0.2 0.2 {}
+T {ip} 0 -125 0 0 0.2 0.2 {}
+T {in} 0 -50 0 0 0.2 0.2 {}
 T {phi1} 60 -160 1 0 0.2 0.2 {}
 T {phi1_b} 50 0 1 1 0.2 0.2 {}
 T {phi2} 80 -160 1 0 0.2 0.2 {}
 T {phi2_b} 70 0 1 1 0.2 0.2 {}
-T {opp} 120 -125 0 1 0.2 0.2 {}
-T {opn} 120 -50 0 1 0.2 0.2 {}
+T {op} 120 -50 0 1 0.2 0.2 {}
+T {on} 120 -125 0 1 0.2 0.2 {}

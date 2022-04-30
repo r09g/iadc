@@ -2,7 +2,7 @@ v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=subcircuit
 format="@name @pinlist @VDD @VSS @symname"
-template="name=x1 VDD=VDD VSS=GND"
+template="name=x1 VDD=VDD VSS=VSS"
 extra="VDD VSS"
 }
 V {}
@@ -38,25 +38,25 @@ L 4 140 -110 140 -100 {}
 L 4 175 -130 185 -130 {}
 L 4 95 -130 105 -130 {}
 B 5 257.5 -132.5 262.5 -127.5 {name=cmc dir=in }
-B 5 17.5 -202.5 22.5 -197.5 {name=inp dir=in }
-B 5 17.5 -182.5 22.5 -177.5 {name=inn dir=in }
+B 5 17.5 -202.5 22.5 -197.5 {name=ip dir=in }
+B 5 17.5 -182.5 22.5 -177.5 {name=in dir=in }
 B 5 17.5 -122.5 22.5 -117.5 {name=bias_a dir=in }
 B 5 17.5 -102.5 22.5 -97.5 {name=bias_b dir=in }
 B 5 17.5 -82.5 22.5 -77.5 {name=bias_c dir=in }
 B 5 17.5 -62.5 22.5 -57.5 {name=bias_d dir=in }
-B 5 257.5 -202.5 262.5 -197.5 {name=opp dir=out }
-B 5 257.5 -62.5 262.5 -57.5 {name=opn dir=out }
+B 5 257.5 -202.5 262.5 -197.5 {name=op dir=out }
+B 5 257.5 -62.5 262.5 -57.5 {name=on dir=out }
 T {@symname} 40 -40 0 0 0.2 0.2 {}
 T {@name} 40 -30 0 0 0.2 0.2 {}
 T {cmc} 235 -134 0 1 0.2 0.2 {}
-T {inp} 45 -204 0 0 0.2 0.2 {}
-T {inn} 45 -184 0 0 0.2 0.2 {}
+T {ip} 45 -204 0 0 0.2 0.2 {}
+T {in} 45 -184 0 0 0.2 0.2 {}
 T {bias_a} 45 -124 0 0 0.2 0.2 {}
 T {bias_b} 45 -104 0 0 0.2 0.2 {}
 T {bias_c} 45 -84 0 0 0.2 0.2 {}
 T {bias_d} 45 -64 0 0 0.2 0.2 {}
-T {opp} 235 -204 0 1 0.2 0.2 {}
-T {opn} 235 -64 0 1 0.2 0.2 {}
+T {op} 235 -204 0 1 0.2 0.2 {}
+T {on} 235 -64 0 1 0.2 0.2 {}
 T {...} 146.25 -95 1 0 0.4 0.4 {layer=4}
 T {...} 126.25 -185 1 0 0.4 0.4 {layer=4}
 T {...} 166.25 -185 1 0 0.4 0.4 {layer=4}

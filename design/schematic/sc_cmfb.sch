@@ -12,14 +12,14 @@ N 640 -600 640 -520 { lab=#net1}
 N 640 -240 640 -160 { lab=#net3}
 N 640 -380 640 -300 { lab=#net2}
 N 480 -160 800 -160 { lab=#net3}
-N 60 -600 220 -600 { lab=opp}
-N 220 -600 380 -600 { lab=opp}
+N 60 -600 220 -600 { lab=op}
+N 220 -600 380 -600 { lab=op}
 N 60 -380 380 -380 { lab=cmc}
 N 220 -460 220 -380 { lab=cmc}
-N 220 -600 220 -520 { lab=opp}
-N 220 -240 220 -160 { lab=opn}
+N 220 -600 220 -520 { lab=op}
+N 220 -240 220 -160 { lab=on}
 N 220 -380 220 -300 { lab=cmc}
-N 60 -160 380 -160 { lab=opn}
+N 60 -160 380 -160 { lab=on}
 N 900 -600 1060 -600 { lab=cm}
 N 900 -380 1060 -380 { lab=bias_a}
 N 900 -160 1060 -160 { lab=cm}
@@ -31,10 +31,10 @@ C {transmission_gate.sym} 400 -380 0 0 {name=x5 VDD=VDD VSS=GND W_N=5.3 L_N=0.15
 C {transmission_gate.sym} 400 -160 0 0 {name=x6 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -490 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -270 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -490 0 0 {name=C3 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -270 0 0 {name=C4 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
-C {devices/lab_pin.sym} 60 -600 0 0 {name=l1 sig_type=std_logic lab=opp}
-C {devices/lab_pin.sym} 60 -160 0 0 {name=l2 sig_type=std_logic lab=opn}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -490 0 0 {name=C3 model=cap_mim_m3_1 W=1 L=1 MF='2*MF' spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -270 0 0 {name=C4 model=cap_mim_m3_1 W=1 L=1 MF='2*MF' spiceprefix=X}
+C {devices/lab_pin.sym} 60 -600 0 0 {name=l1 sig_type=std_logic lab=op}
+C {devices/lab_pin.sym} 60 -160 0 0 {name=l2 sig_type=std_logic lab=on}
 C {devices/lab_pin.sym} 60 -380 0 0 {name=l3 sig_type=std_logic lab=cmc}
 C {devices/lab_pin.sym} 1060 -600 0 1 {name=l4 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 1060 -380 0 1 {name=l6 sig_type=std_logic lab=bias_a}
@@ -51,10 +51,10 @@ C {devices/lab_pin.sym} 430 -420 3 1 {name=l15 sig_type=std_logic lab=phi2_b}
 C {devices/lab_pin.sym} 430 -340 3 0 {name=l16 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 430 -640 3 1 {name=l17 sig_type=std_logic lab=phi2_b}
 C {devices/lab_pin.sym} 430 -560 3 0 {name=l18 sig_type=std_logic lab=phi2}
-C {devices/ipin.sym} 1300 -510 0 0 {name=p1 lab=opn}
+C {devices/ipin.sym} 1300 -510 0 0 {name=p1 lab=on}
 C {devices/ipin.sym} 1300 -490 0 0 {name=p2 lab=cm}
 C {devices/ipin.sym} 1300 -470 0 0 {name=p3 lab=bias_a}
-C {devices/ipin.sym} 1300 -530 0 0 {name=p4 lab=opp}
+C {devices/ipin.sym} 1300 -530 0 0 {name=p4 lab=op}
 C {devices/opin.sym} 1290 -440 0 0 {name=p5 lab=cmc}
 C {devices/ipin.sym} 1300 -550 0 0 {name=p6 lab=phi2_b}
 C {devices/ipin.sym} 1300 -570 0 0 {name=p7 lab=phi2}
