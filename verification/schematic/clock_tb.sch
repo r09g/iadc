@@ -22,6 +22,14 @@ N 340 -240 720 -240 { lab=phi2}
 N 720 -240 720 -100 { lab=phi2}
 N 340 -260 780 -260 { lab=phi1}
 N 780 -260 780 -100 { lab=phi1}
+N 360 -40 360 10 { lab=VSS}
+N 420 -40 420 10 { lab=VSS}
+N 480 -40 480 10 { lab=VSS}
+N 540 -40 540 10 { lab=VSS}
+N 600 -40 600 10 { lab=VSS}
+N 660 -40 660 10 { lab=VSS}
+N 720 -40 720 10 { lab=VSS}
+N 780 -40 780 10 { lab=VSS}
 C {clock.sym} 200 -190 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {devices/gnd.sym} 160 -370 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 80 -400 0 0 {name=V1 value=0}
@@ -79,14 +87,14 @@ C {devices/lab_wire.sym} 600 -200 0 1 {name=l10 sig_type=std_logic lab=phi2d}
 C {devices/lab_wire.sym} 660 -220 0 1 {name=l11 sig_type=std_logic lab=phi1d}
 C {devices/lab_wire.sym} 720 -240 0 1 {name=l12 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 780 -260 0 1 {name=l13 sig_type=std_logic lab=phi1}
-C {devices/lab_pin.sym} 360 -40 3 0 {name=l14 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 420 -40 3 0 {name=l15 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 480 -40 3 0 {name=l16 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 540 -40 3 0 {name=l17 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 600 -40 3 0 {name=l18 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 660 -40 3 0 {name=l19 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 720 -40 3 0 {name=l20 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 780 -40 3 0 {name=l21 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 360 10 3 0 {name=l14 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 420 10 3 0 {name=l15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 480 10 3 0 {name=l16 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 540 10 3 0 {name=l17 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 600 10 3 0 {name=l18 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 660 10 3 0 {name=l19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 720 10 3 0 {name=l20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 780 10 3 0 {name=l21 sig_type=std_logic lab=VSS}
 C {devices/code.sym} 960 -430 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -98,7 +106,7 @@ value="
 spice_ignore=false}
 C {devices/code_shown.sym} 980 -260 0 0 {name=STIMULI only_toplevel=false value="
 .control
-tran 10n 10u
+tran 0.1n 0.2u
 save all
 write clock_tb.raw
 plot v(phi1) v(phi2) v(phi1d) v(phi2d)
