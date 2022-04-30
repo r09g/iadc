@@ -29,21 +29,12 @@ C {transmission_gate.sym} 820 -160 0 0 {name=x3 VDD=VDD VSS=GND W_N=5.3 L_N=0.15
 C {transmission_gate.sym} 400 -600 0 0 {name=x4 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 400 -380 0 0 {name=x5 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 400 -160 0 0 {name=x6 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-<<<<<<< HEAD
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -490 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -270 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -490 0 0 {name=C3 model=cap_mim_m3_1 W=1 L=1 MF='2*MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -270 0 0 {name=C4 model=cap_mim_m3_1 W=1 L=1 MF='2*MF' spiceprefix=X}
 C {devices/lab_pin.sym} 60 -600 0 0 {name=l1 sig_type=std_logic lab=op}
 C {devices/lab_pin.sym} 60 -160 0 0 {name=l2 sig_type=std_logic lab=on}
-=======
-C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -490 0 0 {name=C1 model=cap_mim_m3_1 W=9 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -270 0 0 {name=C2 model=cap_mim_m3_1 W=9 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -490 0 0 {name=C3 model=cap_mim_m3_1 W=9 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -270 0 0 {name=C4 model=cap_mim_m3_1 W=9 L=5 MF=1 spiceprefix=X}
-C {devices/lab_pin.sym} 60 -600 0 0 {name=l1 sig_type=std_logic lab=opp}
-C {devices/lab_pin.sym} 60 -160 0 0 {name=l2 sig_type=std_logic lab=opn}
->>>>>>> f236e65f1b283be62b6c86072fd7603753ec2015
 C {devices/lab_pin.sym} 60 -380 0 0 {name=l3 sig_type=std_logic lab=cmc}
 C {devices/lab_pin.sym} 1060 -600 0 1 {name=l4 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 1060 -380 0 1 {name=l6 sig_type=std_logic lab=bias_a}
