@@ -19,7 +19,7 @@ N 1152.5 -412.5 1182.5 -412.5 { lab=phi2}
 N 1152.5 -472.5 1182.5 -472.5 { lab=phi1_b}
 N 1152.5 -392.5 1182.5 -392.5 { lab=phi2_b}
 N 1152.5 -432.5 1182.5 -432.5 { lab=phi1d_b}
-N 1152.5 -372.5 1182.5 -372.5 { lab=#net2}
+N 1152.5 -372.5 1182.5 -372.5 { lab=phi2d}
 N 1152.5 -452.5 1182.5 -452.5 { lab=phi1d}
 N 1152.5 -352.5 1182.5 -352.5 { lab=phi2d_b}
 C {devices/code.sym} 625 -1135 0 0 {name=TT_MODELS
@@ -59,7 +59,7 @@ C {devices/lab_pin.sym} 1210 -920 0 1 {name=l12 sig_type=std_logic lab=inp}
 C {devices/lab_pin.sym} 1210 -800 0 1 {name=l15 sig_type=std_logic lab=inn}
 C {ota.sym} 1460 -620 0 0 {name=x1 C_CMFB=50 C_COMP=350 VDD=VDD VSS=VSS}
 C {devices/vdd.sym} 1500 -890 0 0 {name=l5 lab=VDD}
-C {devices/isource.sym} 1500 -860 0 0 {name=I0 value=15u}
+C {devices/isource.sym} 1500 -860 0 0 {name=I0 value=30u}
 C {devices/lab_pin.sym} 1520 -780 3 1 {name=l6 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 1540 -780 3 1 {name=l7 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 1510 -620 1 1 {name=l10 sig_type=std_logic lab=phi1_b}
