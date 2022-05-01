@@ -15,6 +15,20 @@ This is the EE372 VLSI Design Project at Stanford University. The chip is an inc
 | Input Range | 90% FS |
 | Input CM | VDD/2 |
 
+# Setup and Run Tests
+To run schematic tests, make sure the Skywater SKY130 PDK is installed on the Farmshare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file. Then run
+```
+source setup.csh
+```
+Next, enter the schematic testbench directory
+```
+cd ./verification/schematic
+```
+Open a test using XSCHEM by running
+```
+xschem <testbench_name>.sch
+```
+Generate a netlist, run NGSPICE simulation, and view the waveforms by clicking the buttons on the top-right corner of the XSCHEM GUI.
 
 # Contact
 - Raymond Yang (rhyang@stanford.edu)
