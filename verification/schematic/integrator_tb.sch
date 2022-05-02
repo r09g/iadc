@@ -47,14 +47,14 @@ C {devices/vsource.sym} 910 -600 0 0 {name=V7 value=1.8}
 C {devices/vdd.sym} 910 -630 0 0 {name=l35 lab=VDD}
 C {devices/vsource.sym} 1050 -620 0 0 {name=V8 value=0.9}
 C {devices/lab_pin.sym} 1050 -590 3 0 {name=l37 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 1150 -720 0 0 {name=V10 value="DC 0 PULSE(0 5m 0.2m 10p 10p 1 1)"}
+C {devices/vsource.sym} 1150 -720 0 0 {name=V10 value=0}
 C {devices/lab_pin.sym} 1050 -690 0 0 {name=l40 sig_type=std_logic lab=cm}
 C {devices/code_shown.sym} 800 -1130 0 0 {name=STIMULI only_toplevel=false value="
 .options savecurrents
 .model SWITCH1 sw vt=0.9 vh=0 ron=500 roff=1e11
 .save all
 .control
-TRAN 1u 1m
+TRAN 1u 100u
 plot v(op)
 write integrator_tb_tran.raw
 .endc
@@ -68,7 +68,7 @@ C {devices/lab_pin.sym} 800 -410 0 0 {name=l21 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 800 -310 0 0 {name=l22 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 800 -470 0 1 {name=l23 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 800 -370 0 1 {name=l24 sig_type=std_logic lab=phi2}
-C {devices/vsource.sym} 1150 -660 0 0 {name=V3 value="DC 0 PULSE(0 5m 0.2m 10p 10p 1 1)"}
+C {devices/vsource.sym} 1150 -660 0 0 {name=V3 value=0}
 C {devices/lab_pin.sym} 1210 -750 0 1 {name=l12 sig_type=std_logic lab=ip}
 C {devices/lab_pin.sym} 1210 -630 0 1 {name=l15 sig_type=std_logic lab=in}
 C {devices/vsource.sym} 1100 -440 0 0 {name=V4 value="DC 0 PULSE(1.8 0 10n 2n 2n 83.5n 195n)"}

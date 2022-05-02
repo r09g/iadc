@@ -20,8 +20,8 @@ N 150 80 150 120 { lab=out}
 N -10 80 -10 120 { lab=in}
 N 150 -130 150 -70 { lab=out}
 N -10 -130 -10 -70 { lab=in}
-N 70 -130 70 -60 { lab=VSS}
 N 70 50 70 120 { lab=VDD}
+N 70 -130 70 -60 { lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 70 -150 1 0 {name=M1
 L=L_N
 W=W_N
@@ -50,9 +50,6 @@ C {devices/lab_pin.sym} 70 190 0 0 {name=l3 sig_type=std_logic lab=en_b}
 C {devices/lab_pin.sym} 190 0 2 0 {name=l4 sig_type=std_logic lab=out}
 C {devices/lab_pin.sym} 70 50 1 0 {name=l6 sig_type=std_logic lab=VDD
 }
-C {devices/lab_pin.sym} 70 -60 3 0 {name=l7 sig_type=std_logic lab=VSS
-
-}
 C {sky130_fd_pr/pfet_01v8.sym} 70 140 3 0 {name=M2
 L=L_P
 W=W_P
@@ -66,4 +63,6 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
+}
+C {devices/lab_pin.sym} 70 -60 1 1 {name=l5 sig_type=std_logic lab=VSS
 }

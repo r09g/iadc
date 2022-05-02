@@ -23,12 +23,6 @@ N 60 -160 380 -160 { lab=on}
 N 900 -600 1060 -600 { lab=cm}
 N 900 -380 1060 -380 { lab=bias_a}
 N 900 -160 1060 -160 { lab=cm}
-C {transmission_gate.sym} 820 -600 0 0 {name=x1 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 820 -380 0 0 {name=x2 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 820 -160 0 0 {name=x3 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 400 -600 0 0 {name=x4 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 400 -380 0 0 {name=x5 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 400 -160 0 0 {name=x6 VDD=VDD VSS=GND W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -490 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 640 -270 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF='MF' spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 220 -490 0 0 {name=C3 model=cap_mim_m3_1 W=1 L=1 MF='2*MF' spiceprefix=X}
@@ -60,3 +54,9 @@ C {devices/ipin.sym} 1300 -550 0 0 {name=p6 lab=phi2_b}
 C {devices/ipin.sym} 1300 -570 0 0 {name=p7 lab=phi2}
 C {devices/ipin.sym} 1300 -590 0 0 {name=p8 lab=phi1_b}
 C {devices/ipin.sym} 1300 -610 0 0 {name=p9 lab=phi1}
+C {transmission_gate.sym} 400 -600 0 0 {name=x1 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 400 -380 0 0 {name=x2 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 400 -160 0 0 {name=x3 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 820 -600 0 0 {name=x4 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 820 -380 0 0 {name=x5 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 820 -160 0 0 {name=x6 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}

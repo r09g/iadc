@@ -7,9 +7,9 @@ E {}
 N 160 -220 160 -190 { lab=clk}
 N 750 -140 750 -110 { lab=clk}
 N 560 -110 750 -110 { lab=clk}
-N 750 -240 750 -220 { lab=clk_b}
-N 560 -240 750 -240 { lab=clk_b}
-N 560 -240 560 -210 { lab=clk_b}
+N 750 -240 750 -220 { lab=#net1}
+N 560 -240 750 -240 { lab=#net1}
+N 560 -240 560 -210 { lab=#net1}
 N 560 -130 560 -110 { lab=clk}
 N 500 -110 560 -110 { lab=clk}
 N 660 -180 700 -180 { lab=in}
@@ -22,9 +22,9 @@ N 80 -200 80 -190 { lab=VDD}
 N 240 -40 240 -10 { lab=in1}
 N 750 60 750 90 { lab=clk}
 N 560 90 750 90 { lab=clk}
-N 750 -40 750 -20 { lab=clk_b}
-N 560 -40 750 -40 { lab=clk_b}
-N 560 -40 560 -10 { lab=clk_b}
+N 750 -40 750 -20 { lab=#net2}
+N 560 -40 750 -40 { lab=#net2}
+N 560 -40 560 -10 { lab=#net2}
 N 560 70 560 90 { lab=clk}
 N 500 90 560 90 { lab=clk}
 N 660 20 700 20 { lab=in1}
@@ -60,8 +60,6 @@ C {devices/gnd.sym} 160 -130 0 0 {name=l3 lab=GND}
 C {sky130_stdcells/inv_4.sym} 560 -170 3 0 {name=x2 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 500 -110 0 0 {name=l4 sig_type=std_logic lab=clk
 }
-C {devices/lab_wire.sym} 560 -240 0 0 {name=l6 sig_type=std_logic lab=clk_b
-}
 C {devices/lab_wire.sym} 660 -180 0 0 {name=l7 sig_type=std_logic lab=in
 }
 C {devices/vsource.sym} 80 -160 0 0 {name=V2 value="1.8"}
@@ -87,8 +85,6 @@ C {devices/gnd.sym} 240 50 0 0 {name=l13 lab=GND}
 C {devices/vsource.sym} 240 20 0 0 {name=V4 value="DC 0 PWL(0 0 10n 1.8)"}
 C {sky130_stdcells/inv_4.sym} 560 30 3 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 500 90 0 0 {name=l14 sig_type=std_logic lab=clk
-}
-C {devices/lab_wire.sym} 560 -40 0 0 {name=l15 sig_type=std_logic lab=clk_b
 }
 C {devices/lab_wire.sym} 660 20 0 0 {name=l16 sig_type=std_logic lab=in1}
 C {devices/gnd.sym} 920 110 0 0 {name=l17 lab=GND}

@@ -42,6 +42,6 @@ C {devices/opin.sym} 130 -310 0 0 {name=p8 lab=op}
 C {devices/opin.sym} 130 -290 0 0 {name=p9 lab=on}
 C {devices/lab_wire.sym} 640 -190 0 1 {name=l23 sig_type=std_logic lab=cmc}
 C {devices/ipin.sym} 140 -500 0 0 {name=p1 lab=i_bias}
-C {sc_cmfb.sym} 700 -80 0 0 {name=x3 MF=10 VDD=VDD VSS=VSS}
 C {folded_cascode_3_bias.sym} 60 -60 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {folded_cascode_3_core.sym} 380 -60 0 0 {name=x2 VDD=VDD VSS=VSS}
+C {sc_cmfb.sym} 700 -80 0 0 {name=x3 MF=50 VDD=VDD VSS=VSS}
