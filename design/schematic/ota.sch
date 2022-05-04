@@ -13,7 +13,7 @@ N 640 -190 700 -190 { lab=cmc}
 N 640 -120 700 -120 { lab=on}
 N 940 -260 960 -260 { lab=bias_e}
 N 940 -120 960 -120 { lab=bias_a}
-N 300 -100 320 -100 { lab=bias_e}
+N 300 -100 320 -100 { lab=cm_bias}
 N 660 -480 660 -260 { lab=op}
 N 680 -480 680 -120 { lab=on}
 C {devices/lab_wire.sym} 320 -180 0 1 {name=l1 sig_type=std_logic lab=bias_a}
@@ -24,8 +24,8 @@ C {devices/lab_pin.sym} 400 -260 0 0 {name=l6 sig_type=std_logic lab=ip}
 C {devices/lab_pin.sym} 400 -240 0 0 {name=l7 sig_type=std_logic lab=in}
 C {devices/lab_pin.sym} 80 -140 0 0 {name=l8 sig_type=std_logic lab=i_bias}
 C {devices/lab_wire.sym} 960 -120 0 1 {name=l9 sig_type=std_logic lab=bias_a}
-C {devices/lab_wire.sym} 320 -100 0 1 {name=l5 sig_type=std_logic lab=bias_e}
-C {devices/lab_wire.sym} 960 -260 0 1 {name=l10 sig_type=std_logic lab=bias_e}
+C {devices/lab_wire.sym} 320 -100 0 1 {name=l5 sig_type=std_logic lab=cm}
+C {devices/lab_wire.sym} 960 -260 0 1 {name=l10 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 800 -300 1 0 {name=l11 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 850 -300 1 0 {name=l12 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 850 -80 3 0 {name=l13 sig_type=std_logic lab=phi2_b}
@@ -45,3 +45,4 @@ C {devices/ipin.sym} 140 -500 0 0 {name=p1 lab=i_bias}
 C {folded_cascode_3_bias.sym} 60 -60 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {folded_cascode_3_core.sym} 380 -60 0 0 {name=x2 VDD=VDD VSS=VSS}
 C {sc_cmfb.sym} 700 -80 0 0 {name=x3 MF=50 VDD=VDD VSS=VSS}
+C {devices/opin.sym} 130 -270 0 0 {name=p10 lab=cm}
