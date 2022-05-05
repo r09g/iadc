@@ -8,6 +8,7 @@ module load base/1.0
 module load magic/latest
 module load netgen
 module load matlab/caddy2020
+module load vcs
 
 # add search path
 set -l path = ( $path /cad/ngspice/36/bin )
