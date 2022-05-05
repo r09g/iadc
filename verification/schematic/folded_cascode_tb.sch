@@ -160,7 +160,7 @@ C {sky130_fd_pr/nfet_01v8.sym} 1240 -140 0 0 {name=M6
 L=0.6
 W=1.4
 nf=1 
-mult=48
+mult=96
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -174,7 +174,7 @@ C {sky130_fd_pr/nfet_01v8.sym} 1460 -140 0 1 {name=M7
 L=0.6
 W=1.4
 nf=1 
-mult=48
+mult=96
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -329,8 +329,8 @@ C {devices/vsource.sym} 980 -970 0 0 {name=V7 value=1.8}
 C {devices/vdd.sym} 980 -1000 0 0 {name=l35 lab=VDD}
 C {devices/vsource.sym} 1120 -990 0 0 {name=V8 value=0.9}
 C {devices/lab_pin.sym} 1120 -960 3 0 {name=l37 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 1220 -1090 0 0 {name=V10 value="DC 0 AC 0.5"}
-C {devices/vsource.sym} 1220 -1030 0 0 {name=V1 value="DC 0 AC 0.5"}
+C {devices/vsource.sym} 1220 -1090 0 0 {name=V10 value="0"}
+C {devices/vsource.sym} 1220 -1030 0 0 {name=V1 value="0"}
 C {devices/lab_pin.sym} 1340 -1120 0 1 {name=l38 sig_type=std_logic lab=ip}
 C {devices/lab_pin.sym} 1340 -1000 0 1 {name=l39 sig_type=std_logic lab=in}
 C {devices/lab_pin.sym} 1120 -1060 0 0 {name=l40 sig_type=std_logic lab=cm}
@@ -339,14 +339,14 @@ C {devices/code_shown.sym} 430 -1060 0 0 {name=STIMULI only_toplevel=false value
 .save all
 .control
 op
-write ota_tb_ac_ideal_cmfb.raw
+write folded_cascode_tb.raw
 
-*ac dec 20 1 1e10
-*plot vdb(op,on)
-*plot 180/PI*vp(op,on)
+ac dec 20 1 1e10
+plot vdb(op,on)
+plot 180/PI*vp(op,on)
 
-*tran 100n 5u
-*plot v(op,on)
+*tran 10n 5u uic
+*plot v(op)
 .endc
 "}
 C {devices/ngspice_probe.sym} 1340 -220 0 0 {name=r1}
@@ -423,7 +423,7 @@ C {sky130_fd_pr/nfet_01v8.sym} 860 -240 0 0 {name=M33
 L=0.6
 W=1.4
 nf=1
-mult=2
+mult='5/4'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

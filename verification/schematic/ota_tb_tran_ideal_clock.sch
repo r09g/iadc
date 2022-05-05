@@ -44,7 +44,7 @@ C {devices/code_shown.sym} 430 -1060 0 0 {name=STIMULI only_toplevel=false value
 .options savecurrents
 .save all
 .control
-tran 1u 100u
+tran 1u 100u uic
 write ota_tb_tran_ideal_clock.raw
 .endc
 "}
@@ -77,13 +77,13 @@ C {devices/lab_wire.sym} 980 -680 0 0 {name=l1 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 980 -560 0 0 {name=l9 sig_type=std_logic lab=inn}
 C {devices/capa.sym} 1440 -680 2 0 {name=C5
 m=1
-value=2p
+value=0.3p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1440 -710 1 0 {name=l12 sig_type=std_logic lab=VSS}
 C {devices/capa.sym} 1440 -560 0 0 {name=C1
 m=1
-value=2p
+value=0.3p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 1440 -530 3 0 {name=l15 sig_type=std_logic lab=VSS}

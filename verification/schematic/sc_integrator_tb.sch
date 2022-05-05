@@ -31,13 +31,13 @@ N 1590 -740 1690 -740 { lab=#net1}
 N 1650 -140 1690 -140 { lab=#net4}
 N 130 -450 200 -450 { lab=GND}
 N 200 -450 300 -450 { lab=GND}
-N 1840 -440 2010 -440 { lab=cm}
+N 1840 -440 2010 -440 { lab=#net7}
 N 1410 -210 1410 -140 { lab=#net3}
-N 1410 -340 1410 -310 { lab=GND}
+N 1410 -340 1410 -310 { lab=#net7}
 N 1410 -740 1410 -650 { lab=#net2}
-N 1410 -550 1410 -520 { lab=GND}
-N 1150 -550 1150 -520 { lab=GND}
-N 1150 -340 1150 -310 { lab=GND}
+N 1410 -550 1410 -520 { lab=#net7}
+N 1150 -550 1150 -520 { lab=#net7}
+N 1150 -340 1150 -310 { lab=#net7}
 N 1150 -740 1150 -650 { lab=#net5}
 N 1150 -210 1150 -140 { lab=#net6}
 N 1750 -740 1850 -740 { lab=#net1}
@@ -53,9 +53,13 @@ N 2300 -410 2300 -140 { lab=on}
 N 2150 -140 2300 -140 { lab=on}
 N 2300 -470 2360 -470 { lab=op}
 N 2300 -410 2360 -410 { lab=on}
-N 440 -520 540 -520 { lab=cm}
+N 440 -520 540 -520 { lab=#net8}
 N 540 -460 660 -460 { lab=in}
 N 540 -580 660 -580 { lab=ip}
+N 1150 -520 1150 -340 { lab=#net7}
+N 1410 -520 1410 -340 { lab=#net7}
+N 1410 -440 1840 -440 { lab=#net7}
+N 1150 -440 1410 -440 { lab=#net7}
 C {devices/code.sym} 120 -1350 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -94,7 +98,6 @@ m=1
 value=1599f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 1840 -440 0 0 {name=l21 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 1020 -700 1 1 {name=l29 sig_type=std_logic lab=p1d}
 C {devices/lab_pin.sym} 1020 -780 3 1 {name=l30 sig_type=std_logic lab=p1d_b}
 C {devices/lab_pin.sym} 1370 -600 2 1 {name=l35 sig_type=std_logic lab=p1}
@@ -140,28 +143,24 @@ C {devices/gnd.sym} 200 -450 0 0 {name=l125 lab=GND}
 C {devices/lab_pin.sym} 300 -510 1 0 {name=l126 sig_type=std_logic lab=i_bias_1}
 C {devices/lab_pin.sym} 1020 -180 3 1 {name=l3 sig_type=std_logic lab=p1d}
 C {devices/lab_pin.sym} 1020 -100 1 1 {name=l4 sig_type=std_logic lab=p1d_b}
-C {devices/gnd.sym} 1410 -520 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 1410 -340 2 1 {name=l6 lab=GND}
 C {transmission_gate.sym} 1150 -630 1 0 {name=x6 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {devices/lab_pin.sym} 1110 -600 2 1 {name=l7 sig_type=std_logic lab=p2d}
 C {devices/lab_pin.sym} 1190 -600 0 1 {name=l8 sig_type=std_logic lab=p2d_b}
-C {devices/gnd.sym} 1150 -520 0 0 {name=l9 lab=GND}
 C {transmission_gate.sym} 1150 -230 1 1 {name=x7 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {devices/lab_pin.sym} 1110 -260 2 1 {name=l10 sig_type=std_logic lab=p2d}
 C {devices/lab_pin.sym} 1190 -260 0 1 {name=l11 sig_type=std_logic lab=p2d_b}
-C {devices/gnd.sym} 1150 -340 2 1 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 2360 -470 0 1 {name=l13 sig_type=std_logic lab=op}
 C {devices/lab_pin.sym} 2360 -410 0 1 {name=l14 sig_type=std_logic lab=on}
 C {devices/vsource.sym} 540 -550 0 0 {name=V10 value="DC 0 PULSE(0 5m 10n 10p 10p '5/5.12e6' '10/5.12e6')"}
 C {devices/lab_pin.sym} 660 -580 0 1 {name=l16 sig_type=std_logic lab=ip}
 C {devices/lab_pin.sym} 660 -460 0 1 {name=l17 sig_type=std_logic lab=in}
-C {devices/lab_pin.sym} 440 -520 0 0 {name=l18 sig_type=std_logic lab=cm}
 C {devices/code_shown.sym} 110 -350 0 0 {name=STIMULI only_toplevel=false value="
-.options savecurrents
 .save all
 .control
-tran 10p 2.5u
+tran 1u 2.5u uic
 write sc_integrator_tb.raw
 .endc
 "}
-C {devices/vsource.sym} 540 -490 0 0 {name=V4 value="DC 0 PULSE(0 -5m 10n 10p 10p '5/5.12e6' '10/5.12e6')"}
+C {devices/vsource.sym} 540 -490 0 0 {name=V4 value="DC 0 PULSE(0 5m 10n 10p 10p '5/5.12e6' '10/5.12e6')"}
+C {devices/vsource.sym} 440 -490 0 0 {name=V5 value=0.9}
+C {devices/gnd.sym} 440 -460 0 0 {name=l15 lab=GND}
