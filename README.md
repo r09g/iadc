@@ -2,6 +2,8 @@
 This is the EE372 VLSI Design Project at Stanford University. The chip is an incremental Delta-Sigma ADC in Skywater 130 nm CMOS technology.
 
 
+Delta-Sigma Modulator Functional Diagram
+![dsm_block](./misc/dsm_functional.PNG)
 
 # Specifications
 | Specification | Value        |
