@@ -1,6 +1,6 @@
 #set environment variables
 setenv PDK_ROOT /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130
-setenv NGSPICE_DIR ~/.xschem/simulations
+setenv SIM_DIR ~/.xschem/simulations
 setenv DESIGN_DIR ~/ee372/incremental_delta_sigma_adc
 
 # load modules

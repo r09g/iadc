@@ -140,10 +140,10 @@ N 170 -860 270 -860 { lab=GND}
 N 270 -860 340 -860 { lab=GND}
 N 340 -860 420 -860 { lab=GND}
 N 420 -960 420 -920 { lab=rst_n}
-N 80 -500 80 -460 { lab=#net6}
-N 80 -500 160 -500 { lab=#net6}
-N 160 -440 260 -440 { lab=in}
-N 160 -560 260 -560 { lab=ip}
+N 90 -720 90 -680 { lab=#net6}
+N 90 -720 170 -720 { lab=#net6}
+N 170 -660 270 -660 { lab=in}
+N 170 -780 270 -780 { lab=ip}
 N 3760 -910 3780 -910 { lab=op2}
 N 3840 -910 3860 -910 { lab=VSS}
 N 3760 -850 3780 -850 { lab=on2}
@@ -307,23 +307,31 @@ C {devices/gnd.sym} 220 -860 0 0 {name=l125 lab=GND}
 C {devices/lab_pin.sym} 270 -920 1 0 {name=l126 sig_type=std_logic lab=i_bias_1}
 C {devices/isource.sym} 340 -890 2 0 {name=I1 value=30u}
 C {devices/lab_pin.sym} 340 -920 1 0 {name=l127 sig_type=std_logic lab=i_bias_2}
-C {devices/vsource.sym} 420 -890 0 0 {name=V4 value="DC 0 PULSE(1.8 0 5n 10p 10p '0.5/10e3-10p' '1/10e3')"}
+C {devices/vsource.sym} 420 -890 0 0 {name=V4 value="1.8"}
 C {devices/lab_wire.sym} 420 -940 3 1 {name=l128 sig_type=std_logic lab=rst_n}
 C {sky130_stdcells/inv_1.sym} 460 -960 0 0 {name=x40 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 500 -960 0 1 {name=l129 sig_type=std_logic lab=rst_n_b}
-C {devices/code_shown.sym} 80 -750 0 0 {name=STIMULI only_toplevel=false value="
+C {devices/code.sym} 250 -1760 0 0 {name=STIMULI only_toplevel=false value="
 .control
-tran 1u 1m
+tran 10n 1010u
+let i_diff = v(ip) - v(in)
+let vc1 = v(c1l) - v(c1r)
+let i1_diff = v(ip1) - v(in1)
+let o1_diff = v(op1) - v(on1)
+let vc3 = v(c3l) - v(c3r)
+let vc4 = v(c4l) - v(c3r)
+let i2_diff = v(ip2) - v(in2)
+let o2_diff = v(op2) - v(on2)
 save all
-write modulator_tb_ideal_clock_no_chopping.raw
+write modulator_tb_ideal_clock_no_chopping.raw 
 .endc
 "}
-C {devices/vsource.sym} 80 -430 0 0 {name=V5 value=0.9}
-C {devices/gnd.sym} 80 -400 0 0 {name=l130 lab=GND}
-C {devices/vsource.sym} 160 -530 0 0 {name=V6 value="DC 0 SINE(0 0.5 1e3)"}
-C {devices/vsource.sym} 160 -470 0 0 {name=V7 value="DC 0 SINE(0 0.5 1e3)"}
-C {devices/lab_pin.sym} 260 -440 0 1 {name=l131 sig_type=std_logic lab=in}
-C {devices/lab_pin.sym} 260 -560 0 1 {name=l132 sig_type=std_logic lab=ip}
+C {devices/vsource.sym} 90 -650 0 0 {name=V5 value=0.9}
+C {devices/gnd.sym} 90 -620 0 0 {name=l130 lab=GND}
+C {devices/vsource.sym} 170 -750 0 0 {name=V6 value="DC 0 SINE(0 0.5 1e3 10u)"}
+C {devices/vsource.sym} 170 -690 0 0 {name=V7 value="DC 0 SINE(0 0.5 1e3 10u)"}
+C {devices/lab_pin.sym} 270 -660 0 1 {name=l131 sig_type=std_logic lab=in}
+C {devices/lab_pin.sym} 270 -780 0 1 {name=l132 sig_type=std_logic lab=ip}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1370 -1180 3 0 {name=C11 model=cap_mim_m3_1 W=8.8 L=8.8 MF=2 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1370 -580 3 1 {name=C1 model=cap_mim_m3_1 W=8.8 L=8.8 MF=2 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2180 -1300 3 0 {name=C2 model=cap_mim_m3_1 W=8.8 L=8.8 MF=10 spiceprefix=X}
