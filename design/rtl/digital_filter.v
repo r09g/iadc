@@ -4,7 +4,8 @@ module digital_filter (
     input wire clk,
     input wire rst_n,
     input wire unsigned data_in,
-    output reg unsigned [11:0] data_out
+    output reg unsigned [11:0] data_out,
+    output reg new_data
 );
     
     wire unsigned [8:0] int_1_out;
@@ -34,7 +35,8 @@ module digital_filter (
         .clk(clk),
         .rst_n(rst_n_d2),
         .data_in(int_2_out[17:6]),
-        .data_out(data_out)
+        .data_out(data_out),
+        .new_data(new_data)
     );
 
 endmodule
