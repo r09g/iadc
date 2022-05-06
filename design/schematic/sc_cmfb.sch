@@ -23,6 +23,9 @@ N 760 -120 1080 -120 { lab=on}
 N 1600 -560 1760 -560 { lab=cm}
 N 1600 -340 1760 -340 { lab=bias_a}
 N 1600 -120 1760 -120 { lab=cm}
+N 920 -340 960 -380 { lab=cmc}
+N 920 -560 960 -600 { lab=op}
+N 920 -120 960 -160 { lab=on}
 N 340 -560 500 -560 { lab=#net4}
 N 500 -560 660 -560 { lab=#net4}
 N 340 -340 660 -340 { lab=#net5}
@@ -34,9 +37,6 @@ N 340 -120 660 -120 { lab=#net6}
 N 80 -560 240 -560 { lab=cm}
 N 80 -340 240 -340 { lab=bias_a}
 N 80 -120 240 -120 { lab=cm}
-N 920 -340 960 -380 { lab=cmc}
-N 920 -560 960 -600 { lab=op}
-N 920 -120 960 -160 { lab=on}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 920 -450 0 0 {name=C3 model=cap_mim_m3_1 W=4.8 L=4.8 MF=4 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 920 -230 2 1 {name=C4 model=cap_mim_m3_1 W=4.8 L=4.8 MF=4 spiceprefix=X}
 C {devices/lab_wire.sym} 960 -600 0 1 {name=l1 sig_type=std_logic lab=op}
@@ -72,7 +72,8 @@ C {transmission_gate.sym} 1160 -120 0 1 {name=x3 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N
 C {transmission_gate.sym} 1580 -560 0 1 {name=x4 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 1580 -340 0 1 {name=x5 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 1580 -120 0 1 {name=x6 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 500 -450 0 0 {name=C5 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1340 -450 0 0 {name=C1 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1340 -230 2 0 {name=C2 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
 C {devices/lab_pin.sym} 710 -600 3 1 {name=l19 sig_type=std_logic lab=phi1_b}
 C {devices/lab_pin.sym} 710 -520 3 0 {name=l20 sig_type=std_logic lab=phi1}
 C {devices/lab_pin.sym} 710 -380 3 1 {name=l21 sig_type=std_logic lab=phi1_b}
@@ -85,15 +86,14 @@ C {devices/lab_pin.sym} 290 -380 3 1 {name=l27 sig_type=std_logic lab=phi2_b}
 C {devices/lab_pin.sym} 290 -300 3 0 {name=l28 sig_type=std_logic lab=phi2}
 C {devices/lab_pin.sym} 290 -600 3 1 {name=l29 sig_type=std_logic lab=phi2_b}
 C {devices/lab_pin.sym} 290 -520 3 0 {name=l30 sig_type=std_logic lab=phi2}
-C {transmission_gate.sym} 680 -560 0 0 {name=x7 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 680 -340 0 0 {name=x8 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 680 -120 0 0 {name=x9 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 260 -560 0 0 {name=x10 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 260 -340 0 0 {name=x11 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
-C {transmission_gate.sym} 260 -120 0 0 {name=x12 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 260 -560 0 0 {name=x7 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 260 -340 0 0 {name=x8 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 260 -120 0 0 {name=x9 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 680 -560 0 0 {name=x10 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 680 -340 0 0 {name=x11 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {transmission_gate.sym} 680 -120 0 0 {name=x12 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 500 -450 0 0 {name=C5 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 500 -230 2 0 {name=C6 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
 C {devices/lab_pin.sym} 80 -560 0 0 {name=l31 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 80 -340 0 0 {name=l32 sig_type=std_logic lab=bias_a}
 C {devices/lab_pin.sym} 80 -120 0 0 {name=l33 sig_type=std_logic lab=cm}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 500 -230 2 0 {name=C6 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1340 -450 0 0 {name=C1 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1340 -230 2 0 {name=C2 model=cap_mim_m3_1 W=4.8 L=4.8 MF=2 spiceprefix=X}

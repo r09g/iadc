@@ -8,144 +8,143 @@ L 4 840 0 4700 0 {}
 L 4 4700 -1760 4700 0 {}
 L 4 840 -1760 4700 -1760 {}
 L 4 840 -1760 840 0 {}
-N 1800 -1180 1860 -1180 { lab=#net1}
-N 1520 -1180 1600 -1180 { lab=#net2}
-N 1520 -1180 1520 -1050 { lab=#net2}
-N 1520 -710 1520 -580 { lab=#net3}
-N 1520 -580 1600 -580 { lab=#net3}
-N 1800 -580 1860 -580 { lab=#net4}
-N 1760 -980 1760 -580 { lab=#net4}
-N 1760 -980 1860 -980 { lab=#net4}
-N 1960 -1180 2040 -1180 { lab=#net5}
-N 2040 -980 2040 -910 { lab=#net5}
-N 1960 -580 2040 -580 { lab=#net6}
-N 2040 -780 2040 -580 { lab=#net6}
-N 1960 -980 2040 -980 { lab=#net5}
-N 1960 -780 2040 -780 { lab=#net6}
+N 1800 -1180 1860 -1180 { lab=c2l}
+N 1520 -1180 1600 -1180 { lab=c1r}
+N 1520 -1180 1520 -1050 { lab=c1r}
+N 1520 -710 1520 -580 { lab=#net1}
+N 1520 -580 1600 -580 { lab=#net1}
+N 1800 -580 1860 -580 { lab=#net2}
+N 1760 -980 1760 -580 { lab=#net2}
+N 1760 -980 1860 -980 { lab=#net2}
+N 1960 -1180 2040 -1180 { lab=in1}
+N 2040 -980 2040 -910 { lab=in1}
+N 1960 -580 2040 -580 { lab=ip1}
+N 2040 -780 2040 -580 { lab=ip1}
+N 1960 -980 2040 -980 { lab=in1}
+N 1960 -780 2040 -780 { lab=ip1}
 N 1520 -880 1520 -810 { lab=cm}
-N 1400 -1180 1520 -1180 { lab=#net2}
-N 1400 -580 1520 -580 { lab=#net3}
-N 1260 -1180 1340 -1180 { lab=#net7}
-N 1260 -580 1340 -580 { lab=#net8}
+N 1400 -1180 1520 -1180 { lab=c1r}
+N 1400 -580 1520 -580 { lab=#net1}
+N 1260 -1180 1340 -1180 { lab=c1l}
+N 1260 -580 1340 -580 { lab=#net3}
 N 960 -1180 1080 -1180 { lab=ip}
 N 960 -580 1080 -580 { lab=in}
-N 2040 -850 2040 -780 { lab=#net6}
-N 2040 -850 2120 -850 { lab=#net6}
-N 2040 -910 2120 -910 { lab=#net5}
-N 1260 -1380 1260 -1180 { lab=#net7}
-N 1180 -1380 1260 -1380 { lab=#net7}
+N 2040 -850 2040 -780 { lab=ip1}
+N 2040 -850 2120 -850 { lab=ip1}
+N 2040 -910 2120 -910 { lab=in1}
+N 1260 -1380 1260 -1180 { lab=c1l}
+N 1180 -1380 1260 -1380 { lab=c1l}
 N 1060 -1380 1080 -1380 { lab=dac_p}
-N 1180 -380 1260 -380 { lab=#net8}
-N 1260 -580 1260 -380 { lab=#net8}
+N 1180 -380 1260 -380 { lab=#net3}
+N 1260 -580 1260 -380 { lab=#net3}
 N 1060 -380 1080 -380 { lab=dac_n}
-N 1800 -1180 1800 -780 { lab=#net1}
-N 1800 -780 1860 -780 { lab=#net1}
-N 1800 -1300 1800 -1180 { lab=#net1}
-N 1800 -1300 2150 -1300 { lab=#net1}
-N 2320 -1180 2400 -1180 { lab=#net9}
-N 2320 -980 2320 -910 { lab=#net9}
-N 2320 -580 2400 -580 { lab=#net10}
-N 2320 -780 2320 -580 { lab=#net10}
-N 2320 -980 2400 -980 { lab=#net9}
-N 2320 -780 2400 -780 { lab=#net10}
-N 2320 -850 2320 -780 { lab=#net10}
-N 2240 -850 2320 -850 { lab=#net10}
-N 2240 -910 2320 -910 { lab=#net9}
-N 2500 -780 2560 -780 { lab=#net11}
-N 2560 -1180 2560 -780 { lab=#net11}
-N 2500 -980 2600 -980 { lab=#net12}
-N 2600 -980 2600 -580 { lab=#net12}
-N 2560 -580 2600 -580 { lab=#net12}
-N 2560 -1180 2740 -1180 { lab=#net11}
-N 2600 -580 2740 -580 { lab=#net12}
-N 2740 -1180 2740 -930 { lab=#net11}
-N 2740 -830 2740 -580 { lab=#net12}
-N 2210 -1300 2560 -1300 { lab=#net11}
-N 2560 -1300 2560 -1180 { lab=#net11}
-N 1800 -580 1800 -460 { lab=#net4}
-N 2560 -580 2560 -460 { lab=#net12}
-N 1800 -460 2150 -460 { lab=#net4}
-N 2210 -460 2560 -460 { lab=#net12}
-N 1800 -1340 1800 -1300 { lab=#net1}
+N 1800 -1180 1800 -780 { lab=c2l}
+N 1800 -780 1860 -780 { lab=c2l}
+N 1800 -1300 1800 -1180 { lab=c2l}
+N 1800 -1300 2150 -1300 { lab=c2l}
+N 2320 -1180 2400 -1180 { lab=op1}
+N 2320 -980 2320 -910 { lab=op1}
+N 2320 -580 2400 -580 { lab=on1}
+N 2320 -780 2320 -580 { lab=on1}
+N 2320 -980 2400 -980 { lab=op1}
+N 2320 -780 2400 -780 { lab=on1}
+N 2320 -850 2320 -780 { lab=on1}
+N 2240 -850 2320 -850 { lab=on1}
+N 2240 -910 2320 -910 { lab=op1}
+N 2500 -780 2560 -780 { lab=c2r}
+N 2560 -1180 2560 -780 { lab=c2r}
+N 2500 -980 2600 -980 { lab=#net4}
+N 2600 -980 2600 -580 { lab=#net4}
+N 2560 -580 2600 -580 { lab=#net4}
+N 2560 -1180 2740 -1180 { lab=c2r}
+N 2600 -580 2740 -580 { lab=#net4}
+N 2740 -1180 2740 -930 { lab=c2r}
+N 2740 -830 2740 -580 { lab=#net4}
+N 2210 -1300 2560 -1300 { lab=c2r}
+N 2560 -1300 2560 -1180 { lab=c2r}
+N 1800 -580 1800 -460 { lab=#net2}
+N 2560 -580 2560 -460 { lab=#net4}
+N 1800 -460 2150 -460 { lab=#net2}
+N 2210 -460 2560 -460 { lab=#net4}
+N 1800 -1340 1800 -1300 { lab=c2l}
 N 1800 -1460 1800 -1440 { lab=cm}
-N 1800 -460 1800 -420 { lab=#net4}
+N 1800 -460 1800 -420 { lab=#net2}
 N 1800 -320 1800 -300 { lab=cm}
-N 2740 -1180 2820 -1180 { lab=#net11}
-N 2740 -580 2820 -580 { lab=#net12}
-N 3000 -1180 3000 -930 { lab=#net13}
-N 3000 -830 3000 -580 { lab=#net14}
-N 3000 -1180 3080 -1180 { lab=#net13}
-N 3000 -580 3080 -580 { lab=#net14}
-N 3220 -1180 3220 -1050 { lab=#net15}
-N 3220 -710 3220 -580 { lab=#net16}
+N 2740 -1180 2820 -1180 { lab=c2r}
+N 2740 -580 2820 -580 { lab=#net4}
+N 3000 -1180 3000 -930 { lab=c3l}
+N 3000 -830 3000 -580 { lab=#net5}
+N 3000 -1180 3080 -1180 { lab=c3l}
+N 3000 -580 3080 -580 { lab=#net5}
+N 3220 -1180 3220 -1050 { lab=c3r}
+N 3220 -710 3220 -580 { lab=#net6}
 N 3220 -880 3220 -810 { lab=cm}
-N 3140 -1180 3220 -1180 { lab=#net15}
-N 3140 -580 3220 -580 { lab=#net16}
+N 3140 -1180 3220 -1180 { lab=c3r}
+N 3140 -580 3220 -580 { lab=#net6}
 N 2800 -1380 2820 -1380 { lab=ip}
-N 3140 -1380 3220 -1380 { lab=#net15}
-N 3220 -1380 3220 -1180 { lab=#net15}
-N 3000 -1380 3080 -1380 { lab=#net17}
-N 2920 -1580 3000 -1580 { lab=#net17}
-N 3000 -1580 3000 -1380 { lab=#net17}
+N 3220 -1380 3220 -1180 { lab=c3r}
+N 3000 -1380 3080 -1380 { lab=c4l}
+N 2920 -1580 3000 -1580 { lab=c4l}
+N 3000 -1580 3000 -1380 { lab=c4l}
 N 2800 -1580 2820 -1580 { lab=dac_p}
-N 3220 -1180 3300 -1180 { lab=#net15}
-N 3220 -580 3300 -580 { lab=#net16}
-N 3480 -850 3480 -580 { lab=#net18}
-N 3400 -580 3480 -580 { lab=#net18}
-N 3400 -1180 3480 -1180 { lab=#net19}
-N 3480 -1180 3480 -910 { lab=#net19}
-N 3480 -910 3560 -910 { lab=#net19}
-N 3480 -850 3560 -850 { lab=#net18}
-N 3480 -1300 3480 -1180 { lab=#net19}
-N 3480 -1340 3480 -1300 { lab=#net19}
+N 3220 -1180 3300 -1180 { lab=c3r}
+N 3220 -580 3300 -580 { lab=#net6}
+N 3480 -850 3480 -580 { lab=ip2}
+N 3400 -580 3480 -580 { lab=ip2}
+N 3400 -1180 3480 -1180 { lab=in2}
+N 3480 -1180 3480 -910 { lab=in2}
+N 3480 -910 3560 -910 { lab=in2}
+N 3480 -850 3560 -850 { lab=ip2}
+N 3480 -1300 3480 -1180 { lab=in2}
+N 3480 -1340 3480 -1300 { lab=in2}
 N 3480 -1460 3480 -1440 { lab=cm}
-N 3480 -1300 3590 -1300 { lab=#net19}
-N 3680 -910 3760 -910 { lab=#net20}
-N 3760 -1180 3760 -910 { lab=#net20}
-N 3650 -1300 3760 -1300 { lab=#net20}
-N 3480 -580 3480 -460 { lab=#net18}
-N 3480 -460 3480 -420 { lab=#net18}
+N 3480 -1300 3590 -1300 { lab=in2}
+N 3680 -910 3760 -910 { lab=op2}
+N 3760 -1180 3760 -910 { lab=op2}
+N 3650 -1300 3760 -1300 { lab=op2}
+N 3480 -580 3480 -460 { lab=ip2}
+N 3480 -460 3480 -420 { lab=ip2}
 N 3480 -320 3480 -300 { lab=cm}
-N 3480 -460 3590 -460 { lab=#net18}
-N 3680 -850 3760 -850 { lab=#net21}
-N 3760 -580 3760 -460 { lab=#net21}
-N 3650 -460 3760 -460 { lab=#net21}
-N 4040 -1180 4040 -930 { lab=#net20}
-N 4040 -830 4040 -580 { lab=#net21}
-N 3760 -580 4040 -580 { lab=#net21}
-N 3760 -1180 4040 -1180 { lab=#net20}
-N 4040 -1180 4160 -1180 { lab=#net20}
-N 4160 -1180 4160 -910 { lab=#net20}
-N 4160 -910 4240 -910 { lab=#net20}
-N 4040 -580 4160 -580 { lab=#net21}
-N 4160 -850 4160 -580 { lab=#net21}
-N 4160 -850 4240 -850 { lab=#net21}
+N 3480 -460 3590 -460 { lab=ip2}
+N 3680 -850 3760 -850 { lab=on2}
+N 3760 -580 3760 -460 { lab=on2}
+N 3650 -460 3760 -460 { lab=on2}
+N 4040 -1180 4040 -930 { lab=op2}
+N 4040 -830 4040 -580 { lab=on2}
+N 3760 -580 4040 -580 { lab=on2}
+N 3760 -1180 4040 -1180 { lab=op2}
+N 4040 -1180 4160 -1180 { lab=op2}
+N 4160 -1180 4160 -910 { lab=op2}
+N 4160 -910 4240 -910 { lab=op2}
+N 4040 -580 4160 -580 { lab=on2}
+N 4160 -850 4160 -580 { lab=on2}
+N 4160 -850 4240 -850 { lab=on2}
 N 4360 -910 4460 -910 { lab=op}
 N 4360 -850 4460 -850 { lab=on}
 N 2800 -380 2820 -380 { lab=in}
-N 3140 -380 3220 -380 { lab=#net16}
-N 3220 -580 3220 -380 { lab=#net16}
-N 3000 -380 3080 -380 { lab=#net22}
-N 2920 -180 3000 -180 { lab=#net22}
-N 3000 -380 3000 -180 { lab=#net22}
+N 3140 -380 3220 -380 { lab=#net6}
+N 3220 -580 3220 -380 { lab=#net6}
+N 3000 -380 3080 -380 { lab=#net7}
+N 2920 -180 3000 -180 { lab=#net7}
+N 3000 -380 3000 -180 { lab=#net7}
 N 2800 -180 2820 -180 { lab=dac_n}
 N 1520 -880 2120 -880 { lab=cm}
 N 3220 -880 3560 -880 { lab=cm}
-N 2040 -1180 2040 -980 { lab=#net5}
-N 1700 -580 1760 -580 { lab=#net4}
-N 1180 -1180 1260 -1180 { lab=#net7}
-N 1180 -580 1260 -580 { lab=#net8}
-N 1700 -1180 1800 -1180 { lab=#net1}
-N 2320 -1180 2320 -980 { lab=#net9}
-N 2500 -1180 2560 -1180 { lab=#net11}
-N 1760 -580 1800 -580 { lab=#net4}
-N 2500 -580 2560 -580 { lab=#net12}
-N 2920 -1180 3000 -1180 { lab=#net13}
-N 2920 -580 3000 -580 { lab=#net14}
-N 2920 -1380 3000 -1380 { lab=#net17}
-N 3760 -850 3760 -580 { lab=#net21}
-N 3760 -1300 3760 -1180 { lab=#net20}
-N 2920 -380 3000 -380 { lab=#net22}
+N 2040 -1180 2040 -980 { lab=in1}
+N 1700 -580 1760 -580 { lab=#net2}
+N 1180 -1180 1260 -1180 { lab=c1l}
+N 1180 -580 1260 -580 { lab=#net3}
+N 1700 -1180 1800 -1180 { lab=c2l}
+N 2320 -1180 2320 -980 { lab=op1}
+N 2500 -1180 2560 -1180 { lab=c2r}
+N 1760 -580 1800 -580 { lab=#net2}
+N 2500 -580 2560 -580 { lab=#net4}
+N 2920 -1180 3000 -1180 { lab=c3l}
+N 2920 -580 3000 -580 { lab=#net5}
+N 2920 -1380 3000 -1380 { lab=c4l}
+N 3760 -850 3760 -580 { lab=on2}
+N 3760 -1300 3760 -1180 { lab=op2}
+N 2920 -380 3000 -380 { lab=#net7}
 N 1520 -950 1520 -880 { lab=cm}
 N 3220 -950 3220 -880 { lab=cm}
 N 100 -860 170 -860 { lab=GND}
@@ -153,14 +152,15 @@ N 170 -860 270 -860 { lab=GND}
 N 270 -860 340 -860 { lab=GND}
 N 340 -860 420 -860 { lab=GND}
 N 420 -960 420 -920 { lab=rst_n}
-N 80 -500 80 -460 { lab=#net23}
-N 80 -500 160 -500 { lab=#net23}
+N 80 -500 80 -460 { lab=#net8}
+N 80 -500 160 -500 { lab=#net8}
 N 160 -440 260 -440 { lab=in}
 N 160 -560 260 -560 { lab=ip}
-N 3760 -910 3780 -910 {}
-N 3840 -910 3860 -910 {}
-N 3760 -850 3780 -850 {}
-N 3840 -850 3860 -850 {}
+N 3760 -910 3780 -910 { lab=op2}
+N 3840 -910 3860 -910 { lab=VSS}
+N 3760 -850 3780 -850 { lab=on2}
+N 3840 -850 3860 -850 { lab=VSS}
+N 3140 -1380 3220 -1380 { lab=c3r}
 C {devices/code.sym} 90 -1760 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -311,7 +311,6 @@ C {devices/lab_pin.sym} 3520 -370 0 1 {name=l100 sig_type=std_logic lab=rst_n_b}
 C {devices/lab_pin.sym} 4080 -880 0 1 {name=l101 sig_type=std_logic lab=rst_n}
 C {devices/lab_pin.sym} 4000 -880 0 0 {name=l102 sig_type=std_logic lab=rst_n_b}
 C {devices/lab_pin.sym} 4300 -810 1 1 {name=l103 sig_type=std_logic lab=p1_b}
-C {clock.sym} 230 -1380 0 0 {name=x39 VDD=VDD VSS=VSS }
 C {devices/lab_pin.sym} 380 -1330 2 0 {name=l104 sig_type=std_logic lab=p1d}
 C {devices/lab_pin.sym} 380 -1350 2 0 {name=l105 sig_type=std_logic lab=p1_b}
 C {devices/lab_pin.sym} 380 -1370 2 0 {name=l106 sig_type=std_logic lab=p1}
@@ -328,7 +327,6 @@ C {devices/lab_pin.sym} 380 -1410 2 0 {name=l116 sig_type=std_logic lab=Bd}
 C {devices/lab_pin.sym} 380 -1430 2 0 {name=l117 sig_type=std_logic lab=B_b}
 C {devices/lab_pin.sym} 380 -1450 2 0 {name=l118 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 380 -1390 2 0 {name=l119 sig_type=std_logic lab=Bd_b}
-C {devices/lab_pin.sym} 80 -1380 2 1 {name=l120 sig_type=std_logic lab=clk}
 C {devices/vsource.sym} 100 -1070 0 0 {name=V1 value="DC 0 PULSE(0 1.8 10n 10p 10p '0.5/5.12e6-10p' '1/5.12e6')"}
 C {devices/lab_pin.sym} 100 -1100 3 1 {name=l121 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} 100 -1040 1 1 {name=l122 sig_type=std_logic lab=VSS}
@@ -347,9 +345,9 @@ C {sky130_stdcells/inv_1.sym} 460 -960 0 0 {name=x40 VGND=GND VNB=GND VPB=VDD VP
 C {devices/lab_wire.sym} 500 -960 0 1 {name=l129 sig_type=std_logic lab=rst_n_b}
 C {devices/code_shown.sym} 80 -750 0 0 {name=STIMULI only_toplevel=false value="
 .control
-tran 10u 1m uic
+tran 1u 1m
 save all
-write modulator_tb.raw
+write modulator_tb_ideal_clock.raw
 .endc
 "}
 C {devices/vsource.sym} 80 -430 0 0 {name=V5 value=0.9}
@@ -372,3 +370,19 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 3810 -910 3 0 {name=C10 model=cap_mim_m3_1 W=1
 C {devices/lab_pin.sym} 3860 -910 0 1 {name=l133 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 3810 -850 3 1 {name=C12 model=cap_mim_m3_1 W=11.6 L=11.6 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 3860 -850 0 1 {name=l134 sig_type=std_logic lab=VSS}
+C {ideal_clock.sym} 230 -1380 0 0 {name=x39 td=10u VDD=VDD VSS=VSS}
+C {devices/lab_wire.sym} 1300 -1180 0 1 {name=l120 sig_type=std_logic lab=c1l}
+C {devices/lab_wire.sym} 1420 -1180 0 1 {name=l135 sig_type=std_logic lab=c1r}
+C {devices/lab_wire.sym} 2100 -1300 0 1 {name=l136 sig_type=std_logic lab=c2l}
+C {devices/lab_wire.sym} 2230 -1300 0 1 {name=l137 sig_type=std_logic lab=c2r}
+C {devices/lab_wire.sym} 2080 -910 0 1 {name=l138 sig_type=std_logic lab=in1}
+C {devices/lab_wire.sym} 2080 -850 0 1 {name=l139 sig_type=std_logic lab=ip1}
+C {devices/lab_wire.sym} 2260 -910 0 1 {name=l140 sig_type=std_logic lab=op1}
+C {devices/lab_wire.sym} 2260 -850 0 1 {name=l141 sig_type=std_logic lab=on1}
+C {devices/lab_wire.sym} 3030 -1180 0 1 {name=l142 sig_type=std_logic lab=c3l}
+C {devices/lab_wire.sym} 3160 -1180 0 1 {name=l143 sig_type=std_logic lab=c3r}
+C {devices/lab_wire.sym} 3030 -1380 0 1 {name=l145 sig_type=std_logic lab=c4l}
+C {devices/lab_wire.sym} 3520 -910 0 1 {name=l146 sig_type=std_logic lab=in2}
+C {devices/lab_wire.sym} 3520 -850 0 1 {name=l147 sig_type=std_logic lab=ip2}
+C {devices/lab_wire.sym} 3700 -910 0 1 {name=l148 sig_type=std_logic lab=op2}
+C {devices/lab_wire.sym} 3700 -850 0 1 {name=l149 sig_type=std_logic lab=on2}

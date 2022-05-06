@@ -11,9 +11,9 @@ N 300 -120 400 -120 { lab=bias_d}
 N 640 -260 700 -260 { lab=op}
 N 640 -190 700 -190 { lab=cmc}
 N 640 -120 700 -120 { lab=on}
-N 940 -260 960 -260 { lab=bias_e}
+N 940 -260 960 -260 { lab=cm}
 N 940 -120 960 -120 { lab=bias_a}
-N 300 -100 320 -100 { lab=cm_bias}
+N 300 -100 320 -100 { lab=cm}
 N 660 -480 660 -260 { lab=op}
 N 680 -480 680 -120 { lab=on}
 C {devices/lab_wire.sym} 320 -180 0 1 {name=l1 sig_type=std_logic lab=bias_a}
@@ -43,6 +43,6 @@ C {devices/opin.sym} 130 -290 0 0 {name=p9 lab=on}
 C {devices/lab_wire.sym} 640 -190 0 1 {name=l23 sig_type=std_logic lab=cmc}
 C {devices/ipin.sym} 140 -500 0 0 {name=p1 lab=i_bias}
 C {folded_cascode_3_bias.sym} 60 -60 0 0 {name=x1 VDD=VDD VSS=VSS}
-C {folded_cascode_3_core.sym} 380 -60 0 0 {name=x2 VDD=VDD VSS=VSS}
-C {sc_cmfb.sym} 700 -80 0 0 {name=x3 MF=50 VDD=VDD VSS=VSS}
 C {devices/opin.sym} 130 -270 0 0 {name=p10 lab=cm}
+C {sc_cmfb.sym} 700 -80 0 0 {name=x3 VDD=VDD VSS=VSS}
+C {folded_cascode_3_core.sym} 380 -60 0 0 {name=x2 VDD=VDD VSS=VSS}
