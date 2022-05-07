@@ -1,15 +1,17 @@
-module digital_filter_tb;
+module digital_filter_tb_random;
 
     reg clk;
     reg rst_n;
     reg unsigned data_in;
     wire unsigned [11:0] data_out;
+    wire new_data;
 
     digital_filter dut (
         .clk(clk),
         .rst_n(rst_n),
         .data_in(data_in),
-        .data_out(data_out)
+        .data_out(data_out),
+        .new_data(new_data)
     );
 
     always #10 clk = ~clk;
@@ -54,7 +56,7 @@ module digital_filter_tb;
 
     initial begin
         $dumpfile("dump.vcd");
-        $dumpvars(0, digital_filter_tb);
+        $dumpvars(0, digital_filter_tb_random);
         #200000
         $finish(2);
     end

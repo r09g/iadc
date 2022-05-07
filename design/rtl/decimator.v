@@ -11,7 +11,7 @@ module decimator (
     
     always @(posedge clk) begin
         if(!rst_n) begin
-            data_out <= 0;
+            data_out <= data_out;
             counter <= 0;
             new_data <= 0;
         end
@@ -23,6 +23,10 @@ module decimator (
                 new_data <= 1;
             end   
         end
+    end
+
+    always @(negedge clk) begin
+        new_data <= 0;
     end
 
 endmodule
