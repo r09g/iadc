@@ -27,7 +27,7 @@ source setup.csh
 ```
 Next, enter the schematic testbench directory
 ```
-cd ./verification/schematic
+cd ./verification/analog_modulator
 ```
 Open a test using XSCHEM by running
 ```

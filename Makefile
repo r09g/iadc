@@ -1,41 +1,34 @@
-.PHONY: clean run wave 0
+.PHONY: clean run wave all 1 2 3 4 5
+
+rtl_path = design/digital_filter/design/rtl
+tb_path = verification/digital_filter
 
 # run all tests
-0:
-  make 1
-  make clean
-  make 2
-  make clean
-  make 3
-  make clean
-  make 4
-  make clean
-  make 5
-  make clean
+all: 1 clean 2 clean 3 clean 4 clean 5 clean
 
 # test_int_1
-1: design/rtl/* verification/rtl/*
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp verification/rtl/integrator_1_tb.v design/rtl/integrator_1.v
+1:
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/integrator_1_tb.v $(rtl_path)/integrator_1.v
 	make run
 
 # test_int_2
-2: design/rtl/* verification/rtl/*
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp verification/rtl/integrator_2_tb.v design/rtl/integrator_2.v
+2:
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/integrator_2_tb.v $(rtl_path)/integrator_2.v
 	make run
 
 # test_decim
-3: design/rtl/* verification/rtl/*
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp verification/rtl/decimator_tb.v design/rtl/decimator.v
+3:
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/decimator_tb.v $(rtl_path)/decimator.v
 	make run
 
 # test_digital_random
-4: design/rtl/* verification/rtl/*
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp verification/rtl/digital_filter_tb_random.v design/rtl/*
+4:
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_random.v $(rtl_path)/*
 	make run
 
 # test_digital_ngspice
-5: design/rtl/* verification/rtl/*
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp verification/rtl/digital_filter_tb_ngspice.v design/rtl/*
+5:
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_ngspice.v $(rtl_path)/*
 	make run
 
 run:

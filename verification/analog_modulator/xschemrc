@@ -36,7 +36,7 @@ append XSCHEM_LIBRARY_PATH :$env(PWD)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
 # schematics
-append XSCHEM_LIBRARY_PATH :$env(DESIGN_DIR)/design/schematic
+append XSCHEM_LIBRARY_PATH :$env(DESIGN_DIR)/design/analog_modulator/schematic
 
 ###########################################################################
 #### SET CUSTOM COLORS FOR XSCHEM LIBRARIES MATCHING CERTAIN PATTERNS

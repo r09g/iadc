@@ -248,8 +248,8 @@ C {devices/lab_pin.sym} 2120 -880 2 1 {name=l79 sig_type=std_logic lab=p2d}
 C {devices/lab_pin.sym} 2200 -880 0 1 {name=l80 sig_type=std_logic lab=p2d_b}
 C {devices/lab_pin.sym} 2340 -1000 2 1 {name=l81 sig_type=std_logic lab=p1}
 C {devices/lab_pin.sym} 2420 -1000 0 1 {name=l82 sig_type=std_logic lab=p1_b}
-C {devices/lab_pin.sym} 2420 -760 2 0 {name=l83 sig_type=std_logic lab=p1}
-C {devices/lab_pin.sym} 2340 -760 0 0 {name=l84 sig_type=std_logic lab=p1_b}
+C {devices/lab_pin.sym} 2340 -760 2 1 {name=l83 sig_type=std_logic lab=p1}
+C {devices/lab_pin.sym} 2420 -760 0 1 {name=l84 sig_type=std_logic lab=p1_b}
 C {devices/lab_pin.sym} 2510 -1140 1 1 {name=l85 sig_type=std_logic lab=p2}
 C {devices/lab_pin.sym} 2510 -1220 3 1 {name=l86 sig_type=std_logic lab=p2_b}
 C {devices/lab_pin.sym} 2510 -620 1 0 {name=l87 sig_type=std_logic lab=p2}
