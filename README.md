@@ -18,7 +18,10 @@ Delta-Sigma Modulator Functional Diagram
 | Input CM | VDD/2 |
 
 # Setup and Run Tests
-To run schematic tests, make sure the Skywater SKY130 PDK is installed on the Farmshare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file. Then run
+Make sure the Skywater SKY130 PDK is installed on the Farmshare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file.
+
+
+For schematic tests, run
 ```
 source setup.csh
 ```
@@ -31,6 +34,19 @@ Open a test using XSCHEM by running
 xschem <testbench_name>.sch
 ```
 Generate a netlist, run NGSPICE simulation, and view the waveforms by clicking the buttons on the top-right corner of the XSCHEM GUI.
+
+---
+
+For RTL tests, run
+```
+make
+```
+to run all tests, or run
+```
+make <number>
+```
+to run individual tests, where `<number>` is the number corresponding to the test in the Makefile.
+
 
 # Contact
 - Raymond Yang (rhyang@stanford.edu)
