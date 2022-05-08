@@ -1,4 +1,17 @@
-.PHONY: clean run wave
+.PHONY: clean run wave 0
+
+# run all tests
+0:
+  make 1
+  make clean
+  make 2
+  make clean
+  make 3
+  make clean
+  make 4
+  make clean
+  make 5
+  make clean
 
 # test_int_1
 1: design/rtl/* verification/rtl/*
