@@ -31,22 +31,25 @@ N 1560 -800 1660 -800 { lab=#net1}
 N 1620 -200 1660 -200 { lab=#net2}
 N 100 -510 170 -510 { lab=GND}
 N 1380 -270 1380 -200 { lab=c2r}
-N 1380 -400 1380 -370 { lab=GND}
+N 1380 -400 1380 -370 { lab=#net3}
 N 1380 -800 1380 -710 { lab=c1r}
-N 1380 -610 1380 -580 { lab=GND}
+N 1380 -610 1380 -580 { lab=#net3}
 N 1120 -610 1120 -580 { lab=GND}
 N 1120 -400 1120 -370 { lab=GND}
 N 1120 -800 1120 -710 { lab=c1l}
 N 1120 -270 1120 -200 { lab=c2l}
-N 2250 -920 2310 -920 { lab=#net3}
-N 2310 -920 2410 -920 { lab=#net3}
-N 2260 -70 2410 -70 { lab=#net4}
+N 2250 -920 2310 -920 { lab=op}
+N 2310 -920 2410 -920 { lab=op}
+N 2260 -70 2410 -70 { lab=on}
+N 1380 -500 2120 -500 { lab=#net3}
 N 170 -510 240 -510 { lab=GND}
 N 240 -510 270 -510 { lab=GND}
 N 430 -590 430 -550 { lab=icm}
 N 430 -590 510 -590 { lab=icm}
 N 510 -530 610 -530 { lab=in}
 N 510 -650 610 -650 { lab=ip}
+N 1380 -580 1380 -500 { lab=#net3}
+N 1380 -500 1380 -400 { lab=#net3}
 N 1720 -800 1780 -800 { lab=#net1}
 N 1880 -800 1960 -800 { lab=in1}
 N 1720 -200 1780 -200 { lab=#net2}
@@ -69,23 +72,23 @@ N 2320 -470 2320 -380 { lab=on1}
 N 2320 -380 2320 -180 { lab=on1}
 N 2320 -620 2320 -530 { lab=op1}
 N 2320 -780 2320 -620 { lab=op1}
-N 2410 -920 2490 -920 { lab=#net3}
-N 2490 -920 2490 -780 { lab=#net3}
-N 2420 -780 2480 -780 { lab=#net3}
-N 2480 -780 2490 -780 { lab=#net3}
-N 2490 -780 2490 -380 { lab=#net3}
-N 2420 -380 2490 -380 { lab=#net3}
-N 2420 -620 2520 -620 { lab=#net4}
-N 2520 -620 2520 -180 { lab=#net4}
-N 2420 -180 2520 -180 { lab=#net4}
-N 2410 -70 2520 -70 { lab=#net4}
-N 2520 -180 2520 -70 { lab=#net4}
-N 2490 -780 2580 -780 { lab=#net3}
-N 2580 -780 2580 -530 { lab=#net3}
-N 2580 -530 2630 -530 { lab=#net3}
-N 2580 -470 2630 -470 { lab=#net4}
-N 2580 -470 2580 -70 { lab=#net4}
-N 2520 -70 2580 -70 { lab=#net4}
+N 2410 -920 2490 -920 { lab=op}
+N 2490 -920 2490 -780 { lab=op}
+N 2420 -780 2480 -780 { lab=op}
+N 2480 -780 2490 -780 { lab=op}
+N 2490 -780 2490 -380 { lab=op}
+N 2420 -380 2490 -380 { lab=op}
+N 2420 -620 2520 -620 { lab=on}
+N 2520 -620 2520 -180 { lab=on}
+N 2420 -180 2520 -180 { lab=on}
+N 2410 -70 2520 -70 { lab=on}
+N 2520 -180 2520 -70 { lab=on}
+N 2490 -780 2580 -780 { lab=op}
+N 2580 -780 2580 -530 { lab=op}
+N 2580 -530 2630 -530 { lab=op}
+N 2580 -470 2630 -470 { lab=on}
+N 2580 -470 2580 -70 { lab=on}
+N 2520 -70 2580 -70 { lab=on}
 C {devices/code.sym} 90 -1410 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -179,18 +182,6 @@ C {devices/lab_wire.sym} 2260 -530 0 1 {name=l140 sig_type=std_logic lab=op1}
 C {devices/lab_wire.sym} 2260 -470 0 1 {name=l141 sig_type=std_logic lab=on1}
 C {devices/isource.sym} 270 -540 2 0 {name=I0 value=30u}
 C {devices/lab_pin.sym} 270 -570 1 0 {name=l126 sig_type=std_logic lab=i_bias_1}
-C {devices/capa.sym} 2630 -560 2 0 {name=C5
-m=1
-value=19f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 2630 -590 1 0 {name=l6 sig_type=std_logic lab=VSS}
-C {devices/capa.sym} 2630 -440 0 0 {name=C6
-m=1
-value=19f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 2630 -410 3 0 {name=l13 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 430 -520 0 0 {name=V5 value=0.9}
 C {devices/gnd.sym} 430 -490 0 0 {name=l130 lab=GND}
 C {devices/vsource.sym} 510 -620 0 0 {name=V6 value="DC 0 SINE(0 0.5 1e3)"}
@@ -232,6 +223,6 @@ C {devices/lab_pin.sym} 360 -1090 0 1 {name=l60 sig_type=std_logic lab=B_b}
 C {devices/lab_pin.sym} 360 -1070 0 1 {name=l61 sig_type=std_logic lab=Bd}
 C {devices/lab_pin.sym} 360 -1050 0 1 {name=l62 sig_type=std_logic lab=Bd_b}
 C {devices/gnd.sym} 1120 -580 0 0 {name=l63 lab=GND}
-C {devices/gnd.sym} 1380 -580 0 0 {name=l64 lab=GND}
-C {devices/gnd.sym} 1120 -400 2 0 {name=l65 lab=GND}
-C {devices/gnd.sym} 1380 -390 2 0 {name=l66 lab=GND}
+C {devices/gnd.sym} 1120 -400 2 0 {name=l64 lab=GND}
+C {devices/lab_wire.sym} 2630 -530 0 1 {name=l6 sig_type=std_logic lab=op}
+C {devices/lab_wire.sym} 2630 -470 0 1 {name=l13 sig_type=std_logic lab=on}
