@@ -31,25 +31,25 @@ N 1560 -800 1660 -800 { lab=#net1}
 N 1620 -200 1660 -200 { lab=#net2}
 N 100 -510 170 -510 { lab=GND}
 N 1380 -270 1380 -200 { lab=c2r}
-N 1380 -400 1380 -370 { lab=#net3}
+N 1380 -400 1380 -370 { lab=cm}
 N 1380 -800 1380 -710 { lab=c1r}
-N 1380 -610 1380 -580 { lab=#net3}
-N 1120 -610 1120 -580 { lab=GND}
-N 1120 -400 1120 -370 { lab=GND}
+N 1380 -610 1380 -580 { lab=cm}
+N 1120 -610 1120 -580 { lab=icm}
+N 1120 -400 1120 -370 { lab=icm}
 N 1120 -800 1120 -710 { lab=c1l}
 N 1120 -270 1120 -200 { lab=c2l}
 N 2250 -920 2310 -920 { lab=op}
 N 2310 -920 2410 -920 { lab=op}
 N 2260 -70 2410 -70 { lab=on}
-N 1380 -500 2120 -500 { lab=#net3}
+N 1380 -500 2120 -500 { lab=cm}
 N 170 -510 240 -510 { lab=GND}
 N 240 -510 270 -510 { lab=GND}
 N 430 -590 430 -550 { lab=icm}
 N 430 -590 510 -590 { lab=icm}
 N 510 -530 610 -530 { lab=in}
 N 510 -650 610 -650 { lab=ip}
-N 1380 -580 1380 -500 { lab=#net3}
-N 1380 -500 1380 -400 { lab=#net3}
+N 1380 -580 1380 -500 { lab=cm}
+N 1380 -500 1380 -400 { lab=cm}
 N 1720 -800 1780 -800 { lab=#net1}
 N 1880 -800 1960 -800 { lab=in1}
 N 1720 -200 1780 -200 { lab=#net2}
@@ -89,6 +89,7 @@ N 2580 -530 2630 -530 { lab=op}
 N 2580 -470 2630 -470 { lab=on}
 N 2580 -470 2580 -70 { lab=on}
 N 2520 -70 2580 -70 { lab=on}
+N 1120 -580 1120 -400 { lab=icm}
 C {devices/code.sym} 90 -1410 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -153,7 +154,7 @@ C {devices/code_shown.sym} 80 -410 0 0 {name=STIMULI only_toplevel=false value="
 .options savecurrents
 .save all
 .control
-tran 0.1u 25u
+tran 10n 25u
 write chopping_tb.raw
 .endc
 "}
@@ -222,7 +223,7 @@ C {devices/lab_pin.sym} 360 -1130 0 1 {name=l59 sig_type=std_logic lab=Ad_b}
 C {devices/lab_pin.sym} 360 -1090 0 1 {name=l60 sig_type=std_logic lab=B_b}
 C {devices/lab_pin.sym} 360 -1070 0 1 {name=l61 sig_type=std_logic lab=Bd}
 C {devices/lab_pin.sym} 360 -1050 0 1 {name=l62 sig_type=std_logic lab=Bd_b}
-C {devices/gnd.sym} 1120 -580 0 0 {name=l63 lab=GND}
-C {devices/gnd.sym} 1120 -400 2 0 {name=l64 lab=GND}
 C {devices/lab_wire.sym} 2630 -530 0 1 {name=l6 sig_type=std_logic lab=op}
 C {devices/lab_wire.sym} 2630 -470 0 1 {name=l13 sig_type=std_logic lab=on}
+C {devices/lab_pin.sym} 1380 -500 0 1 {name=l65 sig_type=std_logic lab=cm}
+C {devices/lab_pin.sym} 1120 -500 0 1 {name=l63 sig_type=std_logic lab=icm}
