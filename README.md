@@ -60,7 +60,7 @@ source venv/bin/activate.csh
 ```
 Next, enter the build directory and run the following
 ```
-cd design/digital_filter/build
+mkdir -p design/digital_filter/build && cd design/digital_filter/build
 mflowgen run --design ../design/
 ```
 Now, if you run `make status` you will see the status of all the steps in the flow. Use the following make targets to run and debug each step. For example to run step number N do:
