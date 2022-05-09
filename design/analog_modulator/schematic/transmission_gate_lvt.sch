@@ -40,10 +40,10 @@ C {devices/lab_pin.sym} 330 -300 3 0 {name=l7 sig_type=std_logic lab=VSS
 
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 330 -390 1 0 {name=M3
-L=L_N
-W=W_N
+L='L_N'
+W='W_N'
 nf=1
-mult=N
+mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -54,10 +54,10 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 330 -100 3 0 {name=M1
-L=L_P
-W=W_P
+L='L_P'
+W='W_P'
 nf=1
-mult=N
+mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

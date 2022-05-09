@@ -69,7 +69,7 @@ C {devices/lab_wire.sym} 350 -410 3 1 {name=l128 sig_type=std_logic lab=rst_n}
 C {devices/lab_wire.sym} 430 -430 0 1 {name=l129 sig_type=std_logic lab=rst_n_b}
 C {devices/code.sym} 220 -770 0 0 {name=STIMULI only_toplevel=false value="
 .control
-tran 10n 10m
+tran 1u 50u
 *let i_diff = v(ip) - v(in)
 *let vc1 = v(c1l) - v(c1r)
 *let i1_diff = v(ip1) - v(in1)
@@ -78,8 +78,8 @@ tran 10n 10m
 *let vc4 = v(c4l) - v(c3r)
 *let i2_diff = v(ip2) - v(in2)
 *let o2_diff = v(op2) - v(on2)
-save op
-write modulator_tb_ideal_clock_mavg.raw v(op) 
+save all
+write modulator_tb_ideal_clock_mavg2.raw 
 .endc
 "}
 C {devices/vsource.sym} 670 -120 0 0 {name=V5 value=0.9}
@@ -93,8 +93,8 @@ C {devices/lab_wire.sym} 1180 -70 3 0 {name=l1 sig_type=std_logic lab=i_bias_1}
 C {devices/lab_wire.sym} 1200 -70 3 0 {name=l2 sig_type=std_logic lab=i_bias_2}
 C {devices/lab_wire.sym} 1120 -70 3 0 {name=l3 sig_type=std_logic lab=rst_n}
 C {devices/lab_wire.sym} 1140 -70 3 0 {name=l4 sig_type=std_logic lab=rst_n_b}
-C {ideal_clock.sym} 1160 -560 3 1 {name=x2 td=97.64625n VDD=VDD VSS=VSS}
 C {sky130_stdcells/inv_1.sym} 390 -430 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1380 -190 0 1 {name=l5 sig_type=std_logic lab=op}
 C {devices/vdd.sym} 90 -390 0 0 {name=l6 lab=VDD}
-C {devices/vsource.sym} 350 -360 0 0 {name=V7 value="DC 0 PULSE(0 1.8 '97.64625n' 10p 10p '511.5/5.12e6+10p' '512/5.12e6')" spice_ignore=true}
+C {devices/vsource.sym} 350 -360 0 0 {name=V7 value="DC 0 PULSE(0 1.8 '97.64625n' 10p 10p '511.5/5.12e6+10p' '512/5.12e6')" spice_ignore=false}
+C {ideal_clock.sym} 1160 -560 3 1 {name=x2 VDD=VDD VSS=VSS td=97.64625n}

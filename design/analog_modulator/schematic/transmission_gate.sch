@@ -23,10 +23,10 @@ N -10 -130 -10 -70 { lab=in}
 N 70 50 70 120 { lab=VDD}
 N 70 -130 70 -60 { lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 70 -150 1 0 {name=M1
-L=L_N
-W=W_N
+L='L_N'
+W='W_N'
 nf=1 
-mult=N
+mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -51,10 +51,10 @@ C {devices/lab_pin.sym} 190 0 2 0 {name=l4 sig_type=std_logic lab=out}
 C {devices/lab_pin.sym} 70 50 1 0 {name=l6 sig_type=std_logic lab=VDD
 }
 C {sky130_fd_pr/pfet_01v8.sym} 70 140 3 0 {name=M2
-L=L_P
-W=W_P
+L='L_P'
+W='W_P'
 nf=1
-mult=N
+mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
