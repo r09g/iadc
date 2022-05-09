@@ -1,5 +1,3 @@
-.PHONY: clean run wave all 1 2 3 4 5
-
 rtl_path = design/digital_filter/design/rtl
 tb_path = verification/digital_filter
 
@@ -43,3 +41,5 @@ clean:
 	rm -rf csrc
 	rm -rf dump.vcd
 	rm -rf ucli.key
+
+.PHONY: clean run wave all 1 2 3 4 5

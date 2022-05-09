@@ -1,0 +1,4 @@
+design/digital_filter/build/*
+design/digital_filter/design/__pycache__/*
+mflowgen/
+venv/

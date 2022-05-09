@@ -17,15 +17,28 @@ Delta-Sigma Modulator Functional Diagram
 | Input Range | 90% FS |
 | Input CM | VDD/2 |
 
-# Setup and Run Tests
-Make sure the Skywater SKY130 PDK is installed on the Farmshare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file.
+# Setup
+To run this flow, please install the following dependencies:
 
+1. `skywater-pdk` - This is the Skywater SKY130 PDK.
 
-For schematic tests, run
+2. `open_pdks` - This system helps install the Skywater foundry provided PDK for open-source EDA tools.
+
+3. `skywater-130nm-adk` - This repo has some scripts that convert the SkyWater PDK into the format that mflowgen expects. The files that are in `skywater-130nm-adk/view-standard` are the ones that mflowgen will use.
+
+4. `mflowgen` - This is a tool to create ASIC design flows in a modular fashion.
+
+Make sure the PDK is installed on the FarmShare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file.
+
+# Running the Flow
+The run procedure for analog and digital flows are different. For both flows, first enter the CentOS container and source the setup file.
 ```
 source setup.csh
 ```
-Next, enter the schematic testbench directory
+
+### Analog
+
+For schematic tests, enter the schematic testbench directory
 ```
 cd ./verification/analog_modulator
 ```
@@ -35,18 +48,17 @@ xschem <testbench_name>.sch
 ```
 Generate a netlist, run NGSPICE simulation, and view the waveforms by clicking the buttons on the top-right corner of the XSCHEM GUI.
 
----
+### Digital
 
-For RTL tests, run
+To run the digital flow, enter the build directory and run the following:
 ```
-make
+cd design/digital_filter/build
+mflowgen run --design ../design/
 ```
-to run all tests, or run
+Now, if you run `make status` you will see the status of all the steps in the flow. Use the following make targets to run and debug each step. For example to run step number N do:
 ```
-make <number>
+make N
 ```
-to run individual tests, where `<number>` is the number corresponding to the test in the Makefile.
-
 
 # Contact
 - Raymond Yang (rhyang@stanford.edu)
