@@ -50,7 +50,15 @@ Generate a netlist, run NGSPICE simulation, and view the waveforms by clicking t
 
 ### Digital
 
-To run the digital flow, enter the build directory and run the following:
+To run the digital flow, create a virtual environment (only needs to be done once)
+```
+python -m venv venv
+```
+and enter this virtual environment (to exit, use `deactivate`)
+```
+source venv/bin/activate.csh
+```
+Next, enter the build directory and run the following
 ```
 cd design/digital_filter/build
 mflowgen run --design ../design/
@@ -59,6 +67,17 @@ Now, if you run `make status` you will see the status of all the steps in the fl
 ```
 make N
 ```
+
+
+Helpful make targets:
+*  `make list` - list all the nodes in the graphs and their corresponding step number
+*  `make status` - list the build status of all the steps
+*  `make graph` - generates a PDF of the graph
+*  `make N` - runs step N
+*  `make debug-N` - pulls up GUI for the appropriate tool for debugging (at the output of step N)
+*  `make clean-N` - removes the folder for step N, and sets the status of steps [N,) to build
+*  `make clean-all` - removes folders for all the steps
+*  `make runtimes` - lists the runtime for each step
 
 # Contact
 - Raymond Yang (rhyang@stanford.edu)
