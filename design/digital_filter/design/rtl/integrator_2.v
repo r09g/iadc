@@ -1,4 +1,3 @@
-`default_nettype none
 module integrator_2 (
     input wire clk,
     input wire rst_n,

@@ -5,5 +5,5 @@ outputs:
   - design.vcs.v
 
 commands:
-  - cat *.v > outputs/design.v
+  - cat integrator_1.v integrator_2.v decimator.v digital_filter.v > outputs/design.v
   - cp outputs/design.v outputs/design.vcs.v

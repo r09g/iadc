@@ -10,7 +10,7 @@ module digital_filter_tb_random;
     supply1 VDD;
 
 
-    digital_filter dut (
+    digital_filter df_inst (
         .clk(clk),
         .rst_n(rst_n),
         .data_in(data_in),

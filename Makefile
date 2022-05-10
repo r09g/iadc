@@ -1,5 +1,5 @@
 rtl_path = design/digital_filter/design/rtl
-tb_path = verification/digital_filter
+tb_path = design/digital_filter/design/testbench
 
 # run all tests
 all: 1 clean 2 clean 3 clean 4 clean 5 clean
@@ -21,12 +21,12 @@ all: 1 clean 2 clean 3 clean 4 clean 5 clean
 
 # test_digital_random
 4:
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_random.v $(rtl_path)/*
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_random.sv $(rtl_path)/*.v
 	make run
 
 # test_digital_ngspice
 5:
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_ngspice.v $(rtl_path)/*
+	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_ngspice.v $(rtl_path)/*.v
 	make run
 
 run:
