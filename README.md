@@ -28,7 +28,7 @@ To run this flow, please install the following dependencies:
 
 4. `mflowgen` - This is a tool to create ASIC design flows in a modular fashion.
 
-Make sure the PDK is installed on the FarmShare servers under `/farmshare/home/classes/ee/372/PDKs/` and update the various paths in the `setup.csh` file.
+For FarmShare servers, the PDKs should be available under `/farmshare/home/classes/ee/372/PDKs/`, but mflowgen needs to be installed. Make sure to update the various paths in the `setup.csh` file after installing all required dependencies.
 
 # Running the Flow
 The run procedure for analog and digital flows are different. For both flows, first enter the CentOS container and source the setup file.
