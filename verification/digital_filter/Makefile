@@ -1,5 +1,5 @@
-rtl_path = design/digital_filter/design/rtl
-tb_path = design/digital_filter/design/testbench
+rtl_path = $(DESIGN_DIR)/design/digital_filter/design/rtl
+tb_path = $(PWD)
 
 # run all tests
 all: 1 clean 2 clean 3 clean 4 clean 5 clean
@@ -29,6 +29,8 @@ all: 1 clean 2 clean 3 clean 4 clean 5 clean
 	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_ngspice.v $(rtl_path)/*.v
 	make run
 
+.PHONY: clean run wave
+
 run:
 	./simv
 
@@ -41,5 +43,3 @@ clean:
 	rm -rf csrc
 	rm -rf dump.vcd
 	rm -rf ucli.key
-
-.PHONY: clean run wave all 1 2 3 4 5

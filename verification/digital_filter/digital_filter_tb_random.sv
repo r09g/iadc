@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module digital_filter_tb_random;
 
     reg clk;
@@ -5,13 +6,21 @@ module digital_filter_tb_random;
     reg unsigned data_in;
     wire unsigned [11:0] data_out;
     wire new_data;
+    supply0 VSS;
+    supply1 VDD;
 
-    digital_filter dut (
+
+    digital_filter df_inst (
         .clk(clk),
         .rst_n(rst_n),
         .data_in(data_in),
         .data_out(data_out),
         .new_data(new_data)
+        `ifdef USE_POWER_PINS
+        ,
+        .VSS(VSS),
+        .VDD(VDD)
+        `endif
     );
 
     always #10 clk = ~clk;
@@ -33,6 +42,7 @@ module digital_filter_tb_random;
         #20
         rst_n <= 1;
         data_in <= $random;
+        if($realtime > 50) assert(new_data == 0);
         #20
         while(count < 511) begin
             rst_n <= 1;
@@ -40,6 +50,7 @@ module digital_filter_tb_random;
             s1 <= s1 + data_in;
             s2 <= s2 + s1;
             count = count + 1;
+            if($realtime > 50) assert(new_data == 0);
             #20;
         end
         s1 <= s1 + data_in;
@@ -47,7 +58,7 @@ module digital_filter_tb_random;
         #20
         s2 <= s2 + s1;
         #20
-        $display("Expected: %d, Actual: %d", (s2 >> 6), data_out);
+        $display("Expected: %d, Actual: %d", (s2 >> 6), data_out); assert((s2 >> 6) == data_out); assert(new_data == 1);
         rst_n <= 0;
         count = 0;
         s1 = 0;
@@ -57,8 +68,15 @@ module digital_filter_tb_random;
     initial begin
         $dumpfile("dump.vcd");
         $dumpvars(0, digital_filter_tb_random);
-        #200000
+        #2000000
         $finish(2);
     end
+
+    `ifdef GL
+    initial begin
+        $sdf_annotate("inputs/design.sdf", df_inst);
+    end
+    `endif
+
 
 endmodule

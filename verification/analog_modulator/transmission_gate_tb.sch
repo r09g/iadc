@@ -14,20 +14,14 @@ N 560 -130 560 -110 { lab=clk}
 N 500 -110 560 -110 { lab=clk}
 N 660 -180 700 -180 { lab=in}
 N 240 -220 240 -190 { lab=in}
-N 800 -180 840 -180 { lab=out}
-N 840 -180 920 -180 { lab=out}
-N 920 -180 920 -170 { lab=out}
-N 920 -110 920 -90 { lab=GND}
+N 800 -180 840 -180 { lab=#net2}
 N 80 -200 80 -190 { lab=VDD}
+N 840 -180 860 -180 { lab=#net2}
 C {devices/code_shown.sym} 1090 -200 0 0 {name=NGSPICE only_toplevel=false value="
-.TRAN 0.1n 10n
 .options savecurrents
-.save all
 .control
-run
-let r_on = (v(out) - v(in))/i(v1)
-plot r_on vs v(in)
-set filetype=binary
+op
+print i(V1)
 write transmission_gate_tb.raw
 .endc
 "}
@@ -53,14 +47,12 @@ C {devices/vsource.sym} 160 -160 0 0 {name=V3 value="1.8"}
 C {devices/lab_wire.sym} 240 -220 0 0 {name=l10 sig_type=std_logic lab=in
 }
 C {devices/gnd.sym} 240 -130 0 0 {name=l11 lab=GND}
-C {devices/gnd.sym} 920 -90 0 0 {name=l12 lab=GND}
-C {devices/lab_wire.sym} 920 -180 0 0 {name=l2 sig_type=std_logic lab=out
-}
 C {devices/vdd.sym} 80 -200 0 0 {name=l5 lab=VDD}
-C {devices/vsource.sym} 240 -160 0 0 {name=V1 value="DC 0 PWL(0 0 10n 1.8)"}
-C {devices/res.sym} 920 -140 0 0 {name=R1
-value=1k
+C {devices/vsource.sym} 240 -160 0 0 {name=V1 value="DC 1"}
+C {transmission_gate.sym} 720 -180 0 0 {name=x1 VDD=VDD VSS=VSS N=1 W_N=0.5 L_N=0.15 W_P=1.3 L_P=0.15}
+C {devices/gnd.sym} 920 -180 0 0 {name=l6 lab=GND}
+C {devices/res.sym} 890 -180 3 0 {name=R2
+value=500
 footprint=1206
 device=resistor
 m=1}
-C {transmission_gate.sym} 720 -180 0 0 {name=x1 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
