@@ -1,23 +1,29 @@
 #=========================================================================
-# Constraints
+# DRC using magic
 #=========================================================================
+# Author : Priyanka Raina
+# Date   : Dec 12, 2020
+#
 
-name: constraints
+name: open-magic-drc
 
 #-------------------------------------------------------------------------
 # Inputs and Outputs
 #-------------------------------------------------------------------------
+inputs:
+  - adk
+  - design_merged.gds
 
 outputs:
-  - constraints.tcl
+  - drc_results.log
 
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: undefined
   design_name: undefined
 
-commands: 
-  - cat constraints.tcl > outputs/constraints.tcl
+commands:
+  - cp inputs/adk/magicrc .magicrc
+  - magic -noconsole -dnull run_drc.tcl | tee outputs/drc_results.log

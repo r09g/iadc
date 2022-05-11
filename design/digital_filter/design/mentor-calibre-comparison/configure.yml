@@ -1,23 +1,33 @@
 #=========================================================================
-# Constraints
+# Comparison of netlists using Calibre
 #=========================================================================
+# Author : Kartik Prabhu
+# Date   : June 13, 2021
+#
 
-name: constraints
+name: mentor-calibre-comparison
 
 #-------------------------------------------------------------------------
 # Inputs and Outputs
 #-------------------------------------------------------------------------
+inputs:
+  - adk
+  - design_extracted.spice
+  - design.lvs.v
 
 outputs:
-  - constraints.tcl
+  - lvs.report
 
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: undefined
   design_name: undefined
 
 commands: 
-  - cat constraints.tcl > outputs/constraints.tcl
+  - sh run_lvs.sh
+
+debug:
+  - calibre -rve -lvs svdb
+

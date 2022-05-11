@@ -42,6 +42,7 @@ module digital_filter_tb_random;
         #20
         rst_n <= 1;
         data_in <= $random;
+        if($realtime > 50) assert(new_data == 0);
         #20
         while(count < 511) begin
             rst_n <= 1;
@@ -49,6 +50,7 @@ module digital_filter_tb_random;
             s1 <= s1 + data_in;
             s2 <= s2 + s1;
             count = count + 1;
+            if($realtime > 50) assert(new_data == 0);
             #20;
         end
         s1 <= s1 + data_in;
@@ -56,7 +58,7 @@ module digital_filter_tb_random;
         #20
         s2 <= s2 + s1;
         #20
-        $display("Expected: %d, Actual: %d", (s2 >> 6), data_out); assert((s2 >> 6) == data_out);
+        $display("Expected: %d, Actual: %d", (s2 >> 6), data_out); assert((s2 >> 6) == data_out); assert(new_data == 1);
         rst_n <= 0;
         count = 0;
         s1 = 0;
@@ -72,7 +74,7 @@ module digital_filter_tb_random;
 
     `ifdef GL
     initial begin
-        $sdf_annotate("inputs/design.sdf", digital_filter_tb_random);
+        $sdf_annotate("inputs/design.sdf", df_inst);
     end
     `endif
 

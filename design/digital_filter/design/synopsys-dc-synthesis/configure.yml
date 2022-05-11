@@ -17,7 +17,6 @@ outputs:
 commands:
 - bash run.sh
 
-# undefined: inherit from construct.py
 parameters:
   clock_period: undefined
   design_name: undefined

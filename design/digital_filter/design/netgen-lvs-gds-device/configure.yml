@@ -1,23 +1,31 @@
 #=========================================================================
-# Constraints
+# LVS using netgen
 #=========================================================================
+# Author : Priyanka Raina
+# Date   : Dec 12, 2020
+#
 
-name: constraints
+name: netgen-lvs-gds-device
 
 #-------------------------------------------------------------------------
 # Inputs and Outputs
 #-------------------------------------------------------------------------
+inputs:
+  - adk
+  - design_extracted.spice
+  - design.lvs.v
 
 outputs:
-  - constraints.tcl
+  - lvs_results.log
 
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: undefined
   design_name: undefined
 
-commands: 
-  - cat constraints.tcl > outputs/constraints.tcl
+commands:
+  - v2lvs -i -lsp inputs/adk/stdcells.spi -s inputs/adk/stdcells.spi -v inputs/design.lvs.v -o design_lvs.spice
+  - sh run_lvs.sh
+

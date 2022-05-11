@@ -1,23 +1,30 @@
 #=========================================================================
-# Constraints
+# LVS using netgen
 #=========================================================================
+# Author : Priyanka Raina
+# Date   : Dec 12, 2020
+#
 
-name: constraints
+name: netgen-lvs-def
 
 #-------------------------------------------------------------------------
 # Inputs and Outputs
 #-------------------------------------------------------------------------
+inputs:
+  - adk
+  - design_extracted.spice
+  - design.lvs.v
 
 outputs:
-  - constraints.tcl
+  - lvs_results.log
 
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: undefined
   design_name: undefined
 
 commands: 
-  - cat constraints.tcl > outputs/constraints.tcl
+  - sh run_lvs.sh
+

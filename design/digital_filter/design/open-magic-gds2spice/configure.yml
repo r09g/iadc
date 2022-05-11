@@ -1,23 +1,30 @@
 #=========================================================================
-# Constraints
+# Extract spice from GDS using magic
 #=========================================================================
+# Author : Kartik Prabhu
+# Date   : May 21, 2021
+#
 
-name: constraints
+name: open-magic-gds2spice
 
 #-------------------------------------------------------------------------
 # Inputs and Outputs
 #-------------------------------------------------------------------------
+inputs:
+  - adk
+  - design_merged.gds
 
 outputs:
-  - constraints.tcl
+  - design_extracted.spice
 
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: undefined
   design_name: undefined
 
-commands: 
-  - cat constraints.tcl > outputs/constraints.tcl
+commands:
+  - cp inputs/adk/magicrc .magicrc
+  - magic -noconsole -dnull extract.tcl | tee gds2spice.log
+  - mv {design_name}.spice outputs/design_extracted.spice
