@@ -49,7 +49,7 @@ C {devices/lab_wire.sym} 240 -220 0 0 {name=l10 sig_type=std_logic lab=in
 C {devices/gnd.sym} 240 -130 0 0 {name=l11 lab=GND}
 C {devices/vdd.sym} 80 -200 0 0 {name=l5 lab=VDD}
 C {devices/vsource.sym} 240 -160 0 0 {name=V1 value="DC 1"}
-C {transmission_gate.sym} 720 -180 0 0 {name=x1 VDD=VDD VSS=VSS N=1 W_N=0.5 L_N=0.15 W_P=1.3 L_P=0.15}
+C {transmission_gate.sym} 720 -180 0 0 {name=x1 VDD=VDD VSS=VSS N=1 W_N=0.5 L_N=0.4 W_P=1.3 L_P=0.4}
 C {devices/gnd.sym} 920 -180 0 0 {name=l6 lab=GND}
 C {devices/res.sym} 890 -180 3 0 {name=R2
 value=500

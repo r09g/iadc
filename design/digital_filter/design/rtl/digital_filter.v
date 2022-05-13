@@ -1,11 +1,12 @@
-`default_nettype none
 // digital filter top
 module digital_filter (
     input wire clk,
+    input wire shift,
     input wire rst_n,
     input wire unsigned data_in,
-    output reg unsigned [11:0] data_out,
-    output reg new_data
+    output reg [11:0] data_out,
+    output reg new_data,
+    output reg serial_data_out
 );
     
     wire unsigned [8:0] int_1_out;
@@ -38,5 +39,15 @@ module digital_filter (
         .data_out(data_out),
         .new_data(new_data)
     );
+    
+    shift_register shift_reg (
+        .clk(clk),
+    	.load_data(new_data),
+    	.shift(shift),
+    	.data_in(data_out),
+	    .serial_data_out(serial_data_out)    
+    );
 
 endmodule
+
+

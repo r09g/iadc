@@ -9,7 +9,7 @@ N 880 -930 980 -930 { lab=GND}
 N 980 -940 980 -930 { lab=GND}
 N 620 -570 620 -530 { lab=#net1}
 N 360 -90 360 -60 { lab=VSS}
-N 360 -330 360 -270 { lab=bias_c}
+N 360 -330 360 -150 { lab=bias_c}
 N 300 -600 320 -600 { lab=bias_b}
 N 360 -450 360 -410 { lab=bias_b}
 N 300 -450 360 -450 { lab=bias_b}
@@ -22,15 +22,12 @@ N 820 -240 840 -240 { lab=bias_e}
 N 820 -290 820 -240 { lab=bias_e}
 N 820 -290 880 -290 { lab=bias_e}
 N 360 -570 360 -530 { lab=#net3}
-N 880 -110 880 -60 { lab=VSS}
-N 880 -190 880 -160 { lab=VSS}
 N 360 -470 360 -450 { lab=bias_b}
 N 360 -350 360 -330 { lab=bias_c}
 N 400 -500 420 -500 { lab=bias_c}
 N 880 -470 880 -290 { lab=bias_e}
 N 360 -60 620 -60 { lab=VSS}
-N 880 -210 880 -190 { lab=VSS}
-N 880 -160 880 -110 { lab=VSS}
+N 880 -210 880 -60 { lab=VSS}
 N 360 -680 360 -630 { lab=VDD}
 N 880 -680 880 -630 { lab=VDD}
 N 620 -680 620 -630 { lab=VDD}
@@ -46,17 +43,16 @@ N 360 -680 620 -680 { lab=VDD}
 N 620 -60 880 -60 { lab=VSS}
 N 300 -380 320 -380 { lab=bias_b}
 N 300 -450 300 -380 { lab=bias_b}
-N 360 -270 360 -150 { lab=bias_c}
 N 620 -170 620 -140 { lab=#net4}
 N 560 -110 580 -110 { lab=bias_a}
 N 560 -250 560 -110 { lab=bias_a}
 N 560 -250 620 -250 { lab=bias_a}
-N 620 -270 620 -230 { lab=bias_a}
+N 620 -250 620 -230 { lab=bias_a}
 N 660 -200 680 -200 { lab=bias_d}
 N 680 -350 680 -200 { lab=bias_d}
 N 620 -350 680 -350 { lab=bias_d}
-N 620 -370 620 -330 { lab=bias_d}
-N 620 -470 620 -430 { lab=#net5}
+N 620 -350 620 -330 { lab=bias_d}
+N 620 -450 620 -430 { lab=#net5}
 N 560 -400 580 -400 { lab=#net5}
 N 560 -400 560 -300 { lab=#net5}
 N 560 -300 580 -300 { lab=#net5}
@@ -64,29 +60,17 @@ N 560 -450 560 -400 { lab=#net5}
 N 560 -450 620 -450 { lab=#net5}
 N 680 -350 700 -350 { lab=bias_d}
 N 540 -110 560 -110 { lab=bias_a}
-N 120 -120 320 -120 { lab=#net6}
+N 140 -120 320 -120 { lab=GND}
 N 80 -90 80 -60 { lab=VSS}
 N 80 -60 360 -60 { lab=VSS}
-N 80 -380 80 -150 { lab=#net6}
-N 80 -680 80 -440 { lab=VDD}
-N 80 -170 140 -170 { lab=#net6}
-N 140 -170 140 -120 { lab=#net6}
-N 1140 -570 1140 -530 { lab=#net7}
-N 1140 -290 1140 -270 { lab=#net8}
-N 1080 -240 1100 -240 { lab=#net8}
-N 1080 -290 1080 -240 { lab=#net8}
-N 1080 -290 1140 -290 { lab=#net8}
-N 1140 -110 1140 -60 { lab=VSS}
-N 1140 -190 1140 -160 { lab=VSS}
-N 1140 -470 1140 -290 { lab=#net8}
-N 1140 -210 1140 -190 { lab=VSS}
-N 1140 -160 1140 -110 { lab=VSS}
-N 1140 -680 1140 -630 { lab=VDD}
-N 1140 -290 1180 -290 { lab=#net8}
-N 1080 -600 1100 -600 { lab=bias_b}
-N 1080 -500 1100 -500 { lab=bias_c}
-N 880 -60 1140 -60 { lab=VSS}
-N 880 -680 1140 -680 { lab=VDD}
+N 80 -170 80 -150 { lab=GND}
+N 80 -170 140 -170 { lab=GND}
+N 140 -170 140 -120 { lab=GND}
+N 620 -270 620 -250 { lab=bias_a}
+N 620 -370 620 -350 { lab=bias_d}
+N 620 -470 620 -450 { lab=#net5}
+N 80 -380 80 -170 { lab=GND}
+N 120 -120 140 -120 { lab=GND}
 C {devices/code.sym} 255 -1065 0 0 {name=TT_MODELS
 only_toplevel=true 
 format="tcleval( @value )"
@@ -95,15 +79,14 @@ value="
 .lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 "
 spice_ignore=false}
-C {devices/lab_pin.sym} 880 -1000 1 0 {name=l29 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} 880 -970 0 0 {name=V6 value=0}
 C {devices/vsource.sym} 980 -970 0 0 {name=V7 value=1.8}
 C {devices/vdd.sym} 980 -1000 0 0 {name=l35 lab=VDD}
 C {devices/code_shown.sym} 430 -1060 0 0 {name=STIMULI only_toplevel=false value="
 .options savecurrents
-.save all
 .control
 op
+save all
 write folded_cascode_bias_tb.raw
 
 *ac dec 20 1 1e10
@@ -355,57 +338,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 80 -120 2 1 {name=l70 sig_type=std_logic lab=VSS}
-C {devices/isource.sym} 80 -410 0 0 {name=I0 value=30u}
-C {devices/vdd.sym} 80 -670 0 0 {name=l71 lab=VDD}
 C {devices/ngspice_probe.sym} 140 -170 2 1 {name=r31}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 -500 0 0 {name=M1
-L=0.6
-W=1.4
-nf=1
-mult=6
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1120 -240 0 0 {name=M2
-L=0.6
-W=1.4
-nf=1
-mult='5/4'
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1120 -600 0 0 {name=M6
-L=0.6
-W=1.4
-nf=1
-mult=6
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 1140 -600 0 1 {name=l1 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1140 -500 0 1 {name=l2 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1140 -240 2 0 {name=l3 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1080 -600 0 0 {name=l5 sig_type=std_logic lab=bias_b}
-C {devices/lab_pin.sym} 1080 -500 0 0 {name=l6 sig_type=std_logic lab=bias_c}
-C {devices/ngspice_probe.sym} 1140 -560 2 1 {name=r1}
-C {devices/ngspice_probe.sym} 1140 -330 2 1 {name=r2}
-C {devices/ngspice_get_value.sym} 1140 -640 0 0 {name=r3 node="i(@m.xm31.msky130_fd_pr__pfet_01v8_lvt[id])"
-descr="id="}
+C {devices/gnd.sym} 80 -380 2 0 {name=l7 lab=GND}
+C {devices/vdd.sym} 880 -1000 0 0 {name=l4 lab=VSS}
