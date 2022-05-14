@@ -3,8 +3,9 @@
 module digital_filter_tb_random;
 
     reg clk;
-    reg sclk;
     reg rst_n;
+    reg sclk;
+    reg cs_n;
     reg unsigned data_in;
     wire unsigned [11:0] data_out;
     wire new_data;
@@ -15,8 +16,9 @@ module digital_filter_tb_random;
 
     digital_filter df_inst (
         .clk(clk),
-        .sclk(sclk),
         .rst_n(rst_n),
+        .sclk(sclk),
+        .cs_n(cs_n),
         .data_in(data_in),
         .data_out(data_out),
         .new_data(new_data),
@@ -32,8 +34,9 @@ module digital_filter_tb_random;
 
     initial begin
         clk <= 0;
-        sclk <= 0;
         rst_n <= 0;
+        sclk <= 0;
+        cs_n <= 1;
         data_in <= 0;
 
         #20
@@ -77,7 +80,10 @@ module digital_filter_tb_random;
     reg unsigned [11:0] dut_serial_out;
     always begin
     @(negedge new_data)
-	if($realtime > 100) begin
+        #30;
+        cs_n <= 0;
+        #40;
+        if($realtime > 200) begin
             dut_serial_out = 0;
             for(int pos = 0; pos < 12; pos++) begin
                 dut_serial_out[11-pos] = s_data_out;
@@ -86,8 +92,11 @@ module digital_filter_tb_random;
                 sclk <= 0;
                 #10;
             end
-        $display("Serial Output Expected: %b, Actual: %b", adc_out[11:0], dut_serial_out); 
-        assert(adc_out[11:0] == dut_serial_out) else $fatal("\033[0;31mERROR\033[0m");
+            sclk <= 0;
+            $display("Serial Output Expected: %b, Actual: %b", adc_out[11:0], dut_serial_out); 
+            assert(adc_out[11:0] == dut_serial_out) else $fatal("\033[0;31mERROR\033[0m");
+            #20;
+            cs_n <= 1;
         end
     end
 

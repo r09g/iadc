@@ -1,8 +1,8 @@
 rtl_path = $(DESIGN_DIR)/design/digital_filter/design/rtl
-tb_path = $(PWD)
+tb_path = $(DESIGN_DIR)/design/digital_filter/design/testbench
 
 # run all tests
-all: 1 clean 2 clean 3 clean 4 clean 5 clean 6 clean
+all: 1 clean 2 clean 3 clean 4 clean 5 clean
 
 # test_int_1
 1:
@@ -29,11 +29,6 @@ all: 1 clean 2 clean 3 clean 4 clean 5 clean 6 clean
 	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/digital_filter_tb_ngspice.v $(rtl_path)/*.v
 	make run
 	
-# test_shift_register
-6:
-	vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+pp $(tb_path)/shift_register_tb.v $(rtl_path)/*.v
-	make run
-
 .PHONY: clean run wave
 
 run:

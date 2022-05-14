@@ -1,8 +1,9 @@
 // digital filter top
 module digital_filter (
     input wire clk,
-    input wire shift,
     input wire rst_n,
+    input wire sclk,
+    input wire cs_n,
     input wire unsigned data_in,
     output reg [11:0] data_out,
     output reg new_data,
@@ -40,12 +41,13 @@ module digital_filter (
         .new_data(new_data)
     );
     
-    shift_register shift_reg (
+    spi_interf serial_tx (
         .clk(clk),
-    	.load_data(new_data),
-    	.shift(shift),
-    	.data_in(data_out),
-	    .serial_data_out(serial_data_out)    
+        .sclk(sclk),
+        .cs_n(cs_n),
+        .load(new_data),
+        .data_in(data_out),
+        .serial_out(serial_data_out)
     );
 
 endmodule
