@@ -4,10 +4,6 @@ K {}
 V {}
 S {}
 E {}
-L 4 0 0 4080 0 {}
-L 4 4080 -1760 4080 0 {}
-L 4 0 -1760 4080 -1760 {}
-L 4 0 -1760 0 0 {}
 N 960 -1180 1140 -1180 { lab=in1}
 N 680 -1180 760 -1180 { lab=c1r}
 N 680 -1180 680 -1050 { lab=c1r}
@@ -229,8 +225,8 @@ C {devices/lab_pin.sym} 920 -370 0 0 {name=l51 sig_type=std_logic lab=rst_n}
 C {devices/lab_pin.sym} 1000 -370 0 1 {name=l52 sig_type=std_logic lab=rst_n_b}
 C {devices/lab_pin.sym} 1460 -800 3 0 {name=l53 sig_type=std_logic lab=p1}
 C {devices/lab_pin.sym} 1480 -800 3 0 {name=l54 sig_type=std_logic lab=p2}
-C {devices/lab_pin.sym} 1450 -960 3 1 {name=l55 sig_type=std_logic lab=p1_b}
-C {devices/lab_pin.sym} 1470 -960 3 1 {name=l56 sig_type=std_logic lab=p2_b}
+C {devices/lab_pin.sym} 1460 -960 3 1 {name=l55 sig_type=std_logic lab=p1_b}
+C {devices/lab_pin.sym} 1480 -960 3 1 {name=l56 sig_type=std_logic lab=p2_b}
 C {devices/lab_pin.sym} 1440 -800 3 0 {name=l57 sig_type=std_logic lab=i_bias_1}
 C {devices/lab_pin.sym} 2980 -800 3 0 {name=l58 sig_type=std_logic lab=p1}
 C {devices/lab_pin.sym} 3000 -800 3 0 {name=l59 sig_type=std_logic lab=p2}
@@ -319,7 +315,6 @@ C {devices/lab_pin.sym} 1730 -620 1 0 {name=l69 sig_type=std_logic lab=Ad}
 C {devices/lab_pin.sym} 1730 -540 3 0 {name=l70 sig_type=std_logic lab=Ad_b}
 C {devices/lab_pin.sym} 1730 -820 1 0 {name=l71 sig_type=std_logic lab=Bd}
 C {devices/lab_pin.sym} 1730 -740 3 0 {name=l72 sig_type=std_logic lab=Bd_b}
-C {ota.sym} 1400 -960 2 1 {name=x1 VDD=VDD VSS=VSS}
 C {ota.sym} 2920 -960 2 1 {name=x31 VDD=VDD VSS=VSS}
 C {comparator.sym} 3600 -810 0 0 {name=x35 VDD=VDD VSS=VSS}
 C {transmission_gate.sym} 1160 -580 2 1 {name=x7 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
@@ -351,3 +346,21 @@ C {devices/lab_wire.sym} 960 -1180 0 1 {name=l104 sig_type=std_logic lab=in1}
 C {devices/lab_wire.sym} 960 -580 0 1 {name=l105 sig_type=std_logic lab=ip1}
 C {devices/lab_wire.sym} 1960 -1180 0 1 {name=l106 sig_type=std_logic lab=op1}
 C {devices/lab_wire.sym} 1960 -580 0 1 {name=l107 sig_type=std_logic lab=on1}
+C {ota_w_test.sym} 1360 -1040 2 1 {name=x1 VDD=VDD VSS=VSS}
+C {devices/opin.sym} 4170 -1160 0 0 {name=p24 lab=bias_a
+}
+C {devices/lab_pin.sym} 1400 -1020 2 1 {name=l108 sig_type=std_logic lab=bias_d}
+C {devices/lab_pin.sym} 1400 -1000 2 1 {name=l109 sig_type=std_logic lab=bias_c}
+C {devices/lab_pin.sym} 1400 -980 2 1 {name=l110 sig_type=std_logic lab=bias_b}
+C {devices/lab_pin.sym} 1400 -960 2 1 {name=l111 sig_type=std_logic lab=bias_a}
+C {devices/opin.sym} 4170 -1140 0 0 {name=p25 lab=bias_b
+}
+C {devices/opin.sym} 4170 -1120 0 0 {name=p26 lab=bias_c}
+C {devices/opin.sym} 4170 -1100 0 0 {name=p27 lab=bias_d}
+C {devices/opin.sym} 4170 -1080 0 0 {name=p28 lab=cm1}
+C {devices/lab_pin.sym} 1400 -1040 2 1 {name=l112 sig_type=std_logic lab=cmc}
+C {devices/opin.sym} 4170 -1060 0 0 {name=p29 lab=cmc}
+C {devices/opin.sym} 4170 -1040 0 0 {name=p30 lab=op1}
+C {devices/opin.sym} 4170 -1020 0 0 {name=p31 lab=on1}
+C {devices/opin.sym} 4170 -1000 0 0 {name=p32 lab=op2}
+C {devices/opin.sym} 4170 -980 0 0 {name=p33 lab=on2}
