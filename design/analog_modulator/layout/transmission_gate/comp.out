@@ -1,0 +1,89 @@
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: transmission_gate_no_parameteri |Circuit 2: transmission_gate_flat          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property mult in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property sd in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property sb in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property sa in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property nrs in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property nrd in circuit1 has no matching property in circuit2
+ ps circuit1: (unresolved expression)   "27.98"  (property type mismatch)
+ pd circuit1: (unresolved expression)   "27.98"  (property type mismatch)
+ as circuit1: (unresolved expression)   "3.973"  (property type mismatch)
+ ad circuit1: (unresolved expression)   "3.973"  (property type mismatch)
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v81:
+Property nf in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property mult in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property sd in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property sb in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property sa in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property nrs in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property nrd in circuit1 has no matching property in circuit2
+ ps circuit1: (unresolved expression)   "11.18"  (property type mismatch)
+ pd circuit1: (unresolved expression)   "11.18"  (property type mismatch)
+ as circuit1: (unresolved expression)   "1.537"  (property type mismatch)
+ ad circuit1: (unresolved expression)   "1.537"  (property type mismatch)
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v80:
+Property nf in circuit1 has no matching property in circuit2
+
+Subcircuit pins:
+Circuit 1: transmission_gate_no_parameteri |Circuit 2: transmission_gate_flat          
+-------------------------------------------|-------------------------------------------
+en                                         |en                                         
+en_b                                       |en_b                                       
+out                                        |out                                        
+in                                         |in                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes transmission_gate_no_parameterized and transmission_gate_flat are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: transmission_gate_no_parameterized
