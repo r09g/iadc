@@ -1,0 +1,30 @@
+
+No compatibility mode selected!
+
+
+Circuit: * spice3 file created from transmission_gate_flat.ext - technology: sky130a
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+v(n1) = 9.000000e-01
+binary raw file "transmission_gate_tb.raw"
+binary raw file "transmission_gate_sim_post.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Total analysis time (seconds) = 0.00177
+
+Total CPU time (seconds) = 34.834 
+
+Total DRAM available = 191913.867 MB.
+DRAM currently available = 19868.922 MB.
+Maximum ngspice program size =  724.844 MB.
+Current ngspice program size =  665.977 MB.
+
+Shared ngspice pages =    9.473 MB.
+Text (code) pages =    8.875 MB.
+Stack = 0 bytes.
+Library pages =  657.285 MB.
+
