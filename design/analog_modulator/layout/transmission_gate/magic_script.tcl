@@ -33,3 +33,5 @@ ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spi
 unset MGC_DESIGN_NAME
 unset MGC_PORT_LIST
 
+quit
+

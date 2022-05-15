@@ -1,0 +1,17 @@
+* NGSPICE file created from transmission_gate_flat.ext - technology: sky130A
+
+.subckt transmission_gate_flat in out en en_b VDD VSS
+X0 in en out VSS sky130_fd_pr__nfet_01v8 ad=1.537e+12p pd=1.118e+07u as=1.537e+12p ps=1.118e+07u w=5.3e+06u l=150000u
+X1 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=3.973e+12p pd=2.798e+07u as=3.973e+12p ps=2.798e+07u w=1.37e+07u l=150000u
+C0 in out 5.84fF
+C1 out VDD 2.06fF
+C2 en_b in 0.11fF
+C3 in en 0.40fF
+C4 en_b VDD 0.35fF
+C5 VDD en 0.01fF
+C6 en_b out 0.06fF
+C7 out en 0.13fF
+C8 en_b en 0.04fF
+C9 in VDD 1.86fF
+.ends
+
