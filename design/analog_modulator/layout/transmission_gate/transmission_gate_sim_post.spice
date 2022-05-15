@@ -37,7 +37,7 @@ XM1 n1 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) 
 .control
 op
 print v(n1)
-write transmission_gate_tb.raw
+write transmission_gate_tb_sim_post.raw
 .endc
 
 
