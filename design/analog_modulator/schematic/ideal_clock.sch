@@ -21,21 +21,21 @@ C {devices/lab_pin.sym} 60 -330 3 1 {name=l47 sig_type=std_logic lab=p2_b}
 C {devices/vsource.sym} 60 -100 0 0 {name=V14 value="DC 0 PULSE(1.8 0 'td+96.65625n' 0.1n 0.1n 91.45625n 195.3125n)"}
 C {devices/lab_pin.sym} 60 -130 3 1 {name=l49 sig_type=std_logic lab=p2d_b}
 C {devices/vsource.sym} 1320 -650 0 0 {name=V1 value="DC 0 PULSE(0 1.8 'td+195.3125n' 0.1n 0.1n 191.1125n 390.625n)"}
-C {devices/lab_pin.sym} 1320 -680 3 1 {name=l2 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 910 -680 3 1 {name=l2 sig_type=std_logic lab=B}
 C {devices/vsource.sym} 1320 -470 0 0 {name=V2 value="DC 0 PULSE(0 1.8 'td+195.3125n' 0.1n 0.1n 193.1125n 390.625n)"}
-C {devices/lab_pin.sym} 1320 -500 3 1 {name=l4 sig_type=std_logic lab=Bd}
+C {devices/lab_pin.sym} 910 -500 3 1 {name=l4 sig_type=std_logic lab=Bd}
 C {devices/vsource.sym} 1320 -300 0 0 {name=V3 value="DC 0 PULSE(1.8 0 'td+195.3125n' 0.1n 0.1n 191.1125n 390.625n)"}
-C {devices/lab_pin.sym} 1320 -330 3 1 {name=l6 sig_type=std_logic lab=B_b}
+C {devices/lab_pin.sym} 910 -330 3 1 {name=l6 sig_type=std_logic lab=B_b}
 C {devices/vsource.sym} 1320 -100 0 0 {name=V4 value="DC 0 PULSE(1.8 0 'td+195.3125n' 0.1n 0.1n 193.1125n 390.625n)"}
-C {devices/lab_pin.sym} 1320 -130 3 1 {name=l8 sig_type=std_logic lab=Bd_b}
+C {devices/lab_pin.sym} 910 -130 3 1 {name=l8 sig_type=std_logic lab=Bd_b}
 C {devices/vsource.sym} 910 -650 0 0 {name=V5 value="DC 0 PULSE(0 1.8 'td' 0.1n 0.1n 191.1125n 390.625n)"}
-C {devices/lab_pin.sym} 910 -680 3 1 {name=l10 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 1320 -680 3 1 {name=l10 sig_type=std_logic lab=A}
 C {devices/vsource.sym} 910 -470 0 0 {name=V10 value="DC 0 PULSE(0 1.8 'td' 0.1n 0.1n 193.1125n 390.625n)"}
-C {devices/lab_pin.sym} 910 -500 3 1 {name=l12 sig_type=std_logic lab=Ad}
+C {devices/lab_pin.sym} 1320 -500 3 1 {name=l12 sig_type=std_logic lab=Ad}
 C {devices/vsource.sym} 910 -300 0 0 {name=V15 value="DC 0 PULSE(1.8 0 'td' 0.1n 0.1n 191.1125n 390.625n)"}
-C {devices/lab_pin.sym} 910 -330 3 1 {name=l14 sig_type=std_logic lab=A_b}
+C {devices/lab_pin.sym} 1320 -330 3 1 {name=l14 sig_type=std_logic lab=A_b}
 C {devices/vsource.sym} 910 -100 0 0 {name=V16 value="DC 0 PULSE(1.8 0 'td' 0.1n 0.1n 193.1125n 390.625n)"}
-C {devices/lab_pin.sym} 910 -130 3 1 {name=l16 sig_type=std_logic lab=Ad_b}
+C {devices/lab_pin.sym} 1320 -130 3 1 {name=l16 sig_type=std_logic lab=Ad_b}
 C {devices/lab_pin.sym} 60 -620 3 0 {name=l1 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 60 -440 3 0 {name=l3 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 60 -270 3 0 {name=l5 sig_type=std_logic lab=VSS}

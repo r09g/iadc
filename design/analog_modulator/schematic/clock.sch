@@ -25,7 +25,6 @@ N 760 -600 760 -540 { lab=#net4}
 N 760 -540 780 -540 { lab=#net4}
 N 760 -740 760 -680 { lab=latch_out}
 N 760 -740 780 -740 { lab=latch_out}
-N 760 -600 1140 -600 { lab=#net4}
 N 920 -810 920 -760 { lab=#net1}
 N 4730 -800 4730 -760 { lab=p2d_b}
 N 4730 -800 4750 -800 { lab=p2d_b}
@@ -144,6 +143,7 @@ N 4660 -760 4850 -760 {}
 N 2580 -760 4580 -760 {}
 N 4650 -520 4840 -520 {}
 N 2570 -520 4570 -520 {}
+N 760 -600 1140 -600 {}
 C {devices/ipin.sym} 80 -780 0 0 {name=p1 lab=clk}
 C {sky130_stdcells/nand2_1.sym} 840 -760 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 840 -520 2 1 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652510594
+timestamp 1652581584
 << pwell >>
 rect 668 -208 732 -96
 << viali >>
@@ -9,39 +9,27 @@ rect 540 740 858 774
 rect 538 -54 856 -20
 << metal1 >>
 rect 662 812 726 922
-rect 1929 861 2382 919
+rect 1922 826 2318 890
 rect 528 774 864 812
 rect 528 740 540 774
 rect 858 740 864 774
 rect 528 698 864 740
 rect -1203 570 -778 628
-rect 1929 627 1987 861
-rect -330 392 -266 572
+rect 1922 626 1986 826
+rect 196 392 260 572
 rect 2044 566 2102 634
-rect -1202 328 -330 392
-rect -266 328 -256 392
-rect 2324 366 2382 861
-rect 1148 308 2382 366
+rect -1202 328 260 392
+rect 196 150 260 328
 rect -1201 90 126 148
-rect 1148 147 1206 308
-rect -340 -8 -330 56
-rect -266 -8 -256 56
-rect -330 -130 -266 -8
-rect 186 -130 250 94
-rect 1248 86 1306 154
 rect 532 -20 862 20
 rect 532 -54 538 -20
 rect 856 -54 862 -20
 rect 532 -96 862 -54
-rect -330 -194 250 -130
 rect 668 -208 732 -96
-<< via1 >>
-rect -330 328 -266 392
-rect -330 -8 -266 56
-<< metal2 >>
-rect -330 392 -266 402
-rect -330 56 -266 328
-rect -330 -18 -266 -8
+rect 1152 -98 1216 100
+rect 1248 86 1306 154
+rect 2254 -98 2318 826
+rect 1152 -162 2318 -98
 use sky130_fd_pr__nfet_01v8_Z33H36  sky130_fd_pr__nfet_01v8_Z33H36_0
 timestamp 1652424686
 transform 0 1 687 -1 0 120
@@ -54,7 +42,7 @@ box -211 -1589 211 1589
 flabel metal1 -1182 120 -1182 120 1 FreeSans 800 0 0 0 en
 flabel metal1 -1186 596 -1186 596 1 FreeSans 800 0 0 0 en_b
 flabel metal1 -1186 358 -1186 358 1 FreeSans 800 0 0 0 in
-flabel metal1 2356 332 2356 332 1 FreeSans 800 0 0 0 out
 flabel metal1 698 -180 698 -180 1 FreeSans 800 0 0 0 VSS
 flabel metal1 694 866 694 866 1 FreeSans 800 0 0 0 VDD
+flabel metal1 2288 346 2288 346 1 FreeSans 800 0 0 0 out
 << end >>

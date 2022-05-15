@@ -1,1 +1,2 @@
-netgen -batch lvs "../../netlist/transmission_gate_no_parameterized.spice transmission_gate_no_parameterized" "transmission_gate_layout_lvs.spice transmission_gate_flat" sky130A_setup.tcl
+LVS_DESIGN_NAME="transmission_gate"
+netgen -batch lvs "../../netlist/${LVS_DESIGN_NAME}/${LVS_DESIGN_NAME}.spice ${LVS_DESIGN_NAME}" "../../netlist/${LVS_DESIGN_NAME}/${LVS_DESIGN_NAME}_layout_lvs.spice ${LVS_DESIGN_NAME}_flat" $PDK_ROOT/sky130A/libs.tech/netgen/sky130A_setup.tcl

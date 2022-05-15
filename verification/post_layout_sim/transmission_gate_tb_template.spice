@@ -1,0 +1,26 @@
+
+x2 clk GND GND VDD VDD net1 sky130_fd_sc_hd__inv_4
+V2 VDD GND 1.8
+V3 clk GND 1.8
+V1 in GND DC 0.9
+x1 in n1 clk net1 VDD VSS transmission_gate_flat
+x3 __UNCONNECTED_PIN__0 out clk net1 VDD VSS transmission_gate_flat
+C1 out GND 1p m=1
+XM1 n1 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+
+.options savecurrents
+.control
+op
+print v(n1)
+write transmission_gate_tb.raw
+.endc
+
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.inc /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

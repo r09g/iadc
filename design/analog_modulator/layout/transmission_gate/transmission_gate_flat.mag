@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652510684
+timestamp 1652591593
 << nwell >>
 rect -954 388 2224 810
 << pwell >>
@@ -140,12 +140,12 @@ rect 538 -21 856 -20
 rect 538 -54 856 -21
 << metal1 >>
 rect 662 812 726 922
-rect 1929 861 2382 919
+rect 1922 826 2318 890
 rect 528 774 864 812
 rect 528 740 540 774
 rect 858 740 864 774
 rect 528 698 864 740
-rect 1929 666 1987 861
+rect 1922 666 1986 826
 rect -735 660 2005 666
 rect -1203 616 -776 628
 rect -735 626 -723 660
@@ -162,12 +162,9 @@ rect -735 538 -723 572
 rect 1993 538 2005 572
 rect 2044 566 2102 582
 rect -735 532 2005 538
-rect -330 392 -266 532
-rect -1202 328 -330 392
-rect -266 328 -256 392
-rect 2324 366 2382 861
-rect 1148 308 2382 366
-rect 1148 187 1206 308
+rect 196 392 260 532
+rect -1202 328 260 392
+rect 196 187 260 328
 rect 157 181 1217 187
 rect 79 148 125 149
 rect -1201 137 126 148
@@ -180,28 +177,20 @@ rect -1201 90 126 103
 rect 1248 137 1306 154
 rect 1248 103 1255 137
 rect 1289 103 1306 137
+rect 1152 99 1216 100
 rect 157 93 1217 99
 rect 157 59 169 93
 rect 1205 59 1217 93
 rect 1248 86 1306 103
-rect -340 -8 -330 56
-rect -266 -8 -256 56
 rect 157 53 1217 59
-rect -330 -130 -266 -8
-rect 186 -130 250 53
 rect 532 -20 862 20
 rect 532 -54 538 -20
 rect 856 -54 862 -20
 rect 532 -96 862 -54
-rect -330 -194 250 -130
 rect 668 -208 732 -96
-<< via1 >>
-rect -330 328 -266 392
-rect -330 -8 -266 56
-<< metal2 >>
-rect -330 392 -266 402
-rect -330 56 -266 328
-rect -330 -18 -266 -8
+rect 1152 -98 1216 53
+rect 2254 -98 2318 826
+rect 1152 -162 2318 -98
 << labels >>
 flabel metal1 -1182 120 -1182 120 1 FreeSans 800 0 0 0 en
 port 3 n
@@ -209,8 +198,10 @@ flabel metal1 -1186 596 -1186 596 1 FreeSans 800 0 0 0 en_b
 port 4 n
 flabel metal1 -1186 358 -1186 358 1 FreeSans 800 0 0 0 in
 port 1 n
-flabel metal1 2356 332 2356 332 1 FreeSans 800 0 0 0 out
-port 2 n
 flabel metal1 698 -180 698 -180 1 FreeSans 800 0 0 0 VSS
+port 6 n
 flabel metal1 694 866 694 866 1 FreeSans 800 0 0 0 VDD
+port 5 n
+flabel metal1 2288 346 2288 346 1 FreeSans 800 0 0 0 out
+port 2 n
 << end >>
