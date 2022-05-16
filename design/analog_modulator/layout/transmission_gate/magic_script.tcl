@@ -1,5 +1,5 @@
 set MGC_DESIGN_NAME "transmission_gate"
-set MGC_PORT_LIST {in out en en_b VDD VSS}
+set MGC_PORT_LIST {in out en en_b}
 
 # flatten design and make ports
 
@@ -18,6 +18,16 @@ foreach port $MGC_PORT_LIST {
     port make
 }
 
+# special handling of power ports
+findlabel VDD
+port make 
+port use power
+port class inout
+findlabel VSS
+port make
+port use ground
+port class inout
+
 save "${MGC_DESIGN_NAME}_flat.mag"
 
 # lvs extraction
@@ -28,6 +38,10 @@ ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_lvs.spi
 # pex extraction
 ext2spice cthresh 0
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
+
+# output gds and lef
+# gds write "${MGC_DESIGN_NAME}.gds"
+# lef write "${MGC_DESIGN_NAME}.lef"
 
 # unset variables
 unset MGC_DESIGN_NAME

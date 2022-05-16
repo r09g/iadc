@@ -21,15 +21,15 @@ X16 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u 
 X17 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
 X18 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
 X19 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-C0 in VDD 1.70fF
-C1 in en_b 1.21fF
-C2 en_b VDD 1.39fF
-C3 out in 6.48fF
-C4 in en 1.32fF
-C5 out VDD 1.13fF
-C6 VDD en 0.12fF
-C7 out en_b 0.42fF
-C8 en_b en 0.11fF
-C9 out en 0.57fF
+C0 in en_b 1.18fF
+C1 en_b VDD 1.23fF
+C2 out in 6.68fF
+C3 in en 1.30fF
+C4 out VDD 1.09fF
+C5 VDD en 0.05fF
+C6 out en_b 0.42fF
+C7 en_b en 0.14fF
+C8 out en 0.57fF
+C9 in VDD 1.25fF
 .ends
 

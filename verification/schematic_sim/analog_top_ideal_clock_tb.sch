@@ -42,7 +42,10 @@ C {devices/code.sym} 220 -770 0 0 {name=STIMULI only_toplevel=false value="
 .control
 tran 1u 1m uic
 save all
-write analog_top_ideal_clock_tb.raw
+plot v(op)
+plot v(x1.op1)
+plot v(x1.op2)
+*write analog_top_ideal_clock_tb.raw
 .endc
 "}
 C {devices/vsource.sym} 670 -120 0 0 {name=V5 value=0.9}
