@@ -24,6 +24,7 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Class transmission_gate_flat:  Merged 18 devices.
 
 Subcircuit summary:
 Circuit 1: transmission_gate               |Circuit 2: transmission_gate_flat          
@@ -41,10 +42,10 @@ Circuits match correctly.
 Subcircuit pins:
 Circuit 1: transmission_gate               |Circuit 2: transmission_gate_flat          
 -------------------------------------------|-------------------------------------------
-en                                         |en                                         
-VSS                                        |VSS                                        
 en_b                                       |en_b                                       
 VDD                                        |VDD                                        
+en                                         |en                                         
+VSS                                        |VSS                                        
 in                                         |in                                         
 out                                        |out                                        
 ---------------------------------------------------------------------------------------

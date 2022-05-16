@@ -1,7 +1,25 @@
 * NGSPICE file created from transmission_gate_flat.ext - technology: sky130A
 
 .subckt transmission_gate_flat in out en en_b VDD VSS
-X0 in en out VSS sky130_fd_pr__nfet_01v8 ad=1.537e+12p pd=1.118e+07u as=1.537e+12p ps=1.118e+07u w=5.3e+06u l=150000u
-X1 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=3.973e+12p pd=2.798e+07u as=3.973e+12p ps=2.798e+07u w=1.37e+07u l=150000u
+X0 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=2.6578e+12p pd=2.032e+07u as=2.2605e+12p ps=1.7e+07u w=1.37e+06u l=150000u
+X1 in en out VSS sky130_fd_pr__nfet_01v8 ad=8.745e+11p pd=8.6e+06u as=1.0282e+12p ps=1.024e+07u w=530000u l=150000u
+X2 out en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X3 in en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X4 out en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X5 in en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X6 out en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X7 in en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X8 out en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X9 in en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X10 out en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
+X11 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X12 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X13 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X14 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X15 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X16 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X17 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X18 in en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
+X19 out en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
 .ends
 
