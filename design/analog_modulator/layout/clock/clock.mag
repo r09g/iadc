@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1652613142
+timestamp 1652663868
 use sky130_fd_sc_hd__clkdlybuf4s50_1  sky130_fd_sc_hd__clkdlybuf4s50_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1650294714
 transform 1 0 1319 0 1 374
@@ -213,12 +213,32 @@ use sky130_fd_sc_hd__clkinv_4  sky130_fd_sc_hd__clkinv_4_1
 timestamp 1650294714
 transform 1 0 6324 0 1 374
 box -19 -24 341 296
+use sky130_fd_sc_hd__clkinv_4  sky130_fd_sc_hd__clkinv_4_2
+timestamp 1650294714
+transform -1 0 7601 0 -1 956
+box -19 -24 341 296
+use sky130_fd_sc_hd__clkinv_16  sky130_fd_sc_hd__clkinv_16_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1650294714
+transform -1 0 9053 0 -1 336
+box -19 -24 1123 296
+use sky130_fd_sc_hd__clkinv_16  sky130_fd_sc_hd__clkinv_16_1
+timestamp 1650294714
+transform 1 0 7949 0 1 374
+box -19 -24 1123 296
+use sky130_fd_sc_hd__clkinv_16  sky130_fd_sc_hd__clkinv_16_2
+timestamp 1650294714
+transform -1 0 9053 0 -1 956
+box -19 -24 1123 296
+use sky130_fd_sc_hd__clkinv_16  sky130_fd_sc_hd__clkinv_16_3
+timestamp 1650294714
+transform 1 0 7949 0 1 994
+box -19 -24 1123 296
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1650294714
 transform 1 0 519 0 1 374
 box -19 -24 157 296
 use sky130_fd_sc_hd__nand2_4  sky130_fd_sc_hd__nand2_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1650294714
-transform 1 0 7564 0 1 384
+transform 1 0 7279 0 1 374
 box -19 -24 433 296
 << end >>
