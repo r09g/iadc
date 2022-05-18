@@ -1,4 +1,4 @@
-set MGC_DESIGN_NAME "1b_dac"
+set MGC_DESIGN_NAME "onebit_dac"
 set MGC_PORT_LIST {v_hi v_lo v v_b out}
 
 # flatten design and make ports

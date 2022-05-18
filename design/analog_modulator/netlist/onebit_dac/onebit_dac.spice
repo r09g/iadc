@@ -1,11 +1,11 @@
-.subckt 1b_dac v_hi v_lo v v_b out
+.subckt onebit_dac v_hi v_lo v v_b out VDD VSS
 *.ipin v_hi
 *.ipin v_lo
 *.ipin v
 *.ipin v_b
 *.opin out
-x1 v_hi out v v_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 v_lo out v_b v VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 v_hi out v v_b VDD VSS transmission_gate
+x2 v_lo out v_b v VDD VSS transmission_gate
 .ends
 
 * expanding   symbol:  transmission_gate.sym # of pins=4
