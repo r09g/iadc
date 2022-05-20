@@ -1,0 +1,74 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_1 in circuit clock (0)(5 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkinv_4 in circuit clock (0)(12 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkinv_1 in circuit clock (0)(7 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__clkdlybuf4s50_1 in circuit clock (0)(200 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_4 in circuit clock (0)(4 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__dfxbp_1 in circuit clock (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__mux2_1 in circuit clock (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__clkbuf_16 in circuit clock (0)(16 instances)
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Class clock:  Merged 727 devices.
+Class clock_flat:  Merged 727 devices.
+
+Subcircuit summary:
+Circuit 1: clock                           |Circuit 2: clock_flat                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (903)          |sky130_fd_pr__pfet_01v8_hvt (903)          
+sky130_fd_pr__nfet_01v8 (903)              |sky130_fd_pr__nfet_01v8 (903)              
+Number of devices: 1806                    |Number of devices: 1806                    
+Number of nets: 907                        |Number of nets: 907                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: clock                           |Circuit 2: clock_flat                      
+-------------------------------------------|-------------------------------------------
+p1d_b                                      |p1d_b                                      
+p2d_b                                      |p2d_b                                      
+p2d                                        |p2d                                        
+Bd                                         |Bd                                         
+p1d                                        |p1d                                        
+Ad                                         |Ad                                         
+A_b                                        |A_b                                        
+p2_b                                       |p2_b                                       
+p1_b                                       |p1_b                                       
+B_b                                        |B_b                                        
+p1                                         |p1                                         
+B                                          |B                                          
+A                                          |A                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+clk                                        |clk                                        
+p2                                         |p2                                         
+Bd_b                                       |Bd_b                                       
+Ad_b                                       |Ad_b                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes clock and clock_flat are equivalent.
+Circuits match uniquely.

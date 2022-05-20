@@ -61,15 +61,20 @@ saveNetlist -includePowerGround -excludeLeafCell $vars(results_dir)/$vars(design
 
 # Write LEF for hierarchical bottom-up design
 
-write_lef_abstract                                                       \
-  -specifyTopLayer $vars(max_route_layer)                                \
+#write_lef_abstract                                                       \
+#  -specifyTopLayer $vars(max_route_layer)                                \
+#  -PGPinLayers [list $ADK_POWER_MESH_BOT_LAYER $ADK_POWER_MESH_TOP_LAYER] \
+#  -noCutObs                                                              \
+#  -stripePin                                                             \
+#  $vars(results_dir)/$vars(design).lef
+
+write_lef_abstract                                                        \
+  -specifyTopLayer 5                                                      \
   -PGPinLayers [list $ADK_POWER_MESH_BOT_LAYER $ADK_POWER_MESH_TOP_LAYER] \
-  -noCutObs                                                              \
-  -stripePin                                                             \
+  -extractBlockObs                                                        \
+  -stripePin                                                              \
   $vars(results_dir)/$vars(design).lef
 
 # Save DEF for use in running DC again
 
 defOut -routing $vars(results_dir)/$vars(design).def.gz
-
-

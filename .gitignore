@@ -1,5 +1,7 @@
 design/digital_filter/build/*
 design/digital_filter/design/__pycache__/*
+design/digital_top/build/*
+design/digital_top/design/__pycache__/*
 mflowgen/
 venv/
 *.raw

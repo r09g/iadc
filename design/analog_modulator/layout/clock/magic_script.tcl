@@ -1,5 +1,5 @@
 set MGC_DESIGN_NAME "clock"
-set MGC_PORT_LIST {in out en en_b VDD VSS}
+set MGC_PORT_LIST {clk p2d_b p2d p2_b p2 p1d_b p1d p1_b p1 Ad_b Ad A_b A Bd_b Bd B_b B}
 
 # flatten design and make ports
 
@@ -18,6 +18,21 @@ foreach port $MGC_PORT_LIST {
     port make
 }
 
+# special handling of power ports
+for {set i 0} {$i < 28} {incr i} {
+    findlabel VDD $i
+    port make 
+    port use power
+    port class inout
+}
+
+for {set i 0} {$i < 26} {incr i} {
+    findlabel VSS $i
+    port make 
+    port use power
+    port class inout
+}
+
 save "${MGC_DESIGN_NAME}_flat.mag"
 
 # lvs extraction
@@ -26,7 +41,8 @@ ext2spice lvs
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_lvs.spice"
 
 # pex extraction
-ext2spice cthresh 0
+# 51.2 MHz corner
+ext2spice cthresh 3100
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
 
 # unset variables
