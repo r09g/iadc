@@ -1,0 +1,80 @@
+name: synopsys-dc-synthesis
+
+commands:
+- bash run.sh
+- echo 'set_dont_touch "clk_gen_inst"' >> outputs/design.sdc
+
+debug:
+- export DC_EXIT_AFTER_SETUP=1
+- ln -sf results/*.mapped.ddc debug.ddc
+- design_vision-xg -topographical -x "source START.tcl; read_ddc debug.ddc"
+
+inputs:
+- adk
+- design.v
+- constraints.tcl
+- run.saif
+- design.upf
+
+outputs:
+- design.v
+- design.sdc
+- design.namemap
+- design.svf
+- design.upf
+
+parameters:
+  clock_period: 195.3125
+  design_name: undefined
+  flatten_effort: 0
+  gate_clock: true
+  high_effort_area_opt: false
+  nthreads: 16
+  order:
+  - designer-interface.tcl
+  - setup-session.tcl
+  - read-design.tcl
+  - constraints.tcl
+  - make-path-groups.tcl
+  - compile-options.tcl
+  - compile.tcl
+  - generate-results.tcl
+  - reporting.tcl
+  saif_instance: undefined
+  suppress_msg: false
+  suppressed_msg:
+  - TFCHK-072
+  - TFCHK-014
+  - TFCHK-049
+  - TFCHK-050
+  - TFCHK-012
+  - TFCHK-073
+  - TFCHK-092
+  - PSYN-651
+  - PSYN-650
+  topographical: true
+  uniquify_with_design_name: true
+
+postconditions:
+- assert File( 'outputs/design.v' )
+- assert File( 'outputs/design.sdc' )
+- assert 'error:' not in File( 'logs/dc.log' )
+- assert 'Unresolved references' not in File( 'logs/dc.log' )
+- assert 'Unable to resolve' not in File( 'logs/dc.log' )
+- assert 'Presto compilation terminated' not in File( 'logs/dc.log' )
+- assert 'GTECH' not in File( 'outputs/design.v' )
+- assert 'ELAB-405' not in File( 'logs/dc.log' )
+- assert 'PSYN-024' not in File( 'logs/dc.log' )
+- assert 'PSYN-025' not in File( 'logs/dc.log' )
+- assert 'PSYN-039' not in File( 'logs/dc.log' )
+- assert 'create_clock' in File( 'outputs/design.sdc' )
+- |
+  from assertion_helpers import percent_clock_gated, n_regs
+  if n_regs() > 10:
+    assert percent_clock_gated() > 0.10
+
+preconditions:
+- assert Tool( 'dc_shell-xg-t' )
+- assert File( 'inputs/adk' )
+- assert File( 'inputs/design.v' )
+- assert File( 'inputs/constraints.tcl' )

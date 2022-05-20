@@ -1,0 +1,36 @@
+
+
+x1 clk p2d_b p2d p2_b p2 p1d_b p1d p1_b p1 Ad_b Ad A_b A Bd_b Bd B_b B VDD VSS clock_flat
+V1 VSS GND 0
+V2 VDD GND 1.8
+V3 clk GND DC 0 PULSE(0 1.8 1n 0.1n 0.1n 97.55625n 195.3125n)
+C1 p2d_b VSS 0.5p m=1
+C2 p2d VSS 0.5p m=1
+C3 p2_b VSS 0.5p m=1
+C4 p2 VSS 0.5p m=1
+C5 p1d_b VSS 0.5p m=1
+C6 p1d VSS 0.5p m=1
+C7 p1_b VSS 0.5p m=1
+C8 p1 VSS 0.5p m=1
+C13 Ad_b VSS 0.5p m=1
+C14 Ad VSS 0.5p m=1
+C15 A_b VSS 0.5p m=1
+C16 A VSS 0.5p m=1
+C9 Bd_b VSS 0.5p m=1
+C10 Bd VSS 0.5p m=1
+C11 B_b VSS 0.5p m=1
+C12 B VSS 0.5p m=1
+
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.inc /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.control
+tran 0.5n 0.4u uic
+save all
+write clock_tb.raw
+plot v(p1) v(p2) v(p1d) v(p2d) v(A) v(Ad) v(B) v(Bd)
+.endc
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

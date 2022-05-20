@@ -1,0 +1,18 @@
+# TODO: Set number of vectors parameter in python file and testbench from yml
+
+name: testbench
+
+inputs:
+  - adk
+
+outputs:
+  - testbench.sv
+  - design.args
+  - design.args.gls
+
+commands:
+  - cp digital_top_tb.sv outputs/testbench.sv
+  - cp design.vcs.args outputs/design.args
+  - cp design.vcs.args.gls outputs/design.args.gls
+  # - cp design.icarus.args outputs/design.args
+  # - cp design.icarus.args.gls outputs/design.args.gls

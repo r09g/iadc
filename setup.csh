@@ -12,6 +12,9 @@ setenv PATH /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:$PA
 setenv PATH /cad/iverilog/bin:$PATH
 setenv MGLS_LICENSE_FILE 1717@cadlic0.stanford.edu
 
+# for netgen
+setenv MAGIC_EXT_USE_GDS 1
+
 # load modules
 module load base/1.0
 module load magic/latest
