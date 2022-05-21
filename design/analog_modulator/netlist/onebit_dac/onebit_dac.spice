@@ -1,23 +1,11 @@
-.subckt onebit_dac v_hi v_lo v v_b out VDD VSS
-*.ipin v_hi
-*.ipin v_lo
-*.ipin v
-*.ipin v_b
-*.opin out
-x1 v_hi out v v_b VDD VSS transmission_gate
-x2 v_lo out v_b v VDD VSS transmission_gate
+* onebit dac
+
+.subckt 1b_dac v_hi v_lo v v_b out VDD VSS
+x1 v_hi out v v_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 v_lo out v_b v VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
 .ends
 
-* expanding   symbol:  transmission_gate.sym # of pins=4
-* sym_path:
-*+ /home/users/yaqingx/EE372/incremental_delta_sigma_adc/design/analog_modulator/schematic/transmission_gate.sym
-* sch_path:
-*+ /home/users/yaqingx/EE372/incremental_delta_sigma_adc/design/analog_modulator/schematic/transmission_gate.sch
 .subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-*.iopin in
-*.iopin out
-*.ipin en
-*.ipin en_b
 XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult='N' m='N' 
@@ -26,5 +14,3 @@ XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=10 ad='int((nf+1)
 + sa=0 sb=0 sd=0 mult='N' m='N' 
 .ends
 
-** flattened .save nodes
-.end
