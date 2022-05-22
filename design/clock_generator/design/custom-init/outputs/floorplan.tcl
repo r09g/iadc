@@ -11,7 +11,7 @@
 #-------------------------------------------------------------------------
 
 set core_aspect_ratio   1.00; # Aspect ratio 1.0 for a square chip
-set core_density_target 0.70; # Placement density of 70% is reasonable
+set core_density_target 0.90; # Placement density of 70% is reasonable
 
 # Make room in the floorplan for the core power ring
 set pwr_net_list {VDD VSS}; # List of power nets in the core power ring

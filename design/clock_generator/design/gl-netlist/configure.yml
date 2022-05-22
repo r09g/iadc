@@ -3,6 +3,7 @@ name: rtl
 outputs:
   - design.v
   - design.vcs.v
+  - design.sdc
 
 commands:
   - sed -i '/parameter/d' clock_generator.v
@@ -13,5 +14,6 @@ commands:
   - sed -i 's/clkinv/sky130_fd_sc_hd__clkinv/g' clock_generator.v
   - sed -i 's/clkbuf/sky130_fd_sc_hd__clkbuf/g' clock_generator.v
   - sed -i '/#(/,+6d' clock_generator.v
-  - cat digital_top.v digital_filter.v clock_generator.v decimator.v integrator_1.v integrator_2.v spi_interf.v > outputs/design.v 
+  - cat clock_generator.v > outputs/design.v 
   - cat outputs/design.v > outputs/design.vcs.v 
+  - cat clock_generator.sdc > outputs/design.sdc
