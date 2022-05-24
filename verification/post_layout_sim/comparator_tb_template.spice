@@ -1,0 +1,24 @@
+
+
+x1 ip in outp clk outn VDD GND comparator
+V1 cm GND 0.9
+V4 VDD GND 1.8
+V5 clk GND DC 0 PULSE(0 1.8 1n 0.1n 0.1n 4.9n 10n)
+C1 outp GND 100f m=1
+.param vin_pp=-1u
+C2 outn GND 100f m=1
+V2 ip cm DC 0 PWL(0 '-vin_pp/2' 8n '-vin_pp/2' 8.5n 'vin_pp/2' 18n 'vin_pp/2' 18.5n '-vin_pp/2') 
+V3 cm in DC 0 PWL(0 '-vin_pp/2' 8n '-vin_pp/2' 8.5n 'vin_pp/2' 18n 'vin_pp/2' 18.5n '-vin_pp/2') 
+
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.inc /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.control
+TRAN 1p 25n uic
+save all
+write comparator_tb_template.raw
+.endc
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

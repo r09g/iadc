@@ -22,7 +22,6 @@ C {devices/ipin.sym} 90 -120 0 0 {name=p3 lab=in
 }
 C {devices/opin.sym} 80 -100 0 0 {name=p4 lab=outp}
 C {devices/opin.sym} 80 -80 0 0 {name=p5 lab=outn}
-C {comparator_core_small.sym} 260 -100 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {sky130_stdcells/buf_2.sym} 490 -210 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_2.sym} 490 -130 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 260 -140 0 0 {name=l1 sig_type=std_logic lab=in}
@@ -35,3 +34,4 @@ C {devices/lab_pin.sym} 730 -190 2 0 {name=l8 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 730 -150 2 0 {name=l9 sig_type=std_logic lab=outn}
 C {rs_b_latch.sym} 680 -150 0 0 {name=x4 VDD=VDD VSS=VSS}
 C {devices/lab_pin.sym} 320 -100 3 0 {name=l3 sig_type=std_logic lab=clk}
+C {comparator_core_small.sym} 260 -100 0 0 {name=x1 VDD=VDD VSS=VSS}

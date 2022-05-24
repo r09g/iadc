@@ -1,0 +1,74 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nand2_4 in circuit rs_b_latch (0)(2 instances)
+Flattening unmatched subcell comparator_core_small in circuit comparator (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit comparator (0)(2 instances)
+Flattening unmatched subcell rs_b_latch in circuit comparator (0)(1 instance)
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Class comparator:  Merged 28 devices.
+Class comparator_flat:  Merged 55 devices.
+
+Subcircuit summary:
+Circuit 1: comparator                      |Circuit 2: comparator_flat                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (17)               |sky130_fd_pr__nfet_01v8 (17)               
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+sky130_fd_pr__pfet_01v8_hvt (8)            |sky130_fd_pr__pfet_01v8_hvt (8)            
+Number of devices: 33                      |Number of devices: 33                      
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: comparator                      |Circuit 2: comparator_flat                 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+outp                                       |outp                                       
+outn                                       |outn                                       
+clk                                        |clk                                        
+in                                         |in                                         
+ip                                         |ip                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes comparator and comparator_flat are equivalent.
+Circuits match uniquely.
