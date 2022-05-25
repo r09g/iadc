@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653453365
+timestamp 1653475914
 << viali >>
 rect 1171 545 1205 931
 rect 1171 81 1205 281
@@ -130,18 +130,18 @@ rect 856 65 908 75
 rect 1100 76 1107 127
 rect 1048 65 1100 75
 use sky130_fd_pr__nfet_01v8_6J4AMR  sky130_fd_pr__nfet_01v8_6J4AMR_0
-timestamp 1653453365
-transform 1 0 594 0 1 212
-box -647 -263 647 201
+timestamp 1653475914
+transform 1 0 593 0 1 211
+box -646 -262 648 200
 use sky130_fd_pr__pfet_01v8_UNG2NQ  sky130_fd_pr__pfet_01v8_UNG2NQ_0
-timestamp 1652659422
-transform -1 0 594 0 -1 707
-box -647 -356 647 294
+timestamp 1653475914
+transform -1 0 595 0 -1 707
+box -646 -356 648 294
 << labels >>
-flabel metal1 1188 -48 1188 -48 1 FreeSans 400 0 0 0 VSS
-flabel metal1 1188 1058 1188 1058 5 FreeSans 400 0 0 0 VDD
 flabel metal1 -211 909 -211 909 3 FreeSans 400 0 0 0 en_b
 flabel metal1 -212 413 -212 413 3 FreeSans 400 0 0 0 in
 flabel metal1 -212 102 -212 102 3 FreeSans 400 0 0 0 en
 flabel metal1 1279 412 1279 412 7 FreeSans 400 0 0 0 out
+flabel metal1 1188 1058 1188 1058 5 FreeSans 400 0 0 0 VDD
+flabel metal1 1188 -48 1188 -48 1 FreeSans 400 0 0 0 VSS
 << end >>

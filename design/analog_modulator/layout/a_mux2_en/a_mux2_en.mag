@@ -1,0 +1,157 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1653475914
+<< nwell >>
+rect -2386 -1234 -1092 -1157
+<< pwell >>
+rect -548 -815 -409 -700
+rect -548 -1692 -405 -1537
+<< viali >>
+rect -298 -812 -264 -778
+rect -381 -907 -347 -873
+rect -299 -1382 -265 -1348
+rect -382 -1520 -348 -1486
+<< metal1 >>
+rect -1168 -112 -1122 -24
+rect 1503 -72 1549 8
+rect 3024 -73 3070 15
+rect -1046 -479 104 -445
+rect -1046 -513 -1012 -479
+rect -2638 -547 -2476 -513
+rect -1079 -547 -1012 -513
+rect 70 -547 104 -479
+rect 185 -547 234 -513
+rect 3140 -547 3258 -513
+rect -624 -700 -522 -604
+rect -43 -772 -33 -769
+rect -310 -778 -33 -772
+rect -310 -812 -298 -778
+rect -264 -812 -33 -778
+rect -310 -818 -33 -812
+rect -43 -821 -33 -818
+rect 19 -821 29 -769
+rect -401 -917 -391 -865
+rect -339 -917 -329 -865
+rect -176 -1052 -166 -1000
+rect -114 -1052 137 -1000
+rect -1168 -1174 -1122 -1134
+rect -1168 -1220 -1045 -1174
+rect -1168 -1253 -1122 -1220
+rect -624 -1244 -541 -1148
+rect 1503 -1248 1549 -1178
+rect 3024 -1246 3070 -1175
+rect 3224 -1270 3258 -547
+rect 3224 -1304 3429 -1270
+rect -965 -1394 -955 -1342
+rect -903 -1348 -253 -1342
+rect -903 -1382 -299 -1348
+rect -265 -1382 -253 -1348
+rect -903 -1388 -253 -1382
+rect -903 -1394 -893 -1388
+rect 1503 -1406 1549 -1334
+rect 3024 -1407 3070 -1336
+rect -401 -1530 -391 -1478
+rect -339 -1530 -329 -1478
+rect -624 -1788 -541 -1692
+rect 3224 -1847 3258 -1304
+rect -2638 -1881 -2460 -1847
+rect -1084 -1881 -989 -1847
+rect -1023 -2007 -989 -1881
+rect 69 -2007 103 -1847
+rect 3149 -1881 3258 -1847
+rect -1023 -2041 103 -2007
+rect -1168 -2371 -1122 -2282
+rect 1503 -2585 1549 -2512
+rect 3024 -2580 3070 -2509
+<< via1 >>
+rect -33 -821 19 -769
+rect -391 -873 -339 -865
+rect -391 -907 -381 -873
+rect -381 -907 -347 -873
+rect -347 -907 -339 -873
+rect -391 -917 -339 -907
+rect -166 -1052 -114 -1000
+rect -955 -1394 -903 -1342
+rect -391 -1486 -339 -1478
+rect -391 -1520 -382 -1486
+rect -382 -1520 -348 -1486
+rect -348 -1520 -339 -1486
+rect -391 -1530 -339 -1520
+<< metal2 >>
+rect -1452 -244 -723 -192
+rect -1312 -1052 -903 -1000
+rect -955 -1342 -903 -1052
+rect -1271 -1394 -955 -1342
+rect -955 -1404 -903 -1394
+rect -775 -1927 -723 -244
+rect -391 -865 -339 115
+rect -391 -1000 -339 -917
+rect -33 -245 261 -193
+rect -33 -769 19 -245
+rect -166 -1000 -114 -990
+rect -391 -1052 -166 -1000
+rect -166 -1062 -114 -1052
+rect -391 -1478 -339 -1468
+rect -391 -1927 -339 -1530
+rect -775 -1979 -339 -1927
+rect -775 -2149 -723 -1979
+rect -2456 -2201 -723 -2149
+rect -391 -2457 -339 -1979
+rect -33 -2334 19 -821
+rect 149 -1052 259 -1000
+rect 149 -1589 201 -1052
+rect -33 -2386 206 -2334
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1653475914
+transform 1 0 -459 0 1 -1740
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
+timestamp 1653475914
+transform 1 0 -459 0 -1 -652
+box -38 -48 314 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1653475914
+transform 1 0 -551 0 1 -1740
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
+timestamp 1653475914
+transform -1 0 -459 0 -1 -652
+box -38 -48 130 592
+use switch_5t  switch_5t_0
+timestamp 1653475914
+transform 1 0 123 0 -1 -1396
+box -53 -36 3056 1162
+use switch_5t  switch_5t_1
+timestamp 1653475914
+transform 1 0 123 0 -1 -62
+box -53 -36 3056 1162
+use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+timestamp 1653475914
+transform 1 0 -2333 0 -1 -117
+box -216 -51 1283 1063
+use transmission_gate  transmission_gate_1
+timestamp 1653475914
+transform 1 0 -2333 0 1 -2277
+box -216 -51 1283 1063
+<< labels >>
+flabel metal1 -2635 -530 -2635 -530 3 FreeSans 400 0 0 0 in0
+flabel metal1 -2634 -1864 -2634 -1864 3 FreeSans 400 0 0 0 in1
+flabel metal1 -1144 -2365 -1144 -2365 1 FreeSans 400 0 0 0 VSS
+flabel metal1 -1051 -1198 -1051 -1198 1 FreeSans 400 0 0 0 VDD
+flabel metal1 -1145 -35 -1145 -35 1 FreeSans 400 0 0 0 VSS
+flabel metal2 -366 110 -366 110 5 FreeSans 400 0 0 0 s0
+flabel metal2 -365 -2445 -365 -2445 1 FreeSans 400 0 0 0 en
+flabel metal1 -615 -1743 -615 -1743 1 FreeSans 400 0 0 0 VSS
+flabel metal1 -617 -1196 -617 -1196 1 FreeSans 400 0 0 0 VDD
+flabel metal1 -616 -652 -616 -652 1 FreeSans 400 0 0 0 VSS
+flabel metal1 1526 -1 1526 -1 1 FreeSans 400 0 0 0 VSS
+flabel metal1 3048 4 3048 4 1 FreeSans 400 0 0 0 VSS
+flabel metal1 1526 -1242 1526 -1242 1 FreeSans 400 0 0 0 VDD
+flabel metal1 3048 -1239 3048 -1239 1 FreeSans 400 0 0 0 VDD
+flabel metal1 3047 -1344 3047 -1344 1 FreeSans 400 0 0 0 VSS
+flabel metal1 1526 -1342 1526 -1342 1 FreeSans 400 0 0 0 VSS
+flabel metal1 1527 -2577 1527 -2577 1 FreeSans 400 0 0 0 VDD
+flabel metal1 3048 -2574 3048 -2574 1 FreeSans 400 0 0 0 VDD
+flabel metal1 3423 -1288 3423 -1288 1 FreeSans 400 0 0 0 out
+<< end >>

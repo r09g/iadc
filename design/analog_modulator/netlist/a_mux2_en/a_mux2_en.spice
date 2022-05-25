@@ -1,0 +1,33 @@
+* analog 2-input mux with enable
+
+.subckt a_mux2_en en s0 in0 in1 out VDD VSS
+x3 net2 out s0 s0_b VDD VSS switch_5t
+x4 net1 out s0_b s0 VDD VSS switch_5t
+x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
+x1 s0 VSS VSS VDD VDD s0_b sky130_fd_sc_hd__inv_1
+.ends
+
+.subckt switch_5t  in out en en_b  VDD  VSS
+x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+.subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends

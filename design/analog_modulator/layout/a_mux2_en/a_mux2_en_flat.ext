@@ -1,0 +1,267 @@
+timestamp 1653475931
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8_hvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "in1" 4 -2634 -1864 -2634 -1864 m1
+port "out" 5 3423 -1288 3423 -1288 m1
+port "s0" 2 -366 110 -366 110 m2
+port "in0" 3 -2635 -530 -2635 -530 m1
+port "en" 1 -365 -2445 -365 -2445 m2
+port "VDD" 6 3048 -2574 3048 -2574 m1
+port "VDD" 6 1527 -2577 1527 -2577 m1
+port "VDD" 6 3048 -1239 3048 -1239 m1
+port "VDD" 6 1526 -1242 1526 -1242 m1
+port "VDD" 6 -617 -1196 -617 -1196 m1
+port "VDD" 6 -1051 -1198 -1051 -1198 m1
+port "VSS" 7 1526 -1342 1526 -1342 m1
+port "VSS" 7 3047 -1344 3047 -1344 m1
+port "VSS" 7 3048 4 3048 4 m1
+port "VSS" 7 1526 -1 1526 -1 m1
+port "VSS" 7 -616 -652 -616 -652 m1
+port "VSS" 7 -615 -1743 -615 -1743 m1
+port "VSS" 7 -1145 -35 -1145 -35 m1
+port "VSS" 7 -1144 -2365 -1144 -2365 m1
+node "sky130_fd_sc_hd__inv_1_0/inv_1" 0 0 -459 -1740 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__inv_1_1/inv_1" 0 0 -459 -652 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__tapvpwrvgnd_1_0/tapvpwrvgnd_1" 0 0 -551 -1740 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__tapvpwrvgnd_1_1/tapvpwrvgnd_1" 0 0 -459 -652 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "switch_5t_0/transmission_gate_0/out" 21649 2228.88 423 -2294 pdif 0 0 0 0 0 0 0 0 80472 4040 195296 7420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150280 10404 455102 24156 0 0 0 0 0 0 0 0 0 0
+node "transmission_gate_1/in" 9161 1186.49 -2156 -2118 ndif 0 0 0 0 0 0 0 0 34320 1700 89760 3380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66640 4600 249884 13680 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_1/in" "in1"
+node "switch_5t_0/transmission_gate_0/in" 21071 2581.86 -2248 -2118 ndif 0 0 0 0 0 0 0 0 74672 3724 195296 7420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146608 10120 497582 26946 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__inv_1_0/Y" 12819 862.368 -2252 -1402 p 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 333432 17568 0 0 53700 3456 87368 5068 198536 7740 0 0 0 0 0 0 0 0
+node "switch_5t_0/transmission_gate_1/out" 23139 2357.55 1944 -2294 pdif 0 0 0 0 0 0 0 0 80704 4048 211072 8080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159936 11040 457894 24394 0 0 0 0 0 0 0 0 0 0
+equiv "switch_5t_0/transmission_gate_1/out" "out"
+node "sky130_fd_sc_hd__inv_1_1/A" 19542 4075.19 -395 -917 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 587616 29752 0 0 59268 5228 140740 8480 449376 17484 0 0 0 0 0 0 0 0
+equiv "sky130_fd_sc_hd__inv_1_1/A" "s0"
+node "switch_5t_1/transmission_gate_0/out" 21649 2495.93 423 -960 pdif 0 0 0 0 0 0 0 0 80472 4040 195296 7420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150280 10404 455102 24156 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__inv_1_1/Y" 19687 5176.61 -309 -1149 pdif 0 0 0 0 0 0 0 0 6760 364 10400 504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 568860 28576 0 0 82872 6056 140230 8522 479848 18552 0 0 0 0 0 0 0 0
+node "transmission_gate_0/in" 9161 1431.22 -2156 -960 pdif 0 0 0 0 0 0 0 0 34320 1700 89760 3380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66640 4600 249884 13680 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_0/in" "in0"
+node "switch_5t_1/transmission_gate_0/in" 21071 2997.38 -2248 -960 pdif 0 0 0 0 0 0 0 0 74672 3724 195296 7420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146608 10120 491326 26578 0 0 0 0 0 0 0 0 0 0
+node "sky130_fd_sc_hd__inv_1_0/A" 7271 4925.64 -2252 -2206 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 245388 11624 0 0 30096 2628 64264 3980 369555 14310 0 0 0 0 0 0 0 0
+equiv "sky130_fd_sc_hd__inv_1_0/A" "en"
+node "switch_5t_0/transmission_gate_0/VDD" 30911 6885.76 285 -2514 nw 0 0 0 0 1829750 6930 0 0 235552 13856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235552 13856 55062 2578 0 0 0 0 0 0 0 0 0 0
+equiv "switch_5t_0/transmission_gate_0/VDD" "VDD"
+node "switch_5t_1/transmission_gate_0/VDD" 30911 7330.91 285 -1180 nw 0 0 0 0 1829750 6930 0 0 235552 13856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235552 13856 54924 2572 0 0 0 0 0 0 0 0 0 0
+equiv "switch_5t_1/transmission_gate_0/VDD" "VDD"
+node "sky130_fd_sc_hd__inv_1_0/VPWR" 5073 918.943 -589 -1479 nw 0 0 0 0 251304 2020 0 0 11900 836 20800 1008 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58692 2648 42336 1074 0 0 0 0 0 0 0 0 0 0
+equiv "sky130_fd_sc_hd__inv_1_0/VPWR" "VDD"
+node "transmission_gate_0/VDD" 27776 6699.89 -2386 -1864 nw 0 0 0 0 1726196 5256 0 0 235552 13856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235552 13856 53866 2434 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_0/VDD" "VDD"
+substrate "sky130_fd_sc_hd__inv_1_0/VGND" 0 0 -2350 -2292 ppd 0 0 0 0 0 0 0 0 25120 1360 637092 37612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 694228 40468 217836 7992 0 0 0 0 0 0 0 0 0 0
+equiv "sky130_fd_sc_hd__inv_1_0/VGND" "VSS"
+cap "transmission_gate_0/in" "transmission_gate_1/in" 505.014
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "transmission_gate_0/VDD" 40.8979
+cap "sky130_fd_sc_hd__inv_1_1/A" "sky130_fd_sc_hd__inv_1_0/Y" 42.8369
+cap "sky130_fd_sc_hd__inv_1_0/Y" "switch_5t_0/transmission_gate_0/in" 552.169
+cap "sky130_fd_sc_hd__inv_1_1/Y" "sky130_fd_sc_hd__inv_1_0/Y" 50.4285
+cap "switch_5t_0/transmission_gate_0/out" "sky130_fd_sc_hd__inv_1_0/Y" 11.6717
+cap "switch_5t_1/transmission_gate_0/in" "sky130_fd_sc_hd__inv_1_0/Y" 506.383
+cap "sky130_fd_sc_hd__inv_1_1/A" "transmission_gate_0/VDD" 12.0504
+cap "sky130_fd_sc_hd__inv_1_1/A" "sky130_fd_sc_hd__inv_1_0/VPWR" 225.705
+cap "transmission_gate_0/in" "sky130_fd_sc_hd__inv_1_0/Y" 1303.7
+cap "transmission_gate_0/VDD" "switch_5t_0/transmission_gate_0/in" 1209.37
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "switch_5t_0/transmission_gate_0/in" 24.6432
+cap "sky130_fd_sc_hd__inv_1_1/Y" "transmission_gate_0/VDD" 17.3845
+cap "sky130_fd_sc_hd__inv_1_1/Y" "sky130_fd_sc_hd__inv_1_0/VPWR" 311.994
+cap "switch_5t_0/transmission_gate_0/out" "transmission_gate_0/VDD" 5.19166
+cap "transmission_gate_0/VDD" "switch_5t_1/transmission_gate_0/in" 1390.05
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "switch_5t_1/transmission_gate_0/in" 31.0109
+cap "sky130_fd_sc_hd__inv_1_0/A" "transmission_gate_1/in" 1343.44
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_0/transmission_gate_0/VDD" 133.774
+cap "transmission_gate_0/VDD" "transmission_gate_0/in" 1153.59
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "transmission_gate_0/in" 3.45939
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_1/transmission_gate_0/VDD" 2860.27
+cap "switch_5t_0/transmission_gate_0/VDD" "switch_5t_0/transmission_gate_0/in" 1189.96
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_0/transmission_gate_0/VDD" 2893.36
+cap "switch_5t_0/transmission_gate_0/out" "switch_5t_0/transmission_gate_0/VDD" 2646.67
+cap "switch_5t_1/transmission_gate_0/in" "switch_5t_0/transmission_gate_0/VDD" 11.4415
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_0/transmission_gate_0/in" 1448.11
+cap "switch_5t_0/transmission_gate_0/VDD" "switch_5t_0/transmission_gate_1/out" 1283.63
+cap "sky130_fd_sc_hd__inv_1_1/Y" "sky130_fd_sc_hd__inv_1_1/A" 1535.11
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_0/transmission_gate_0/out" 2024.12
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_1/transmission_gate_0/in" 1445.03
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_0/transmission_gate_1/out" 1137.15
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_0/transmission_gate_0/in" 1368.97
+cap "switch_5t_0/transmission_gate_0/out" "switch_5t_0/transmission_gate_0/in" 7354.17
+cap "sky130_fd_sc_hd__inv_1_0/A" "sky130_fd_sc_hd__inv_1_0/Y" 778.861
+cap "switch_5t_1/transmission_gate_0/in" "switch_5t_0/transmission_gate_0/in" 356.896
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_0/transmission_gate_0/out" 1869.03
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_1/transmission_gate_0/in" 1636.93
+cap "switch_5t_0/transmission_gate_1/out" "switch_5t_0/transmission_gate_0/in" 428.306
+cap "sky130_fd_sc_hd__inv_1_1/A" "transmission_gate_0/in" 15.3186
+cap "switch_5t_0/transmission_gate_0/out" "switch_5t_1/transmission_gate_0/in" 72.9855
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_0/transmission_gate_1/out" 1028.94
+cap "switch_5t_0/transmission_gate_0/out" "switch_5t_0/transmission_gate_1/out" 7481.46
+cap "switch_5t_1/transmission_gate_0/in" "switch_5t_0/transmission_gate_1/out" 428.306
+cap "transmission_gate_0/in" "switch_5t_0/transmission_gate_0/in" 84.8424
+cap "sky130_fd_sc_hd__inv_1_1/Y" "transmission_gate_0/in" 27.6929
+cap "transmission_gate_0/in" "switch_5t_1/transmission_gate_0/in" 6634.54
+cap "sky130_fd_sc_hd__inv_1_0/A" "transmission_gate_0/VDD" 132.647
+cap "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 0.615385
+cap "sky130_fd_sc_hd__inv_1_0/A" "sky130_fd_sc_hd__inv_1_0/VPWR" 123.431
+cap "transmission_gate_1/in" "sky130_fd_sc_hd__inv_1_0/Y" 1282.06
+cap "sky130_fd_sc_hd__inv_1_0/A" "switch_5t_0/transmission_gate_0/VDD" 0.615385
+cap "transmission_gate_0/VDD" "switch_5t_1/transmission_gate_0/VDD" 11.1691
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "switch_5t_1/transmission_gate_0/VDD" 15.0218
+cap "switch_5t_1/transmission_gate_0/out" "transmission_gate_0/VDD" 12.3878
+cap "switch_5t_1/transmission_gate_0/out" "sky130_fd_sc_hd__inv_1_0/VPWR" 3.38936
+cap "sky130_fd_sc_hd__inv_1_0/A" "sky130_fd_sc_hd__inv_1_1/A" 179.305
+cap "sky130_fd_sc_hd__inv_1_0/A" "switch_5t_0/transmission_gate_0/in" 686.573
+cap "transmission_gate_0/VDD" "transmission_gate_1/in" 1091.06
+cap "sky130_fd_sc_hd__inv_1_0/A" "sky130_fd_sc_hd__inv_1_1/Y" 241.089
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "transmission_gate_1/in" 3.02303
+cap "sky130_fd_sc_hd__inv_1_0/A" "switch_5t_1/transmission_gate_0/in" 633.899
+cap "switch_5t_1/transmission_gate_0/VDD" "switch_5t_0/transmission_gate_0/VDD" 194.546
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_0/transmission_gate_0/VDD" 26.3526
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_1/transmission_gate_0/VDD" 2943.04
+cap "sky130_fd_sc_hd__inv_1_1/A" "switch_5t_1/transmission_gate_0/out" 1967.84
+cap "sky130_fd_sc_hd__inv_1_0/A" "transmission_gate_0/in" 1350.33
+cap "switch_5t_1/transmission_gate_0/VDD" "switch_5t_0/transmission_gate_0/in" 23.8377
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_0/transmission_gate_0/in" 63.6994
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_1/transmission_gate_0/VDD" 133.586
+cap "sky130_fd_sc_hd__inv_1_1/Y" "switch_5t_1/transmission_gate_0/out" 2052.52
+cap "switch_5t_0/transmission_gate_0/out" "switch_5t_1/transmission_gate_0/VDD" 55.2767
+cap "switch_5t_1/transmission_gate_0/in" "switch_5t_1/transmission_gate_0/VDD" 1218.22
+cap "sky130_fd_sc_hd__inv_1_1/A" "transmission_gate_1/in" 2.57238
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_0/transmission_gate_0/out" 325.413
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_1/transmission_gate_0/in" 7320.83
+cap "switch_5t_1/transmission_gate_0/VDD" "switch_5t_0/transmission_gate_1/out" 1603.64
+cap "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 2469.62
+cap "switch_5t_1/transmission_gate_0/out" "switch_5t_0/transmission_gate_1/out" 7546.98
+cap "sky130_fd_sc_hd__inv_1_0/VPWR" "sky130_fd_sc_hd__inv_1_0/Y" 536.036
+cap "transmission_gate_1/in" "switch_5t_0/transmission_gate_0/in" 6641.39
+cap "switch_5t_1/transmission_gate_0/in" "transmission_gate_1/in" 84.8424
+device msubckt sky130_fd_pr__pfet_01v8 2870 -2294 2871 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2774 -2294 2775 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2678 -2294 2679 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2582 -2294 2583 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2486 -2294 2487 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2390 -2294 2391 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2294 -2294 2295 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2198 -2294 2199 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2102 -2294 2103 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2006 -2294 2007 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1349 -2294 1350 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1253 -2294 1254 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1157 -2294 1158 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1061 -2294 1062 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 965 -2294 966 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 869 -2294 870 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 773 -2294 774 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 677 -2294 678 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 581 -2294 582 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "switch_5t_0/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 485 -2294 486 -2293 l=30 w=272 "switch_5t_0/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 -2118 -1321 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_1/in" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 -2118 -1417 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "transmission_gate_1/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 -2118 -1513 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_1/in" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 -2118 -1609 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "transmission_gate_1/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 -2118 -1705 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_1/in" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 -2118 -1801 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "transmission_gate_1/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 -2118 -1897 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_1/in" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1994 -2118 -1993 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "transmission_gate_1/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -2090 -2118 -2089 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_1/in" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -2186 -2118 -2185 -2117 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "transmission_gate_1/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2870 -1714 2871 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2774 -1714 2775 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2678 -1714 2679 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2582 -1714 2583 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2486 -1714 2487 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2390 -1714 2391 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2294 -1714 2295 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2198 -1714 2199 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2102 -1714 2103 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2006 -1714 2007 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1661 -1719 1662 -1718 l=30 w=100 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "sky130_fd_sc_hd__inv_1_0/VGND" 100 0 "switch_5t_0/transmission_gate_0/out" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 1349 -1714 1350 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1253 -1714 1254 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1157 -1714 1158 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1061 -1714 1062 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 965 -1714 966 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 869 -1714 870 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 773 -1714 774 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 677 -1714 678 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 581 -1714 582 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/in" 104 0 "switch_5t_0/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 485 -1714 486 -1713 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -339 -1693 -338 -1692 l=30 w=130 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "sky130_fd_sc_hd__inv_1_0/VGND" 130 0 "sky130_fd_sc_hd__inv_1_0/Y" 130 0
+device msubckt sky130_fd_pr__pfet_01v8_hvt -339 -1443 -338 -1442 l=30 w=200 "sky130_fd_sc_hd__inv_1_0/VPWR" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "sky130_fd_sc_hd__inv_1_0/VPWR" 200 0 "sky130_fd_sc_hd__inv_1_0/Y" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 -1706 -1321 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_1/in" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 -1706 -1417 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "transmission_gate_1/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 -1706 -1513 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_1/in" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 -1706 -1609 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "transmission_gate_1/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 -1706 -1705 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_1/in" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 -1706 -1801 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "transmission_gate_1/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 -1706 -1897 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_1/in" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1994 -1706 -1993 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "transmission_gate_1/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -2090 -1706 -2089 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_1/in" 272 0 "switch_5t_0/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -2186 -1706 -2185 -1705 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_0/transmission_gate_0/in" 272 0 "transmission_gate_1/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2870 -960 2871 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2774 -960 2775 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2678 -960 2679 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2582 -960 2583 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2486 -960 2487 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2390 -960 2391 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2294 -960 2295 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2198 -960 2199 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2102 -960 2103 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_0/transmission_gate_1/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 2006 -960 2007 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_0/transmission_gate_1/out" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1349 -960 1350 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1253 -960 1254 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1157 -960 1158 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 1061 -960 1062 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 965 -960 966 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 869 -960 870 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 773 -960 774 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 677 -960 678 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 581 -960 582 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/out" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 485 -960 486 -959 l=30 w=272 "switch_5t_1/transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "switch_5t_1/transmission_gate_0/out" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8_hvt -339 -1149 -338 -1148 l=30 w=200 "sky130_fd_sc_hd__inv_1_0/VPWR" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "sky130_fd_sc_hd__inv_1_0/VPWR" 200 0 "sky130_fd_sc_hd__inv_1_1/Y" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 -339 -829 -338 -828 l=30 w=130 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "sky130_fd_sc_hd__inv_1_0/VGND" 130 0 "sky130_fd_sc_hd__inv_1_1/Y" 130 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 -960 -1321 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 -960 -1417 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 -960 -1513 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 -960 -1609 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 -960 -1705 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 -960 -1801 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 -960 -1897 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -1994 -960 -1993 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -2090 -960 -2089 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "transmission_gate_0/in" 272 0 "switch_5t_1/transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__pfet_01v8 -2186 -960 -2185 -959 l=30 w=272 "transmission_gate_0/VDD" "sky130_fd_sc_hd__inv_1_0/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 272 0 "transmission_gate_0/in" 272 0
+device msubckt sky130_fd_pr__nfet_01v8 2870 -380 2871 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2774 -380 2775 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2678 -380 2679 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2582 -380 2583 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2486 -380 2487 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2390 -380 2391 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2294 -380 2295 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2198 -380 2199 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2102 -380 2103 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_0/transmission_gate_1/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 2006 -380 2007 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_0/transmission_gate_1/out" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1661 -385 1662 -384 l=30 w=100 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/A" 60 0 "sky130_fd_sc_hd__inv_1_0/VGND" 100 0 "switch_5t_1/transmission_gate_0/out" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 1349 -380 1350 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1253 -380 1254 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1157 -380 1158 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 1061 -380 1062 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 965 -380 966 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 869 -380 870 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 773 -380 774 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 677 -380 678 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 581 -380 582 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/out" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 485 -380 486 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_1/Y" 60 0 "switch_5t_1/transmission_gate_0/out" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 -380 -1321 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 -380 -1417 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 -380 -1513 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 -380 -1609 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 -380 -1705 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 -380 -1801 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 -380 -1897 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -1994 -380 -1993 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -2090 -380 -2089 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "transmission_gate_0/in" 104 0 "switch_5t_1/transmission_gate_0/in" 104 0
+device msubckt sky130_fd_pr__nfet_01v8 -2186 -380 -2185 -379 l=30 w=104 "sky130_fd_sc_hd__inv_1_0/VGND" "sky130_fd_sc_hd__inv_1_0/A" 60 0 "switch_5t_1/transmission_gate_0/in" 104 0 "transmission_gate_0/in" 104 0

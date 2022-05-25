@@ -1,0 +1,71 @@
+Flattening unmatched subcell transmission_gate in circuit switch_5t (0)(2 instances)
+Flattening unmatched subcell switch_5t in circuit a_mux2_en (0)(2 instances)
+Flattening unmatched subcell transmission_gate in circuit a_mux2_en (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit a_mux2_en (0)(2 instances)
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Class a_mux2_en_flat:  Merged 108 devices.
+
+Subcircuit summary:
+Circuit 1: a_mux2_en                       |Circuit 2: a_mux2_en_flat                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (10)               |sky130_fd_pr__nfet_01v8 (10)               
+sky130_fd_pr__pfet_01v8 (6)                |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: a_mux2_en                       |Circuit 2: a_mux2_en_flat                  
+-------------------------------------------|-------------------------------------------
+in0                                        |in0                                        
+in1                                        |in1                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+s0                                         |s0                                         
+out                                        |out                                        
+en                                         |en                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes a_mux2_en and a_mux2_en_flat are equivalent.
+Circuits match uniquely.

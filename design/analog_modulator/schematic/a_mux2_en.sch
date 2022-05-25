@@ -22,11 +22,9 @@ N 590 -760 630 -760 { lab=s0}
 N 630 -780 630 -660 { lab=s0}
 C {switch_5t.sym} 860 -170 2 1 {name=x3 VDD=VDD VSS=VSS}
 C {switch_5t.sym} 740 -370 2 1 {name=x4 VDD=VDD VSS=VSS}
-C {sky130_stdcells/inv_1.sym} 930 -200 1 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 810 -400 1 0 {name=x8 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 810 -440 1 0 {name=l1 sig_type=std_logic lab=s0}
+C {devices/lab_pin.sym} 930 -160 1 0 {name=l1 sig_type=std_logic lab=s0}
 C {devices/lab_pin.sym} 810 -280 3 0 {name=l2 sig_type=std_logic lab=s0}
-C {devices/lab_pin.sym} 930 -240 1 0 {name=l3 sig_type=std_logic lab=s0_b}
+C {devices/lab_pin.sym} 810 -360 1 0 {name=l3 sig_type=std_logic lab=s0_b}
 C {devices/lab_pin.sym} 930 -80 3 0 {name=l4 sig_type=std_logic lab=s0_b}
 C {devices/lab_pin.sym} 1270 -320 0 1 {name=l13 sig_type=std_logic lab=out}
 C {transmission_gate.sym} 490 -320 0 0 {name=x15 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
