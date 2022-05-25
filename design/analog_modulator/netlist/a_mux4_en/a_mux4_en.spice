@@ -1,0 +1,52 @@
+* analog 4-input mux with enable
+
+.subckt a_mux4_en en s1 s0 in0 in1 in2 in3 out VDD VSS
+x1 net4 out net5 en3_b VDD VSS switch_5t
+x2 net3 out net6 en2_b VDD VSS switch_5t
+x3 net2 out net7 en1_b VDD VSS switch_5t
+x4 net1 out net8 en0_b VDD VSS switch_5t
+x5 en3_b VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x6 en2_b VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+x7 en1_b VSS VSS VDD VDD net7 sky130_fd_sc_hd__inv_1
+x8 en0_b VSS VSS VDD VDD net8 sky130_fd_sc_hd__inv_1
+x13 s0 VSS VSS VDD VDD s0_b sky130_fd_sc_hd__inv_1
+x14 s1 VSS VSS VDD VDD s1_b sky130_fd_sc_hd__inv_1
+x9 s1_b s0_b VSS VSS VDD VDD en0_b sky130_fd_sc_hd__nand2_1
+x10 s1 s0_b VSS VSS VDD VDD en1_b sky130_fd_sc_hd__nand2_1
+x11 s0 s1_b VSS VSS VDD VDD en2_b sky130_fd_sc_hd__nand2_1
+x12 s0 s1 VSS VSS VDD VDD en3_b sky130_fd_sc_hd__nand2_1
+x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x17 in2 net3 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x18 in3 net4 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
+.ends
+
+.subckt switch_5t  in out en en_b  VDD  VSS
+x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__nand2_1 A B VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X1 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X2 VGND B a_113_47# VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X3 a_113_47# A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+.ends
