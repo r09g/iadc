@@ -1,7 +1,9 @@
 #!/bin/bash
 
-PLSIM_DESIGN_NAME="comparator" 
+# run post-layout sim with OTA
 
-cat ../../netlist/${PLSIM_DESIGN_NAME}/${PLSIM_DESIGN_NAME}_layout_pex.spice ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb_template.spice > ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb.spice
-ngspice ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb.spice
+# PLSIM_DESIGN_NAME="sc_cmfb" 
+
+# cat ../../netlist/${PLSIM_DESIGN_NAME}/${PLSIM_DESIGN_NAME}_layout_pex.spice ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb_template.spice > ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb.spice
+# ngspice ${DESIGN_DIR}/verification/post_layout_sim/${PLSIM_DESIGN_NAME}_tb.spice
 

@@ -97,3 +97,4 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 500 -230 2 0 {name=C6 model=cap_mim_m3_1 W=4.8
 C {devices/lab_pin.sym} 80 -560 0 0 {name=l31 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 80 -340 0 0 {name=l32 sig_type=std_logic lab=bias_a}
 C {devices/lab_pin.sym} 80 -120 0 0 {name=l33 sig_type=std_logic lab=cm}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1990 -200 0 0 {name=Cdummy model=cap_mim_m3_1 W=4.8 L=4.8 MF=20 spiceprefix=X}

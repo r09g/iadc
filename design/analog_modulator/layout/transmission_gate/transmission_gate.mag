@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652661863
+timestamp 1653453365
 << viali >>
 rect 1171 545 1205 931
 rect 1171 81 1205 281
@@ -130,7 +130,7 @@ rect 856 65 908 75
 rect 1100 76 1107 127
 rect 1048 65 1100 75
 use sky130_fd_pr__nfet_01v8_6J4AMR  sky130_fd_pr__nfet_01v8_6J4AMR_0
-timestamp 1652660033
+timestamp 1653453365
 transform 1 0 594 0 1 212
 box -647 -263 647 201
 use sky130_fd_pr__pfet_01v8_UNG2NQ  sky130_fd_pr__pfet_01v8_UNG2NQ_0

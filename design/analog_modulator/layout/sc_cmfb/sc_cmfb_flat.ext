@@ -1,0 +1,782 @@
+timestamp 1653460579
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "p1" 9 8645 -1537 8645 -1537 m3
+port "p1" 9 -2389 1840 -2389 1840 m3
+port "p1_b" 8 8898 -670 8898 -670 m3
+port "p1_b" 8 -2639 2626 -2639 2626 m3
+port "cmc" 5 -2412 3371 -2412 3371 m1
+port "cm" 2 8790 3295 8790 3295 m1
+port "on" 1 -2872 3368 -2872 3368 m1
+port "p2" 7 8648 7246 8648 7246 m3
+port "p2" 7 -2389 7236 -2389 7236 m3
+port "bias_a" 3 9292 3298 9292 3298 m1
+port "p2_b" 6 8904 8016 8904 8016 m3
+port "op" 4 -3484 3369 -3484 3369 m1
+port "p2_b" 6 -2642 8019 -2642 8019 m3
+port "VDD" 10 6954 -659 6954 -659 m1
+port "VDD" 10 -2045 -659 -2045 -659 m1
+port "VDD" 10 6952 1141 6952 1141 m1
+port "VDD" 10 -2043 1146 -2043 1146 m1
+port "VDD" 10 6954 2944 6954 2944 m1
+port "VDD" 10 -2047 2942 -2047 2942 m1
+port "VDD" 10 6957 4740 6957 4740 m1
+port "VDD" 10 -2043 4743 -2043 4743 m1
+port "VDD" 10 6952 6547 6952 6547 m1
+port "VDD" 10 -2043 6543 -2043 6543 m1
+port "VDD" 10 6954 8345 6954 8345 m1
+port "VDD" 10 -2046 8350 -2046 8350 m1
+port "VSS" 11 6954 7180 6954 7180 m1
+port "VSS" 11 6954 5375 6954 5375 m1
+port "VSS" 11 6954 3579 6954 3579 m1
+port "VSS" 11 6952 1776 6952 1776 m1
+port "VSS" 11 6957 -26 6957 -26 m1
+port "VSS" 11 6957 -1822 6957 -1822 m1
+port "VSS" 11 -2045 -1822 -2045 -1822 m1
+port "VSS" 11 -2047 -27 -2047 -27 m1
+port "VSS" 11 -2045 1776 -2045 1776 m1
+port "VSS" 11 -2047 3574 -2047 3574 m1
+port "VSS" 11 -2045 5370 -2045 5370 m1
+port "VSS" 11 -2045 7178 -2045 7178 m1
+node "c1_7300_n1700#" 0 0 7300 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_5500_n1700#" 0 0 5500 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_3700_n1700#" 0 0 3700 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_1900_n1700#" 0 0 1900 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_100_n1700#" 0 0 100 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_n1700#" 0 0 -1700 -1700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_7300_100#" 0 0 7300 100 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_100#" 0 0 -1700 100 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_7300_1900#" 0 0 7300 1900 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_1900#" 0 0 -1700 1900 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_7300_3700#" 0 0 7300 3700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_3700#" 0 0 -1700 3700 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_7300_5500#" 0 0 7300 5500 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_5500#" 0 0 -1700 5500 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_7300_7300#" 0 0 7300 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_5500_7300#" 0 0 5500 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_3700_7300#" 0 0 3700 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_1900_7300#" 0 0 1900 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_100_7300#" 0 0 100 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "c1_n1700_7300#" 0 0 -1700 7300 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777924 3528 0 0 0 0
+node "m3_7200_n1800#" 0 753.223 7200 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_5400_n1800#" 0 1033.79 5400 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_3600_n1800#" 0 1072.83 3600 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_1800_n1800#" 0 1072.83 1800 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_0_n1800#" 0 1015.27 0 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_n1800#" 0 803.792 -1800 -1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_7200_0#" 0 701.433 7200 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_7200_1800#" 0 725.885 7200 1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_7200_3600#" 0 698.081 7200 3600 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_0#" 0 738.403 -1800 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_1800#" 0 741.854 -1800 1800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_3600#" 0 729.115 -1800 3600 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_7200_5400#" 0 701.027 7200 5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_5400#" 0 727.689 -1800 5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_7200_7200#" 0 817.054 7200 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_5400_7200#" 0 1072.83 5400 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_3600_7200#" 0 1138.96 3600 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_1800_7200#" 0 1027.91 1800 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_0_7200#" 0 1093.96 0 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "m3_n1800_7200#" 0 839.778 -1800 7200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1344440 4638 0 0 0 0 0 0
+node "transmission_gate_1/en" 9724 5747.02 7036 -1678 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 341748 15792 0 0 40392 3600 90780 5598 281172 11082 240216 7616 0 0 0 0 0 0
+equiv "transmission_gate_1/en" "p1"
+node "transmission_gate_9/en" 9725 6040.06 -1964 -1678 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 341748 15792 0 0 40392 3600 90780 5598 297885 11724 240216 7616 0 0 0 0 0 0
+equiv "transmission_gate_9/en" "p1"
+node "transmission_gate_1/en_b" 17710 2020.54 7036 -874 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501048 26412 0 0 40392 3600 81276 5310 320640 12600 239896 7606 0 0 0 0 0 0
+equiv "transmission_gate_1/en_b" "p1_b"
+node "transmission_gate_9/en_b" 17711 2199.05 -1964 -874 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501048 26412 0 0 40392 3600 81276 5310 337332 13242 240216 7616 0 0 0 0 0 0
+equiv "transmission_gate_9/en_b" "p1_b"
+node "transmission_gate_3/out" 21187 5111.35 -1868 210 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 713280 32764 281152 9170 50013 1786 1664536 10452 0 0 0 0
+node "transmission_gate_8/in" 21181 10659.9 -1868 3810 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 467858 25058 298304 9706 6342856 48424 0 0 0 0 0 0
+node "transmission_gate_8/out" 23226 20328.1 -1960 2010 ndif 0 0 0 0 0 0 0 0 82256 4096 212624 8128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 161568 11136 1520532 56528 311532 11400 11697576 66334 0 0 0 0 0 0
+equiv "transmission_gate_8/out" "cmc"
+node "transmission_gate_4/in" 38766 6498.65 7132 210 ndif 0 0 0 0 0 0 0 0 139920 6880 361680 13600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 269280 18560 1447622 67794 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_4/in" "cm"
+node "transmission_gate_4/out" 21182 4637.29 -1868 -1590 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 466022 24950 233536 7682 41504 1632 2109592 24360 0 0 0 0
+node "transmission_gate_7/in" 21176 4693.97 -1868 5610 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 467008 25008 10752 592 21848 836 2252432 28696 0 0 0 0
+node "transmission_gate_7/out" 23278 8698.69 -1960 210 ndif 0 0 0 0 0 0 0 0 82256 4096 212624 8128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 161568 11136 857426 34662 493760 16070 94363 3488 3807728 35862 0 0 0 0
+equiv "transmission_gate_7/out" "on"
+node "transmission_gate_5/en" 9724 5760.55 7036 3722 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 341748 15792 0 0 40392 3600 90780 5598 281172 11082 240216 7616 0 0 0 0 0 0
+equiv "transmission_gate_5/en" "p2"
+node "transmission_gate_6/en" 9725 5889.31 -1964 3722 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 341748 15792 0 0 40392 3600 90780 5598 297885 11724 239896 7606 0 0 0 0 0 0
+equiv "transmission_gate_6/en" "p2"
+node "transmission_gate_5/in" 19049 6622.62 7132 -1590 ndif 0 0 0 0 0 0 0 0 69960 3440 180840 6800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134640 9280 1232334 48650 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_5/in" "bias_a"
+node "transmission_gate_5/out" 21192 11542.8 -1868 2010 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 759758 34528 273856 9454 6130856 42030 0 0 0 0 0 0
+node "transmission_gate_5/en_b" 17710 2036.01 7036 4526 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501048 26412 0 0 40392 3600 81276 5310 320640 12600 239896 7606 0 0 0 0 0 0
+equiv "transmission_gate_5/en_b" "p2_b"
+node "transmission_gate_6/in" 21189 6836.11 -1868 7410 ndif 0 0 0 0 0 0 0 0 76108 3768 196732 7464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148104 10208 894660 38314 211072 6852 22063 840 1754448 13134 0 0 0 0
+node "transmission_gate_6/out" 23296 12236.6 -1960 -1590 ndif 0 0 0 0 0 0 0 0 82256 4096 212624 8128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 161568 11136 1169008 44308 818112 26206 89547 3412 3713264 32910 0 0 0 0
+equiv "transmission_gate_6/out" "op"
+node "transmission_gate_6/en_b" 17711 2221.05 -1964 4526 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501048 26412 0 0 40392 3600 81276 5310 337332 13242 240216 7616 0 0 0 0 0 0
+equiv "transmission_gate_6/en_b" "p2_b"
+node "transmission_gate_2/VDD" 15156 3293.32 6902 -1336 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_2/VDD" "VDD"
+node "transmission_gate_11/VDD" 15156 3293.04 -2098 -1336 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_11/VDD" "VDD"
+node "transmission_gate_0/VDD" 15156 3293.32 6902 464 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_0/VDD" "VDD"
+node "transmission_gate_10/VDD" 15156 3290.21 -2098 464 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_10/VDD" "VDD"
+node "transmission_gate_1/VDD" 15156 3293.32 6902 2264 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_1/VDD" "VDD"
+node "transmission_gate_9/VDD" 15156 3286.56 -2098 2264 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_9/VDD" "VDD"
+node "transmission_gate_3/VDD" 15156 3293.32 6902 4064 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_3/VDD" "VDD"
+node "transmission_gate_8/VDD" 15156 3290.21 -2098 4064 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_8/VDD" "VDD"
+node "transmission_gate_4/VDD" 15156 3293.32 6902 5864 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_4/VDD" "VDD"
+node "transmission_gate_7/VDD" 15156 3293.04 -2098 5864 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_7/VDD" "VDD"
+node "transmission_gate_5/VDD" 15156 3195.72 6902 7664 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_5/VDD" "VDD"
+node "transmission_gate_6/VDD" 15156 3195.72 -2098 7664 nw 0 0 0 0 841100 3888 0 0 117776 6928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117776 6928 26496 1244 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_6/VDD" "VDD"
+substrate "transmission_gate_5/VSS" 0 0 -2062 -1764 ppd 0 0 0 0 0 0 0 0 0 0 1261536 74208 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1261536 74208 211968 10320 0 0 0 0 0 0 0 0 0 0
+equiv "transmission_gate_5/VSS" "VSS"
+cap "m3_n1800_5400#" "m3_n1800_7200#" 101.775
+cap "transmission_gate_6/en" "transmission_gate_6/in" 1285.18
+cap "m3_n1800_7200#" "transmission_gate_6/out" 931.936
+cap "m3_n1800_1800#" "m3_n1800_3600#" 101.775
+cap "transmission_gate_8/VDD" "m3_n1800_3600#" 325.454
+cap "transmission_gate_1/en" "transmission_gate_0/VDD" 67.023
+cap "transmission_gate_1/en" "transmission_gate_4/in" 2726.39
+cap "m3_0_n1800#" "transmission_gate_6/out" 20.6736
+cap "transmission_gate_7/out" "transmission_gate_9/en_b" 536.059
+cap "m3_0_n1800#" "c1_100_n1700#" 2597.94
+cap "transmission_gate_7/out" "transmission_gate_4/out" 2901.09
+cap "transmission_gate_5/en_b" "m3_7200_7200#" 948.554
+cap "transmission_gate_5/en_b" "transmission_gate_4/VDD" 1212.09
+cap "m3_n1800_7200#" "m3_0_7200#" 101.704
+cap "transmission_gate_7/out" "transmission_gate_9/en" 780.462
+cap "m3_3600_n1800#" "m3_5400_n1800#" 101.704
+cap "m3_5400_7200#" "m3_3600_7200#" 101.704
+cap "transmission_gate_4/in" "m3_7200_3600#" 1040.88
+cap "transmission_gate_7/in" "transmission_gate_4/in" 6789.9
+cap "transmission_gate_7/in" "transmission_gate_0/VDD" 1236.36
+cap "transmission_gate_8/out" "transmission_gate_9/VDD" 1322.55
+cap "transmission_gate_8/VDD" "transmission_gate_6/en_b" 1275.21
+cap "m3_n1800_1800#" "transmission_gate_5/out" 907.847
+cap "transmission_gate_8/VDD" "transmission_gate_5/out" 3.39757
+cap "transmission_gate_6/VDD" "transmission_gate_6/out" 1264.84
+cap "c1_7300_7300#" "c1_5500_7300#" 56.6863
+cap "transmission_gate_1/en" "transmission_gate_1/VDD" 46.1705
+cap "transmission_gate_8/out" "transmission_gate_8/in" 14692.3
+cap "transmission_gate_6/en" "transmission_gate_9/VDD" 20.8525
+cap "transmission_gate_4/in" "transmission_gate_5/en_b" 2538.15
+cap "transmission_gate_1/en_b" "m3_7200_n1800#" 762.434
+cap "m3_1800_7200#" "m3_3600_7200#" 101.704
+cap "transmission_gate_1/en" "transmission_gate_6/in" 565.954
+cap "transmission_gate_7/in" "transmission_gate_6/en_b" 1192.15
+cap "transmission_gate_7/in" "transmission_gate_5/out" 24.3858
+cap "transmission_gate_4/out" "transmission_gate_5/en" 586.733
+cap "transmission_gate_8/in" "m3_7200_n1800#" 684.975
+cap "transmission_gate_4/out" "c1_n1700_100#" 56.6863
+cap "m3_n1800_5400#" "c1_n1700_5500#" 2677.21
+cap "transmission_gate_7/in" "transmission_gate_1/VDD" 4.07709
+cap "transmission_gate_7/out" "transmission_gate_6/VDD" 4.07709
+cap "transmission_gate_9/en_b" "transmission_gate_3/out" 1241.44
+cap "transmission_gate_6/en" "transmission_gate_8/in" 1299.47
+cap "c1_7300_3700#" "c1_7300_5500#" 56.6863
+cap "transmission_gate_8/out" "m3_7200_1800#" 101.704
+cap "transmission_gate_7/in" "c1_7300_100#" 59.3684
+cap "transmission_gate_4/out" "transmission_gate_3/out" 371.057
+cap "c1_7300_1900#" "c1_7300_100#" 56.6863
+cap "m3_1800_7200#" "transmission_gate_6/out" 565.166
+cap "m3_7200_3600#" "transmission_gate_3/VDD" 336.381
+cap "transmission_gate_5/out" "transmission_gate_5/en_b" 451.905
+cap "transmission_gate_7/in" "transmission_gate_6/in" 448.202
+cap "transmission_gate_9/en" "transmission_gate_3/out" 1299.41
+cap "c1_3700_n1700#" "transmission_gate_6/out" 56.6863
+cap "m3_7200_n1800#" "c1_7300_n1700#" 2743.95
+cap "m3_0_7200#" "m3_1800_7200#" 101.704
+cap "m3_n1800_1800#" "transmission_gate_9/VDD" 327.384
+cap "transmission_gate_8/VDD" "transmission_gate_9/VDD" 29.3868
+cap "transmission_gate_5/en_b" "transmission_gate_3/VDD" 1203.71
+cap "c1_3700_7300#" "c1_5500_7300#" 56.6863
+cap "c1_1900_7300#" "transmission_gate_6/out" 59.2637
+cap "transmission_gate_1/en" "transmission_gate_1/en_b" 1657.7
+cap "transmission_gate_5/en" "transmission_gate_5/VDD" 46.1705
+cap "transmission_gate_8/VDD" "transmission_gate_8/in" 1117.3
+cap "transmission_gate_7/VDD" "transmission_gate_6/en_b" 1287.4
+cap "transmission_gate_1/en" "transmission_gate_8/in" 586.733
+cap "transmission_gate_7/in" "transmission_gate_1/en_b" 451.905
+cap "transmission_gate_10/VDD" "transmission_gate_5/out" 11.9179
+cap "transmission_gate_8/out" "m3_1800_n1800#" 101.775
+cap "m3_n1800_0#" "transmission_gate_5/out" 101.704
+cap "transmission_gate_4/out" "transmission_gate_9/en_b" 1179.15
+cap "c1_3700_n1700#" "c1_1900_n1700#" 56.6863
+cap "transmission_gate_6/in" "transmission_gate_7/VDD" 11.9179
+cap "transmission_gate_9/en" "transmission_gate_9/en_b" 1689.96
+cap "m3_n1800_5400#" "m3_n1800_3600#" 101.775
+cap "transmission_gate_7/in" "transmission_gate_8/in" 7017.59
+cap "transmission_gate_1/en" "m3_7200_1800#" 757.59
+cap "transmission_gate_4/out" "transmission_gate_9/en" 1317.59
+cap "transmission_gate_1/en_b" "transmission_gate_5/en_b" 3.63507
+cap "transmission_gate_8/out" "transmission_gate_6/en" 1107.92
+cap "m3_7200_3600#" "m3_7200_1800#" 101.775
+cap "transmission_gate_5/en" "transmission_gate_5/in" 1349.57
+cap "transmission_gate_10/VDD" "transmission_gate_11/VDD" 29.3868
+cap "transmission_gate_4/out" "m3_0_n1800#" 529.337
+cap "m3_7200_5400#" "transmission_gate_5/en" 985.962
+cap "m3_n1800_5400#" "transmission_gate_6/en_b" 829.632
+cap "c1_n1700_5500#" "c1_n1700_3700#" 56.6863
+cap "transmission_gate_6/out" "transmission_gate_6/en_b" 596.459
+cap "m3_7200_1800#" "c1_7300_1900#" 2677.02
+cap "transmission_gate_5/out" "transmission_gate_6/out" 656.619
+cap "transmission_gate_5/in" "transmission_gate_3/out" 54.0628
+cap "c1_7300_n1700#" "c1_5500_n1700#" 56.6863
+cap "c1_1900_7300#" "c1_100_7300#" 56.6863
+cap "transmission_gate_5/en" "m3_7200_7200#" 744.311
+cap "transmission_gate_5/en" "transmission_gate_4/VDD" 67.023
+cap "m3_n1800_n1800#" "transmission_gate_11/VDD" 284.025
+cap "transmission_gate_10/VDD" "transmission_gate_9/VDD" 29.3868
+cap "transmission_gate_6/in" "transmission_gate_6/out" 7282.69
+cap "transmission_gate_4/out" "transmission_gate_5/VDD" 4.07709
+cap "m3_n1800_1800#" "transmission_gate_8/out" 999.812
+cap "transmission_gate_8/in" "transmission_gate_7/VDD" 3.39757
+cap "transmission_gate_8/VDD" "transmission_gate_8/out" 1182.09
+cap "transmission_gate_3/out" "transmission_gate_4/VDD" 4.07709
+cap "transmission_gate_7/out" "transmission_gate_6/en_b" 528.44
+cap "c1_3700_n1700#" "m3_3600_n1800#" 2677.02
+cap "transmission_gate_7/out" "transmission_gate_5/out" 1211.66
+cap "m3_n1800_7200#" "transmission_gate_6/VDD" 351.359
+cap "transmission_gate_5/in" "transmission_gate_2/VDD" 1116.33
+cap "transmission_gate_11/VDD" "transmission_gate_6/out" 1216.83
+cap "transmission_gate_6/in" "m3_0_7200#" 393.267
+cap "transmission_gate_4/in" "transmission_gate_5/en" 2821.93
+cap "transmission_gate_8/VDD" "transmission_gate_6/en" 67.023
+cap "c1_3700_7300#" "m3_3600_7200#" 2677.21
+cap "m3_7200_3600#" "transmission_gate_8/out" 101.704
+cap "transmission_gate_1/en" "m3_7200_n1800#" 992.256
+cap "transmission_gate_7/out" "transmission_gate_6/in" 396.13
+cap "m3_7200_0#" "transmission_gate_4/in" 1025.88
+cap "m3_7200_0#" "transmission_gate_0/VDD" 332.861
+cap "transmission_gate_7/in" "transmission_gate_8/out" 69.912
+cap "transmission_gate_4/in" "transmission_gate_3/out" 6869.64
+cap "transmission_gate_4/out" "transmission_gate_5/in" 85.8118
+cap "transmission_gate_9/VDD" "transmission_gate_6/out" 15.7323
+cap "transmission_gate_7/out" "transmission_gate_11/VDD" 15.863
+cap "m3_n1800_3600#" "c1_n1700_3700#" 2677.21
+cap "m3_7200_5400#" "transmission_gate_4/out" 775.496
+cap "transmission_gate_5/en" "transmission_gate_5/out" 565.954
+cap "transmission_gate_7/in" "transmission_gate_6/en" 1297.59
+cap "m3_n1800_5400#" "transmission_gate_8/in" 101.704
+cap "transmission_gate_8/in" "transmission_gate_6/out" 856.152
+cap "transmission_gate_1/VDD" "transmission_gate_5/en" 20.8525
+cap "m3_7200_0#" "c1_7300_100#" 2671.19
+cap "transmission_gate_5/out" "transmission_gate_3/out" 8252.04
+cap "transmission_gate_0/VDD" "transmission_gate_2/VDD" 29.3868
+cap "transmission_gate_4/in" "transmission_gate_2/VDD" 11.9179
+cap "transmission_gate_5/en" "transmission_gate_6/in" 20.7794
+cap "transmission_gate_1/VDD" "transmission_gate_3/out" 15.863
+cap "transmission_gate_5/en" "transmission_gate_3/VDD" 67.023
+cap "transmission_gate_4/out" "transmission_gate_4/VDD" 1220.32
+cap "m3_0_7200#" "transmission_gate_8/in" 101.775
+cap "transmission_gate_7/out" "transmission_gate_9/VDD" 32.6833
+cap "transmission_gate_7/out" "c1_3700_7300#" 56.6863
+cap "transmission_gate_4/out" "c1_7300_5500#" 59.4046
+cap "transmission_gate_6/in" "transmission_gate_3/out" 757.599
+cap "transmission_gate_3/out" "transmission_gate_3/VDD" 1233.68
+cap "transmission_gate_7/out" "transmission_gate_8/in" 951.011
+cap "transmission_gate_8/out" "transmission_gate_7/VDD" 4.07709
+cap "transmission_gate_3/out" "transmission_gate_11/VDD" 11.9179
+cap "transmission_gate_10/VDD" "transmission_gate_8/out" 15.863
+cap "transmission_gate_7/in" "transmission_gate_8/VDD" 11.9179
+cap "transmission_gate_5/in" "transmission_gate_5/VDD" 1186.04
+cap "transmission_gate_4/out" "transmission_gate_4/in" 6760.3
+cap "transmission_gate_7/in" "transmission_gate_1/en" 586.733
+cap "transmission_gate_6/en" "transmission_gate_7/VDD" 67.023
+cap "m3_n1800_1800#" "c1_n1700_1900#" 2677.21
+cap "transmission_gate_1/en_b" "transmission_gate_5/en" 118.474
+cap "transmission_gate_9/en_b" "transmission_gate_6/en_b" 3.63507
+cap "transmission_gate_8/out" "m3_3600_7200#" 101.775
+cap "transmission_gate_5/VDD" "m3_7200_7200#" 354.783
+cap "transmission_gate_9/en_b" "transmission_gate_5/out" 1192.14
+cap "transmission_gate_5/VDD" "transmission_gate_4/VDD" 29.3868
+cap "m3_7200_0#" "transmission_gate_1/en_b" 915.139
+cap "m3_5400_7200#" "m3_7200_7200#" 101.704
+cap "transmission_gate_3/out" "transmission_gate_9/VDD" 3.39757
+cap "transmission_gate_4/out" "transmission_gate_5/out" 9063.91
+cap "transmission_gate_1/en_b" "transmission_gate_3/out" 27.4225
+cap "transmission_gate_9/en" "transmission_gate_5/out" 1304.72
+cap "c1_n1700_7300#" "c1_100_7300#" 56.6863
+cap "transmission_gate_7/in" "c1_5500_n1700#" 56.6863
+cap "m3_7200_0#" "transmission_gate_8/in" 101.704
+cap "m3_7200_3600#" "transmission_gate_5/en_b" 812.893
+cap "transmission_gate_8/in" "m3_5400_n1800#" 516.015
+cap "transmission_gate_8/out" "transmission_gate_6/out" 16078.1
+cap "transmission_gate_8/in" "transmission_gate_3/out" 228.429
+cap "m3_n1800_7200#" "transmission_gate_6/en_b" 901.795
+cap "c1_1900_7300#" "m3_1800_7200#" 2677.21
+cap "transmission_gate_4/out" "transmission_gate_6/in" 463.162
+cap "transmission_gate_4/out" "transmission_gate_3/VDD" 15.863
+cap "m3_n1800_n1800#" "c1_n1700_n1700#" 2744.14
+cap "transmission_gate_5/out" "m3_0_n1800#" 101.775
+cap "transmission_gate_4/in" "transmission_gate_5/VDD" 3.39757
+cap "transmission_gate_8/VDD" "transmission_gate_7/VDD" 29.3868
+cap "m3_n1800_5400#" "transmission_gate_6/en" 761.291
+cap "transmission_gate_9/en_b" "transmission_gate_11/VDD" 1234.86
+cap "m3_7200_0#" "m3_7200_1800#" 101.775
+cap "transmission_gate_6/en" "transmission_gate_6/out" 606.133
+cap "transmission_gate_4/out" "transmission_gate_11/VDD" 1094.57
+cap "transmission_gate_1/en_b" "transmission_gate_2/VDD" 1157.67
+cap "transmission_gate_9/en" "transmission_gate_11/VDD" 67.023
+cap "transmission_gate_5/in" "m3_7200_7200#" 989.365
+cap "m3_n1800_7200#" "transmission_gate_6/in" 951.17
+cap "m3_n1800_0#" "m3_n1800_1800#" 101.775
+cap "c1_n1700_n1700#" "transmission_gate_6/out" 51.2034
+cap "transmission_gate_5/in" "transmission_gate_4/VDD" 11.9179
+cap "m3_7200_5400#" "m3_7200_7200#" 101.775
+cap "transmission_gate_6/VDD" "transmission_gate_6/en_b" 1369.64
+cap "c1_n1700_n1700#" "c1_100_n1700#" 56.6863
+cap "m3_7200_5400#" "transmission_gate_4/VDD" 330.911
+cap "transmission_gate_7/out" "transmission_gate_8/out" 13798.2
+cap "transmission_gate_8/in" "transmission_gate_2/VDD" 1169.2
+cap "m3_1800_n1800#" "c1_1900_n1700#" 2677.02
+cap "m3_7200_3600#" "c1_7300_3700#" 2677.02
+cap "transmission_gate_7/in" "transmission_gate_7/VDD" 1117.9
+cap "m3_7200_5400#" "c1_7300_5500#" 2671.22
+cap "transmission_gate_5/out" "transmission_gate_5/VDD" 1157.24
+cap "m3_5400_7200#" "transmission_gate_5/out" 361.592
+cap "transmission_gate_9/en_b" "transmission_gate_9/VDD" 1279.91
+cap "c1_7300_3700#" "c1_7300_1900#" 56.6863
+cap "transmission_gate_6/in" "transmission_gate_6/VDD" 1186
+cap "transmission_gate_7/out" "transmission_gate_6/en" 839.444
+cap "transmission_gate_9/en" "transmission_gate_9/VDD" 46.1705
+cap "transmission_gate_0/VDD" "transmission_gate_5/in" 3.39757
+cap "transmission_gate_4/in" "transmission_gate_5/in" 910.78
+cap "transmission_gate_9/en_b" "transmission_gate_8/in" 18.2326
+cap "m3_7200_5400#" "transmission_gate_4/in" 1011.68
+cap "transmission_gate_4/out" "transmission_gate_8/in" 261.994
+cap "transmission_gate_8/VDD" "transmission_gate_6/out" 15.7323
+cap "m3_n1800_7200#" "c1_n1700_7300#" 2744.33
+cap "transmission_gate_5/out" "transmission_gate_5/in" 6699.87
+cap "transmission_gate_4/in" "transmission_gate_4/VDD" 1142.43
+cap "transmission_gate_8/out" "transmission_gate_3/out" 1220.29
+cap "transmission_gate_7/in" "m3_n1800_5400#" 944.836
+cap "m3_7200_5400#" "transmission_gate_5/out" 101.704
+cap "transmission_gate_6/in" "m3_1800_7200#" 337.931
+cap "transmission_gate_7/in" "transmission_gate_6/out" 2623.97
+cap "m3_7200_n1800#" "m3_5400_n1800#" 101.704
+cap "m3_7200_0#" "m3_7200_n1800#" 101.775
+cap "transmission_gate_8/VDD" "transmission_gate_7/out" 44.4692
+cap "c1_n1700_100#" "c1_n1700_n1700#" 56.6863
+cap "m3_1800_n1800#" "m3_3600_n1800#" 101.704
+cap "transmission_gate_6/in" "transmission_gate_5/in" 54.0628
+cap "transmission_gate_8/out" "m3_3600_n1800#" 101.775
+cap "transmission_gate_5/out" "m3_7200_7200#" 700
+cap "transmission_gate_6/out" "c1_n1700_1900#" 68.2115
+cap "m3_7200_7200#" "c1_7300_7300#" 2744.14
+cap "transmission_gate_5/out" "transmission_gate_4/VDD" 15.863
+cap "transmission_gate_4/in" "transmission_gate_0/VDD" 1163.32
+cap "m3_n1800_0#" "transmission_gate_10/VDD" 325.695
+cap "c1_7300_7300#" "c1_7300_5500#" 56.6863
+cap "transmission_gate_7/in" "transmission_gate_7/out" 9806.8
+cap "transmission_gate_7/out" "c1_7300_1900#" 56.6863
+cap "transmission_gate_3/VDD" "transmission_gate_4/VDD" 29.3868
+cap "m3_7200_n1800#" "transmission_gate_2/VDD" 291.277
+cap "c1_n1700_7300#" "c1_n1700_5500#" 56.6863
+cap "transmission_gate_4/in" "transmission_gate_5/out" 35.372
+cap "m3_n1800_3600#" "transmission_gate_6/en_b" 763.647
+cap "m3_n1800_5400#" "transmission_gate_7/VDD" 325.168
+cap "transmission_gate_9/en_b" "transmission_gate_8/out" 714.604
+cap "transmission_gate_1/en" "transmission_gate_5/en" 3.22785
+cap "m3_n1800_0#" "m3_n1800_n1800#" 101.775
+cap "transmission_gate_1/VDD" "transmission_gate_0/VDD" 29.3868
+cap "transmission_gate_4/in" "transmission_gate_1/VDD" 1166.72
+cap "transmission_gate_4/out" "transmission_gate_8/out" 95.9966
+cap "transmission_gate_7/VDD" "transmission_gate_6/out" 31.5954
+cap "transmission_gate_1/en_b" "transmission_gate_5/in" 1232.59
+cap "m3_7200_0#" "transmission_gate_1/en" 985.445
+cap "c1_7300_3700#" "transmission_gate_6/out" 56.6863
+cap "transmission_gate_9/en" "transmission_gate_8/out" 600.36
+cap "transmission_gate_10/VDD" "transmission_gate_6/out" 19.8094
+cap "transmission_gate_0/VDD" "transmission_gate_6/in" 15.863
+cap "transmission_gate_4/in" "transmission_gate_6/in" 6869.64
+cap "m3_7200_3600#" "transmission_gate_5/en" 962.42
+cap "transmission_gate_9/en_b" "transmission_gate_6/en" 122.939
+cap "transmission_gate_8/in" "transmission_gate_5/in" 6714.32
+cap "transmission_gate_4/in" "transmission_gate_3/VDD" 1166.72
+cap "c1_3700_7300#" "c1_1900_7300#" 56.6863
+cap "m3_0_n1800#" "m3_1800_n1800#" 101.704
+cap "m3_7200_0#" "transmission_gate_7/in" 787.716
+cap "transmission_gate_9/en" "transmission_gate_6/en" 3.22785
+cap "transmission_gate_7/in" "c1_100_7300#" 56.6863
+cap "m3_7200_3600#" "transmission_gate_3/out" 792.006
+cap "transmission_gate_7/in" "transmission_gate_3/out" 285.216
+cap "transmission_gate_7/out" "transmission_gate_7/VDD" 1187.68
+cap "transmission_gate_5/en" "transmission_gate_5/en_b" 1657.7
+cap "c1_5500_n1700#" "m3_5400_n1800#" 2677.02
+cap "transmission_gate_6/in" "transmission_gate_6/en_b" 1208.87
+cap "transmission_gate_5/out" "transmission_gate_6/in" 87.8366
+cap "m3_n1800_n1800#" "transmission_gate_6/out" 786.973
+cap "m3_n1800_7200#" "transmission_gate_6/en" 704.175
+cap "c1_n1700_100#" "c1_n1700_1900#" 56.6863
+cap "transmission_gate_1/en" "transmission_gate_2/VDD" 67.023
+cap "transmission_gate_7/out" "transmission_gate_10/VDD" 1251.69
+cap "m3_n1800_0#" "transmission_gate_7/out" 964.352
+cap "transmission_gate_1/VDD" "transmission_gate_6/in" 1233.13
+cap "transmission_gate_1/VDD" "transmission_gate_3/VDD" 29.3868
+cap "transmission_gate_5/en_b" "transmission_gate_3/out" 424.482
+cap "c1_n1700_1900#" "c1_n1700_3700#" 56.6863
+cap "transmission_gate_4/in" "transmission_gate_1/en_b" 2668.19
+cap "transmission_gate_0/VDD" "transmission_gate_1/en_b" 1212.09
+cap "transmission_gate_6/out" "c1_100_n1700#" 48.4029
+cap "transmission_gate_7/in" "transmission_gate_2/VDD" 15.863
+cap "transmission_gate_6/in" "transmission_gate_3/VDD" 4.07709
+cap "transmission_gate_8/VDD" "transmission_gate_9/en_b" 8.37462
+cap "m3_n1800_1800#" "transmission_gate_9/en_b" 836.091
+cap "transmission_gate_4/out" "c1_5500_7300#" 56.6863
+cap "transmission_gate_6/en" "transmission_gate_6/VDD" 46.1705
+cap "m3_0_7200#" "transmission_gate_6/out" 650.914
+cap "transmission_gate_4/in" "transmission_gate_8/in" 31.749
+cap "transmission_gate_0/VDD" "transmission_gate_8/in" 4.07709
+cap "transmission_gate_9/en" "m3_n1800_1800#" 706.371
+cap "m3_n1800_3600#" "transmission_gate_8/in" 907.801
+cap "m3_n1800_5400#" "transmission_gate_7/out" 873.276
+cap "transmission_gate_5/out" "transmission_gate_9/VDD" 1117.32
+cap "transmission_gate_7/out" "transmission_gate_6/out" 1776.63
+cap "m3_n1800_0#" "c1_n1700_100#" 2677.21
+cap "transmission_gate_8/out" "m3_1800_7200#" 101.775
+cap "transmission_gate_7/in" "transmission_gate_4/out" 606.615
+cap "transmission_gate_4/in" "m3_7200_1800#" 1040.46
+cap "transmission_gate_1/VDD" "transmission_gate_1/en_b" 1211.92
+cap "transmission_gate_10/VDD" "transmission_gate_3/out" 1140.66
+cap "transmission_gate_8/in" "transmission_gate_6/en_b" 1173.92
+cap "c1_1900_n1700#" "c1_100_n1700#" 56.6863
+cap "m3_n1800_0#" "transmission_gate_3/out" 924.176
+cap "transmission_gate_5/out" "transmission_gate_8/in" 3093.97
+cap "transmission_gate_1/en_b" "transmission_gate_6/in" 455.838
+cap "transmission_gate_1/en_b" "transmission_gate_3/VDD" 8.37462
+cap "transmission_gate_4/out" "transmission_gate_5/en_b" 451.905
+cap "transmission_gate_5/in" "m3_7200_n1800#" 949.222
+cap "transmission_gate_6/in" "transmission_gate_8/in" 6072.32
+cap "m3_5400_7200#" "c1_5500_7300#" 2677.36
+cap "transmission_gate_7/out" "c1_1900_n1700#" 56.6863
+cap "transmission_gate_1/VDD" "m3_7200_1800#" 332.185
+cap "c1_n1700_100#" "transmission_gate_6/out" 125.393
+cap "c1_7300_n1700#" "c1_7300_100#" 56.6863
+cap "transmission_gate_3/out" "transmission_gate_6/out" 448.313
+cap "transmission_gate_6/in" "m3_7200_1800#" 791.084
+cap "transmission_gate_7/in" "transmission_gate_6/VDD" 3.39757
+cap "transmission_gate_10/VDD" "transmission_gate_9/en_b" 1286.46
+cap "m3_0_7200#" "c1_100_7300#" 2677.21
+cap "m3_n1800_0#" "transmission_gate_9/en_b" 829.645
+cap "transmission_gate_4/out" "transmission_gate_10/VDD" 3.39757
+cap "m3_n1800_3600#" "transmission_gate_8/out" 972.684
+cap "transmission_gate_9/en" "transmission_gate_10/VDD" 67.023
+cap "transmission_gate_8/in" "transmission_gate_9/VDD" 11.9179
+cap "transmission_gate_1/en_b" "transmission_gate_8/in" 424.482
+cap "transmission_gate_5/en_b" "transmission_gate_5/VDD" 1282.48
+cap "m3_n1800_0#" "transmission_gate_9/en" 771.07
+cap "transmission_gate_1/en" "transmission_gate_5/in" 1365.97
+cap "transmission_gate_7/out" "transmission_gate_3/out" 7163.64
+cap "transmission_gate_7/in" "c1_n1700_5500#" 65.5099
+cap "m3_n1800_3600#" "transmission_gate_6/en" 748.872
+cap "transmission_gate_7/out" "c1_n1700_3700#" 56.6863
+cap "transmission_gate_8/out" "transmission_gate_6/en_b" 449.539
+cap "transmission_gate_8/out" "transmission_gate_5/out" 12881.8
+cap "m3_n1800_n1800#" "transmission_gate_9/en_b" 756.882
+cap "transmission_gate_4/out" "m3_n1800_n1800#" 884.906
+cap "transmission_gate_1/en_b" "m3_7200_1800#" 890.825
+cap "m3_7200_5400#" "m3_7200_3600#" 101.775
+cap "transmission_gate_7/in" "transmission_gate_5/in" 89.4348
+cap "m3_n1800_n1800#" "transmission_gate_9/en" 815.096
+cap "transmission_gate_6/VDD" "transmission_gate_7/VDD" 29.3868
+cap "transmission_gate_9/en_b" "transmission_gate_6/out" 528.602
+cap "transmission_gate_6/en" "transmission_gate_6/en_b" 1689.96
+cap "transmission_gate_6/en" "transmission_gate_5/out" 18.0031
+cap "transmission_gate_8/out" "transmission_gate_6/in" 1362.58
+cap "transmission_gate_4/out" "transmission_gate_6/out" 7770.66
+cap "transmission_gate_9/en" "transmission_gate_6/out" 667.488
+cap "transmission_gate_5/en_b" "transmission_gate_5/in" 1253.51
+cap "transmission_gate_4/out" "c1_100_n1700#" 60.4238
+cap "transmission_gate_5/en" "transmission_gate_3/out" 590.683
+cap "c1_5500_n1700#" "c1_3700_n1700#" 56.6863
+cap "m3_n1800_n1800#" "m3_0_n1800#" 101.704
+cap "m3_7200_5400#" "transmission_gate_5/en_b" 906.815
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 -1700 7301 -1699 w=960 l=960 "None" "c1_7300_n1700#" 3520 0 "m3_7200_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 -1700 5501 -1699 w=960 l=960 "None" "c1_5500_n1700#" 3520 0 "m3_5400_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 -1700 3701 -1699 w=960 l=960 "None" "c1_3700_n1700#" 3520 0 "m3_3600_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 -1700 1901 -1699 w=960 l=960 "None" "c1_1900_n1700#" 3520 0 "m3_1800_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 -1700 101 -1699 w=960 l=960 "None" "c1_100_n1700#" 3520 0 "m3_0_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 -1700 -1699 -1699 w=960 l=960 "None" "c1_n1700_n1700#" 3520 0 "m3_n1800_n1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 100 7301 101 w=960 l=960 "None" "c1_7300_100#" 3520 0 "m3_7200_0#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 100 5501 101 w=960 l=960 "None" "transmission_gate_7/in" 3520 0 "transmission_gate_8/in" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 100 3701 101 w=960 l=960 "None" "transmission_gate_6/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 100 1901 101 w=960 l=960 "None" "transmission_gate_7/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 100 101 101 w=960 l=960 "None" "transmission_gate_4/out" 3520 0 "transmission_gate_5/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 100 -1699 101 w=960 l=960 "None" "c1_n1700_100#" 3520 0 "m3_n1800_0#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 1900 7301 1901 w=960 l=960 "None" "c1_7300_1900#" 3520 0 "m3_7200_1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 1900 5501 1901 w=960 l=960 "None" "transmission_gate_7/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 1900 3701 1901 w=960 l=960 "None" "transmission_gate_6/in" 3520 0 "transmission_gate_8/in" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 1900 1901 1901 w=960 l=960 "None" "transmission_gate_3/out" 3520 0 "transmission_gate_5/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 1900 101 1901 w=960 l=960 "None" "transmission_gate_6/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 1900 -1699 1901 w=960 l=960 "None" "c1_n1700_1900#" 3520 0 "m3_n1800_1800#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 3700 7301 3701 w=960 l=960 "None" "c1_7300_3700#" 3520 0 "m3_7200_3600#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 3700 5501 3701 w=960 l=960 "None" "transmission_gate_6/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 3700 3701 3701 w=960 l=960 "None" "transmission_gate_3/out" 3520 0 "transmission_gate_5/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 3700 1901 3701 w=960 l=960 "None" "transmission_gate_6/in" 3520 0 "transmission_gate_8/in" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 3700 101 3701 w=960 l=960 "None" "transmission_gate_7/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 3700 -1699 3701 w=960 l=960 "None" "c1_n1700_3700#" 3520 0 "m3_n1800_3600#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 5500 7301 5501 w=960 l=960 "None" "c1_7300_5500#" 3520 0 "m3_7200_5400#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 5500 5501 5501 w=960 l=960 "None" "transmission_gate_4/out" 3520 0 "transmission_gate_5/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 5500 3701 5501 w=960 l=960 "None" "transmission_gate_7/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 5500 1901 5501 w=960 l=960 "None" "transmission_gate_6/out" 3520 0 "transmission_gate_8/out" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 5500 101 5501 w=960 l=960 "None" "transmission_gate_7/in" 3520 0 "transmission_gate_8/in" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 5500 -1699 5501 w=960 l=960 "None" "c1_n1700_5500#" 3520 0 "m3_n1800_5400#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7300 7300 7301 7301 w=960 l=960 "None" "c1_7300_7300#" 3520 0 "m3_7200_7200#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5500 7300 5501 7301 w=960 l=960 "None" "c1_5500_7300#" 3520 0 "m3_5400_7200#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3700 7300 3701 7301 w=960 l=960 "None" "c1_3700_7300#" 3520 0 "m3_3600_7200#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1900 7300 1901 7301 w=960 l=960 "None" "c1_1900_7300#" 3520 0 "m3_1800_7200#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 100 7300 101 7301 w=960 l=960 "None" "c1_100_7300#" 3520 0 "m3_0_7200#" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1700 7300 -1699 7301 w=960 l=960 "None" "c1_n1700_7300#" 3520 0 "m3_n1800_7200#" 0 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 -1590 7967 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 -1590 7871 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 -1590 7775 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 -1590 7679 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 -1590 7583 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 -1590 7487 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 -1590 7391 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 -1590 7295 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 -1590 7199 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 -1590 7103 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 -1590 -1033 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 -1590 -1129 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 -1590 -1225 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 -1590 -1321 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 -1590 -1417 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 -1590 -1513 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 -1590 -1609 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 -1590 -1705 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 -1590 -1801 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 -1590 -1897 -1589 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 -1179 7967 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 -1179 7871 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 -1179 7775 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 -1179 7679 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 -1179 7583 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 -1179 7487 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 -1179 7391 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 -1179 7295 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 -1179 7199 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 -1179 7103 -1178 l=30 w=274 "transmission_gate_2/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 -1179 -1033 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 -1179 -1129 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 -1179 -1225 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 -1179 -1321 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 -1179 -1417 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 -1179 -1513 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 -1179 -1609 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 -1179 -1705 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 -1179 -1801 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 -1179 -1897 -1178 l=30 w=274 "transmission_gate_11/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 210 7967 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 210 7871 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 210 7775 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 210 7679 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 210 7583 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 210 7487 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 210 7391 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 210 7295 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 210 7199 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 210 7103 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 210 -1033 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 210 -1129 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 210 -1225 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 210 -1321 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 210 -1417 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 210 -1513 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 210 -1609 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 210 -1705 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 210 -1801 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 210 -1897 211 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 621 7967 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 621 7871 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 621 7775 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 621 7679 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 621 7583 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 621 7487 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 621 7391 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 621 7295 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 621 7199 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 621 7103 622 l=30 w=274 "transmission_gate_0/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 621 -1033 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 621 -1129 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 621 -1225 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 621 -1321 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 621 -1417 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 621 -1513 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 621 -1609 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 621 -1705 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 621 -1801 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 621 -1897 622 l=30 w=274 "transmission_gate_10/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 2010 7967 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 2010 7871 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 2010 7775 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 2010 7679 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 2010 7583 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 2010 7487 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 2010 7391 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 2010 7295 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 2010 7199 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 2010 7103 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_1/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 2010 -1033 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 2010 -1129 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 2010 -1225 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 2010 -1321 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 2010 -1417 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 2010 -1513 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 2010 -1609 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 2010 -1705 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 2010 -1801 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 2010 -1897 2011 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_9/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 2421 7967 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 2421 7871 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 2421 7775 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 2421 7679 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 2421 7583 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 2421 7487 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 2421 7391 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 2421 7295 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 2421 7199 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 2421 7103 2422 l=30 w=274 "transmission_gate_1/VDD" "transmission_gate_1/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 2421 -1033 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 2421 -1129 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 2421 -1225 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 2421 -1321 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 2421 -1417 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 2421 -1513 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 2421 -1609 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 2421 -1705 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 2421 -1801 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 2421 -1897 2422 l=30 w=274 "transmission_gate_9/VDD" "transmission_gate_9/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 3810 7967 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 3810 7871 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 3810 7775 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 3810 7679 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 3810 7583 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 3810 7487 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 3810 7391 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 3810 7295 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 3810 7199 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_3/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 3810 7103 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_3/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 3810 -1033 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 3810 -1129 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 3810 -1225 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 3810 -1321 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 3810 -1417 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 3810 -1513 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 3810 -1609 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 3810 -1705 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 3810 -1801 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/in" 106 0 "transmission_gate_8/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 3810 -1897 3811 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_8/out" 106 0 "transmission_gate_8/in" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 4221 7967 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 4221 7871 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 4221 7775 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 4221 7679 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 4221 7583 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 4221 7487 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 4221 7391 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 4221 7295 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 4221 7199 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_3/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 4221 7103 4222 l=30 w=274 "transmission_gate_3/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_3/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 4221 -1033 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 4221 -1129 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 4221 -1225 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 4221 -1321 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 4221 -1417 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 4221 -1513 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 4221 -1609 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 4221 -1705 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 4221 -1801 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/in" 274 0 "transmission_gate_8/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 4221 -1897 4222 l=30 w=274 "transmission_gate_8/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_8/out" 274 0 "transmission_gate_8/in" 274 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 5610 7967 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 5610 7871 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 5610 7775 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 5610 7679 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 5610 7583 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 5610 7487 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 5610 7391 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 5610 7295 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 5610 7199 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/in" 106 0 "transmission_gate_4/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 5610 7103 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_4/out" 106 0 "transmission_gate_4/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 5610 -1033 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 5610 -1129 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 5610 -1225 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 5610 -1321 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 5610 -1417 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 5610 -1513 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 5610 -1609 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 5610 -1705 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 5610 -1801 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/in" 106 0 "transmission_gate_7/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 5610 -1897 5611 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_7/out" 106 0 "transmission_gate_7/in" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 6021 7967 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 6021 7871 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 6021 7775 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 6021 7679 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 6021 7583 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 6021 7487 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 6021 7391 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 6021 7295 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 6021 7199 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/in" 274 0 "transmission_gate_4/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 6021 7103 6022 l=30 w=274 "transmission_gate_4/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_4/out" 274 0 "transmission_gate_4/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 6021 -1033 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 6021 -1129 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 6021 -1225 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 6021 -1321 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 6021 -1417 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 6021 -1513 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 6021 -1609 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 6021 -1705 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 6021 -1801 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/in" 274 0 "transmission_gate_7/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 6021 -1897 6022 l=30 w=274 "transmission_gate_7/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_7/out" 274 0 "transmission_gate_7/in" 274 0
+device msubckt sky130_fd_pr__nfet_01v8 7966 7410 7967 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7870 7410 7871 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7774 7410 7775 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7678 7410 7679 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7582 7410 7583 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7486 7410 7487 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7390 7410 7391 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7294 7410 7295 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7198 7410 7199 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/in" 106 0 "transmission_gate_5/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 7102 7410 7103 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_5/en" 60 0 "transmission_gate_5/out" 106 0 "transmission_gate_5/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1034 7410 -1033 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1130 7410 -1129 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1226 7410 -1225 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1322 7410 -1321 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1418 7410 -1417 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1514 7410 -1513 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1610 7410 -1609 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1706 7410 -1705 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1802 7410 -1801 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/in" 106 0 "transmission_gate_6/out" 106 0
+device msubckt sky130_fd_pr__nfet_01v8 -1898 7410 -1897 7411 l=30 w=106 "transmission_gate_5/VSS" "transmission_gate_6/en" 60 0 "transmission_gate_6/out" 106 0 "transmission_gate_6/in" 106 0
+device msubckt sky130_fd_pr__pfet_01v8 7966 7821 7967 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7870 7821 7871 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7774 7821 7775 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7678 7821 7679 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7582 7821 7583 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7486 7821 7487 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7390 7821 7391 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7294 7821 7295 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7198 7821 7199 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/in" 274 0 "transmission_gate_5/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 7102 7821 7103 7822 l=30 w=274 "transmission_gate_5/VDD" "transmission_gate_5/en_b" 60 0 "transmission_gate_5/out" 274 0 "transmission_gate_5/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1034 7821 -1033 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 7821 -1129 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1226 7821 -1225 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1322 7821 -1321 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1418 7821 -1417 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1514 7821 -1513 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1610 7821 -1609 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1706 7821 -1705 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_6/in" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1802 7821 -1801 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/in" 274 0 "transmission_gate_6/out" 274 0
+device msubckt sky130_fd_pr__pfet_01v8 -1898 7821 -1897 7822 l=30 w=274 "transmission_gate_6/VDD" "transmission_gate_6/en_b" 60 0 "transmission_gate_6/out" 274 0 "transmission_gate_6/in" 274 0
