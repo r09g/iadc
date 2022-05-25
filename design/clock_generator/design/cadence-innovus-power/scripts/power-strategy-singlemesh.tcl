@@ -52,9 +52,9 @@ set M1_route_pitchX [dbGet [dbGetLayerByZ 2].pitchX]
 # See: https://github.com/efabless/caravel_user_project/blob/main/openlane/user_project_wrapper/config.json
 
 set pmesh_bot_str_width [expr 3.1] 
-set pmesh_bot_str_pitch [expr 180]
+set pmesh_bot_str_pitch [expr 28]
 
-set pmesh_bot_str_intraset_spacing [expr 90]
+set pmesh_bot_str_intraset_spacing [expr 3.1]
 set pmesh_bot_str_interset_pitch   [expr $pmesh_bot_str_pitch]
 
 setViaGenMode -reset
@@ -79,4 +79,4 @@ addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
     -max_same_layer_jog_length $pmesh_bot_str_pitch             \
     -padcore_ring_bottom_layer_limit $pmesh_bot                 \
     -padcore_ring_top_layer_limit $pmesh_top                    \
-    -start [expr 170]
+    -start [expr 40]
