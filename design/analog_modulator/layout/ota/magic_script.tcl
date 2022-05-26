@@ -1,5 +1,5 @@
 set MGC_DESIGN_NAME "ota"
-set MGC_PORT_LIST {ip in phi1 phi1_b phi2 phi2_b op on i_bias cm}
+set MGC_PORT_LIST {ip in op on i_bias bias_e bias_a bias_b bias_c bias_d cmc}
 
 # flatten design and make ports
 
