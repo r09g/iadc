@@ -3303,5 +3303,15 @@ X3297 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u 
 X3298 p2 a_13765_n8669# VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X3299 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=1.05e+06u
 X3300 VDD a_13765_n5405# A_b VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+C0 sky130_fd_sc_hd__nand2_4_1/A VDD 13.21fF
+C1 sky130_fd_sc_hd__nand2_4_0/A VDD 12.78fF
+C2 sky130_fd_sc_hd__clkinv_1_5/A VDD 12.89fF
+C3 sky130_fd_sc_hd__nand2_4_3/A VDD 13.16fF
+C4 sky130_fd_sc_hd__clkinv_4_7/A VSS 12.47fF
+C5 sky130_fd_sc_hd__clkinv_1_3/A VSS 13.93fF
+C6 sky130_fd_sc_hd__clkinv_4_4/A VSS 13.93fF
+C7 Ad_b VSS 16.44fF
+C8 sky130_fd_sc_hd__clkinv_1_0/A VSS 13.40fF
+C9 VDD VSS 1347.57fF
 .ends
 

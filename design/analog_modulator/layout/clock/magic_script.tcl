@@ -42,7 +42,7 @@ ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_lvs.spi
 
 # pex extraction
 # 51.2 MHz corner
-ext2spice cthresh 3100
+ext2spice cthresh 10
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
 
 # unset variables
