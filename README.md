@@ -3,7 +3,7 @@ This is the EE372 VLSI Design Project at Stanford University. The chip is an inc
 
 
 Chip System-Level Block Diagram
-![sys_blk](./misc/system_block_diagram.PNG)
+![sys_blk](./misc/system_block_diagram.png)
 
 # Specifications
 | Specification | Value        |
