@@ -26,12 +26,14 @@ if {[catch {set PDK_ROOT [file nativename $env(PDK_ROOT)]}]} {
 
 # loading technology
 tech load $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech
+# tech load $PDK_ROOT/sky130A/libs.tech/magic/closed_sky130A.tech
 
 # load device generator
 source $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tcl
 
 # load bind keys (optional)
 # source $PDK_ROOT/sky130A/libs.tech/magic/sky130A-BindKeys
+source $env(DESIGN_DIR)/design/analog_modulator/layout/sky130A_BindKeys.tcl
 
 # set units to lambda grid 
 snap lambda
