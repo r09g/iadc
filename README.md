@@ -48,6 +48,11 @@ xschem <testbench_name>.sch
 ```
 Generate a netlist, run NGSPICE simulation, and view the waveforms by clicking the buttons on the top-right corner of the XSCHEM GUI.
 
+
+
+For post-layout simulation, this was done using Cadence Virtuoso and Spectre simulator with the closed-source S130 PDK. To run these simulations, the LVS extracted SPICE netlist and layout GDS need to be imported into Cadence Virtuoso. There are several changes that need to be performed to the netlist and layout. See `verification/post_layout_sim_readme.txt` for details.
+
+
 ### Digital
 
 To run the digital flow, create a virtual environment (only needs to be done once)

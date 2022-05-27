@@ -4,12 +4,12 @@ set MGC_PORT_LIST {en s0 in0 in1 out}
 # flatten design and make ports
 
 load "${MGC_DESIGN_NAME}.mag"
-box 0 0 0 0
-select
+# box 0 0 0 0
+# select
 
-flatten "${MGC_DESIGN_NAME}_flat"
+# flatten "${MGC_DESIGN_NAME}_flat"
 
-load "${MGC_DESIGN_NAME}_flat"
+# load "${MGC_DESIGN_NAME}_flat"
 box 0 0 0 0
 select
 
@@ -33,7 +33,7 @@ for {set i 0} {$i < 8} {incr i} {
     port class inout
 }
 
-save "${MGC_DESIGN_NAME}_flat.mag"
+# save "${MGC_DESIGN_NAME}_flat.mag"
 
 # lvs extraction
 extract all
@@ -45,7 +45,9 @@ ext2spice cthresh 0
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
 
 # output gds and lef
-# gds write "${MGC_DESIGN_NAME}.gds"
+select top cell
+expand
+gds write "${MGC_DESIGN_NAME}.gds"
 # lef write "${MGC_DESIGN_NAME}.lef"
 
 # unset variables

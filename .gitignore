@@ -5,3 +5,5 @@ design/clock_generator/design/__pycache__/*
 mflowgen/
 venv/
 *.raw
+*.ext
+*.out

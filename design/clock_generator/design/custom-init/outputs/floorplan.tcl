@@ -38,3 +38,5 @@ floorPlan -r $core_aspect_ratio $core_density_target \
 
 setFlipping s
 
+specifyNetWeight * 512
+

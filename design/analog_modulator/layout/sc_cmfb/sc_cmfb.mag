@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653460551
+timestamp 1653628873
 << metal1 >>
 rect -2068 8268 -2022 8360
 rect 6932 8182 6978 8360
@@ -1056,51 +1056,51 @@ rect -365 -1138 -364 -1074
 rect -300 -1138 -299 -1074
 rect -365 -1139 -299 -1138
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 51
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_1
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 1851
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_2
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 -1749
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_3
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 3651
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_4
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 5451
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_5
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 8143 0 1 7251
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_6
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 7251
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_7
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 5451
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_8
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 3651
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_9
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 1851
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_10
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 51
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_11
-timestamp 1653453365
+timestamp 1653475914
 transform -1 0 -857 0 1 -1749
 box -216 -51 1283 1063
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_0

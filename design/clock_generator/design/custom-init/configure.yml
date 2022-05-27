@@ -10,6 +10,6 @@ name: custom-init
 
 outputs:
   - floorplan.tcl
-  # - pin-assignments.tcl
+  - pin-assignments.tcl
   # - dont-use-cells.tcl
 

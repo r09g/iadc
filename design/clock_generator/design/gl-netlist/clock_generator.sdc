@@ -37,4 +37,4 @@ set_output_delay -clock ideal_clock  0 [get_ports {Bd_b} ]
 set_output_delay -clock ideal_clock  0 [get_ports {Bd} ]
 set_output_delay -clock ideal_clock  0 [get_ports {B_b} ]
 set_output_delay -clock ideal_clock  0 [get_ports {B} ]
-set_disable_timing
+set_disable_timing [get_cells {x195 x198 x117 x5}]
