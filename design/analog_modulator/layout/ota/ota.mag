@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653628873
+timestamp 1653641400
 << nwell >>
 rect -7664 -7309 3823 -1120
 << pwell >>
@@ -7384,7 +7384,6 @@ flabel metal2 3431 -5243 3431 -5243 1 FreeSans 1200 0 0 0 op
 flabel metal2 5049 -9956 5049 -9956 1 FreeSans 1200 0 0 0 cmc
 flabel metal1 4262 -15741 4262 -15741 1 FreeSans 1200 0 0 0 bias_a
 flabel metal1 6929 -13167 6929 -13167 1 FreeSans 1200 0 0 0 bias_d
-flabel metal2 10414 -8662 10414 -8662 1 FreeSans 1200 0 0 0 bias_e
 flabel metal1 -7420 -1403 -7420 -1403 1 FreeSans 1200 0 0 0 VDD
 flabel metal1 -7407 -17402 -7407 -17402 1 FreeSans 1200 0 0 0 VSS
 flabel metal1 -6957 -14245 -6957 -14245 1 FreeSans 1200 0 0 0 i_bias
@@ -7406,24 +7405,18 @@ flabel viali -2097 -3132 -2097 -3132 1 FreeSans 400 0 0 0 VDD
 flabel viali -2945 -5751 -2945 -5751 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7057 2874 7057 2874 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7057 1707 7057 1707 1 FreeSans 400 0 0 0 VSS
-flabel metal1 7058 1074 7058 1074 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7058 -83 7058 -83 1 FreeSans 400 0 0 0 VSS
 flabel metal1 7058 -739 7058 -739 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7058 -1885 7058 -1885 1 FreeSans 400 0 0 0 VSS
 flabel metal1 7058 -2537 7058 -2537 1 FreeSans 400 0 0 0 VDD
-flabel metal1 7061 -3687 7061 -3687 1 FreeSans 400 0 0 0 VSS
 flabel metal1 7051 -4329 7051 -4329 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7054 -5489 7054 -5489 1 FreeSans 400 0 0 0 VSS
-flabel metal1 7058 -6127 7058 -6127 1 FreeSans 400 0 0 0 VDD
 flabel metal1 7054 -7288 7054 -7288 1 FreeSans 400 0 0 0 VSS
 flabel metal1 16056 -7290 16056 -7290 1 FreeSans 400 0 0 0 VSS
 flabel metal1 16057 -6136 16057 -6136 1 FreeSans 400 0 0 0 VDD
 flabel metal1 16055 -5482 16055 -5482 1 FreeSans 400 0 0 0 VSS
-flabel metal1 16057 -4331 16057 -4331 1 FreeSans 400 0 0 0 VDD
-flabel metal1 16055 -3689 16055 -3689 1 FreeSans 400 0 0 0 VSS
 flabel metal1 16057 -2529 16057 -2529 1 FreeSans 400 0 0 0 VDD
 flabel metal1 16055 -1886 16055 -1886 1 FreeSans 400 0 0 0 VSS
-flabel metal1 16057 -730 16057 -730 1 FreeSans 400 0 0 0 VDD
 flabel metal1 16057 -86 16057 -86 1 FreeSans 400 0 0 0 VSS
 flabel metal1 16057 1070 16057 1070 1 FreeSans 400 0 0 0 VDD
 flabel metal1 16057 1716 16057 1716 1 FreeSans 400 0 0 0 VSS
@@ -7436,4 +7429,11 @@ flabel metal3 17730 1821 17730 1821 1 FreeSans 400 0 0 0 p2
 flabel metal3 17980 2631 17980 2631 1 FreeSans 400 0 0 0 p2_b
 flabel metal3 17727 -7023 17727 -7023 1 FreeSans 400 0 0 0 p1
 flabel metal3 17984 -6236 17984 -6236 1 FreeSans 400 0 0 0 p1_b
+flabel metal2 17862 -8732 17862 -8732 1 FreeSans 800 0 0 0 cm
+flabel metal1 7058 1058 7058 1058 1 FreeSans 400 0 0 0 VDD
+flabel metal1 7058 -3672 7058 -3672 1 FreeSans 400 0 0 0 VSS
+flabel metal1 7058 -6144 7058 -6144 1 FreeSans 400 0 0 0 VDD
+flabel metal1 16056 -4338 16056 -4338 1 FreeSans 400 0 0 0 VDD
+flabel metal1 16056 -3678 16056 -3678 1 FreeSans 400 0 0 0 VSS
+flabel metal1 16056 -738 16056 -738 1 FreeSans 400 0 0 0 VDD
 << end >>

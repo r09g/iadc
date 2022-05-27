@@ -10,7 +10,7 @@ Post layout simulation is necessary to ensure that the design meets the specs. T
 #-------------------------------------------------------------------------
 # Setting-Up Simulation Files
 #-------------------------------------------------------------------------
-1. In design/analog_modulator/netlist folder, run convert_s130.sh to generate the proper netlist.
+1. In design/analog_modulator/netlist folder, run convert_s130.sh on the Magic VLSI tool extracted LVS SPICE netlist to generate the netlist with proper Cadence formatting. Use LVS netlist because it contains the necessary decap cells.
 2. Generate layout GDS file from Magic VLSI tool. Make the ports but do not flatten the design in Magic.
 
 #-------------------------------------------------------------------------

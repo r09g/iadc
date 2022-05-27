@@ -29,4 +29,4 @@ set pins_left {\
 }
 
 editPin -layer met3 -pin $pins_right  -side RIGHT  -spreadType SIDE
-editPin -layer met3 -pin $pins_left   -side LEFT   -spreadType SIDE
+editPin -layer met3 -pin $pins_left   -side LEFT   -spreadType CENTER

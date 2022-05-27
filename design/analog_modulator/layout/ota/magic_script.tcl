@@ -1,5 +1,5 @@
 set MGC_DESIGN_NAME "ota"
-set MGC_PORT_LIST {ip in op on i_bias bias_e bias_a bias_b bias_c bias_d cmc}
+set MGC_PORT_LIST {ip in p1 p1_b p2 p2_b op on i_bias cm}
 
 # flatten design and make ports
 
@@ -13,20 +13,58 @@ load "${MGC_DESIGN_NAME}_flat"
 box 0 0 0 0
 select
 
-foreach port $MGC_PORT_LIST {
-    findlabel $port
-    port make
-}
+findlabel ip
+port make
+
+findlabel in
+port make
+
+findlabel p1 0
+port make
+findlabel p1 1
+port make
+
+findlabel p1_b 0
+port make
+findlabel p1_b 1
+port make
+
+findlabel p2 0
+port make
+findlabel p2 1
+port make
+
+findlabel p2_b 0
+port make
+findlabel p2_b 1
+port make
+
+findlabel op
+port make
+
+findlabel on
+port make
+
+findlabel i_bias
+port make
+
+findlabel cm
+port make
 
 # special handling of power ports
-findlabel VDD
-port make 
-port use power
-port class inout
-findlabel VSS
-port make
-port use ground
-port class inout
+for {set i 0} {$i < 15} {incr i} {
+    findlabel VDD $i
+    port make 
+    port use power
+    port class inout
+}
+
+for {set i 0} {$i < 23} {incr i} {
+    findlabel VSS $i
+    port make 
+    port use power
+    port class inout
+}
 
 save "${MGC_DESIGN_NAME}_flat.mag"
 
@@ -40,6 +78,8 @@ ext2spice cthresh 0
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
 
 # output gds and lef
+# select top cell
+# expand
 # gds write "${MGC_DESIGN_NAME}.gds"
 # lef write "${MGC_DESIGN_NAME}.lef"
 
