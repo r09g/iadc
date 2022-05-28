@@ -1,66 +1,66 @@
 * NGSPICE file created from onebit_dac_flat.ext - technology: sky130A
 
 .subckt onebit_dac_flat v_hi v_lo v v_b out VDD VSS
-X0 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=8.745e+11p pd=8.6e+06u as=2.0564e+12p ps=2.048e+07u w=530000u l=150000u
-X1 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X2 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=2.2605e+12p pd=1.7e+07u as=5.3156e+12p ps=4.064e+07u w=1.37e+06u l=150000u
-X3 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=8.745e+11p pd=8.6e+06u as=0p ps=0u w=530000u l=150000u
-X4 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X5 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X6 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X7 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X8 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X9 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X10 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X11 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X12 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X13 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X14 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X15 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X16 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X17 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X18 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X19 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X20 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X21 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X22 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X23 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X24 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=2.2605e+12p pd=1.7e+07u as=0p ps=0u w=1.37e+06u l=150000u
-X25 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X26 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X27 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X28 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X29 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X30 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X31 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X32 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X33 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X34 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X35 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X36 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X37 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-X38 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.37e+06u l=150000u
-X39 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=530000u l=150000u
-C0 v out 1.18fF
-C1 v_lo v_b 1.75fF
-C2 v_hi v_b 1.63fF
-C3 VDD v 1.14fF
-C4 out v_b 1.45fF
-C5 VDD v_b 1.43fF
-C6 v_hi v_lo 0.50fF
-C7 v v_b 0.91fF
-C8 out v_lo 6.97fF
-C9 out v_hi 6.88fF
-C10 VDD v_lo 1.22fF
-C11 VDD v_hi 1.42fF
-C12 v v_lo 1.31fF
-C13 v v_hi 1.49fF
-C14 VDD out 3.20fF
-C15 v_lo VSS 1.28fF
+X0 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=2.244e+12p pd=1.69e+07u as=5.2768e+12p ps=4.04e+07u w=1.36e+06u l=150000u
+X1 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X2 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X3 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X4 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X5 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X6 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X7 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=8.58e+11p pd=8.5e+06u as=2.0176e+12p ps=2.024e+07u w=520000u l=150000u
+X8 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X9 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=8.58e+11p pd=8.5e+06u as=0p ps=0u w=520000u l=150000u
+X10 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X11 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X12 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X13 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X14 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.244e+12p ps=1.69e+07u w=1.36e+06u l=150000u
+X15 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X16 v_hi v_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X17 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X18 out v_b v_hi VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X19 v_hi v out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X20 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X21 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X22 out v v_hi VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X23 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X24 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X25 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X26 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X27 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X28 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X29 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X30 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X31 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X32 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X33 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X34 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X35 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X36 out v v_lo VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X37 out v_b v_lo VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X38 v_lo v out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X39 v_lo v_b out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+C0 v_hi v_b 1.63fF
+C1 VDD v 1.14fF
+C2 out v_b 1.44fF
+C3 VDD v_b 1.43fF
+C4 v_hi v_lo 0.50fF
+C5 v v_b 0.91fF
+C6 out v_lo 6.91fF
+C7 out v_hi 6.81fF
+C8 VDD v_lo 1.22fF
+C9 VDD v_hi 1.42fF
+C10 v v_lo 1.31fF
+C11 v v_hi 1.49fF
+C12 VDD out 3.19fF
+C13 v out 1.17fF
+C14 v_lo v_b 1.74fF
+C15 v_lo VSS 1.27fF
 C16 v VSS 1.96fF
-C17 v_hi VSS 1.27fF
+C17 v_hi VSS 1.26fF
 C18 out VSS 3.22fF
-C19 v_b VSS 2.64fF
-C20 VDD VSS 8.25fF
+C19 v_b VSS 2.65fF
+C20 VDD VSS 8.23fF
 .ends
 

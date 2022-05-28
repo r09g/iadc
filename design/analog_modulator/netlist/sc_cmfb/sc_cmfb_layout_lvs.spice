@@ -1,7 +1,113 @@
-* NGSPICE file created from sc_cmfb_flat.ext - technology: sky130A
+* NGSPICE file created from sc_cmfb.ext - technology: sky130A
 
+.subckt sky130_fd_pr__pfet_01v8_UNG2NQ a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136#
++ a_64_n136# a_160_n136# a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136#
++ a_n512_n234# a_256_n136#
+X0 a_n224_n136# a_n512_n234# a_n320_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X1 a_352_n136# a_n512_n234# a_256_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X2 a_n128_n136# a_n512_n234# a_n224_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X3 a_256_n136# a_n512_n234# a_160_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X4 a_n416_n136# a_n512_n234# a_n508_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.216e+11p ps=3.34e+06u w=1.36e+06u l=150000u
+X5 a_n320_n136# a_n512_n234# a_n416_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X6 a_n32_n136# a_n512_n234# a_n128_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X7 a_448_n136# a_n512_n234# a_352_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.216e+11p pd=3.34e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+.ends
 
-* Top level circuit sc_cmfb_flat
+.subckt sky130_fd_pr__nfet_01v8_6J4AMR a_256_n52# a_n32_n52# a_n224_n52# a_448_n52#
++ a_n416_n52# a_160_n52# a_n610_n226# a_n128_n52# a_n512_n140# a_352_n52# a_n320_n52#
++ a_n508_n52# a_64_n52#
+X0 a_n32_n52# a_n512_n140# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X1 a_n416_n52# a_n512_n140# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
+X2 a_n224_n52# a_n512_n140# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X3 a_n128_n52# a_n512_n140# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X4 a_n320_n52# a_n512_n140# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X5 a_160_n52# a_n512_n140# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X6 a_352_n52# a_n512_n140# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X7 a_256_n52# a_n512_n140# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_448_n52# a_n512_n140# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
+X9 a_64_n52# a_n512_n140# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+.ends
 
-.end
+.subckt transmission_gate out en_b en VSS VDD in
+Xsky130_fd_pr__pfet_01v8_UNG2NQ_0 in in out in out in out VDD in out out en_b out
++ sky130_fd_pr__pfet_01v8_UNG2NQ
+Xsky130_fd_pr__nfet_01v8_6J4AMR_0 out in in out in in VSS out en in out out out sky130_fd_pr__nfet_01v8_6J4AMR
+.ends
+
+.subckt unit_cap_mim_m3m4 c1_n530_n480# m3_n630_n580#
+X0 c1_n530_n480# m3_n630_n580# sky130_fd_pr__cap_mim_m3_1 l=4.8e+06u w=4.8e+06u
+.ends
+
+.subckt sc_cmfb on cm bias_a op cmc p2_b p2 p1_b p1 VDD VSS
+Xtransmission_gate_10 on p1_b p1 VSS VDD transmission_gate_3/out transmission_gate
+Xtransmission_gate_11 op p1_b p1 VSS VDD transmission_gate_4/out transmission_gate
+Xtransmission_gate_0 transmission_gate_7/in p1_b p1 VSS VDD cm transmission_gate
+Xtransmission_gate_1 transmission_gate_6/in p1_b p1 VSS VDD cm transmission_gate
+Xtransmission_gate_2 transmission_gate_8/in p1_b p1 VSS VDD bias_a transmission_gate
+Xtransmission_gate_3 transmission_gate_3/out p2_b p2 VSS VDD cm transmission_gate
+Xunit_cap_mim_m3m4_0 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
+Xtransmission_gate_4 transmission_gate_4/out p2_b p2 VSS VDD cm transmission_gate
+Xunit_cap_mim_m3m4_1 on cmc unit_cap_mim_m3m4
+Xtransmission_gate_5 transmission_gate_9/in p2_b p2 VSS VDD bias_a transmission_gate
+Xunit_cap_mim_m3m4_2 op cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_30 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xtransmission_gate_6 op p2_b p2 VSS VDD transmission_gate_6/in transmission_gate
+Xunit_cap_mim_m3m4_20 unit_cap_mim_m3m4_20/c1_n530_n480# unit_cap_mim_m3m4_20/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_3 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_31 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xtransmission_gate_7 on p2_b p2 VSS VDD transmission_gate_7/in transmission_gate
+Xunit_cap_mim_m3m4_10 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_21 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_21/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_4 on cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_32 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_32/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_12 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_11 on cmc unit_cap_mim_m3m4
+Xtransmission_gate_8 cmc p2_b p2 VSS VDD transmission_gate_8/in transmission_gate
+Xunit_cap_mim_m3m4_5 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_22 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_22/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_23 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_23/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_34 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_34/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_33 unit_cap_mim_m3m4_33/c1_n530_n480# unit_cap_mim_m3m4_33/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_24 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_13 on cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_6 transmission_gate_3/out transmission_gate_9/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_7 op cmc unit_cap_mim_m3m4
+Xtransmission_gate_9 cmc p1_b p1 VSS VDD transmission_gate_9/in transmission_gate
+Xunit_cap_mim_m3m4_35 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_35/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_25 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_25/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_14 op cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_8 op cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_26 unit_cap_mim_m3m4_26/c1_n530_n480# unit_cap_mim_m3m4_26/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_15 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_9 transmission_gate_3/out transmission_gate_9/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_27 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_27/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_16 unit_cap_mim_m3m4_16/c1_n530_n480# unit_cap_mim_m3m4_16/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_28 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_28/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_17 unit_cap_mim_m3m4_17/c1_n530_n480# unit_cap_mim_m3m4_17/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_29 unit_cap_mim_m3m4_29/c1_n530_n480# unit_cap_mim_m3m4_29/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_18 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_18/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_19 unit_cap_mim_m3m4_19/c1_n530_n480# unit_cap_mim_m3m4_19/m3_n630_n580#
++ unit_cap_mim_m3m4
+.ends
 

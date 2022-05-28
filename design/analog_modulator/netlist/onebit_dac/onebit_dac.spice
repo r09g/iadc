@@ -1,8 +1,8 @@
 * onebit dac
 
-.subckt 1b_dac v_hi v_lo v v_b out VDD VSS
-x1 v_hi out v v_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 v_lo out v_b v VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+.subckt onebit_dac v_hi v_lo v v_b out VDD VSS
+x1 v_hi out v v_b VDD VSS transmission_gate
+x2 v_lo out v_b v VDD VSS transmission_gate
 .ends
 
 .subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15

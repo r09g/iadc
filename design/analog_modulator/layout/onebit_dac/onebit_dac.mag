@@ -88,7 +88,7 @@ rect -7 -663 45 -653
 rect -186 -715 -7 -663
 rect -238 -725 -186 -715
 rect -7 -725 45 -715
-use transmission_gate  transmission_gate_0 ~/EE372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+use transmission_gate  transmission_gate_0 $env(DESIGN_DIR)/design/analog_modulator/layout/transmission_gate
 timestamp 1652661863
 transform 1 0 216 0 1 51
 box -216 -51 1283 1063

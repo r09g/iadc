@@ -1,279 +1,85 @@
-* NGSPICE file created from a_mux4_en_flat.ext - technology: sky130A
+* NGSPICE file created from a_mux4_en.ext - technology: sky130A
 
-.subckt a_mux4_en_flat en s1 s0 in0 in1 in2 in3 out VDD VSS
-X0 out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=1.05536e+13p pd=8.08e+07u as=4.8824e+12p ps=3.71e+07u w=1.36e+06u l=150000u
-X1 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=4.8824e+12p ps=3.71e+07u w=1.36e+06u l=150000u
-X2 switch_5t_3/transmission_gate_0/in transmission_gate_0/en_b in3 VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=2.244e+12p ps=1.69e+07u w=1.36e+06u l=150000u
-X3 switch_5t_2/transmission_gate_0/in en in2 VSS sky130_fd_pr__nfet_01v8 ad=1.8668e+12p pd=1.862e+07u as=8.58e+11p ps=8.5e+06u w=520000u l=150000u
-X4 switch_5t_1/transmission_gate_0/in transmission_gate_0/en_b in0 VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=2.244e+12p ps=1.69e+07u w=1.36e+06u l=150000u
-X5 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y out VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=0p ps=0u w=1.36e+06u l=150000u
-X6 in3 transmission_gate_0/en_b switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X7 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=4.8824e+12p ps=3.71e+07u w=1.36e+06u l=150000u
-X8 in2 transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=2.244e+12p pd=1.69e+07u as=0p ps=0u w=1.36e+06u l=150000u
-X9 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=2.0118e+12p pd=2.02e+07u as=4.0352e+12p ps=4.048e+07u w=520000u l=150000u
-X10 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X11 switch_5t_0/transmission_gate_0/in transmission_gate_0/en_b in1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.244e+12p ps=1.69e+07u w=1.36e+06u l=150000u
-X12 a_n499_n2830# sky130_fd_sc_hd__nand2_1_3/A VSS VSS sky130_fd_pr__nfet_01v8 ad=1.755e+11p pd=1.84e+06u as=2.439e+12p ps=2.634e+07u w=650000u l=150000u
-X13 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=2.0118e+12p pd=2.02e+07u as=1.8668e+12p ps=1.862e+07u w=520000u l=150000u
-X14 switch_5t_1/transmission_gate_0/in en in0 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=8.58e+11p ps=8.5e+06u w=520000u l=150000u
-X15 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X16 out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X17 switch_5t_3/transmission_gate_0/in transmission_gate_0/en_b in3 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X18 a_n499_n1742# sky130_fd_sc_hd__nand2_1_3/B VSS VSS sky130_fd_pr__nfet_01v8 ad=1.755e+11p pd=1.84e+06u as=0p ps=0u w=650000u l=150000u
-X19 switch_5t_0/transmission_gate_0/in en in1 VSS sky130_fd_pr__nfet_01v8 ad=1.8668e+12p pd=1.862e+07u as=8.58e+11p ps=8.5e+06u w=520000u l=150000u
-X20 switch_5t_3/transmission_gate_0/in sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X21 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X22 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X23 in1 transmission_gate_0/en_b switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X24 in1 en switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X25 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X26 in3 en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=8.58e+11p pd=8.5e+06u as=1.8668e+12p ps=1.862e+07u w=520000u l=150000u
-X27 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y out VSS sky130_fd_pr__nfet_01v8 ad=2.0118e+12p pd=2.02e+07u as=0p ps=0u w=520000u l=150000u
-X28 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X29 switch_5t_3/transmission_gate_0/in sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X30 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=2.0118e+12p pd=2.02e+07u as=0p ps=0u w=520000u l=150000u
-X31 switch_5t_2/transmission_gate_0/in en in2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X32 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X33 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X34 out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X35 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X36 out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X37 switch_5t_0/transmission_gate_0/in en in1 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X38 switch_5t_1/transmission_gate_0/in transmission_gate_0/en_b in0 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X39 sky130_fd_sc_hd__inv_1_3/Y sky130_fd_sc_hd__inv_1_3/A VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X40 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X41 switch_5t_3/transmission_gate_0/in transmission_gate_0/en_b in3 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X42 in2 en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X43 out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X44 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X45 in0 transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X46 switch_5t_3/transmission_gate_0/in sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X47 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X48 out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X49 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X50 out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X51 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X52 in3 transmission_gate_0/en_b switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X53 out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X54 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X55 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X56 sky130_fd_sc_hd__inv_1_3/A sky130_fd_sc_hd__nand2_1_3/B VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.7e+11p pd=2.54e+06u as=3.9e+12p ps=3.78e+07u w=1e+06u l=150000u
-X57 out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X58 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X59 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X60 out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X61 switch_5t_0/transmission_gate_0/in en in1 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X62 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X63 switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/en_b VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X64 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X65 out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X66 out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X67 in0 transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X68 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X69 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X70 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X71 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X72 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X73 switch_5t_3/transmission_gate_0/en sky130_fd_sc_hd__nand2_1_0/Y VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X74 in1 en switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X75 VDD s0 switch_5t_2/transmission_gate_0/en_b VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
-X76 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X77 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X78 switch_5t_3/transmission_gate_0/en sky130_fd_sc_hd__nand2_1_0/Y VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X79 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X80 VDD sky130_fd_sc_hd__nand2_1_3/A switch_5t_1/transmission_gate_0/en_b VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
-X81 out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X82 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X83 sky130_fd_sc_hd__nand2_1_0/Y s0 a_n499_n3694# VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.755e+11p ps=1.84e+06u w=650000u l=150000u
-X84 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X85 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
-X86 VDD s0 sky130_fd_sc_hd__nand2_1_0/Y VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
-X87 out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X88 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X89 out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X90 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X91 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X92 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X93 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X94 out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X95 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
-X96 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X97 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X98 out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X99 out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X100 out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X101 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X102 in0 transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X103 switch_5t_2/transmission_gate_0/in transmission_gate_0/en_b in2 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X104 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X105 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X106 switch_5t_1/transmission_gate_0/in en in0 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X107 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X108 in2 transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X109 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X110 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X111 sky130_fd_sc_hd__inv_1_3/Y sky130_fd_sc_hd__inv_1_3/A VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X112 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X113 switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X114 switch_5t_3/transmission_gate_0/in en in3 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X115 switch_5t_2/transmission_gate_0/in transmission_gate_0/en_b in2 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X116 out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X117 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X118 in1 transmission_gate_0/en_b switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X119 out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X120 in3 en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X121 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X122 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X123 switch_5t_1/transmission_gate_0/in transmission_gate_0/en_b in0 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X124 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X125 switch_5t_2/transmission_gate_0/en_b sky130_fd_sc_hd__nand2_1_3/A VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X126 in1 transmission_gate_0/en_b switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X127 switch_5t_1/transmission_gate_0/en_b sky130_fd_sc_hd__nand2_1_3/B VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X128 out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X129 switch_5t_0/transmission_gate_0/in transmission_gate_0/en_b in1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X130 switch_5t_3/transmission_gate_0/in en in3 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X131 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X132 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X133 switch_5t_3/transmission_gate_0/in switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X134 a_n499_n3694# s1 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
-X135 switch_5t_1/transmission_gate_0/in en in0 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X136 out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X137 sky130_fd_sc_hd__nand2_1_3/B s0 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X138 sky130_fd_sc_hd__nand2_1_0/Y s1 VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X139 in2 en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X140 switch_5t_2/transmission_gate_0/in transmission_gate_0/en_b in2 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X141 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X142 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X143 switch_5t_3/transmission_gate_0/in switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X144 in0 en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X145 in2 en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X146 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X147 in3 transmission_gate_0/en_b switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X148 switch_5t_2/transmission_gate_0/in en in2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X149 in2 transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X150 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X151 in0 transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X152 switch_5t_0/transmission_gate_0/in transmission_gate_0/en_b in1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X153 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X154 switch_5t_3/transmission_gate_0/in en in3 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X155 in3 transmission_gate_0/en_b switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X156 out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X157 switch_5t_3/transmission_gate_0/in transmission_gate_0/en_b in3 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X158 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X159 switch_5t_3/transmission_gate_0/in switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X160 in0 en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X161 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X162 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X163 in3 en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X164 in1 en switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X165 switch_5t_3/transmission_gate_0/in sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X166 transmission_gate_0/en_b en VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X167 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X168 switch_5t_2/transmission_gate_0/in en in2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X169 out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X170 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X171 out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X172 switch_5t_1/transmission_gate_0/in transmission_gate_0/en_b in0 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X173 in1 en switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X174 switch_5t_0/transmission_gate_0/in en in1 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X175 sky130_fd_sc_hd__nand2_1_3/A s1 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X176 out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X177 switch_5t_3/transmission_gate_0/in transmission_gate_0/en_b in3 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X178 switch_5t_3/transmission_gate_0/in sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X179 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X180 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X181 in1 transmission_gate_0/en_b switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X182 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X183 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X184 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X185 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X186 in0 transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X187 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X188 out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X189 out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X190 switch_5t_0/transmission_gate_0/in en in1 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X191 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X192 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X193 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X194 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X195 in2 en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X196 in0 en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X197 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X198 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X199 in3 transmission_gate_0/en_b switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X200 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X201 switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/en_b VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X202 sky130_fd_sc_hd__nand2_1_3/B s0 VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X203 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X204 sky130_fd_sc_hd__inv_1_3/A s1 a_n499_n2606# VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.755e+11p ps=1.84e+06u w=650000u l=150000u
-X205 out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X206 out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X207 switch_5t_2/transmission_gate_0/in switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X208 switch_5t_1/transmission_gate_0/in transmission_gate_0/en_b in0 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X209 out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X210 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X211 out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X212 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X213 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X214 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X215 switch_5t_1/transmission_gate_0/in en in0 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X216 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X217 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X218 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X219 in1 en switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X220 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X221 out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X222 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
-X223 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X224 out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X225 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X226 out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X227 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X228 switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X229 in2 transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X230 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X231 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X232 switch_5t_3/transmission_gate_0/out switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X233 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X234 in0 en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X235 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X236 out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X237 in2 transmission_gate_0/en_b switch_5t_2/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X238 switch_5t_2/transmission_gate_0/en_b s0 a_n499_n2830# VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X239 switch_5t_2/transmission_gate_0/in transmission_gate_0/en_b in2 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X240 out switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X241 switch_5t_1/transmission_gate_0/en_b sky130_fd_sc_hd__nand2_1_3/A a_n499_n1742# VSS sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=0p ps=0u w=650000u l=150000u
-X242 in3 en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X243 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X244 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X245 transmission_gate_0/en_b en VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X246 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X247 in3 en switch_5t_3/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X248 switch_5t_1/transmission_gate_0/in en in0 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X249 switch_5t_3/transmission_gate_0/in en in3 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X250 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y switch_5t_3/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X251 switch_5t_0/transmission_gate_0/in transmission_gate_0/en_b in1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X252 a_n499_n2606# sky130_fd_sc_hd__nand2_1_3/B VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
-X253 switch_5t_2/transmission_gate_0/in transmission_gate_0/en_b in2 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X254 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X255 switch_5t_3/transmission_gate_0/out sky130_fd_sc_hd__nand2_1_0/Y VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
-X256 switch_5t_3/transmission_gate_0/in switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X257 in1 transmission_gate_0/en_b switch_5t_0/transmission_gate_0/in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X258 switch_5t_1/transmission_gate_0/out switch_5t_1/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X259 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/A out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X260 switch_5t_2/transmission_gate_0/out switch_5t_2/transmission_gate_0/en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X261 sky130_fd_sc_hd__nand2_1_3/A s1 VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
-X262 switch_5t_1/transmission_gate_0/in switch_5t_1/transmission_gate_0/en_b switch_5t_1/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X263 switch_5t_0/transmission_gate_0/in transmission_gate_0/en_b in1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X264 switch_5t_0/transmission_gate_0/out sky130_fd_sc_hd__inv_1_3/Y switch_5t_0/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X265 switch_5t_3/transmission_gate_0/in en in3 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X266 switch_5t_2/transmission_gate_0/in en in2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X267 in0 en switch_5t_1/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X268 VDD s1 sky130_fd_sc_hd__inv_1_3/A VDD sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X269 out switch_5t_2/transmission_gate_0/en_b switch_5t_2/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X270 switch_5t_0/transmission_gate_0/in sky130_fd_sc_hd__inv_1_3/A switch_5t_0/transmission_gate_0/out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X271 switch_5t_3/transmission_gate_0/in switch_5t_3/transmission_gate_0/en switch_5t_3/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X272 in2 en switch_5t_2/transmission_gate_0/in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X273 out switch_5t_1/transmission_gate_0/en switch_5t_1/transmission_gate_0/out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+.subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
+X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_UNG2NQ a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136#
++ a_64_n136# a_160_n136# a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136#
++ a_n512_n234# a_256_n136#
+X0 a_n224_n136# a_n512_n234# a_n320_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X1 a_352_n136# a_n512_n234# a_256_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X2 a_n128_n136# a_n512_n234# a_n224_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X3 a_256_n136# a_n512_n234# a_160_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X4 a_n416_n136# a_n512_n234# a_n508_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.216e+11p ps=3.34e+06u w=1.36e+06u l=150000u
+X5 a_n320_n136# a_n512_n234# a_n416_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X6 a_n32_n136# a_n512_n234# a_n128_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X7 a_448_n136# a_n512_n234# a_352_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.216e+11p pd=3.34e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6J4AMR a_256_n52# a_n32_n52# a_n224_n52# a_448_n52#
++ a_n416_n52# a_160_n52# a_n610_n226# a_n128_n52# a_n512_n140# a_352_n52# a_n320_n52#
++ a_n508_n52# a_64_n52#
+X0 a_n32_n52# a_n512_n140# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X1 a_n416_n52# a_n512_n140# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
+X2 a_n224_n52# a_n512_n140# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X3 a_n128_n52# a_n512_n140# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X4 a_n320_n52# a_n512_n140# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X5 a_160_n52# a_n512_n140# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X6 a_352_n52# a_n512_n140# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X7 a_256_n52# a_n512_n140# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_448_n52# a_n512_n140# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
+X9 a_64_n52# a_n512_n140# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+.ends
+
+.subckt transmission_gate out en_b en VSS VDD in
+Xsky130_fd_pr__pfet_01v8_UNG2NQ_0 in in out in out in out VDD in out out en_b out
++ sky130_fd_pr__pfet_01v8_UNG2NQ
+Xsky130_fd_pr__nfet_01v8_6J4AMR_0 out in in out in in VSS out en in out out out sky130_fd_pr__nfet_01v8_6J4AMR
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_E56BNL a_n72_n90# a_16_n90# a_n32_32# VSUBS
+X0 a_16_n90# a_n32_32# a_n72_n90# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
+.ends
+
+.subckt switch_5t out en_b en VDD in VSS
+Xtransmission_gate_0 transmission_gate_1/in en_b en VSS VDD in transmission_gate
+Xtransmission_gate_1 out en_b en VSS VDD transmission_gate_1/in transmission_gate
+Xsky130_fd_pr__nfet_01v8_E56BNL_0 VSS transmission_gate_1/in en_b VSS sky130_fd_pr__nfet_01v8_E56BNL
+.ends
+
+.subckt sky130_fd_sc_hd__nand2_1 A B VGND VPWR Y VNB VPB
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=5.2e+11p pd=5.04e+06u as=2.7e+11p ps=2.54e+06u w=1e+06u l=150000u
+X1 Y A a_113_47# VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.755e+11p ps=1.84e+06u w=650000u l=150000u
+X2 a_113_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
+X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt a_mux4_en en s1 s0 in0 in1 in2 in3 out VDD VSS
+Xsky130_fd_sc_hd__inv_1_4 switch_5t_1/en_b VSS VDD switch_5t_1/en VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_5 switch_5t_2/en_b VSS VDD switch_5t_2/en VSS VDD sky130_fd_sc_hd__inv_1
+Xswitch_5t_0 out switch_5t_0/en_b switch_5t_0/en VDD switch_5t_0/in VSS switch_5t
+Xsky130_fd_sc_hd__inv_1_6 switch_5t_3/en_b VSS VDD switch_5t_3/en VSS VDD sky130_fd_sc_hd__inv_1
+Xswitch_5t_1 out switch_5t_1/en_b switch_5t_1/en VDD switch_5t_1/in VSS switch_5t
+Xsky130_fd_sc_hd__inv_1_8 en VSS VDD transmission_gate_3/en_b VSS VDD sky130_fd_sc_hd__inv_1
+Xswitch_5t_2 out switch_5t_2/en_b switch_5t_2/en VDD switch_5t_2/in VSS switch_5t
+Xswitch_5t_3 out switch_5t_3/en_b switch_5t_3/en VDD switch_5t_3/in VSS switch_5t
+Xtransmission_gate_0 switch_5t_1/in transmission_gate_3/en_b en VSS VDD in0 transmission_gate
+Xtransmission_gate_1 switch_5t_0/in transmission_gate_3/en_b en VSS VDD in1 transmission_gate
+Xtransmission_gate_2 switch_5t_2/in transmission_gate_3/en_b en VSS VDD in2 transmission_gate
+Xtransmission_gate_3 switch_5t_3/in transmission_gate_3/en_b en VSS VDD in3 transmission_gate
+Xsky130_fd_sc_hd__nand2_1_0 s0 s1 VSS VDD switch_5t_3/en_b VSS VDD sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__nand2_1_1 s0 sky130_fd_sc_hd__inv_1_0/Y VSS VDD switch_5t_2/en_b
++ VSS VDD sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__nand2_1_2 s1 sky130_fd_sc_hd__inv_1_1/Y VSS VDD switch_5t_0/en_b
++ VSS VDD sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__nand2_1_3 sky130_fd_sc_hd__inv_1_0/Y sky130_fd_sc_hd__inv_1_1/Y
++ VSS VDD switch_5t_1/en_b VSS VDD sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_1 s0 VSS VDD sky130_fd_sc_hd__inv_1_1/Y VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_0 s1 VSS VDD sky130_fd_sc_hd__inv_1_0/Y VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_3 switch_5t_0/en_b VSS VDD switch_5t_0/en VSS VDD sky130_fd_sc_hd__inv_1
 .ends
 

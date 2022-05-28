@@ -11,13 +11,16 @@ Post layout simulation is necessary to ensure that the design meets the specs. T
 # Setting-Up Simulation Files
 #-------------------------------------------------------------------------
 1. In design/analog_modulator/netlist folder, run convert_s130.sh on the Magic VLSI tool extracted LVS SPICE netlist to generate the netlist with proper Cadence formatting. Use LVS netlist because it contains the necessary decap cells.
-2. Generate layout GDS file from Magic VLSI tool. Make the ports but do not flatten the design in Magic.
+2. Generate layout GDS file from Magic VLSI tool. Set FLAT to 0 (do not flatten the design in Magic).
 
 #-------------------------------------------------------------------------
 # Cadence-Side Procedure
 #-------------------------------------------------------------------------
-1. GDS Stream-In (note top cell name)
-2. Add diffusion layer for all ntaps and ptaps.
+1. GDS Stream-in
+    - Add top cell name
+    - Add layermap file /skywater/V2.1.302/LIBS/S130/S8_to_S130.layermap
+    - Run translate
+2. Add diffusion layer for all ntaps and ptaps (OBSOLETE: Use layermap file)
 3. Calibre LVS
     - Add rules
     - Specify input SPICE netlist

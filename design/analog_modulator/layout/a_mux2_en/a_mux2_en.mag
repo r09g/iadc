@@ -126,7 +126,7 @@ use switch_5t  switch_5t_1
 timestamp 1653475914
 transform 1 0 123 0 -1 -62
 box -53 -36 3056 1162
-use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+use transmission_gate  transmission_gate_0 $env(DESIGN_DIR)/design/analog_modulator/layout/transmission_gate
 timestamp 1653475914
 transform 1 0 -2333 0 -1 -117
 box -216 -51 1283 1063

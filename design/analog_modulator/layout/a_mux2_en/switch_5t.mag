@@ -35,7 +35,7 @@ use sky130_fd_pr__nfet_01v8_E56BNL  sky130_fd_pr__nfet_01v8_E56BNL_0
 timestamp 1653475914
 transform 1 0 1553 0 1 312
 box -73 -115 73 99
-use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+use transmission_gate  transmission_gate_0 $env(DESIGN_DIR)/design/analog_modulator/layout/transmission_gate
 timestamp 1653475914
 transform 1 0 215 0 1 55
 box -216 -51 1283 1063
