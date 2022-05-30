@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653690036
+timestamp 1653910725
 << nwell >>
 rect 1427 468 1802 1118
 << pwell >>
@@ -31,16 +31,16 @@ rect 1262 938 1726 990
 rect 1527 413 1579 938
 rect 1527 351 1579 361
 rect 1263 131 1663 183
-use sky130_fd_pr__nfet_01v8_E56BNL  sky130_fd_pr__nfet_01v8_E56BNL_0
-timestamp 1653689997
+use sky130_fd_pr__nfet_01v8_E56BNL#0  sky130_fd_pr__nfet_01v8_E56BNL_0
+timestamp 1653910725
 transform 1 0 1553 0 1 312
 box -72 -116 74 98
-use transmission_gate  transmission_gate_0 $env(DESIGN_DIR)/design/analog_modulator/layout/transmission_gate
-timestamp 1653689997
+use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+timestamp 1653910725
 transform 1 0 215 0 1 55
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_1
-timestamp 1653689997
+timestamp 1653910725
 transform 1 0 1736 0 1 55
 box -216 -51 1283 1063
 << labels >>

@@ -16,7 +16,7 @@ N 200 -710 220 -710 { lab=i_bias_1}
 N 200 -730 220 -730 { lab=rst_n}
 N 200 -750 220 -750 { lab=in}
 N 200 -770 220 -770 { lab=ip}
-N 200 -810 220 -810 { lab=a_mod_grp_ctrl_0}
+N 200 -810 220 -810 { lab=clk}
 C {modulator_w_test.sym} 440 -140 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {a_mux4_en.sym} 1220 -360 0 0 {name=x2 VDD=VDD VSS=VSS}
 C {devices/lab_pin.sym} 900 -350 0 1 {name=l1 sig_type=std_logic lab=op2}
@@ -35,18 +35,18 @@ C {devices/lab_pin.sym} 820 -170 1 1 {name=l13 sig_type=std_logic lab=bias_d}
 C {devices/lab_pin.sym} 840 -170 1 1 {name=l14 sig_type=std_logic lab=cm1}
 C {devices/lab_pin.sym} 860 -170 1 1 {name=l15 sig_type=std_logic lab=cmc}
 C {devices/lab_pin.sym} 1240 -660 0 0 {name=l16 sig_type=std_logic lab=a_mod_grp_ctrl_1}
-C {devices/lab_pin.sym} 1240 -560 2 1 {name=l17 sig_type=std_logic lab=bias_a}
+C {devices/lab_pin.sym} 1240 -480 2 1 {name=l17 sig_type=std_logic lab=cmc}
 C {devices/lab_pin.sym} 1240 -520 2 1 {name=l18 sig_type=std_logic lab=bias_b}
-C {devices/lab_pin.sym} 1240 -480 2 1 {name=l19 sig_type=std_logic lab=cm1}
+C {devices/lab_pin.sym} 1240 -560 2 1 {name=l19 sig_type=std_logic lab=cm1}
 C {devices/noconn.sym} 1240 -440 0 0 {name=l20}
 C {devices/lab_pin.sym} 1240 -640 0 0 {name=l21 sig_type=std_logic lab=a_mod_grp_ctrl_0}
 C {devices/lab_pin.sym} 1240 -620 0 0 {name=l22 sig_type=std_logic lab=debug}
 C {devices/lab_pin.sym} 1380 -1110 2 0 {name=l23 sig_type=std_logic lab=a_probe_0}
 C {a_mux4_en.sym} 1220 -40 0 0 {name=x3 VDD=VDD VSS=VSS}
 C {devices/lab_pin.sym} 1240 -340 0 0 {name=l24 sig_type=std_logic lab=a_mod_grp_ctrl_1}
-C {devices/lab_pin.sym} 1240 -240 2 1 {name=l25 sig_type=std_logic lab=bias_c}
-C {devices/lab_pin.sym} 1240 -200 2 1 {name=l26 sig_type=std_logic lab=bias_d}
-C {devices/lab_pin.sym} 1240 -160 2 1 {name=l27 sig_type=std_logic lab=cmc}
+C {devices/lab_pin.sym} 1240 -200 2 1 {name=l25 sig_type=std_logic lab=bias_c}
+C {devices/lab_pin.sym} 1240 -160 2 1 {name=l26 sig_type=std_logic lab=bias_d}
+C {devices/lab_pin.sym} 1240 -240 2 1 {name=l27 sig_type=std_logic lab=bias_a}
 C {devices/noconn.sym} 1240 -120 0 0 {name=l28}
 C {devices/lab_pin.sym} 1240 -320 0 0 {name=l29 sig_type=std_logic lab=a_mod_grp_ctrl_0}
 C {devices/lab_pin.sym} 1240 -300 0 0 {name=l30 sig_type=std_logic lab=debug}
