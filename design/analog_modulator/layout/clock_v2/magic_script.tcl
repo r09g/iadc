@@ -1,4 +1,4 @@
-set MGC_DESIGN_NAME "clock"
+set MGC_DESIGN_NAME "clock_v2"
 set MGC_PORT_LIST {clk p2d_b p2d p2_b p2 p1d_b p1d p1_b p1 Ad_b Ad A_b A Bd_b Bd B_b B}
 set FLAT 0
 

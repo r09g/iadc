@@ -65,7 +65,7 @@ C {devices/lab_pin.sym} 1380 -500 2 0 {name=l40 sig_type=std_logic lab=a_probe_2
 C {devices/lab_pin.sym} 1380 -180 2 0 {name=l41 sig_type=std_logic lab=a_probe_3}
 C {devices/lab_pin.sym} 460 -220 0 0 {name=l42 sig_type=std_logic lab=in}
 C {devices/lab_pin.sym} 460 -360 0 0 {name=l43 sig_type=std_logic lab=ip}
-C {sky130_stdcells/clkinv_1.sym} 620 -60 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/clkinv_4.sym} 620 -60 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 580 -60 0 0 {name=l44 sig_type=std_logic lab=rst_n}
 C {devices/lab_pin.sym} 660 -60 2 0 {name=l45 sig_type=std_logic lab=rst_n_b}
 C {devices/ipin.sym} 200 -770 0 0 {name=p1 lab=ip}
