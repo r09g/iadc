@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653911004
+timestamp 1654175581
 << nwell >>
 rect -51 2940 246 3012
 rect 417 3000 983 3284
@@ -224,15 +224,15 @@ rect 1103 1253 1155 1263
 rect 245 1203 297 1213
 rect 674 485 726 816
 rect 674 423 726 433
-use input_diff_pair  input_diff_pair_0
+use input_diff_pair#0  input_diff_pair_0
 timestamp 1653911004
 transform 1 0 700 0 1 1267
 box -455 -548 455 330
-use latch_nmos_pair  latch_nmos_pair_0
+use latch_nmos_pair#0  latch_nmos_pair_0
 timestamp 1653911004
 transform 1 0 700 0 1 1857
 box -740 -260 740 260
-use latch_pmos_pair  latch_pmos_pair_0
+use latch_pmos_pair#0  latch_pmos_pair_0
 timestamp 1653911004
 transform 1 0 700 0 1 2675
 box -455 -558 455 338
@@ -249,35 +249,35 @@ timestamp 1653911004
 transform -1 0 144 0 -1 2604
 box -108 -88 196 150
 use sky130_fd_sc_hd__buf_2  sky130_fd_sc_hd__buf_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1653911004
+timestamp 1650294714
 transform 0 -1 1244 1 0 3077
 box -38 -48 406 592
 use sky130_fd_sc_hd__buf_2  sky130_fd_sc_hd__buf_2_1
-timestamp 1653911004
+timestamp 1650294714
 transform 0 1 156 1 0 3077
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  sky130_fd_sc_hd__decap_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1653911004
+timestamp 1650294714
 transform 0 1 156 -1 0 4733
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  sky130_fd_sc_hd__decap_4_1
-timestamp 1653911004
+timestamp 1650294714
 transform 0 -1 1244 1 0 4365
 box -38 -48 406 592
 use sky130_fd_sc_hd__nand2_4  sky130_fd_sc_hd__nand2_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1653911004
+timestamp 1650294714
 transform 0 1 156 -1 0 4273
 box -38 -48 866 592
 use sky130_fd_sc_hd__nand2_4  sky130_fd_sc_hd__nand2_4_1
-timestamp 1653911004
+timestamp 1650294714
 transform 0 -1 1244 -1 0 4273
 box -38 -48 866 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1653911004
+timestamp 1650294714
 transform 0 1 156 -1 0 4365
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1653911004
+timestamp 1650294714
 transform 0 -1 1244 1 0 4273
 box -38 -48 130 592
 << labels >>

@@ -34,4 +34,4 @@ C {devices/lab_pin.sym} 730 -190 2 0 {name=l8 sig_type=std_logic lab=outp}
 C {devices/lab_pin.sym} 730 -150 2 0 {name=l9 sig_type=std_logic lab=outn}
 C {rs_b_latch.sym} 680 -150 0 0 {name=x4 VDD=VDD VSS=VSS}
 C {devices/lab_pin.sym} 320 -100 3 0 {name=l3 sig_type=std_logic lab=clk}
-C {comparator_core_small.sym} 260 -100 0 0 {name=x1 VDD=VDD VSS=VSS}
+C {comparator_core_large.sym} 260 -100 0 0 {name=x1 VDD=VDD VSS=VSS}

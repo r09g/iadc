@@ -1,0 +1,14 @@
+name: testbench
+
+inputs:
+  - adk
+
+outputs:
+  - testbench.sv
+  - design.args
+  - design.args.gls
+
+commands:
+  - cp digital_filter_tb_random.sv outputs/testbench.sv
+  - cp design.vcs.args outputs/design.args
+  - cp design.vcs.args.gls outputs/design.args.gls
