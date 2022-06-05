@@ -1,5 +1,5 @@
-set MGC_DESIGN_NAME "a_mux4_en"
-set MGC_PORT_LIST {en s1 s0 in0 in1 in2 in3 out}
+set MGC_DESIGN_NAME "analog_top"
+set MGC_PORT_LIST {ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 debug op a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_probe_0 d_probe_1 d_probe_2 d_probe_3 d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1 d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1}
 set FLAT 0
 
 # flatten design and make ports
@@ -20,14 +20,14 @@ foreach port $MGC_PORT_LIST {
 }
 
 # special handling of power ports
-for {set i 0} {$i < 16} {incr i} {
+for {set i 0} {$i < 4} {incr i} {
     findlabel VDD $i
     port make 
     port use power
     port class inout
 }
 
-for {set i 0} {$i < 17} {incr i} {
+for {set i 0} {$i < 4} {incr i} {
     findlabel VSS $i
     port make 
     port use power
