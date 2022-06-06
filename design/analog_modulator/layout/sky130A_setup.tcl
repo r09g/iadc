@@ -2,6 +2,9 @@
 # Setup file for netgen LVS
 # SkyWater sky130A
 #---------------------------------------------------------------
+
+debug off
+automorphisms
 permute default
 property default
 property parallel none

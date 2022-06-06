@@ -46,11 +46,11 @@ ext2spice cthresh 0
 ext2spice -o "../../netlist/${MGC_DESIGN_NAME}/${MGC_DESIGN_NAME}_layout_pex.spice"
 
 # output gds and lef
-if {$FLAT == 0} {
-    select top cell
-    expand
-    gds write "${MGC_DESIGN_NAME}.gds"
-}
+# if {$FLAT == 0} {
+#     select top cell
+#     expand
+#     gds write "${MGC_DESIGN_NAME}.gds"
+# }
 # lef write "${MGC_DESIGN_NAME}.lef"
 
 # unset variables
