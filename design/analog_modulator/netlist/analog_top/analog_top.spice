@@ -60,7 +60,7 @@ x7 rst_n VSS VSS VDD VDD rst_n_b sky130_fd_sc_hd__clkinv_4
 xDC1 VSS VSS VDD VDD sky130_fd_sc_hd__decap_4
 xDC2 VSS VSS VDD VDD sky130_fd_sc_hd__decap_3
 xDC3 VSS VSS VDD VDD sky130_fd_sc_hd__decap_8
-xDC4 VSS VDD VSS VSS sky130_fd_sc_hd__decap_12
+xDC4 VSS VSS VDD VDD sky130_fd_sc_hd__decap_12
 .ends
 
 * expanding   symbol:  modulator_w_test.sym # of pins=33
@@ -263,7 +263,7 @@ XM2 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 ad='int((nf+1)/2
 xDC1 VSS VSS VDD VDD sky130_fd_sc_hd__decap_4
 xDC2 VSS VSS VDD VDD sky130_fd_sc_hd__decap_3
 xDC3 VSS VSS VDD VDD sky130_fd_sc_hd__decap_8
-xDC4 VSS VDD VSS VSS sky130_fd_sc_hd__decap_12
+xDC4 VSS VSS VDD VDD sky130_fd_sc_hd__decap_12
 x2 latch_out clk VSS VSS VDD VDD net1 sky130_fd_sc_hd__nand2_1
 x3 net3 net6 VSS VSS VDD VDD net4 sky130_fd_sc_hd__nand2_1
 x4 net1 VSS VSS VDD VDD net2 sky130_fd_sc_hd__clkinv_4

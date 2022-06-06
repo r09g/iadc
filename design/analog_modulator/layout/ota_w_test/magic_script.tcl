@@ -68,14 +68,14 @@ findlabel cmc
 port make
 
 # special handling of power ports
-for {set i 0} {$i < 15} {incr i} {
+for {set i 0} {$i < 13} {incr i} {
     findlabel VDD $i
     port make 
     port use power
     port class inout
 }
 
-for {set i 0} {$i < 23} {incr i} {
+for {set i 0} {$i < 13} {incr i} {
     findlabel VSS $i
     port make 
     port use power

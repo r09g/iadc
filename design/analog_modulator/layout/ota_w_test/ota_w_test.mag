@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654517900
+timestamp 1654558272
 << nwell >>
 rect -7664 -7309 3823 -1120
 << pwell >>
@@ -7251,48 +7251,93 @@ transform 1 0 -4861 0 1 -5740
 box -1489 -241 1489 241
 << labels >>
 flabel metal2 3147 -3484 3147 -3484 1 FreeSans 1200 0 0 0 on
+port 8 n
 flabel metal2 3431 -5243 3431 -5243 1 FreeSans 1200 0 0 0 op
+port 7 n
 flabel metal2 5049 -9956 5049 -9956 1 FreeSans 1200 0 0 0 cmc
+port 15 n
 flabel metal1 4262 -15741 4262 -15741 1 FreeSans 1200 0 0 0 bias_a
+port 11 n
 flabel metal1 6929 -13167 6929 -13167 1 FreeSans 1200 0 0 0 bias_d
+port 14 n
 flabel metal1 -7420 -1403 -7420 -1403 1 FreeSans 1200 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 -6957 -14245 -6957 -14245 1 FreeSans 1200 0 0 0 i_bias
+port 9 n
 flabel metal1 -3636 -12323 -3636 -12323 1 FreeSans 1200 0 0 0 bias_c
+port 13 n
 flabel metal1 -6950 -12541 -6950 -12541 1 FreeSans 1200 0 0 0 ip
+port 1 n
 flabel metal1 -6952 -13880 -6952 -13880 1 FreeSans 1200 0 0 0 in
+port 2 n
 flabel metal1 -4277 -7715 -4277 -7715 1 FreeSans 1200 0 0 0 bias_b
+port 12 n
 flabel metal1 7057 2874 7057 2874 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 7057 1707 7057 1707 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 7058 -83 7058 -83 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 7058 -739 7058 -739 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 7058 -1885 7058 -1885 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 7058 -2537 7058 -2537 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 7051 -4329 7051 -4329 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 7054 -5489 7054 -5489 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 7054 -7288 7054 -7288 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16056 -7290 16056 -7290 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16057 -6136 16057 -6136 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 16055 -5482 16055 -5482 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16057 -2529 16057 -2529 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 16055 -1886 16055 -1886 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16057 -86 16057 -86 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16057 1070 16057 1070 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 16057 1716 16057 1716 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16057 2870 16057 2870 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal3 6479 2585 6479 2585 1 FreeSans 400 0 0 0 p2_b
+port 6 n
 flabel metal3 6738 1807 6738 1807 1 FreeSans 400 0 0 0 p2
+port 5 n
 flabel metal3 6486 -6211 6486 -6211 1 FreeSans 400 0 0 0 p1_b
+port 4 n
 flabel metal3 6735 -5207 6735 -5207 1 FreeSans 400 0 0 0 p1
+port 3 n
 flabel metal3 17730 1821 17730 1821 1 FreeSans 400 0 0 0 p2
+port 5 n
 flabel metal3 17980 2631 17980 2631 1 FreeSans 400 0 0 0 p2_b
+port 6 n
 flabel metal3 17727 -7023 17727 -7023 1 FreeSans 400 0 0 0 p1
+port 3 n
 flabel metal3 17984 -6236 17984 -6236 1 FreeSans 400 0 0 0 p1_b
+port 4 n
 flabel metal2 17862 -8732 17862 -8732 1 FreeSans 800 0 0 0 cm
+port 10 n
 flabel metal1 7058 1058 7058 1058 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 7058 -3672 7058 -3672 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 7058 -6144 7058 -6144 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 16056 -4338 16056 -4338 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 16056 -3678 16056 -3678 1 FreeSans 400 0 0 0 VSS
+port 17 n power bidirectional
 flabel metal1 16056 -738 16056 -738 1 FreeSans 400 0 0 0 VDD
+port 16 n power bidirectional
 flabel metal1 1056 -17349 1056 -17349 1 FreeSans 1600 0 0 0 VSS
+port 17 n power bidirectional
 << end >>
