@@ -165,7 +165,7 @@ X10 VPWR a_76_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=2.6e+11p ps=
 X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
 .ends
 
-.subckt clock_v2_flat clk p2d_b p2d p2_b p2 p1d_b p1d p1_b p1 Ad_b Ad A_b A Bd_b Bd B_b
+.subckt clock_v2 clk p2d_b p2d p2_b p2 p1d_b p1d p1_b p1 Ad_b Ad A_b A Bd_b Bd B_b
 + B VDD VSS
 Xsky130_fd_sc_hd__clkbuf_16_11 sky130_fd_sc_hd__clkinv_4_8/Y VSS VDD p1d_b VSS VDD
 + sky130_fd_sc_hd__clkbuf_16

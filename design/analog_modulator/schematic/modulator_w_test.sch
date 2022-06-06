@@ -14,7 +14,7 @@ N 1240 -1180 1320 -1180 { lab=in1_c}
 N 1320 -980 1320 -910 { lab=in1_c}
 N 1240 -580 1320 -580 { lab=ip1_c}
 N 1320 -780 1320 -580 { lab=ip1_c}
-N 680 -880 680 -810 { lab=cm}
+N 680 -880 680 -810 { lab=cm1}
 N 560 -1180 680 -1180 { lab=c1r}
 N 560 -580 680 -580 { lab=#net1}
 N 420 -1180 500 -1180 { lab=c1l}
@@ -51,9 +51,9 @@ N 1960 -580 1960 -460 { lab=on1}
 N 960 -460 1430 -460 { lab=ip1}
 N 1490 -460 1960 -460 { lab=on1}
 N 960 -1340 960 -1300 { lab=in1}
-N 960 -1460 960 -1440 { lab=cm}
+N 960 -1460 960 -1440 { lab=cm1}
 N 960 -460 960 -420 { lab=ip1}
-N 960 -320 960 -300 { lab=cm}
+N 960 -320 960 -300 { lab=cm1}
 N 2100 -1180 2180 -1180 { lab=op1}
 N 2100 -580 2180 -580 { lab=on1}
 N 2360 -1180 2360 -930 { lab=c3l}
@@ -62,7 +62,7 @@ N 2360 -1180 2440 -1180 { lab=c3l}
 N 2360 -580 2440 -580 { lab=#net3}
 N 2580 -1180 2580 -1050 { lab=c3r}
 N 2580 -710 2580 -580 { lab=#net4}
-N 2580 -880 2580 -810 { lab=cm}
+N 2580 -880 2580 -810 { lab=cm2}
 N 2500 -1180 2580 -1180 { lab=c3r}
 N 2500 -580 2580 -580 { lab=#net4}
 N 2160 -1380 2180 -1380 { lab=ip}
@@ -81,14 +81,14 @@ N 2840 -910 2920 -910 { lab=in2}
 N 2840 -850 2920 -850 { lab=ip2}
 N 2840 -1300 2840 -1180 { lab=in2}
 N 2840 -1340 2840 -1300 { lab=in2}
-N 2840 -1460 2840 -1440 { lab=cm}
+N 2840 -1460 2840 -1440 { lab=cm2}
 N 2840 -1300 2950 -1300 { lab=in2}
 N 3040 -910 3120 -910 { lab=op2}
 N 3120 -1180 3120 -910 { lab=op2}
 N 3010 -1300 3120 -1300 { lab=op2}
 N 2840 -580 2840 -460 { lab=ip2}
 N 2840 -460 2840 -420 { lab=ip2}
-N 2840 -320 2840 -300 { lab=cm}
+N 2840 -320 2840 -300 { lab=cm2}
 N 2840 -460 2950 -460 { lab=ip2}
 N 3040 -850 3120 -850 { lab=on2}
 N 3120 -580 3120 -460 { lab=on2}
@@ -112,8 +112,8 @@ N 2360 -380 2440 -380 { lab=#net5}
 N 2280 -180 2360 -180 { lab=#net5}
 N 2360 -380 2360 -180 { lab=#net5}
 N 2160 -180 2180 -180 { lab=dac_n}
-N 680 -880 1400 -880 { lab=cm}
-N 2580 -880 2920 -880 { lab=cm}
+N 680 -880 1400 -880 { lab=cm1}
+N 2580 -880 2920 -880 { lab=cm2}
 N 1320 -1180 1320 -980 { lab=in1_c}
 N 860 -580 920 -580 { lab=ip1}
 N 340 -1180 420 -1180 { lab=c1l}
@@ -129,8 +129,8 @@ N 2280 -1380 2360 -1380 { lab=c4l}
 N 3120 -850 3120 -580 { lab=on2}
 N 3120 -1300 3120 -1180 { lab=op2}
 N 2280 -380 2360 -380 { lab=#net5}
-N 680 -950 680 -880 { lab=cm}
-N 2580 -950 2580 -880 { lab=cm}
+N 680 -950 680 -880 { lab=cm1}
+N 2580 -950 2580 -880 { lab=cm2}
 N 3120 -910 3140 -910 { lab=op2}
 N 3200 -910 3220 -910 { lab=VSS}
 N 3120 -850 3140 -850 { lab=on2}
@@ -152,23 +152,17 @@ N 1960 -660 1960 -580 { lab=on1}
 N 1780 -780 1820 -780 { lab=op1}
 N 1820 -780 1960 -1100 { lab=op1}
 N 1960 -1180 1960 -1100 { lab=op1}
-N 4120 -540 4140 -540 {}
-N 4120 -660 4140 -660 {}
-N 4180 -660 4200 -660 {}
-N 4200 -710 4200 -660 {}
-N 4180 -710 4200 -710 {}
-N 4180 -710 4180 -690 {}
+N 4180 -620 4200 -620 {}
+N 4180 -620 4180 -540 {}
 N 4180 -540 4200 -540 {}
-N 4200 -540 4200 -490 {}
-N 4180 -490 4200 -490 {}
-N 4180 -510 4180 -490 {}
-N 4180 -630 4180 -610 {}
-N 4180 -610 4200 -610 {}
-N 4200 -660 4200 -610 {}
-N 4180 -590 4180 -570 {}
-N 4180 -590 4200 -590 {}
-N 4200 -590 4200 -540 {}
-N 4120 -660 4120 -540 {}
+N 4240 -590 4260 -590 {}
+N 4260 -650 4260 -590 {}
+N 4240 -650 4260 -650 {}
+N 4240 -620 4260 -620 {}
+N 4240 -570 4260 -570 {}
+N 4260 -570 4260 -510 {}
+N 4240 -510 4260 -510 {}
+N 4240 -540 4260 -540 {}
 C {transmission_gate.sym} 780 -1180 0 0 {name=x4 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 780 -580 2 1 {name=x5 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 680 -1030 1 0 {name=x2 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
@@ -332,8 +326,6 @@ C {devices/lab_pin.sym} 1730 -620 1 0 {name=l69 sig_type=std_logic lab=Ad}
 C {devices/lab_pin.sym} 1730 -540 3 0 {name=l70 sig_type=std_logic lab=Ad_b}
 C {devices/lab_pin.sym} 1730 -820 1 0 {name=l71 sig_type=std_logic lab=Bd}
 C {devices/lab_pin.sym} 1730 -740 3 0 {name=l72 sig_type=std_logic lab=Bd_b}
-C {ota.sym} 2920 -960 2 1 {name=x31 VDD=VDD VSS=VSS}
-C {comparator.sym} 3600 -810 0 0 {name=x35 VDD=VDD VSS=VSS}
 C {transmission_gate.sym} 1160 -580 2 1 {name=x7 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {transmission_gate.sym} 1160 -780 2 1 {name=x9 VDD=VDD VSS=VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15}
 C {devices/ipin.sym} 4180 -1750 0 0 {name=p1 lab=ip}
@@ -363,7 +355,6 @@ C {devices/lab_wire.sym} 960 -1180 0 1 {name=l104 sig_type=std_logic lab=in1}
 C {devices/lab_wire.sym} 960 -580 0 1 {name=l105 sig_type=std_logic lab=ip1}
 C {devices/lab_wire.sym} 1960 -1180 0 1 {name=l106 sig_type=std_logic lab=op1}
 C {devices/lab_wire.sym} 1960 -580 0 1 {name=l107 sig_type=std_logic lab=on1}
-C {ota_w_test.sym} 1360 -1040 2 1 {name=x1 VDD=VDD VSS=VSS}
 C {devices/opin.sym} 4170 -1160 0 0 {name=p24 lab=bias_a
 }
 C {devices/lab_pin.sym} 1400 -1020 2 1 {name=l108 sig_type=std_logic lab=bias_d}
@@ -381,7 +372,10 @@ C {devices/opin.sym} 4170 -1040 0 0 {name=p30 lab=op1}
 C {devices/opin.sym} 4170 -1020 0 0 {name=p31 lab=on1}
 C {devices/opin.sym} 4170 -1000 0 0 {name=p32 lab=op2}
 C {devices/opin.sym} 4170 -980 0 0 {name=p33 lab=on2}
-C {sky130_fd_pr/nfet_01v8.sym} 4160 -540 0 0 {name=M1
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4180 -370 0 0 {name=C13 model=cap_mim_m3_1 W=8.8 L=8.8 MF=24 spiceprefix=X IC=0}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4300 -370 0 0 {name=C14 model=cap_mim_m3_1 W=2.1 L=2.1 MF=38 spiceprefix=X IC=0}
+C {comparator.sym} 3600 -810 0 0 {name=x35 VDD=VDD VSS=VSS}
+C {sky130_fd_pr/nfet_01v8.sym} 4220 -540 0 0 {name=M2
 L=0.15
 W=0.65
 nf=1 
@@ -395,7 +389,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 4160 -660 0 0 {name=M4
+C {sky130_fd_pr/pfet_01v8_hvt.sym} 4220 -620 0 0 {name=M3
 L=0.15
 W=1
 nf=1
@@ -409,6 +403,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 4200 -540 0 1 {name=l113 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 4120 -600 0 0 {name=l114 sig_type=std_logic lab=on}
-C {devices/lab_pin.sym} 4200 -660 0 1 {name=l115 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 4260 -620 2 0 {name=l113 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 4260 -540 2 0 {name=l114 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 4180 -580 0 0 {name=l115 sig_type=std_logic lab=on}
+C {ota_w_test.sym} 1360 -1040 2 1 {name=x1 VDD=VDD VSS=VSS}
+C {ota.sym} 2920 -960 2 1 {name=x31 VDD=VDD VSS=VSS}

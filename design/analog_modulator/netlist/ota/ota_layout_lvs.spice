@@ -15,8 +15,8 @@ X7 a_n296_n140# a_n416_n194# a_n474_n140# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0
 X8 a_238_n140# a_118_n194# a_60_n140# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.4e+06u l=600000u
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_lvt_TRAZV8 a_21_n120# a_n79_n120# a_n33_n208# VSUBS
-X0 a_21_n120# a_n33_n208# a_n79_n120# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=3.48e+11p pd=2.98e+06u as=3.48e+11p ps=2.98e+06u w=1.2e+06u l=210000u
+.subckt sky130_fd_pr__nfet_01v8_lvt_TRAZV8 a_20_n120# a_n78_n120# a_n33_n208# VSUBS
+X0 a_20_n120# a_n33_n208# a_n78_n120# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=3.48e+11p pd=2.98e+06u as=3.48e+11p ps=2.98e+06u w=1.2e+06u l=200000u
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_BASQVB a_n1008_n140# a_n652_n140# a_652_n194# a_772_n140#

@@ -1,0 +1,59 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654526415
+<< nwell >>
+rect 1443 906 1802 1118
+rect 1427 468 1802 906
+<< pwell >>
+rect 1430 323 1686 468
+rect 1380 239 1686 323
+rect 1430 4 1686 239
+<< locali >>
+rect 1386 1048 1767 1082
+rect 1386 1014 1759 1048
+rect 1386 74 1753 108
+rect 1368 40 1766 74
+<< viali >>
+rect 1386 223 1420 323
+<< metal1 >>
+rect -53 938 -1 990
+rect -53 451 93 485
+rect 1456 451 1652 485
+rect 2985 451 3056 485
+rect 1517 361 1527 413
+rect 1579 361 1589 413
+rect 1380 323 1426 335
+rect 1380 223 1386 323
+rect 1420 223 1526 323
+rect 1580 239 1683 323
+rect 1603 223 1665 239
+rect 1380 211 1426 223
+rect -53 131 -1 183
+<< via1 >>
+rect 1527 361 1579 413
+<< metal2 >>
+rect 1262 938 1726 990
+rect 1527 413 1579 938
+rect 1527 351 1579 361
+rect 1263 131 1663 183
+use nmos_PDN  nmos_PDN_0
+timestamp 1654517900
+transform 1 0 1553 0 1 312
+box -73 -116 73 98
+use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
+timestamp 1654522530
+transform 1 0 215 0 1 55
+box -216 -51 1283 1063
+use transmission_gate  transmission_gate_1
+timestamp 1654522530
+transform 1 0 1736 0 1 55
+box -216 -51 1283 1063
+<< labels >>
+flabel metal1 -43 963 -43 963 1 FreeSans 400 0 0 0 en_b
+flabel metal1 -45 157 -45 157 1 FreeSans 400 0 0 0 en
+flabel metal1 -44 468 -44 468 1 FreeSans 400 0 0 0 in
+flabel metal1 3051 467 3051 467 7 FreeSans 400 0 0 0 out
+flabel locali 1553 1056 1553 1056 1 FreeSans 400 0 0 0 VDD
+flabel locali 1553 66 1553 66 1 FreeSans 400 0 0 0 VSS
+<< end >>
