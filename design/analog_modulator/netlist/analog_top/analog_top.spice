@@ -1,5 +1,7 @@
 * analog_top
 
+.include "../sky130_fd_sc_hd.spice"
+
 .subckt analog_top ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 debug op
 + a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_probe_0 d_probe_1 d_probe_2 d_probe_3 d_clk_grp_1_ctrl_0
 + d_clk_grp_1_ctrl_1 d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VDD VSS
@@ -55,30 +57,6 @@ x25 net9 VSS VSS VDD VDD d_probe_2 sky130_fd_sc_hd__clkinv_16
 x26 net6 VSS VSS VDD VDD net10 sky130_fd_sc_hd__clkinv_4
 x27 net10 VSS VSS VDD VDD d_probe_3 sky130_fd_sc_hd__clkinv_16
 x7 rst_n VSS VSS VDD VDD rst_n_b sky130_fd_sc_hd__clkinv_4
-XM1 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 L=1.05 W=0.55 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=266 m=266 
-XM2 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt L=1.05 W=0.87 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=266 m=266 
-XM3 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 L=0.59 W=0.55 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.59 W=0.87 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM5 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 L=2.89 W=0.55 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=171 m=171 
-XM6 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt L=2.89 W=0.87 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=171 m=171 
-XM7 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 L=4.73 W=0.55 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=38 m=38 
-XM8 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt L=4.73 W=0.87 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=38 m=38 
 .ends
 
 * expanding   symbol:  modulator_w_test.sym # of pins=33
@@ -121,33 +99,33 @@ XM8 VDD VSS VDD VDD sky130_fd_pr__pfet_01v8_hvt L=4.73 W=0.87 nf=1 ad='int((nf+1
 *.opin on1
 *.opin op2
 *.opin on2
-x4 c1r in1 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x5 net1 ip1 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 c1r cm1 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x3 net1 cm1 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x10 ip c1l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x11 dac_n net2 p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x4 c1r in1 p2 p2_b VDD VSS transmission_gate
+x5 net1 ip1 p2 p2_b VDD VSS transmission_gate
+x2 c1r cm1 p1 p1_b VDD VSS transmission_gate
+x3 net1 cm1 p1 p1_b VDD VSS transmission_gate
+x10 ip c1l p1d p1d_b VDD VSS transmission_gate
+x11 dac_n net2 p2d p2d_b VDD VSS transmission_gate
 x12 VDD VSS op dac_p on VDD VSS 1b_dac
-x13 dac_p c1l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x14 in net2 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x19 on1 op1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x20 cm1 in1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x21 cm1 ip1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x22 op1 c3l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x23 on1 net3 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x24 net3 c3l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x25 c3r cm2 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x26 net4 cm2 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x27 ip c4l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x28 dac_p c4l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x29 c3r in2 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x30 net4 ip2 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x32 cm2 in2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x33 cm2 ip2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x34 on2 op2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x13 dac_p c1l p2d p2d_b VDD VSS transmission_gate
+x14 in net2 p1d p1d_b VDD VSS transmission_gate
+x19 on1 op1 rst_n_b rst_n VDD VSS transmission_gate
+x20 cm1 in1 rst_n_b rst_n VDD VSS transmission_gate
+x21 cm1 ip1 rst_n_b rst_n VDD VSS transmission_gate
+x22 op1 c3l p1d p1d_b VDD VSS transmission_gate
+x23 on1 net3 p1d p1d_b VDD VSS transmission_gate
+x24 net3 c3l p2d p2d_b VDD VSS transmission_gate
+x25 c3r cm2 p1 p1_b VDD VSS transmission_gate
+x26 net4 cm2 p1 p1_b VDD VSS transmission_gate
+x27 ip c4l p1d p1d_b VDD VSS transmission_gate
+x28 dac_p c4l p2d p2d_b VDD VSS transmission_gate
+x29 c3r in2 p2 p2_b VDD VSS transmission_gate
+x30 net4 ip2 p2 p2_b VDD VSS transmission_gate
+x32 cm2 in2 rst_n_b rst_n VDD VSS transmission_gate
+x33 cm2 ip2 rst_n_b rst_n VDD VSS transmission_gate
+x34 on2 op2 rst_n_b rst_n VDD VSS transmission_gate
 x36 VSS VDD op dac_n on VDD VSS 1b_dac
-x37 in net5 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x38 dac_n net5 p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x37 in net5 p1d p1d_b VDD VSS transmission_gate
+x38 dac_n net5 p2d p2d_b VDD VSS transmission_gate
 XC11 c1l c1r sky130_fd_pr__cap_mim_m3_1 W=8.8 L=8.8 MF=2 m=2
 XC1 net2 net1 sky130_fd_pr__cap_mim_m3_1 W=8.8 L=8.8 MF=2 m=2
 XC2 op1 in1 sky130_fd_pr__cap_mim_m3_1 W=8.8 L=8.8 MF=10 m=10
@@ -160,14 +138,14 @@ XC8 op2 in2 sky130_fd_pr__cap_mim_m3_1 W=2.1 L=2.1 MF=14 m=14
 XC9 on2 ip2 sky130_fd_pr__cap_mim_m3_1 W=2.1 L=2.1 MF=14 m=14
 XC10 op2 VSS sky130_fd_pr__cap_mim_m3_1 W=11.6 L=11.6 MF=1 m=1
 XC12 on2 VSS sky130_fd_pr__cap_mim_m3_1 W=11.6 L=11.6 MF=1 m=1
-x6 in1 in1_c A A_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x8 ip1 in1_c B B_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x15 op1_c op1 Ad Ad_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x16 on1_c on1 Ad Ad_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x17 op1_c on1 Bd Bd_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x18 on1_c op1 Bd Bd_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x7 ip1 ip1_c A A_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x9 in1 ip1_c B B_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x6 in1 in1_c A A_b VDD VSS transmission_gate
+x8 ip1 in1_c B B_b VDD VSS transmission_gate
+x15 op1_c op1 Ad Ad_b VDD VSS transmission_gate
+x16 on1_c on1 Ad Ad_b VDD VSS transmission_gate
+x17 op1_c on1 Bd Bd_b VDD VSS transmission_gate
+x18 on1_c op1 Bd Bd_b VDD VSS transmission_gate
+x7 ip1 ip1_c A A_b VDD VSS transmission_gate
+x9 in1 ip1_c B B_b VDD VSS transmission_gate
 XC13 __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 sky130_fd_pr__cap_mim_m3_1 W=8.8 L=8.8 MF=24 m=24
 XC14 __UNCONNECTED_PIN__2 __UNCONNECTED_PIN__3 sky130_fd_pr__cap_mim_m3_1 W=2.1 L=2.1 MF=38 m=38
 x35 op2 on2 op p1_b on VDD VSS comparator
@@ -211,10 +189,10 @@ x9 s1_b s0_b VSS VSS VDD VDD en0_b sky130_fd_sc_hd__nand2_1
 x10 s1 s0_b VSS VSS VDD VDD en1_b sky130_fd_sc_hd__nand2_1
 x11 s0 s1_b VSS VSS VDD VDD en2_b sky130_fd_sc_hd__nand2_1
 x12 s0 s1 VSS VSS VDD VDD en3_b sky130_fd_sc_hd__nand2_1
-x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x17 in2 net3 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x18 in3 net4 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x15 in0 net1 en en_b VDD VSS transmission_gate
+x16 in1 net2 en en_b VDD VSS transmission_gate
+x17 in2 net3 en en_b VDD VSS transmission_gate
+x18 in3 net4 en en_b VDD VSS transmission_gate
 x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
 .ends
 
@@ -232,8 +210,8 @@ x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
 *.opin out
 x3 net2 out s0 s0_b VDD VSS switch_5t
 x4 net1 out s0_b s0 VDD VSS switch_5t
-x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x15 in0 net1 en en_b VDD VSS transmission_gate
+x16 in1 net2 en en_b VDD VSS transmission_gate
 x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
 x1 s0 VSS VSS VDD VDD s0_b sky130_fd_sc_hd__inv_1
 .ends
@@ -478,8 +456,8 @@ XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=10 ad='int((nf+1)
 *.ipin v
 *.ipin v_b
 *.opin out
-x1 v_hi out v v_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 v_lo out v_b v VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 v_hi out v v_b VDD VSS transmission_gate
+x2 v_lo out v_b v VDD VSS transmission_gate
 .ends
 
 
@@ -579,8 +557,8 @@ XM9 VSS VSS VSS VSS sky130_fd_pr__nfet_01v8 L=0.6 W=1.4 nf=1 ad='int((nf+1)/2) *
 *.iopin out
 *.ipin en
 *.ipin en_b
-x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 in net1 en en_b VDD VSS transmission_gate
+x2 net1 out en en_b VDD VSS transmission_gate
 XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
@@ -858,20 +836,20 @@ XM51 m21d m21d m21d VDD sky130_fd_pr__pfet_01v8 L=0.6 W=1.4 nf=1 ad='int((nf+1)/
 *.ipin phi1
 XC3 op cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
 XC4 on cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
-x1 net1 op phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x3 net3 on phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x4 cm net1 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x6 cm net3 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 net1 op phi2 phi2_b VDD VSS transmission_gate
+x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate
+x3 net3 on phi2 phi2_b VDD VSS transmission_gate
+x4 cm net1 phi1 phi1_b VDD VSS transmission_gate
+x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate
+x6 cm net3 phi1 phi1_b VDD VSS transmission_gate
 XC1 net1 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC2 net3 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
-x7 cm net4 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x9 cm net6 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x10 net4 op phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x12 net6 on phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x7 cm net4 phi2 phi2_b VDD VSS transmission_gate
+x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate
+x9 cm net6 phi2 phi2_b VDD VSS transmission_gate
+x10 net4 op phi1 phi1_b VDD VSS transmission_gate
+x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate
+x12 net6 on phi1 phi1_b VDD VSS transmission_gate
 XC5 net4 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC6 net6 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XCdummy __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=20 m=20
