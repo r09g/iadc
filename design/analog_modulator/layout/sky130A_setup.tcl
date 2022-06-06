@@ -2,9 +2,6 @@
 # Setup file for netgen LVS
 # SkyWater sky130A
 #---------------------------------------------------------------
-
-debug off
-automorphisms
 permute default
 property default
 property parallel none
@@ -327,9 +324,9 @@ foreach dev $devices {
 
 if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
     foreach cell $cells1 {
-		if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
-			ignore class "-circuit1 $cell"
-		}
+#        if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+#            ignore class "-circuit1 $cell"
+#        }
         if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
             ignore class "-circuit1 $cell"
         }
@@ -341,9 +338,9 @@ if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
         }
     }
     foreach cell $cells2 {
-       if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
-           ignore class "-circuit2 $cell"
-       }
+#        if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+#            ignore class "-circuit2 $cell"
+#        }
         if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
             ignore class "-circuit2 $cell"
         }
