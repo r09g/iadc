@@ -1,0 +1,739 @@
+* analog_top
+
+.subckt analog_top ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 debug op
++ a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_probe_0 d_probe_1 d_probe_2 d_probe_3 d_clk_grp_1_ctrl_0
++ d_clk_grp_1_ctrl_1 d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VDD VSS
+x1 ip in A A_b Ad Ad_b B B_b Bd Bd_b p1 p1_b p1d p1d_b p2 p2_b p2d p2d_b rst_n rst_n_b i_bias_1
++ i_bias_2 op bias_a bias_b bias_c bias_d cm1 cmc op2 op1 on1 on2 VDD VSS modulator_w_test
+x2 a_mod_grp_ctrl_1 a_mod_grp_ctrl_0 debug cm1 bias_b cmc net1 a_probe_2 VDD VSS a_mux4_en
+x3 a_mod_grp_ctrl_1 a_mod_grp_ctrl_0 debug bias_a bias_c bias_d net2 a_probe_3 VDD VSS a_mux4_en
+x4 a_mod_grp_ctrl_0 debug op1 on1 a_probe_0 VDD VSS a_mux2_en
+x5 a_mod_grp_ctrl_0 debug op2 on2 a_probe_1 VDD VSS a_mux2_en
+x8 a_probe_0 VDD VSS esd_cell
+x9 a_probe_1 VDD VSS esd_cell
+x10 a_probe_2 VDD VSS esd_cell
+x11 a_probe_3 VDD VSS esd_cell
+x12 i_bias_1 VDD VSS esd_cell
+x13 i_bias_2 VDD VSS esd_cell
+x14 ip VDD VSS esd_cell
+x15 in VDD VSS esd_cell
+x6 A A_b Ad Ad_b Bd_b Bd B_b B p2 p2_b p2d clk p2d_b p1d_b p1d p1_b p1 VDD VSS clock_v2
+x16 p1 A p1_b A_b d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1 VSS VSS VDD VDD net3 sky130_fd_sc_hd__mux4_1
+x17 p2 B p2_b B_b d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1 VSS VSS VDD VDD net4 sky130_fd_sc_hd__mux4_1
+x18 p1d Ad p1d_b Ad_b d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VSS VSS VDD VDD net5
++ sky130_fd_sc_hd__mux4_1
+x19 p2d Bd p2d_b Bd_b d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VSS VSS VDD VDD net6
++ sky130_fd_sc_hd__mux4_1
+x20 net3 VSS VSS VDD VDD net7 sky130_fd_sc_hd__clkinv_4
+x21 net7 VSS VSS VDD VDD d_probe_0 sky130_fd_sc_hd__clkinv_16
+x22 net4 VSS VSS VDD VDD net8 sky130_fd_sc_hd__clkinv_4
+x23 net8 VSS VSS VDD VDD d_probe_1 sky130_fd_sc_hd__clkinv_16
+x24 net5 VSS VSS VDD VDD net9 sky130_fd_sc_hd__clkinv_4
+x25 net9 VSS VSS VDD VDD d_probe_2 sky130_fd_sc_hd__clkinv_16
+x26 net6 VSS VSS VDD VDD net10 sky130_fd_sc_hd__clkinv_4
+x27 net10 VSS VSS VDD VDD d_probe_3 sky130_fd_sc_hd__clkinv_16
+x7 rst_n VSS VSS VDD VDD rst_n_b sky130_fd_sc_hd__clkinv_4
+M1 VSS VDD VSS VSS nmos L=1.05 W=0.55 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=266 m=266 
+M2 VDD VSS VDD VDD pmos_hvt L=1.05 W=0.87 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=266 m=266 
+M3 VSS VDD VSS VSS nmos L=0.59 W=0.55 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M4 VDD VSS VDD VDD pmos_hvt L=0.59 W=0.87 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M5 VSS VDD VSS VSS nmos L=2.89 W=0.55 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=171 m=171 
+M6 VDD VSS VDD VDD pmos_hvt L=2.89 W=0.87 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=171 m=171 
+M7 VSS VDD VSS VSS nmos L=4.73 W=0.55 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=38 m=38 
+M8 VDD VSS VDD VDD pmos_hvt L=4.73 W=0.87 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=38 m=38 
+.ends
+
+.subckt modulator_w_test  ip in A A_b Ad Ad_b B B_b Bd Bd_b p1 p1_b p1d p1d_b p2 p2_b p2d p2d_b
++ rst_n rst_n_b i_bias_1 i_bias_2 op bias_a bias_b bias_c bias_d cm1 cmc op2 op1 on1 on2  VDD  VSS
+x4 c1r in1 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x5 net1 ip1 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 c1r cm1 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x3 net1 cm1 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x10 ip c1l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x11 dac_n net2 p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x12 VDD VSS op dac_p on VDD VSS 1b_dac
+x13 dac_p c1l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x14 in net2 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x19 on1 op1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x20 cm1 in1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x21 cm1 ip1 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x22 op1 c3l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x23 on1 net3 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x24 net3 c3l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x25 c3r cm2 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x26 net4 cm2 p1 p1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x27 ip c4l p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x28 dac_p c4l p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x29 c3r in2 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x30 net4 ip2 p2 p2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x32 cm2 in2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x33 cm2 ip2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x34 on2 op2 rst_n_b rst_n VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x36 VSS VDD op dac_n on VDD VSS 1b_dac
+x37 in net5 p1d p1d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x38 dac_n net5 p2d p2d_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+CC11 c1l c1r cm3m4 W=8.8 L=8.8 MF=2 m=2
+CC1 net2 net1 cm3m4 W=8.8 L=8.8 MF=2 m=2
+CC2 op1 in1 cm3m4 W=8.8 L=8.8 MF=10 m=10
+CC3 on1 ip1 cm3m4 W=8.8 L=8.8 MF=10 m=10
+CC4 c3r c4l cm3m4 W=2.1 L=2.1 MF=1 m=1
+CC5 c3r c3l cm3m4 W=2.1 L=2.1 MF=2 m=2
+CC6 net4 net3 cm3m4 W=2.1 L=2.1 MF=2 m=2
+CC7 net4 net5 cm3m4 W=2.1 L=2.1 MF=1 m=1
+CC8 op2 in2 cm3m4 W=2.1 L=2.1 MF=14 m=14
+CC9 on2 ip2 cm3m4 W=2.1 L=2.1 MF=14 m=14
+CC10 op2 VSS cm3m4 W=11.6 L=11.6 MF=1 m=1
+CC12 on2 VSS cm3m4 W=11.6 L=11.6 MF=1 m=1
+x6 in1 in1_c A A_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x8 ip1 in1_c B B_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x15 op1_c op1 Ad Ad_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x16 on1_c on1 Ad Ad_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x17 op1_c on1 Bd Bd_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x18 on1_c op1 Bd Bd_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x7 ip1 ip1_c A A_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x9 in1 ip1_c B B_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+CC13 __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 cm3m4 W=8.8 L=8.8 MF=24 m=24
+CC14 __UNCONNECTED_PIN__2 __UNCONNECTED_PIN__3 cm3m4 W=2.1 L=2.1 MF=38 m=38
+x35 op2 on2 op p1_b on VDD VSS comparator
+M2 VSS on VSS VSS nmos L=0.15 W=0.65 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+M3 VDD on VDD VDD pmos_hvt L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+x1 i_bias_1 ip1_c in1_c p1 p1_b p2 p2_b op1_c on1_c cm1 bias_a bias_b bias_c bias_d cmc VDD VSS
++ ota_w_test
+x31 i_bias_2 ip2 in2 p1 p1_b p2 p2_b op2 on2 cm2 VDD VSS ota
+.ends
+
+
+.subckt a_mux4_en  s0 s1 en in0 in1 in2 in3 out  VDD  VSS
+x1 net4 out net5 en3_b VDD VSS switch_5t
+x2 net3 out net6 en2_b VDD VSS switch_5t
+x3 net2 out net7 en1_b VDD VSS switch_5t
+x4 net1 out net8 en0_b VDD VSS switch_5t
+x5 en3_b VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x6 en2_b VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+x7 en1_b VSS VSS VDD VDD net7 sky130_fd_sc_hd__inv_1
+x8 en0_b VSS VSS VDD VDD net8 sky130_fd_sc_hd__inv_1
+x13 s0 VSS VSS VDD VDD s0_b sky130_fd_sc_hd__inv_1
+x14 s1 VSS VSS VDD VDD s1_b sky130_fd_sc_hd__inv_1
+x9 s1_b s0_b VSS VSS VDD VDD en0_b sky130_fd_sc_hd__nand2_1
+x10 s1 s0_b VSS VSS VDD VDD en1_b sky130_fd_sc_hd__nand2_1
+x11 s0 s1_b VSS VSS VDD VDD en2_b sky130_fd_sc_hd__nand2_1
+x12 s0 s1 VSS VSS VDD VDD en3_b sky130_fd_sc_hd__nand2_1
+x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x17 in2 net3 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x18 in3 net4 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
+.ends
+
+
+.subckt a_mux2_en  s0 en in0 in1 out  VDD  VSS
+x3 net2 out s0 s0_b VDD VSS switch_5t
+x4 net1 out s0_b s0 VDD VSS switch_5t
+x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
+x1 s0 VSS VSS VDD VDD s0_b sky130_fd_sc_hd__inv_1
+.ends
+
+
+.subckt esd_cell  esd  VDD  VSS
+M1 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=5 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=20 m=20 
+M2 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=20 m=20 
+.ends
+
+
+.subckt clock_v2  A A_b Ad Ad_b Bd_b Bd B_b B p2 p2_b p2d clk p2d_b p1d_b p1d p1_b p1  VDD  VSS
+x2 latch_out clk VSS VSS VDD VDD net1 sky130_fd_sc_hd__nand2_1
+x3 net3 net6 VSS VSS VDD VDD net4 sky130_fd_sc_hd__nand2_1
+x4 net1 VSS VSS VDD VDD net2 sky130_fd_sc_hd__clkinv_4
+x6 net2 VSS VSS VDD VDD net34 sky130_fd_sc_hd__clkinv_1
+x9 net4 VSS VSS VDD VDD net5 sky130_fd_sc_hd__clkinv_4
+x11 net5 VSS VSS VDD VDD net35 sky130_fd_sc_hd__clkinv_1
+x1 clk VSS VSS VDD VDD net3 sky130_fd_sc_hd__clkinv_1
+x20 net36 VSS VSS VDD VDD latch_in sky130_fd_sc_hd__clkdlybuf4s50_1
+x21 net37 VSS VSS VDD VDD net6 sky130_fd_sc_hd__clkdlybuf4s50_1
+x22 net34 VSS VSS VDD VDD net38 sky130_fd_sc_hd__clkdlybuf4s50_1
+x25 net35 VSS VSS VDD VDD net39 sky130_fd_sc_hd__clkdlybuf4s50_1
+x7 net40 VSS VSS VDD VDD net36 sky130_fd_sc_hd__clkdlybuf4s50_1
+x12 net41 VSS VSS VDD VDD net37 sky130_fd_sc_hd__clkdlybuf4s50_1
+x14 net38 VSS VSS VDD VDD net42 sky130_fd_sc_hd__clkdlybuf4s50_1
+x15 net39 VSS VSS VDD VDD net43 sky130_fd_sc_hd__clkdlybuf4s50_1
+x16 net44 VSS VSS VDD VDD net40 sky130_fd_sc_hd__clkdlybuf4s50_1
+x17 net45 VSS VSS VDD VDD net41 sky130_fd_sc_hd__clkdlybuf4s50_1
+x18 net42 VSS VSS VDD VDD net46 sky130_fd_sc_hd__clkdlybuf4s50_1
+x19 net43 VSS VSS VDD VDD net47 sky130_fd_sc_hd__clkdlybuf4s50_1
+x23 net48 VSS VSS VDD VDD net44 sky130_fd_sc_hd__clkdlybuf4s50_1
+x24 net49 VSS VSS VDD VDD net45 sky130_fd_sc_hd__clkdlybuf4s50_1
+x26 net46 VSS VSS VDD VDD net7 sky130_fd_sc_hd__clkdlybuf4s50_1
+x27 net47 VSS VSS VDD VDD net8 sky130_fd_sc_hd__clkdlybuf4s50_1
+x28 net50 VSS VSS VDD VDD net48 sky130_fd_sc_hd__clkdlybuf4s50_1
+x29 net51 VSS VSS VDD VDD net49 sky130_fd_sc_hd__clkdlybuf4s50_1
+x32 net52 VSS VSS VDD VDD net50 sky130_fd_sc_hd__clkdlybuf4s50_1
+x33 net53 VSS VSS VDD VDD net51 sky130_fd_sc_hd__clkdlybuf4s50_1
+x36 net54 VSS VSS VDD VDD net52 sky130_fd_sc_hd__clkdlybuf4s50_1
+x37 net55 VSS VSS VDD VDD net53 sky130_fd_sc_hd__clkdlybuf4s50_1
+x40 net56 VSS VSS VDD VDD net54 sky130_fd_sc_hd__clkdlybuf4s50_1
+x41 net57 VSS VSS VDD VDD net55 sky130_fd_sc_hd__clkdlybuf4s50_1
+x44 net58 VSS VSS VDD VDD net56 sky130_fd_sc_hd__clkdlybuf4s50_1
+x45 net59 VSS VSS VDD VDD net57 sky130_fd_sc_hd__clkdlybuf4s50_1
+x48 net60 VSS VSS VDD VDD net58 sky130_fd_sc_hd__clkdlybuf4s50_1
+x49 net61 VSS VSS VDD VDD net59 sky130_fd_sc_hd__clkdlybuf4s50_1
+x52 net62 VSS VSS VDD VDD net60 sky130_fd_sc_hd__clkdlybuf4s50_1
+x53 net63 VSS VSS VDD VDD net61 sky130_fd_sc_hd__clkdlybuf4s50_1
+x56 net64 VSS VSS VDD VDD net62 sky130_fd_sc_hd__clkdlybuf4s50_1
+x57 net65 VSS VSS VDD VDD net63 sky130_fd_sc_hd__clkdlybuf4s50_1
+x60 net66 VSS VSS VDD VDD net64 sky130_fd_sc_hd__clkdlybuf4s50_1
+x61 net67 VSS VSS VDD VDD net65 sky130_fd_sc_hd__clkdlybuf4s50_1
+x64 net68 VSS VSS VDD VDD net66 sky130_fd_sc_hd__clkdlybuf4s50_1
+x65 net69 VSS VSS VDD VDD net67 sky130_fd_sc_hd__clkdlybuf4s50_1
+x68 net70 VSS VSS VDD VDD net68 sky130_fd_sc_hd__clkdlybuf4s50_1
+x69 net71 VSS VSS VDD VDD net69 sky130_fd_sc_hd__clkdlybuf4s50_1
+x72 net72 VSS VSS VDD VDD net70 sky130_fd_sc_hd__clkdlybuf4s50_1
+x73 net73 VSS VSS VDD VDD net71 sky130_fd_sc_hd__clkdlybuf4s50_1
+x76 net74 VSS VSS VDD VDD net72 sky130_fd_sc_hd__clkdlybuf4s50_1
+x77 net75 VSS VSS VDD VDD net73 sky130_fd_sc_hd__clkdlybuf4s50_1
+x80 net76 VSS VSS VDD VDD net74 sky130_fd_sc_hd__clkdlybuf4s50_1
+x81 net77 VSS VSS VDD VDD net75 sky130_fd_sc_hd__clkdlybuf4s50_1
+x84 net78 VSS VSS VDD VDD net79 sky130_fd_sc_hd__clkdlybuf4s50_1
+x85 net80 VSS VSS VDD VDD net81 sky130_fd_sc_hd__clkdlybuf4s50_1
+x86 net82 VSS VSS VDD VDD net78 sky130_fd_sc_hd__clkdlybuf4s50_1
+x87 net83 VSS VSS VDD VDD net80 sky130_fd_sc_hd__clkdlybuf4s50_1
+x88 net29 VSS VSS VDD VDD net82 sky130_fd_sc_hd__clkdlybuf4s50_1
+x89 net28 VSS VSS VDD VDD net83 sky130_fd_sc_hd__clkdlybuf4s50_1
+x30 clk_div net17 VSS VSS VDD VDD net9 sky130_fd_sc_hd__nand2_1
+x31 net16 net12 VSS VSS VDD VDD net13 sky130_fd_sc_hd__nand2_1
+x34 net9 VSS VSS VDD VDD net10 sky130_fd_sc_hd__clkinv_4
+x35 net10 VSS VSS VDD VDD net84 sky130_fd_sc_hd__clkinv_1
+x38 net13 VSS VSS VDD VDD net14 sky130_fd_sc_hd__clkinv_4
+x39 net14 VSS VSS VDD VDD net85 sky130_fd_sc_hd__clkinv_1
+x42 clk_div VSS VSS VDD VDD net12 sky130_fd_sc_hd__clkinv_1
+x43 net86 VSS VSS VDD VDD net17 sky130_fd_sc_hd__clkdlybuf4s50_1
+x46 net87 VSS VSS VDD VDD net16 sky130_fd_sc_hd__clkdlybuf4s50_1
+x47 net84 VSS VSS VDD VDD net88 sky130_fd_sc_hd__clkdlybuf4s50_1
+x50 net85 VSS VSS VDD VDD net89 sky130_fd_sc_hd__clkdlybuf4s50_1
+x51 net90 VSS VSS VDD VDD net86 sky130_fd_sc_hd__clkdlybuf4s50_1
+x54 net91 VSS VSS VDD VDD net87 sky130_fd_sc_hd__clkdlybuf4s50_1
+x55 net88 VSS VSS VDD VDD net92 sky130_fd_sc_hd__clkdlybuf4s50_1
+x58 net89 VSS VSS VDD VDD net93 sky130_fd_sc_hd__clkdlybuf4s50_1
+x59 net94 VSS VSS VDD VDD net90 sky130_fd_sc_hd__clkdlybuf4s50_1
+x62 net95 VSS VSS VDD VDD net91 sky130_fd_sc_hd__clkdlybuf4s50_1
+x63 net92 VSS VSS VDD VDD net96 sky130_fd_sc_hd__clkdlybuf4s50_1
+x66 net93 VSS VSS VDD VDD net97 sky130_fd_sc_hd__clkdlybuf4s50_1
+x67 net98 VSS VSS VDD VDD net94 sky130_fd_sc_hd__clkdlybuf4s50_1
+x70 net99 VSS VSS VDD VDD net95 sky130_fd_sc_hd__clkdlybuf4s50_1
+x71 net96 VSS VSS VDD VDD net18 sky130_fd_sc_hd__clkdlybuf4s50_1
+x74 net97 VSS VSS VDD VDD net20 sky130_fd_sc_hd__clkdlybuf4s50_1
+x75 net100 VSS VSS VDD VDD net98 sky130_fd_sc_hd__clkdlybuf4s50_1
+x136 net101 VSS VSS VDD VDD net99 sky130_fd_sc_hd__clkdlybuf4s50_1
+x137 net102 VSS VSS VDD VDD net100 sky130_fd_sc_hd__clkdlybuf4s50_1
+x138 net103 VSS VSS VDD VDD net101 sky130_fd_sc_hd__clkdlybuf4s50_1
+x139 net104 VSS VSS VDD VDD net102 sky130_fd_sc_hd__clkdlybuf4s50_1
+x140 net105 VSS VSS VDD VDD net103 sky130_fd_sc_hd__clkdlybuf4s50_1
+x141 net106 VSS VSS VDD VDD net104 sky130_fd_sc_hd__clkdlybuf4s50_1
+x142 net107 VSS VSS VDD VDD net105 sky130_fd_sc_hd__clkdlybuf4s50_1
+x143 net108 VSS VSS VDD VDD net106 sky130_fd_sc_hd__clkdlybuf4s50_1
+x144 net109 VSS VSS VDD VDD net107 sky130_fd_sc_hd__clkdlybuf4s50_1
+x145 net110 VSS VSS VDD VDD net108 sky130_fd_sc_hd__clkdlybuf4s50_1
+x146 net111 VSS VSS VDD VDD net109 sky130_fd_sc_hd__clkdlybuf4s50_1
+x147 net112 VSS VSS VDD VDD net110 sky130_fd_sc_hd__clkdlybuf4s50_1
+x148 net113 VSS VSS VDD VDD net111 sky130_fd_sc_hd__clkdlybuf4s50_1
+x149 net114 VSS VSS VDD VDD net112 sky130_fd_sc_hd__clkdlybuf4s50_1
+x150 net115 VSS VSS VDD VDD net113 sky130_fd_sc_hd__clkdlybuf4s50_1
+x151 net116 VSS VSS VDD VDD net114 sky130_fd_sc_hd__clkdlybuf4s50_1
+x152 net117 VSS VSS VDD VDD net115 sky130_fd_sc_hd__clkdlybuf4s50_1
+x153 net118 VSS VSS VDD VDD net116 sky130_fd_sc_hd__clkdlybuf4s50_1
+x154 net119 VSS VSS VDD VDD net117 sky130_fd_sc_hd__clkdlybuf4s50_1
+x155 net120 VSS VSS VDD VDD net118 sky130_fd_sc_hd__clkdlybuf4s50_1
+x156 net121 VSS VSS VDD VDD net119 sky130_fd_sc_hd__clkdlybuf4s50_1
+x157 net122 VSS VSS VDD VDD net120 sky130_fd_sc_hd__clkdlybuf4s50_1
+x158 net123 VSS VSS VDD VDD net121 sky130_fd_sc_hd__clkdlybuf4s50_1
+x195 net9 net18 VSS VSS VDD VDD net23 sky130_fd_sc_hd__nand2_4
+x196 net10 VSS VSS VDD VDD net22 sky130_fd_sc_hd__clkinv_4
+x197 net14 VSS VSS VDD VDD net21 sky130_fd_sc_hd__clkinv_4
+x198 net13 net20 VSS VSS VDD VDD net19 sky130_fd_sc_hd__nand2_4
+x223 clk net24 VSS VSS VDD VDD clk_div net24 sky130_fd_sc_hd__dfxbp_1
+x224 p2 clk_div VSS VSS VDD VDD net25 net124 sky130_fd_sc_hd__dfxbp_1
+x225 Ad_b Bd_b net25 VSS VSS VDD VDD net26 sky130_fd_sc_hd__mux2_1
+x226 net26 latch_in VSS VSS VDD VDD net27 sky130_fd_sc_hd__nand2_1
+x227 net27 VSS VSS VDD VDD latch_out sky130_fd_sc_hd__clkinv_1
+x232 net22 VSS VSS VDD VDD A_b sky130_fd_sc_hd__clkbuf_16
+x233 net10 VSS VSS VDD VDD A sky130_fd_sc_hd__clkbuf_16
+x234 net11 VSS VSS VDD VDD Ad_b sky130_fd_sc_hd__clkbuf_16
+x235 net23 VSS VSS VDD VDD Ad sky130_fd_sc_hd__clkbuf_16
+x236 net19 VSS VSS VDD VDD Bd sky130_fd_sc_hd__clkbuf_16
+x237 net15 VSS VSS VDD VDD Bd_b sky130_fd_sc_hd__clkbuf_16
+x238 net14 VSS VSS VDD VDD B sky130_fd_sc_hd__clkbuf_16
+x239 net21 VSS VSS VDD VDD B_b sky130_fd_sc_hd__clkbuf_16
+x228 net23 VSS VSS VDD VDD net11 sky130_fd_sc_hd__clkinv_4
+x229 net19 VSS VSS VDD VDD net15 sky130_fd_sc_hd__clkinv_4
+x5 net1 net7 VSS VSS VDD VDD net33 sky130_fd_sc_hd__nand2_4
+x10 net2 VSS VSS VDD VDD net32 sky130_fd_sc_hd__clkinv_4
+x116 net5 VSS VSS VDD VDD net31 sky130_fd_sc_hd__clkinv_4
+x117 net4 net8 VSS VSS VDD VDD net30 sky130_fd_sc_hd__nand2_4
+x230 net32 VSS VSS VDD VDD p2_b sky130_fd_sc_hd__clkbuf_16
+x231 net2 VSS VSS VDD VDD p2 sky130_fd_sc_hd__clkbuf_16
+x240 net28 VSS VSS VDD VDD p2d_b sky130_fd_sc_hd__clkbuf_16
+x241 net33 VSS VSS VDD VDD p2d sky130_fd_sc_hd__clkbuf_16
+x242 net30 VSS VSS VDD VDD p1d sky130_fd_sc_hd__clkbuf_16
+x243 net29 VSS VSS VDD VDD p1d_b sky130_fd_sc_hd__clkbuf_16
+x244 net5 VSS VSS VDD VDD p1 sky130_fd_sc_hd__clkbuf_16
+x245 net31 VSS VSS VDD VDD p1_b sky130_fd_sc_hd__clkbuf_16
+x246 net33 VSS VSS VDD VDD net28 sky130_fd_sc_hd__clkinv_4
+x247 net30 VSS VSS VDD VDD net29 sky130_fd_sc_hd__clkinv_4
+x8 net125 VSS VSS VDD VDD net123 sky130_fd_sc_hd__clkdlybuf4s50_1
+x13 net126 VSS VSS VDD VDD net122 sky130_fd_sc_hd__clkdlybuf4s50_1
+x78 net127 VSS VSS VDD VDD net125 sky130_fd_sc_hd__clkdlybuf4s50_1
+x79 net128 VSS VSS VDD VDD net126 sky130_fd_sc_hd__clkdlybuf4s50_1
+x82 net129 VSS VSS VDD VDD net130 sky130_fd_sc_hd__clkdlybuf4s50_1
+x83 net131 VSS VSS VDD VDD net132 sky130_fd_sc_hd__clkdlybuf4s50_1
+x90 net133 VSS VSS VDD VDD net129 sky130_fd_sc_hd__clkdlybuf4s50_1
+x91 net134 VSS VSS VDD VDD net131 sky130_fd_sc_hd__clkdlybuf4s50_1
+x92 net11 VSS VSS VDD VDD net133 sky130_fd_sc_hd__clkdlybuf4s50_1
+x93 net15 VSS VSS VDD VDD net134 sky130_fd_sc_hd__clkdlybuf4s50_1
+x94 net135 VSS VSS VDD VDD net128 sky130_fd_sc_hd__clkdlybuf4s50_1
+x95 net136 VSS VSS VDD VDD net127 sky130_fd_sc_hd__clkdlybuf4s50_1
+x96 net137 VSS VSS VDD VDD net135 sky130_fd_sc_hd__clkdlybuf4s50_1
+x97 net138 VSS VSS VDD VDD net136 sky130_fd_sc_hd__clkdlybuf4s50_1
+x98 net139 VSS VSS VDD VDD net137 sky130_fd_sc_hd__clkdlybuf4s50_1
+x99 net140 VSS VSS VDD VDD net138 sky130_fd_sc_hd__clkdlybuf4s50_1
+x100 net141 VSS VSS VDD VDD net140 sky130_fd_sc_hd__clkdlybuf4s50_1
+x101 net142 VSS VSS VDD VDD net139 sky130_fd_sc_hd__clkdlybuf4s50_1
+x102 net130 VSS VSS VDD VDD net141 sky130_fd_sc_hd__clkdlybuf4s50_1
+x103 net132 VSS VSS VDD VDD net142 sky130_fd_sc_hd__clkdlybuf4s50_1
+x104 net143 VSS VSS VDD VDD net77 sky130_fd_sc_hd__clkdlybuf4s50_1
+x105 net144 VSS VSS VDD VDD net76 sky130_fd_sc_hd__clkdlybuf4s50_1
+x106 net145 VSS VSS VDD VDD net143 sky130_fd_sc_hd__clkdlybuf4s50_1
+x107 net146 VSS VSS VDD VDD net144 sky130_fd_sc_hd__clkdlybuf4s50_1
+x108 net147 VSS VSS VDD VDD net145 sky130_fd_sc_hd__clkdlybuf4s50_1
+x109 net148 VSS VSS VDD VDD net146 sky130_fd_sc_hd__clkdlybuf4s50_1
+x110 net149 VSS VSS VDD VDD net148 sky130_fd_sc_hd__clkdlybuf4s50_1
+x111 net150 VSS VSS VDD VDD net147 sky130_fd_sc_hd__clkdlybuf4s50_1
+x112 net79 VSS VSS VDD VDD net149 sky130_fd_sc_hd__clkdlybuf4s50_1
+x113 net81 VSS VSS VDD VDD net150 sky130_fd_sc_hd__clkdlybuf4s50_1
+.ends
+
+
+.subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+M1 out en in VSS nmos L='L_N' W='W_N' nf=10 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+M2 out en_b in VDD pmos L='L_P' W='W_P' nf=10 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+.ends
+
+
+.subckt 1b_dac  v_hi v_lo v out v_b  VDD  VSS
+x1 v_hi out v v_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 v_lo out v_b v VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+.ends
+
+
+.subckt comparator  ip in outp clk outn  VDD  VSS
+x2 s_b VSS VSS VDD VDD s_b_buf sky130_fd_sc_hd__buf_2
+x3 r_b VSS VSS VDD VDD r_b_buf sky130_fd_sc_hd__buf_2
+x4 s_b_buf r_b_buf outp outn VDD VSS rs_b_latch
+x1 ip in s_b clk r_b VDD VSS comparator_core_large
+.ends
+
+
+.subckt ota_w_test  i_bias ip in phi1 phi1_b phi2 phi2_b op on cm bias_a bias_b bias_c bias_d cmc
++  VDD  VSS
+x1 bias_a bias_b bias_c bias_d cm i_bias VDD VSS folded_cascode_3_bias
+x3 phi1 phi1_b op on cm bias_a cmc phi2 phi2_b VDD VSS sc_cmfb
+x2 cmc ip in bias_a bias_b bias_c bias_d op on VDD VSS folded_cascode_3_core
+M43 VDD VDD VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=8 m=8 
+M45 VDD VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M9 VSS VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=23 m=23 
+.ends
+
+
+.subckt ota  i_bias ip in phi1 phi1_b phi2 phi2_b op on cm  VDD  VSS
+x1 bias_a bias_b bias_c bias_d cm i_bias VDD VSS folded_cascode_3_bias
+x3 phi1 phi1_b op on cm bias_a cmc phi2 phi2_b VDD VSS sc_cmfb
+x2 cmc ip in bias_a bias_b bias_c bias_d op on VDD VSS folded_cascode_3_core
+M43 VDD VDD VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=8 m=8 
+M45 VDD VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M9 VSS VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=23 m=23 
+.ends
+
+
+.subckt switch_5t  in out en en_b  VDD  VSS
+x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+M1 net1 en_b VSS VSS nmos L=0.15 W=0.5 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+.subckt rs_b_latch  s_b r_b q q_b  VDD  VSS
+x1 s_b q_b VSS VSS VDD VDD q sky130_fd_sc_hd__nand2_4
+x2 r_b q VSS VSS VDD VDD q_b sky130_fd_sc_hd__nand2_4
+.ends
+
+
+.subckt comparator_core_large  ip in s_b clk r_b  VDD  VSS
+M1 tail_d clk VSS VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=32 m=32 
+M2 p ip tail_d VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=160 m=160 
+M3 q in tail_d VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=160 m=160 
+M4 s_b r_b p VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=80 m=80 
+M5 r_b s_b q VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=80 m=80 
+M6 s_b r_b VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=40 m=40 
+M7 r_b s_b VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=40 m=40 
+M8 s_b clk VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=16 m=16 
+M9 r_b clk VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=16 m=16 
+M10 p clk VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=16 m=16 
+M11 q clk VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=16 m=16 
+M12 tail_d VSS VSS VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M13 VSS VSS VSS VSS nmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=24 m=24 
+M17 VDD VDD VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+M14 q VDD VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M15 p VDD VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M16 r_b VDD VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M18 s_b VDD VDD VDD pmos L=0.15 W=1 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+.subckt folded_cascode_3_bias  bias_a bias_b bias_c bias_d bias_e i_bias  VDD  VSS
+M22 bias_b bias_c m21d VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=6 m=6 
+M26 m2d bias_c m25d VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M32 bias_e bias_c m31d VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=6 m=6 
+M21 m21d bias_b VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=6 m=6 
+M25 m25d bias_b VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=6 m=6 
+M31 m31d bias_b VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=6 m=6 
+M1 bias_b bias_b bias_c VSS nmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=56 m=56 
+M2 m2d m2d bias_d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=50 m=50 
+M3 bias_d m2d bias_a VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M4 bias_a bias_d m5d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=18 m=18 
+M5 m5d bias_a VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=18 m=18 
+M6 bias_c i_bias VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=18 m=18 
+M7 i_bias i_bias VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=18 m=18 
+M33 bias_e bias_e net1 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M49 net1 bias_e net2 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M50 net2 bias_e net3 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M63 net3 bias_e VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M68 bias_e bias_e net4 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M69 net4 bias_e net5 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M70 net5 bias_e net6 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M71 net6 bias_e VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M72 bias_e bias_e net7 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M73 net7 bias_e net8 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M74 net8 bias_e net9 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M75 net9 bias_e VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M76 bias_e bias_e net10 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M77 net10 bias_e net11 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M78 net11 bias_e net12 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M79 net12 bias_e VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M64 bias_e bias_e net13 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M65 net13 bias_e net14 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M66 net14 bias_e net15 VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=1 m=1 
+M67 net15 bias_e VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+M57 bias_b VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M58 m2d VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M59 bias_e VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M60 m31d VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M42 m5d VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M44 bias_c bias_c bias_c VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M34 bias_d bias_d bias_d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=8 m=8 
+M35 m2d m2d m2d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M36 bias_a bias_a bias_a VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=4 m=4 
+M37 bias_e bias_e bias_e VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=8 m=8 
+M54 m25d m25d m25d VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M29 m5d m5d m5d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M8 i_bias i_bias i_bias VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M10 bias_c bias_c bias_c VSS nmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=8 m=8 
+M27 bias_b bias_b bias_b VSS nmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=8 m=8 
+M46 m21d m21d m21d VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M47 m25d m25d m25d VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M48 m31d m31d m31d VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M51 m21d m21d m21d VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+.subckt sc_cmfb  phi1 phi1_b op on cm bias_a cmc phi2 phi2_b  VDD  VSS
+CC3 op cmc cm3m4 W=4.8 L=4.8 MF=4 m=4
+CC4 on cmc cm3m4 W=4.8 L=4.8 MF=4 m=4
+x1 net1 op phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x3 net3 on phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x4 cm net1 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x6 cm net3 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+CC1 net1 net2 cm3m4 W=4.8 L=4.8 MF=2 m=2
+CC2 net3 net2 cm3m4 W=4.8 L=4.8 MF=2 m=2
+x7 cm net4 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x9 cm net6 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x10 net4 op phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x12 net6 on phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+CC5 net4 net5 cm3m4 W=4.8 L=4.8 MF=2 m=2
+CC6 net6 net5 cm3m4 W=4.8 L=4.8 MF=2 m=2
+CCdummy __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 cm3m4 W=4.8 L=4.8 MF=20 m=20
+.ends
+
+
+.subckt folded_cascode_3_core  cmc ip in bias_a bias_b bias_c bias_d op on  VDD  VSS
+M1 foldp ip tail VSS nmos_lvt L=0.2 W=1.2 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M2 foldn in tail VSS nmos_lvt L=0.2 W=1.2 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M6 tail cmc VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=96 m=96 
+M5 tail bias_a VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=96 m=96 
+M11 foldp bias_b VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=24 m=24 
+M12 foldn bias_b VDD VDD pmos_lvt L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=24 m=24 
+M1A on bias_c foldp VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=20 m=20 
+M8 op bias_c foldn VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=20 m=20 
+M3A on bias_d m3d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=36 m=36 
+M7 op bias_d m4d VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=36 m=36 
+M3 m3d bias_a VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=36 m=36 
+M4 m4d bias_a VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=36 m=36 
+M82 foldn foldn foldn VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M83 foldp foldp foldp VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M55 foldn VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M56 op VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+M61 foldp VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M62 on VDD VDD VDD pmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+M40 m4d VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+M41 m3d VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=8 m=8 
+M38 op op op VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M39 on on on VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M30 tail VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M23 foldp foldp foldp VSS nmos_lvt L=0.2 W=1.2 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M24 foldn foldn foldn VSS nmos_lvt L=0.2 W=1.2 nf=1 ad='int((nf+1)_2) * W_nf * 0.29'
++ as='int((nf+2)_2) * W_nf * 0.29' pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)'
++ nrd='0.29 _ W' nrs='0.29 _ W' sa=0 sb=0 sd=0 mult=2 m=2 
+M80 op VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M81 on VSS VSS VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+M28 tail tail tail VSS nmos L=0.6 W=1.4 nf=1 ad='int((nf+1)_2) * W_nf * 0.29' as='int((nf+2)_2) * W_nf * 0.29'
++ pd='2*int((nf+1)_2) * (W_nf + 0.29)' ps='2*int((nf+2)_2) * (W_nf + 0.29)' nrd='0.29 _ W' nrs='0.29 _ W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+.ends
+

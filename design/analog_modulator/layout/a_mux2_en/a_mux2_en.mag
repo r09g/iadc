@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654408082
+timestamp 1654573192
 << nwell >>
 rect -2386 -1234 -1092 -1157
 << pwell >>
@@ -103,55 +103,74 @@ rect 149 -1052 259 -1000
 rect 149 -1589 201 -1052
 rect -33 -2386 206 -2334
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -459 0 1 -1740
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -459 0 -1 -652
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -551 0 1 -1740
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -459 0 -1 -652
 box -38 -48 130 592
 use switch_5t  switch_5t_0
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 123 0 -1 -1396
 box -53 -36 3056 1162
 use switch_5t  switch_5t_1
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 123 0 -1 -62
 box -53 -36 3056 1162
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -2333 0 -1 -117
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -2333 0 1 -2277
 box -216 -51 1283 1063
 << labels >>
 flabel metal1 -2635 -530 -2635 -530 3 FreeSans 400 0 0 0 in0
+port 3 e
 flabel metal1 -2634 -1864 -2634 -1864 3 FreeSans 400 0 0 0 in1
+port 4 e
 flabel metal1 -1144 -2365 -1144 -2365 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 -1051 -1198 -1051 -1198 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 -1145 -35 -1145 -35 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal2 -366 110 -366 110 5 FreeSans 400 0 0 0 s0
+port 2 s
 flabel metal2 -365 -2445 -365 -2445 1 FreeSans 400 0 0 0 en
+port 1 n
 flabel metal1 -615 -1743 -615 -1743 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 -617 -1196 -617 -1196 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 -616 -652 -616 -652 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 1526 -1 1526 -1 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 3048 4 3048 4 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 1526 -1242 1526 -1242 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 3048 -1239 3048 -1239 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 3047 -1344 3047 -1344 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 1526 -1342 1526 -1342 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal1 1527 -2577 1527 -2577 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 3048 -2574 3048 -2574 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 3423 -1288 3423 -1288 1 FreeSans 400 0 0 0 out
+port 5 n
 << end >>

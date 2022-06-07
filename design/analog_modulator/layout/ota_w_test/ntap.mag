@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1653078673
+<< nwell >>
+rect -166 -102 66 104
+<< nsubdiff >>
+rect -92 15 -6 42
+rect -92 -19 -65 15
+rect -31 -19 -6 15
+rect -92 -44 -6 -19
+<< nsubdiffcont >>
+rect -65 -19 -31 15
+<< locali >>
+rect -92 15 -6 42
+rect -92 -19 -65 15
+rect -31 -19 -6 15
+rect -92 -44 -6 -19
+<< end >>

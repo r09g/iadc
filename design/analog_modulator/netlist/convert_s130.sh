@@ -2,7 +2,7 @@
 
 # Usage: ./convert_s130.sh <DESIGN_NAME>
 
-NETLIST=$1/$1_layout_lvs.spice
+NETLIST=$1/$1.spice
 OUTPUT=$1/$1_s130.spice
 cp $NETLIST $OUTPUT
 sed -i -r 's/X(.*sky130_fd_pr__cap_mim_m3.*)/C\1/g' $OUTPUT

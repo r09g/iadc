@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654408082
+timestamp 1654573235
 << nwell >>
 rect -1129 -2208 -869 -2205
 rect -599 -2208 -428 -2205
@@ -462,169 +462,210 @@ rect -500 -5089 -448 -4627
 rect -500 -5141 203 -5089
 rect -1587 -5148 -1535 -5143
 use sky130_fd_sc_hd__fill_2  sky130_fd_sc_hd__fill_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -704 0 -1 -2653
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_2  sky130_fd_sc_hd__fill_2_1
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -888 0 1 -2653
 box -38 -48 222 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -1164 0 -1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -1164 0 1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -612 0 1 -1565
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -612 0 -1 -477
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_5
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -612 0 -1 -3741
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_6
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -612 0 1 -4829
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_8
-timestamp 1654408082
+timestamp 1654309566
 transform 1 0 -980 0 -1 -477
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -612 0 1 -3741
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_1
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -612 0 -1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_2
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -612 0 1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_3
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -612 0 -1 -1565
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -1164 0 -1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -1256 0 1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -612 0 -1 -1565
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -704 0 1 -3741
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -704 0 1 -1565
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -612 0 -1 -477
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -612 0 -1 -3741
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -704 0 1 -4829
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
-timestamp 1654408082
+timestamp 1650294714
 transform -1 0 -612 0 -1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
-timestamp 1654408082
+timestamp 1650294714
 transform 1 0 -704 0 1 -2653
 box -38 -48 130 592
-use switch_5t  switch_5t_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/a_mux2_en
-timestamp 1654408082
+use switch_5t_AA  switch_5t_0
+timestamp 1654572275
 transform 1 0 123 0 -1 -62
 box -53 -36 3056 1162
-use switch_5t  switch_5t_1
-timestamp 1654408082
+use switch_5t_AA  switch_5t_1
+timestamp 1654572275
 transform 1 0 123 0 -1 -1396
 box -53 -36 3056 1162
-use switch_5t  switch_5t_2
-timestamp 1654408082
+use switch_5t_AA  switch_5t_2
+timestamp 1654572275
 transform 1 0 123 0 -1 -2774
 box -53 -36 3056 1162
-use switch_5t  switch_5t_3
-timestamp 1654408082
+use switch_5t_AA  switch_5t_3
+timestamp 1654572275
 transform 1 0 123 0 -1 -4152
 box -53 -36 3056 1162
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -3213 0 1 -1129
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -3213 0 1 -2463
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_2
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -3213 0 1 -3841
 box -216 -51 1283 1063
 use transmission_gate  transmission_gate_3
-timestamp 1654408082
+timestamp 1654572275
 transform 1 0 -3213 0 1 -5219
 box -216 -51 1283 1063
 << labels >>
 flabel metal1 -3682 -716 -3682 -716 1 FreeSans 400 0 0 0 in0
+port 4 n
 flabel metal1 -3684 -2051 -3684 -2051 1 FreeSans 400 0 0 0 in1
+port 5 n
 flabel metal1 -3682 -3429 -3682 -3429 1 FreeSans 400 0 0 0 in2
+port 6 n
 flabel metal1 -3683 -4808 -3683 -4808 1 FreeSans 400 0 0 0 in3
+port 7 n
 flabel metal1 1525 -1212 1525 -1212 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3046 -1214 3046 -1214 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 1527 -1369 1527 -1369 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 3048 -1371 3048 -1371 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 1527 -2546 1527 -2546 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3048 -2550 3048 -2550 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3048 -2746 3048 -2746 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 1527 -2744 1527 -2744 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 1525 -3926 1525 -3926 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3049 -3925 3049 -3925 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 1525 -4130 1525 -4130 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 3049 -4128 3049 -4128 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 1523 -5306 1523 -5306 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3045 -5302 3045 -5302 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 3438 -2641 3438 -2641 1 FreeSans 400 0 0 0 out
+port 8 n
 flabel metal2 -1562 128 -1562 128 1 FreeSans 400 0 0 0 en
+port 1 n
 flabel metal2 -1216 128 -1216 128 1 FreeSans 400 0 0 0 s1
+port 2 n
 flabel metal2 -1073 128 -1073 128 1 FreeSans 400 0 0 0 s0
+port 3 n
 flabel metal1 -1030 -478 -1030 -478 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -1037 -1022 -1037 -1022 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -752 -1566 -752 -1566 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -1314 -2113 -1314 -2113 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -1303 -2653 -1303 -2653 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -1315 -3203 -1315 -3203 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -767 -3742 -767 -3742 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -769 -4286 -769 -4286 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -748 -4830 -748 -4830 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -2025 -77 -2025 -77 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -2025 -1170 -2025 -1170 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -2025 -1408 -2025 -1408 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -2025 -2505 -2025 -2505 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -2025 -2787 -2025 -2787 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -2025 -3884 -2025 -3884 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 -2028 -4172 -2028 -4172 1 FreeSans 400 0 0 0 VDD
+port 9 n power bidirectional
 flabel metal1 -2026 -5260 -2026 -5260 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 1528 -56 1528 -56 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 flabel metal1 3048 -56 3048 -56 1 FreeSans 400 0 0 0 VSS
+port 10 n power bidirectional
 << end >>

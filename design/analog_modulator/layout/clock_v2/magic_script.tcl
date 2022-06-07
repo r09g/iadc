@@ -20,19 +20,15 @@ foreach port $MGC_PORT_LIST {
 }
 
 # special handling of power ports
-for {set i 0} {$i < 28} {incr i} {
-    findlabel VDD $i
-    port make 
-    port use power
-    port class inout
-}
+findlabel VDD
+port make 
+port use power
+port class inout
 
-for {set i 0} {$i < 26} {incr i} {
-    findlabel VSS $i
-    port make 
-    port use power
-    port class inout
-}
+findlabel VSS
+port make 
+port use power
+port class inout
 
 if {$FLAT} {save "${MGC_DESIGN_NAME}_flat.mag"}
 
