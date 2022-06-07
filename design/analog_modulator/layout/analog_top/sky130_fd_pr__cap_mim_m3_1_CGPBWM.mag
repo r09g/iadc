@@ -1,21 +1,21 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654517900
+timestamp 1654572275
 << metal3 >>
-rect -1030 -980 976 980
+rect -1031 -980 975 980
 << mimcap >>
-rect -930 840 830 880
-rect -930 -840 -890 840
-rect 790 -840 830 840
-rect -930 -880 830 -840
+rect -931 840 829 880
+rect -931 -840 -891 840
+rect 789 -840 829 840
+rect -931 -880 829 -840
 << mimcapcontact >>
-rect -890 -840 790 840
+rect -891 -840 789 840
 << metal4 >>
-rect -891 840 791 841
-rect -891 -840 -890 840
-rect 790 -840 791 840
-rect -891 -841 791 -840
+rect -892 840 790 841
+rect -892 -840 -891 840
+rect 789 -840 790 840
+rect -892 -841 790 -840
 << properties >>
 string FIXED_BBOX -1030 -980 930 980
 string gencell sky130_fd_pr__cap_mim_m3_1

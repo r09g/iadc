@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654557945
+timestamp 1654572275
 << nwell >>
 rect -7664 -7309 3823 -1120
 << pwell >>
@@ -7019,237 +7019,237 @@ rect -3396 -7045 -3315 -7040
 rect 17697 -7078 17761 -5342
 rect 17950 -6271 18014 -4535
 use sc_cmfb  sc_cmfb_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/sc_cmfb
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 9102 0 1 -5469
 box -3494 -1840 9310 8360
 use sky130_fd_pr__nfet_01v8_7P4E2J  sky130_fd_pr__nfet_01v8_7P4E2J_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 7953 0 1 -9022
 box -1453 -228 1453 228
 use sky130_fd_pr__nfet_01v8_7P4E2J  sky130_fd_pr__nfet_01v8_7P4E2J_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 7953 0 1 -9922
 box -1453 -228 1453 228
 use sky130_fd_pr__nfet_01v8_7P4E2J  sky130_fd_pr__nfet_01v8_7P4E2J_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 7953 0 1 -10822
 box -1453 -228 1453 228
 use sky130_fd_pr__nfet_01v8_7P4E2J  sky130_fd_pr__nfet_01v8_7P4E2J_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 7953 0 1 -11722
 box -1453 -228 1453 228
 use sky130_fd_pr__nfet_01v8_BASQVB  sky130_fd_pr__nfet_01v8_BASQVB_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5032 0 1 -14522
 box -1008 -228 1008 228
 use sky130_fd_pr__nfet_01v8_BASQVB  sky130_fd_pr__nfet_01v8_BASQVB_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5032 0 1 -15222
 box -1008 -228 1008 228
 use sky130_fd_pr__nfet_01v8_BASQVB  sky130_fd_pr__nfet_01v8_BASQVB_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5032 0 1 -15922
 box -1008 -228 1008 228
 use sky130_fd_pr__nfet_01v8_BASQVB  sky130_fd_pr__nfet_01v8_BASQVB_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5032 0 1 -16622
 box -1008 -228 1008 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_4
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -15260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_5
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -14260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_6
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -13260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_7
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -12260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_8
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -11260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_9
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -10260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_10
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -9260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_11
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -8260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_KEEN2X  sky130_fd_pr__nfet_01v8_KEEN2X_12
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 959 0 1 -16260
 box -3144 -228 3144 228
 use sky130_fd_pr__nfet_01v8_UFQYRB  sky130_fd_pr__nfet_01v8_UFQYRB_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 9154 0 1 -14260
 box -3589 -228 3589 228
 use sky130_fd_pr__nfet_01v8_UFQYRB  sky130_fd_pr__nfet_01v8_UFQYRB_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 9154 0 1 -15260
 box -3589 -228 3589 228
 use sky130_fd_pr__nfet_01v8_UFQYRB  sky130_fd_pr__nfet_01v8_UFQYRB_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 9154 0 1 -16260
 box -3589 -228 3589 228
 use sky130_fd_pr__nfet_01v8_VJ4JGY  sky130_fd_pr__nfet_01v8_VJ4JGY_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 11754 0 1 -9052
 box -994 -228 994 228
 use sky130_fd_pr__nfet_01v8_VJ4JGY  sky130_fd_pr__nfet_01v8_VJ4JGY_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 11754 0 1 -9822
 box -994 -228 994 228
 use sky130_fd_pr__nfet_01v8_VJ4JGY  sky130_fd_pr__nfet_01v8_VJ4JGY_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 11754 0 1 -10592
 box -994 -228 994 228
 use sky130_fd_pr__nfet_01v8_VJ4JGY  sky130_fd_pr__nfet_01v8_VJ4JGY_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 11754 0 1 -11362
 box -994 -228 994 228
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5850 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5850 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5600 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5350 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_4
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5100 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_5
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4850 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_6
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4600 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_7
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4350 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_8
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4100 0 1 -13500
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_9
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5600 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_10
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5350 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_11
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -5100 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_12
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4850 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_13
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4600 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_14
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4350 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_TRAZV8  sky130_fd_pr__nfet_01v8_lvt_TRAZV8_15
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4100 0 1 -12820
 box -78 -208 78 208
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -8002
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -8552
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -9102
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -9652
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_4
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -10202
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_5
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -10752
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_6
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -11302
 box -830 -228 830 228
 use sky130_fd_pr__nfet_01v8_lvt_VU7MNH  sky130_fd_pr__nfet_01v8_lvt_VU7MNH_7
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4810 0 1 -11852
 box -830 -228 830 228
 use sky130_fd_pr__pfet_01v8_E4DCBA  sky130_fd_pr__pfet_01v8_E4DCBA_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 610 0 1 -3012
-box -2112 -240 2112 240
+box -2112 -241 2112 241
 use sky130_fd_pr__pfet_01v8_E4DCBA  sky130_fd_pr__pfet_01v8_E4DCBA_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 610 0 1 -3912
-box -2112 -240 2112 240
+box -2112 -241 2112 241
 use sky130_fd_pr__pfet_01v8_E4DCBA  sky130_fd_pr__pfet_01v8_E4DCBA_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 610 0 1 -4812
-box -2112 -240 2112 240
+box -2112 -241 2112 241
 use sky130_fd_pr__pfet_01v8_E4DCBA  sky130_fd_pr__pfet_01v8_E4DCBA_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 610 0 1 -5712
-box -2112 -240 2112 240
+box -2112 -241 2112 241
 use sky130_fd_pr__pfet_01v8_lvt_6QKDBA  sky130_fd_pr__pfet_01v8_lvt_6QKDBA_0
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4861 0 1 -2260
-box -1489 -240 1489 240
+box -1489 -241 1489 241
 use sky130_fd_pr__pfet_01v8_lvt_6QKDBA  sky130_fd_pr__pfet_01v8_lvt_6QKDBA_1
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4861 0 1 -3130
-box -1489 -240 1489 240
+box -1489 -241 1489 241
 use sky130_fd_pr__pfet_01v8_lvt_6QKDBA  sky130_fd_pr__pfet_01v8_lvt_6QKDBA_2
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4861 0 1 -4000
-box -1489 -240 1489 240
+box -1489 -241 1489 241
 use sky130_fd_pr__pfet_01v8_lvt_6QKDBA  sky130_fd_pr__pfet_01v8_lvt_6QKDBA_3
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4861 0 1 -4870
-box -1489 -240 1489 240
+box -1489 -241 1489 241
 use sky130_fd_pr__pfet_01v8_lvt_6QKDBA  sky130_fd_pr__pfet_01v8_lvt_6QKDBA_4
-timestamp 1654517900
+timestamp 1654572275
 transform 1 0 -4861 0 1 -5740
-box -1489 -240 1489 240
+box -1489 -241 1489 241
 << labels >>
 flabel metal2 3147 -3484 3147 -3484 1 FreeSans 1200 0 0 0 on
 port 8 n
