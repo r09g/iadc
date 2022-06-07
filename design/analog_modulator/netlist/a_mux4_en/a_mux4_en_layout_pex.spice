@@ -1,17 +1,17 @@
 * NGSPICE file created from a_mux4_en.ext - technology: sky130A
 
-.subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
+.subckt sky130_fd_sc_hd__inv_1 Y A VGND VPWR VNB VPB
 X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
-C0 VPB Y 0.06fF
-C1 VPWR VGND 0.05fF
-C2 VPWR Y 0.22fF
-C3 VPB A 0.08fF
-C4 VGND Y 0.17fF
-C5 VPWR A 0.05fF
-C6 VPWR VPB 0.21fF
-C7 A VGND 0.05fF
-C8 A Y 0.05fF
+C0 Y VGND 0.17fF
+C1 VPB VPWR 0.21fF
+C2 A VPWR 0.05fF
+C3 A VGND 0.05fF
+C4 VPB Y 0.06fF
+C5 A Y 0.05fF
+C6 VGND VPWR 0.05fF
+C7 A VPB 0.08fF
+C8 Y VPWR 0.22fF
 C9 VGND VNB 0.25fF
 C10 Y VNB 0.06fF
 C11 VPWR VNB 0.06fF
@@ -19,9 +19,19 @@ C12 A VNB 0.13fF
 C13 VPB VNB 0.34fF
 .ends
 
-.subckt sky130_fd_pr__pfet_01v8_UNG2NQ a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136#
-+ a_64_n136# a_160_n136# a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136#
-+ a_n512_n234# a_256_n136# VSUBS
+.subckt nmos_PDN a_n33_32# a_15_n90# a_n73_n90# VSUBS
+X0 a_15_n90# a_n33_32# a_n73_n90# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
+C0 a_15_n90# a_n73_n90# 0.14fF
+C1 a_15_n90# a_n33_32# 0.01fF
+C2 a_n33_32# a_n73_n90# 0.01fF
+C3 a_15_n90# VSUBS 0.02fF
+C4 a_n73_n90# VSUBS 0.02fF
+C5 a_n33_32# VSUBS 0.15fF
+.ends
+
+.subckt pmos_tgate a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136# a_64_n136# a_160_n136#
++ a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136# a_n512_n234# a_256_n136#
++ VSUBS
 X0 a_n224_n136# a_n512_n234# a_n320_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
 X1 a_352_n136# a_n512_n234# a_256_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
 X2 a_n128_n136# a_n512_n234# a_n224_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
@@ -32,224 +42,223 @@ X6 a_n32_n136# a_n512_n234# a_n128_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad
 X7 a_448_n136# a_n512_n234# a_352_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.216e+11p pd=3.34e+06u as=0p ps=0u w=1.36e+06u l=150000u
 X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
 X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-C0 a_160_n136# w_n646_n356# 0.06fF
-C1 a_256_n136# a_n320_n136# 0.03fF
-C2 a_n128_n136# a_n224_n136# 0.33fF
-C3 a_n128_n136# a_n508_n136# 0.05fF
-C4 a_n320_n136# a_n512_n234# 0.06fF
-C5 a_n128_n136# a_352_n136# 0.04fF
-C6 a_256_n136# a_n128_n136# 0.05fF
-C7 a_n128_n136# a_n512_n234# 0.06fF
-C8 a_n416_n136# a_160_n136# 0.03fF
-C9 a_448_n136# a_n320_n136# 0.02fF
-C10 a_n32_n136# a_n320_n136# 0.07fF
-C11 a_n224_n136# a_n508_n136# 0.07fF
-C12 a_352_n136# a_n224_n136# 0.03fF
-C13 a_64_n136# a_160_n136# 0.33fF
-C14 a_352_n136# a_n508_n136# 0.02fF
-C15 a_256_n136# a_n224_n136# 0.04fF
-C16 a_n128_n136# a_n32_n136# 0.33fF
-C17 a_256_n136# a_n508_n136# 0.02fF
-C18 a_448_n136# a_n128_n136# 0.03fF
-C19 a_256_n136# a_352_n136# 0.33fF
-C20 a_n508_n136# a_n512_n234# 0.06fF
-C21 a_n416_n136# w_n646_n356# 0.08fF
-C22 a_256_n136# a_n512_n234# 0.06fF
-C23 a_n32_n136# a_n224_n136# 0.12fF
-C24 a_448_n136# a_n224_n136# 0.03fF
-C25 a_64_n136# w_n646_n356# 0.05fF
-C26 a_n32_n136# a_n508_n136# 0.04fF
-C27 a_448_n136# a_n508_n136# 0.02fF
-C28 a_448_n136# a_352_n136# 0.33fF
-C29 a_352_n136# a_n32_n136# 0.05fF
-C30 a_448_n136# a_256_n136# 0.12fF
-C31 a_256_n136# a_n32_n136# 0.07fF
-C32 a_448_n136# a_n512_n234# 0.06fF
-C33 a_160_n136# a_n320_n136# 0.04fF
-C34 a_64_n136# a_n416_n136# 0.04fF
-C35 a_n128_n136# a_160_n136# 0.07fF
-C36 a_448_n136# a_n32_n136# 0.04fF
-C37 a_n320_n136# w_n646_n356# 0.06fF
-C38 a_160_n136# a_n224_n136# 0.05fF
-C39 a_160_n136# a_n508_n136# 0.03fF
-C40 a_160_n136# a_352_n136# 0.12fF
-C41 a_n128_n136# w_n646_n356# 0.05fF
-C42 a_256_n136# a_160_n136# 0.33fF
-C43 a_n416_n136# a_n320_n136# 0.33fF
-C44 a_64_n136# a_n320_n136# 0.05fF
-C45 a_n128_n136# a_n416_n136# 0.07fF
-C46 a_n224_n136# w_n646_n356# 0.06fF
-C47 a_n508_n136# w_n646_n356# 0.13fF
-C48 a_352_n136# w_n646_n356# 0.08fF
-C49 a_160_n136# a_n32_n136# 0.12fF
-C50 a_448_n136# a_160_n136# 0.07fF
-C51 a_64_n136# a_n128_n136# 0.12fF
-C52 a_256_n136# w_n646_n356# 0.06fF
-C53 a_n512_n234# w_n646_n356# 1.13fF
-C54 a_n416_n136# a_n224_n136# 0.12fF
-C55 a_n416_n136# a_n508_n136# 0.33fF
-C56 a_n416_n136# a_352_n136# 0.02fF
-C57 a_64_n136# a_n224_n136# 0.07fF
-C58 a_256_n136# a_n416_n136# 0.03fF
-C59 a_64_n136# a_n508_n136# 0.03fF
-C60 a_64_n136# a_352_n136# 0.07fF
-C61 a_n32_n136# w_n646_n356# 0.05fF
-C62 a_448_n136# w_n646_n356# 0.13fF
-C63 a_64_n136# a_256_n136# 0.12fF
-C64 a_64_n136# a_n512_n234# 0.06fF
-C65 a_448_n136# a_n416_n136# 0.02fF
-C66 a_n416_n136# a_n32_n136# 0.05fF
-C67 a_n128_n136# a_n320_n136# 0.12fF
-C68 a_448_n136# a_64_n136# 0.05fF
-C69 a_64_n136# a_n32_n136# 0.33fF
-C70 a_n224_n136# a_n320_n136# 0.33fF
-C71 a_n320_n136# a_n508_n136# 0.12fF
-C72 a_352_n136# a_n320_n136# 0.03fF
-C73 w_n646_n356# VSUBS 2.52fF
+C0 a_352_n136# a_n32_n136# 0.05fF
+C1 a_n320_n136# a_352_n136# 0.03fF
+C2 w_n646_n356# a_160_n136# 0.06fF
+C3 a_256_n136# a_n128_n136# 0.05fF
+C4 a_256_n136# a_n508_n136# 0.02fF
+C5 a_256_n136# a_448_n136# 0.12fF
+C6 a_n224_n136# a_n128_n136# 0.33fF
+C7 a_n224_n136# a_n508_n136# 0.07fF
+C8 a_n224_n136# a_448_n136# 0.03fF
+C9 a_160_n136# a_n128_n136# 0.07fF
+C10 a_n508_n136# a_160_n136# 0.03fF
+C11 a_448_n136# a_160_n136# 0.07fF
+C12 w_n646_n356# a_n128_n136# 0.05fF
+C13 a_256_n136# a_n416_n136# 0.03fF
+C14 a_n508_n136# w_n646_n356# 0.13fF
+C15 w_n646_n356# a_448_n136# 0.13fF
+C16 a_n224_n136# a_n416_n136# 0.12fF
+C17 a_256_n136# a_n512_n234# 0.03fF
+C18 a_n224_n136# a_n512_n234# 0.03fF
+C19 a_n416_n136# a_160_n136# 0.03fF
+C20 a_256_n136# a_64_n136# 0.12fF
+C21 a_n224_n136# a_64_n136# 0.07fF
+C22 a_n512_n234# a_160_n136# 0.03fF
+C23 a_n508_n136# a_n128_n136# 0.05fF
+C24 a_256_n136# a_n32_n136# 0.07fF
+C25 a_448_n136# a_n128_n136# 0.03fF
+C26 a_n416_n136# w_n646_n356# 0.08fF
+C27 a_n508_n136# a_448_n136# 0.02fF
+C28 a_n224_n136# a_n32_n136# 0.12fF
+C29 a_64_n136# a_160_n136# 0.33fF
+C30 a_256_n136# a_n320_n136# 0.03fF
+C31 a_n224_n136# a_n320_n136# 0.33fF
+C32 a_n512_n234# w_n646_n356# 1.47fF
+C33 a_160_n136# a_n32_n136# 0.12fF
+C34 a_64_n136# w_n646_n356# 0.05fF
+C35 a_n320_n136# a_160_n136# 0.04fF
+C36 a_256_n136# a_352_n136# 0.33fF
+C37 a_n416_n136# a_n128_n136# 0.07fF
+C38 a_n224_n136# a_352_n136# 0.03fF
+C39 a_n416_n136# a_n508_n136# 0.33fF
+C40 w_n646_n356# a_n32_n136# 0.05fF
+C41 a_n416_n136# a_448_n136# 0.02fF
+C42 a_n320_n136# w_n646_n356# 0.06fF
+C43 a_n512_n234# a_n128_n136# 0.03fF
+C44 a_n508_n136# a_n512_n234# 0.03fF
+C45 a_352_n136# a_160_n136# 0.12fF
+C46 a_n512_n234# a_448_n136# 0.03fF
+C47 a_64_n136# a_n128_n136# 0.12fF
+C48 a_64_n136# a_n508_n136# 0.03fF
+C49 a_64_n136# a_448_n136# 0.05fF
+C50 a_352_n136# w_n646_n356# 0.08fF
+C51 a_n128_n136# a_n32_n136# 0.33fF
+C52 a_n508_n136# a_n32_n136# 0.04fF
+C53 a_448_n136# a_n32_n136# 0.04fF
+C54 a_n320_n136# a_n128_n136# 0.12fF
+C55 a_n320_n136# a_n508_n136# 0.12fF
+C56 a_n320_n136# a_448_n136# 0.02fF
+C57 a_n416_n136# a_n512_n234# 0.03fF
+C58 a_64_n136# a_n416_n136# 0.04fF
+C59 a_352_n136# a_n128_n136# 0.04fF
+C60 a_n508_n136# a_352_n136# 0.02fF
+C61 a_64_n136# a_n512_n234# 0.03fF
+C62 a_352_n136# a_448_n136# 0.33fF
+C63 a_n416_n136# a_n32_n136# 0.05fF
+C64 a_n320_n136# a_n416_n136# 0.33fF
+C65 a_n512_n234# a_n32_n136# 0.03fF
+C66 a_n320_n136# a_n512_n234# 0.03fF
+C67 a_64_n136# a_n32_n136# 0.33fF
+C68 a_n224_n136# a_256_n136# 0.04fF
+C69 a_64_n136# a_n320_n136# 0.05fF
+C70 a_n416_n136# a_352_n136# 0.02fF
+C71 a_256_n136# a_160_n136# 0.33fF
+C72 a_n224_n136# a_160_n136# 0.05fF
+C73 a_n320_n136# a_n32_n136# 0.07fF
+C74 a_352_n136# a_n512_n234# 0.03fF
+C75 a_64_n136# a_352_n136# 0.07fF
+C76 a_256_n136# w_n646_n356# 0.06fF
+C77 a_n224_n136# w_n646_n356# 0.06fF
+C78 w_n646_n356# VSUBS 2.52fF
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_6J4AMR a_256_n52# a_n32_n52# a_n224_n52# a_448_n52#
-+ a_n416_n52# a_160_n52# a_n610_n226# a_n128_n52# a_n512_n140# a_352_n52# a_n320_n52#
-+ a_n508_n52# a_64_n52#
-X0 a_n32_n52# a_n512_n140# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X1 a_n416_n52# a_n512_n140# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
-X2 a_n224_n52# a_n512_n140# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X3 a_n128_n52# a_n512_n140# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X4 a_n320_n52# a_n512_n140# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X5 a_160_n52# a_n512_n140# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X6 a_352_n52# a_n512_n140# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X7 a_256_n52# a_n512_n140# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X8 a_448_n52# a_n512_n140# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
-X9 a_64_n52# a_n512_n140# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-C0 a_n512_n140# a_256_n52# 0.09fF
-C1 a_n416_n52# a_352_n52# 0.01fF
-C2 a_n416_n52# a_n320_n52# 0.13fF
-C3 a_352_n52# a_160_n52# 0.05fF
-C4 a_n416_n52# a_448_n52# 0.01fF
-C5 a_n320_n52# a_160_n52# 0.02fF
-C6 a_n416_n52# a_n128_n52# 0.03fF
-C7 a_n320_n52# a_352_n52# 0.01fF
-C8 a_448_n52# a_160_n52# 0.03fF
-C9 a_n128_n52# a_160_n52# 0.03fF
-C10 a_448_n52# a_352_n52# 0.13fF
-C11 a_n512_n140# a_64_n52# 0.09fF
-C12 a_n320_n52# a_448_n52# 0.01fF
-C13 a_n416_n52# a_n508_n52# 0.13fF
-C14 a_352_n52# a_n128_n52# 0.02fF
-C15 a_n320_n52# a_n128_n52# 0.05fF
-C16 a_n508_n52# a_160_n52# 0.01fF
-C17 a_448_n52# a_n128_n52# 0.01fF
-C18 a_n224_n52# a_256_n52# 0.02fF
-C19 a_n416_n52# a_n32_n52# 0.02fF
-C20 a_n508_n52# a_352_n52# 0.01fF
-C21 a_n508_n52# a_n320_n52# 0.05fF
-C22 a_n32_n52# a_160_n52# 0.05fF
-C23 a_256_n52# a_64_n52# 0.05fF
-C24 a_n508_n52# a_448_n52# 0.01fF
-C25 a_352_n52# a_n32_n52# 0.02fF
-C26 a_n320_n52# a_n32_n52# 0.03fF
-C27 a_n508_n52# a_n128_n52# 0.02fF
-C28 a_448_n52# a_n32_n52# 0.02fF
-C29 a_n224_n52# a_64_n52# 0.03fF
-C30 a_n128_n52# a_n32_n52# 0.13fF
-C31 a_n508_n52# a_n32_n52# 0.02fF
-C32 a_n512_n140# a_n320_n52# 0.09fF
-C33 a_n416_n52# a_256_n52# 0.01fF
-C34 a_n512_n140# a_448_n52# 0.09fF
-C35 a_n512_n140# a_n128_n52# 0.09fF
-C36 a_256_n52# a_160_n52# 0.13fF
-C37 a_n416_n52# a_n224_n52# 0.05fF
-C38 a_352_n52# a_256_n52# 0.13fF
-C39 a_n320_n52# a_256_n52# 0.01fF
-C40 a_n512_n140# a_n508_n52# 0.09fF
-C41 a_n224_n52# a_160_n52# 0.02fF
-C42 a_448_n52# a_256_n52# 0.05fF
-C43 a_n416_n52# a_64_n52# 0.02fF
-C44 a_256_n52# a_n128_n52# 0.02fF
-C45 a_n224_n52# a_352_n52# 0.01fF
-C46 a_n224_n52# a_n320_n52# 0.13fF
-C47 a_64_n52# a_160_n52# 0.13fF
+.subckt nmos_tgate a_256_n52# a_n32_n52# a_n224_n52# a_448_n52# a_n416_n52# a_160_n52#
++ a_n610_n226# a_n128_n52# a_352_n52# a_n320_n52# a_n508_n52# a_n512_n149# a_64_n52#
+X0 a_n32_n52# a_n512_n149# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X1 a_n416_n52# a_n512_n149# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
+X2 a_n224_n52# a_n512_n149# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X3 a_n128_n52# a_n512_n149# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X4 a_n320_n52# a_n512_n149# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X5 a_160_n52# a_n512_n149# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X6 a_352_n52# a_n512_n149# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X7 a_256_n52# a_n512_n149# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_448_n52# a_n512_n149# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
+X9 a_64_n52# a_n512_n149# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+C0 a_n128_n52# a_256_n52# 0.02fF
+C1 a_n512_n149# a_352_n52# 0.03fF
+C2 a_n416_n52# a_352_n52# 0.01fF
+C3 a_n512_n149# a_160_n52# 0.03fF
+C4 a_n416_n52# a_160_n52# 0.01fF
+C5 a_n512_n149# a_n508_n52# 0.03fF
+C6 a_n416_n52# a_n508_n52# 0.13fF
+C7 a_448_n52# a_256_n52# 0.05fF
+C8 a_n320_n52# a_256_n52# 0.01fF
+C9 a_64_n52# a_256_n52# 0.05fF
+C10 a_n512_n149# a_n224_n52# 0.03fF
+C11 a_n512_n149# a_n32_n52# 0.03fF
+C12 a_n416_n52# a_n224_n52# 0.05fF
+C13 a_n416_n52# a_n32_n52# 0.02fF
+C14 a_352_n52# a_160_n52# 0.05fF
+C15 a_n512_n149# a_n128_n52# 0.03fF
+C16 a_n416_n52# a_n128_n52# 0.03fF
+C17 a_352_n52# a_n508_n52# 0.01fF
+C18 a_160_n52# a_n508_n52# 0.01fF
+C19 a_n512_n149# a_448_n52# 0.03fF
+C20 a_n416_n52# a_448_n52# 0.01fF
+C21 a_n512_n149# a_n320_n52# 0.03fF
+C22 a_n416_n52# a_n320_n52# 0.13fF
+C23 a_64_n52# a_n512_n149# 0.03fF
+C24 a_n416_n52# a_64_n52# 0.02fF
+C25 a_n224_n52# a_352_n52# 0.01fF
+C26 a_n32_n52# a_352_n52# 0.02fF
+C27 a_n224_n52# a_160_n52# 0.02fF
+C28 a_n32_n52# a_160_n52# 0.05fF
+C29 a_352_n52# a_n128_n52# 0.02fF
+C30 a_n224_n52# a_n508_n52# 0.03fF
+C31 a_n32_n52# a_n508_n52# 0.02fF
+C32 a_160_n52# a_n128_n52# 0.03fF
+C33 a_n128_n52# a_n508_n52# 0.02fF
+C34 a_352_n52# a_448_n52# 0.13fF
+C35 a_n512_n149# a_256_n52# 0.03fF
+C36 a_n320_n52# a_352_n52# 0.01fF
+C37 a_n416_n52# a_256_n52# 0.01fF
+C38 a_160_n52# a_448_n52# 0.03fF
+C39 a_64_n52# a_352_n52# 0.03fF
+C40 a_n320_n52# a_160_n52# 0.02fF
+C41 a_448_n52# a_n508_n52# 0.01fF
+C42 a_64_n52# a_160_n52# 0.13fF
+C43 a_n224_n52# a_n32_n52# 0.05fF
+C44 a_n320_n52# a_n508_n52# 0.05fF
+C45 a_64_n52# a_n508_n52# 0.01fF
+C46 a_n224_n52# a_n128_n52# 0.13fF
+C47 a_n32_n52# a_n128_n52# 0.13fF
 C48 a_n224_n52# a_448_n52# 0.01fF
-C49 a_352_n52# a_64_n52# 0.03fF
-C50 a_n320_n52# a_64_n52# 0.02fF
-C51 a_n508_n52# a_256_n52# 0.01fF
-C52 a_n224_n52# a_n128_n52# 0.13fF
-C53 a_448_n52# a_64_n52# 0.02fF
-C54 a_256_n52# a_n32_n52# 0.03fF
-C55 a_n128_n52# a_64_n52# 0.05fF
-C56 a_n224_n52# a_n508_n52# 0.03fF
-C57 a_n508_n52# a_64_n52# 0.01fF
-C58 a_n224_n52# a_n32_n52# 0.05fF
-C59 a_64_n52# a_n32_n52# 0.13fF
-C60 a_n416_n52# a_160_n52# 0.01fF
-C61 a_448_n52# a_n610_n226# 0.07fF
-C62 a_352_n52# a_n610_n226# 0.05fF
-C63 a_256_n52# a_n610_n226# 0.04fF
-C64 a_160_n52# a_n610_n226# 0.04fF
-C65 a_64_n52# a_n610_n226# 0.04fF
-C66 a_n32_n52# a_n610_n226# 0.04fF
-C67 a_n128_n52# a_n610_n226# 0.04fF
-C68 a_n224_n52# a_n610_n226# 0.04fF
-C69 a_n320_n52# a_n610_n226# 0.04fF
-C70 a_n416_n52# a_n610_n226# 0.05fF
-C71 a_n508_n52# a_n610_n226# 0.07fF
-C72 a_n512_n140# a_n610_n226# 1.45fF
+C49 a_n32_n52# a_448_n52# 0.02fF
+C50 a_352_n52# a_256_n52# 0.13fF
+C51 a_n320_n52# a_n224_n52# 0.13fF
+C52 a_n320_n52# a_n32_n52# 0.03fF
+C53 a_160_n52# a_256_n52# 0.13fF
+C54 a_64_n52# a_n224_n52# 0.03fF
+C55 a_64_n52# a_n32_n52# 0.13fF
+C56 a_448_n52# a_n128_n52# 0.01fF
+C57 a_n320_n52# a_n128_n52# 0.05fF
+C58 a_256_n52# a_n508_n52# 0.01fF
+C59 a_n416_n52# a_n512_n149# 0.03fF
+C60 a_64_n52# a_n128_n52# 0.05fF
+C61 a_n320_n52# a_448_n52# 0.01fF
+C62 a_64_n52# a_448_n52# 0.02fF
+C63 a_64_n52# a_n320_n52# 0.02fF
+C64 a_n224_n52# a_256_n52# 0.02fF
+C65 a_n32_n52# a_256_n52# 0.03fF
+C66 a_448_n52# a_n610_n226# 0.07fF
+C67 a_352_n52# a_n610_n226# 0.05fF
+C68 a_256_n52# a_n610_n226# 0.04fF
+C69 a_160_n52# a_n610_n226# 0.04fF
+C70 a_64_n52# a_n610_n226# 0.04fF
+C71 a_n32_n52# a_n610_n226# 0.04fF
+C72 a_n128_n52# a_n610_n226# 0.04fF
+C73 a_n224_n52# a_n610_n226# 0.04fF
+C74 a_n320_n52# a_n610_n226# 0.04fF
+C75 a_n416_n52# a_n610_n226# 0.05fF
+C76 a_n508_n52# a_n610_n226# 0.07fF
+C77 a_n512_n149# a_n610_n226# 1.83fF
 .ends
 
-.subckt transmission_gate en_b en VDD in out VSS
-Xsky130_fd_pr__pfet_01v8_UNG2NQ_0 in in out in out in out VDD in out out en_b out
-+ VSS sky130_fd_pr__pfet_01v8_UNG2NQ
-Xsky130_fd_pr__nfet_01v8_6J4AMR_0 out in in out in in VSS out en in out out out sky130_fd_pr__nfet_01v8_6J4AMR
-C0 en_b out 0.03fF
-C1 en_b in 1.18fF
-C2 en VDD 0.05fF
-C3 en out 0.05fF
-C4 en in 1.30fF
-C5 out VDD 0.40fF
-C6 in VDD 0.92fF
-C7 en_b en 0.14fF
-C8 en_b VDD 0.10fF
-C9 out in 0.71fF
-C10 en VSS 1.66fF
-C11 out VSS 1.04fF
-C12 in VSS 1.15fF
-C13 en_b VSS 0.24fF
-C14 VDD VSS 3.18fF
+.subckt transmission_gate in en VDD en_b out VSS
+Xpmos_tgate_0 in in out in out in out VDD in out out en_b out VSS pmos_tgate
+Xnmos_tgate_0 out in in out in in VSS out in out out en out nmos_tgate
+C0 en_b in 0.15fF
+C1 en out 0.01fF
+C2 VDD out 0.29fF
+C3 in out 0.77fF
+C4 en VDD 0.12fF
+C5 en in 0.13fF
+C6 in VDD 0.70fF
+C7 en_b out 0.01fF
+C8 en en_b 0.07fF
+C9 en_b VDD -0.11fF
+C10 en VSS 1.70fF
+C11 out VSS 0.57fF
+C12 in VSS 1.13fF
+C13 en_b VSS 0.09fF
+C14 VDD VSS 3.16fF
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_E56BNL a_n72_n90# a_16_n90# a_n32_32# VSUBS
-X0 a_16_n90# a_n32_32# a_n72_n90# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
-C0 a_n32_32# a_n72_n90# 0.01fF
-C1 a_16_n90# a_n72_n90# 0.14fF
-C2 a_n32_32# a_16_n90# 0.01fF
-C3 a_16_n90# VSUBS 0.02fF
-C4 a_n72_n90# VSUBS 0.02fF
-C5 a_n32_32# VSUBS 0.15fF
-.ends
-
-.subckt switch_5t out en_b VDD in en VSS transmission_gate_1/in
-Xtransmission_gate_0 en_b en VDD in transmission_gate_1/in VSS transmission_gate
-Xtransmission_gate_1 en_b en VDD transmission_gate_1/in out VSS transmission_gate
-Xsky130_fd_pr__nfet_01v8_E56BNL_0 VSS transmission_gate_1/in en_b VSS sky130_fd_pr__nfet_01v8_E56BNL
-C0 en in 0.13fF
-C1 transmission_gate_1/in out 0.72fF
-C2 transmission_gate_1/in VDD 0.42fF
-C3 out VDD 0.16fF
-C4 en_b in 0.12fF
-C5 transmission_gate_1/in en 0.09fF
-C6 transmission_gate_1/in en_b 0.23fF
-C7 out en_b 0.02fF
-C8 transmission_gate_1/in in 0.68fF
-C9 out in 0.43fF
-C10 en_b VDD 0.57fF
-C11 VDD in 0.10fF
-C12 en_b en 0.06fF
-C13 en VSS 3.45fF
-C14 out VSS 0.90fF
-C15 transmission_gate_1/in VSS 2.10fF
-C16 en_b VSS 0.55fF
-C17 VDD VSS 10.85fF
-C18 in VSS 1.01fF
+.subckt switch_5t in en_b VDD out en VSS transmission_gate_1/in
+Xnmos_PDN_0 en_b transmission_gate_1/in VSS VSS nmos_PDN
+Xtransmission_gate_0 in en VDD en_b transmission_gate_1/in VSS transmission_gate
+Xtransmission_gate_1 transmission_gate_1/in en VDD en_b out VSS transmission_gate
+C0 en_b VDD 0.59fF
+C1 transmission_gate_1/in in 0.68fF
+C2 en_b en 0.19fF
+C3 out transmission_gate_1/in 0.72fF
+C4 en_b in 0.50fF
+C5 out en_b 0.11fF
+C6 in VDD 0.10fF
+C7 in en 0.51fF
+C8 transmission_gate_1/in en_b 0.67fF
+C9 out VDD -0.13fF
+C10 out en 0.10fF
+C11 transmission_gate_1/in VDD 0.19fF
+C12 out in 0.43fF
+C13 transmission_gate_1/in en 0.51fF
+C14 en VSS 4.27fF
+C15 out VSS 0.81fF
+C16 en_b VSS 0.43fF
+C17 VDD VSS 10.97fF
+C18 transmission_gate_1/in VSS 1.85fF
+C19 in VSS 0.97fF
 .ends
 
 .subckt sky130_fd_sc_hd__nand2_1 A B VGND VPWR Y VNB VPB a_113_47#
@@ -257,22 +266,22 @@ X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=5.2e+11p pd=5.04e+06u as=2.7e+11p
 X1 Y A a_113_47# VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.755e+11p ps=1.84e+06u w=650000u l=150000u
 X2 a_113_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
 X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-C0 VPWR B 0.06fF
-C1 A VPWR 0.05fF
-C2 B VPB 0.06fF
-C3 A VPB 0.06fF
-C4 VGND Y 0.21fF
-C5 VPWR VPB 0.24fF
+C0 VGND Y 0.21fF
+C1 Y VPB 0.02fF
+C2 VPWR Y 0.40fF
+C3 B A 0.07fF
+C4 VGND A 0.02fF
+C5 A VPB 0.06fF
 C6 VGND B 0.06fF
-C7 A VGND 0.02fF
-C8 VGND a_113_47# 0.01fF
-C9 B Y 0.05fF
-C10 VPWR VGND 0.05fF
-C11 A Y 0.11fF
-C12 a_113_47# Y 0.01fF
-C13 A B 0.07fF
-C14 VPWR Y 0.40fF
-C15 VPB Y 0.02fF
+C7 VPWR A 0.05fF
+C8 B VPB 0.06fF
+C9 VPWR B 0.06fF
+C10 a_113_47# VGND 0.01fF
+C11 Y A 0.11fF
+C12 B Y 0.05fF
+C13 VPWR VGND 0.05fF
+C14 VPWR VPB 0.24fF
+C15 a_113_47# Y 0.01fF
 C16 VGND VNB 0.23fF
 C17 Y VNB 0.05fF
 C18 VPWR VNB 0.06fF
@@ -282,295 +291,295 @@ C21 VPB VNB 0.34fF
 .ends
 
 .subckt a_mux4_en en s1 s0 in0 in1 in2 in3 out VDD VSS
-Xsky130_fd_sc_hd__inv_1_4 switch_5t_1/en_b VSS VDD switch_5t_1/en VSS VDD sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_5 switch_5t_2/en_b VSS VDD switch_5t_2/en VSS VDD sky130_fd_sc_hd__inv_1
-Xswitch_5t_0 out switch_5t_0/en_b VDD switch_5t_0/in switch_5t_0/en VSS switch_5t_0/transmission_gate_1/in
+Xsky130_fd_sc_hd__inv_1_4 switch_5t_0/en switch_5t_0/en_b VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_5 switch_5t_2/en switch_5t_2/en_b VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_6 switch_5t_3/en switch_5t_3/en_b VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xswitch_5t_0 switch_5t_0/in switch_5t_0/en_b VDD out switch_5t_0/en VSS switch_5t_0/transmission_gate_1/in
 + switch_5t
-Xsky130_fd_sc_hd__inv_1_6 switch_5t_3/en_b VSS VDD switch_5t_3/en VSS VDD sky130_fd_sc_hd__inv_1
-Xswitch_5t_1 out switch_5t_1/en_b VDD switch_5t_1/in switch_5t_1/en VSS switch_5t_1/transmission_gate_1/in
+Xswitch_5t_1 switch_5t_1/in switch_5t_1/en_b VDD out switch_5t_1/en VSS switch_5t_1/transmission_gate_1/in
 + switch_5t
-Xsky130_fd_sc_hd__inv_1_8 en VSS VDD transmission_gate_3/en_b VSS VDD sky130_fd_sc_hd__inv_1
-Xswitch_5t_2 out switch_5t_2/en_b VDD switch_5t_2/in switch_5t_2/en VSS switch_5t_2/transmission_gate_1/in
+Xsky130_fd_sc_hd__inv_1_8 transmission_gate_3/en_b en VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xswitch_5t_2 switch_5t_2/in switch_5t_2/en_b VDD out switch_5t_2/en VSS switch_5t_2/transmission_gate_1/in
 + switch_5t
-Xswitch_5t_3 out switch_5t_3/en_b VDD switch_5t_3/in switch_5t_3/en VSS switch_5t_3/transmission_gate_1/in
+Xswitch_5t_3 switch_5t_3/in switch_5t_3/en_b VDD out switch_5t_3/en VSS switch_5t_3/transmission_gate_1/in
 + switch_5t
-Xtransmission_gate_0 transmission_gate_3/en_b en VDD in0 switch_5t_1/in VSS transmission_gate
-Xtransmission_gate_1 transmission_gate_3/en_b en VDD in1 switch_5t_0/in VSS transmission_gate
-Xtransmission_gate_2 transmission_gate_3/en_b en VDD in2 switch_5t_2/in VSS transmission_gate
-Xtransmission_gate_3 transmission_gate_3/en_b en VDD in3 switch_5t_3/in VSS transmission_gate
+Xtransmission_gate_0 in0 en VDD transmission_gate_3/en_b switch_5t_0/in VSS transmission_gate
+Xtransmission_gate_1 in1 en VDD transmission_gate_3/en_b switch_5t_1/in VSS transmission_gate
+Xtransmission_gate_2 in2 en VDD transmission_gate_3/en_b switch_5t_2/in VSS transmission_gate
+Xtransmission_gate_3 in3 en VDD transmission_gate_3/en_b switch_5t_3/in VSS transmission_gate
 Xsky130_fd_sc_hd__nand2_1_0 s0 s1 VSS VDD switch_5t_3/en_b VSS VDD sky130_fd_sc_hd__nand2_1_0/a_113_47#
 + sky130_fd_sc_hd__nand2_1
 Xsky130_fd_sc_hd__nand2_1_1 s0 sky130_fd_sc_hd__inv_1_0/Y VSS VDD switch_5t_2/en_b
 + VSS VDD sky130_fd_sc_hd__nand2_1_1/a_113_47# sky130_fd_sc_hd__nand2_1
-Xsky130_fd_sc_hd__nand2_1_2 s1 sky130_fd_sc_hd__inv_1_1/Y VSS VDD switch_5t_0/en_b
+Xsky130_fd_sc_hd__nand2_1_2 s1 sky130_fd_sc_hd__inv_1_1/Y VSS VDD switch_5t_1/en_b
 + VSS VDD sky130_fd_sc_hd__nand2_1_2/a_113_47# sky130_fd_sc_hd__nand2_1
 Xsky130_fd_sc_hd__nand2_1_3 sky130_fd_sc_hd__inv_1_0/Y sky130_fd_sc_hd__inv_1_1/Y
-+ VSS VDD switch_5t_1/en_b VSS VDD sky130_fd_sc_hd__nand2_1_3/a_113_47# sky130_fd_sc_hd__nand2_1
-Xsky130_fd_sc_hd__inv_1_1 s0 VSS VDD sky130_fd_sc_hd__inv_1_1/Y VSS VDD sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_0 s1 VSS VDD sky130_fd_sc_hd__inv_1_0/Y VSS VDD sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_3 switch_5t_0/en_b VSS VDD switch_5t_0/en VSS VDD sky130_fd_sc_hd__inv_1
-C0 sky130_fd_sc_hd__inv_1_0/Y switch_5t_1/en_b 0.10fF
-C1 VDD switch_5t_2/transmission_gate_1/in 0.31fF
-C2 in3 transmission_gate_3/en_b 0.04fF
-C3 in2 sky130_fd_sc_hd__inv_1_0/Y 0.01fF
-C4 switch_5t_3/transmission_gate_1/in switch_5t_2/in 0.07fF
-C5 switch_5t_2/en_b switch_5t_3/en_b 0.38fF
-C6 switch_5t_0/en sky130_fd_sc_hd__inv_1_0/Y 0.02fF
-C7 switch_5t_1/in en 0.14fF
-C8 switch_5t_3/en_b switch_5t_1/en_b 0.00fF
-C9 switch_5t_1/in VDD -0.19fF
-C10 switch_5t_2/in s0 0.46fF
-C11 out switch_5t_2/transmission_gate_1/in 0.34fF
-C12 switch_5t_0/in switch_5t_0/transmission_gate_1/in 0.06fF
-C13 switch_5t_2/in switch_5t_0/en_b 0.06fF
-C14 switch_5t_1/transmission_gate_1/in switch_5t_0/en_b 0.03fF
-C15 switch_5t_2/en switch_5t_2/in 0.09fF
-C16 sky130_fd_sc_hd__inv_1_1/Y switch_5t_1/in 0.02fF
-C17 in0 en 0.06fF
-C18 in0 VDD 0.07fF
-C19 switch_5t_2/in en 0.09fF
-C20 switch_5t_1/en switch_5t_0/transmission_gate_1/in 0.03fF
-C21 switch_5t_2/in VDD 1.04fF
-C22 switch_5t_1/transmission_gate_1/in en 0.00fF
-C23 switch_5t_1/transmission_gate_1/in VDD 0.16fF
-C24 s1 transmission_gate_3/en_b 1.15fF
-C25 switch_5t_2/en_b switch_5t_0/transmission_gate_1/in 0.02fF
-C26 switch_5t_0/transmission_gate_1/in switch_5t_1/en_b 0.12fF
-C27 switch_5t_2/en_b switch_5t_3/in 0.09fF
-C28 sky130_fd_sc_hd__inv_1_1/Y switch_5t_2/in 0.02fF
-C29 sky130_fd_sc_hd__nand2_1_2/a_113_47# switch_5t_0/en_b 0.01fF
-C30 in2 switch_5t_3/in 0.06fF
-C31 switch_5t_1/transmission_gate_1/in out 0.23fF
-C32 sky130_fd_sc_hd__inv_1_0/Y transmission_gate_3/en_b 0.10fF
-C33 switch_5t_0/transmission_gate_1/in switch_5t_0/en 0.00fF
-C34 en in3 0.04fF
-C35 VDD in3 -0.12fF
-C36 switch_5t_2/in switch_5t_2/transmission_gate_1/in 0.02fF
-C37 switch_5t_0/in switch_5t_1/en 0.01fF
-C38 switch_5t_2/en_b switch_5t_0/in 0.02fF
-C39 switch_5t_0/in switch_5t_1/en_b 0.13fF
-C40 in0 switch_5t_1/in 0.02fF
-C41 switch_5t_3/en_b transmission_gate_3/en_b 0.04fF
-C42 s0 s1 2.16fF
-C43 switch_5t_3/en switch_5t_3/en_b 0.15fF
-C44 s1 switch_5t_0/en_b 0.31fF
-C45 switch_5t_1/transmission_gate_1/in switch_5t_1/in 0.10fF
-C46 switch_5t_0/in in2 0.07fF
-C47 switch_5t_2/en s1 0.03fF
-C48 switch_5t_0/in switch_5t_0/en 0.14fF
-C49 switch_5t_1/en switch_5t_1/en_b 0.15fF
-C50 s0 sky130_fd_sc_hd__inv_1_0/Y 0.98fF
-C51 sky130_fd_sc_hd__nand2_1_0/a_113_47# switch_5t_3/en_b 0.01fF
-C52 switch_5t_0/en_b sky130_fd_sc_hd__inv_1_0/Y 0.19fF
-C53 en s1 0.66fF
-C54 VDD s1 0.75fF
-C55 switch_5t_2/en_b switch_5t_1/en_b 0.01fF
-C56 switch_5t_3/transmission_gate_1/in switch_5t_3/en_b 0.01fF
-C57 switch_5t_2/en sky130_fd_sc_hd__inv_1_0/Y 0.01fF
-C58 switch_5t_3/in transmission_gate_3/en_b 0.07fF
-C59 switch_5t_1/en switch_5t_0/en 0.20fF
-C60 switch_5t_3/en switch_5t_3/in 0.14fF
-C61 switch_5t_3/en_b s0 0.10fF
-C62 sky130_fd_sc_hd__inv_1_1/Y s1 0.31fF
-C63 switch_5t_3/en_b switch_5t_0/en_b 0.01fF
-C64 switch_5t_2/en_b switch_5t_0/en 0.01fF
-C65 en sky130_fd_sc_hd__inv_1_0/Y 0.07fF
-C66 VDD sky130_fd_sc_hd__inv_1_0/Y 0.77fF
-C67 switch_5t_0/en switch_5t_1/en_b 0.67fF
-C68 switch_5t_2/en switch_5t_3/en_b 0.19fF
-C69 s1 switch_5t_2/transmission_gate_1/in 0.01fF
-C70 switch_5t_2/in in3 0.07fF
-C71 sky130_fd_sc_hd__inv_1_1/Y sky130_fd_sc_hd__inv_1_0/Y 0.42fF
-C72 switch_5t_3/en_b en 0.06fF
-C73 switch_5t_3/en_b VDD 0.28fF
-C74 switch_5t_0/in transmission_gate_3/en_b 0.41fF
-C75 switch_5t_3/transmission_gate_1/in switch_5t_3/in 0.02fF
-C76 switch_5t_1/in s1 0.06fF
-C77 s0 switch_5t_3/in 0.01fF
-C78 switch_5t_2/transmission_gate_1/in sky130_fd_sc_hd__inv_1_0/Y 0.00fF
-C79 switch_5t_0/transmission_gate_1/in switch_5t_0/en_b 0.04fF
-C80 in1 switch_5t_0/in 0.14fF
-C81 sky130_fd_sc_hd__nand2_1_3/a_113_47# switch_5t_1/en_b -0.00fF
-C82 out switch_5t_3/en_b 0.01fF
-C83 switch_5t_2/en switch_5t_0/transmission_gate_1/in 0.09fF
-C84 switch_5t_2/en switch_5t_3/in 0.04fF
-C85 switch_5t_1/en transmission_gate_3/en_b 0.07fF
-C86 switch_5t_1/in sky130_fd_sc_hd__inv_1_0/Y 0.02fF
-C87 switch_5t_2/en_b transmission_gate_3/en_b 0.04fF
-C88 switch_5t_3/en_b switch_5t_2/transmission_gate_1/in 0.06fF
-C89 switch_5t_0/transmission_gate_1/in VDD 0.36fF
-C90 switch_5t_1/en_b transmission_gate_3/en_b 0.06fF
-C91 switch_5t_3/en switch_5t_2/en_b 0.46fF
-C92 switch_5t_2/in s1 0.30fF
-C93 en switch_5t_3/in 0.08fF
-C94 VDD switch_5t_3/in 0.17fF
-C95 switch_5t_0/in s0 0.06fF
-C96 in2 transmission_gate_3/en_b 0.11fF
-C97 switch_5t_0/in switch_5t_0/en_b 0.28fF
-C98 switch_5t_0/en transmission_gate_3/en_b 0.01fF
-C99 sky130_fd_sc_hd__inv_1_1/Y switch_5t_0/transmission_gate_1/in 0.02fF
-C100 out switch_5t_0/transmission_gate_1/in 0.34fF
-C101 switch_5t_2/in sky130_fd_sc_hd__inv_1_0/Y 0.08fF
-C102 in1 in2 0.23fF
-C103 switch_5t_2/en switch_5t_0/in 0.05fF
-C104 switch_5t_0/transmission_gate_1/in switch_5t_2/transmission_gate_1/in 0.30fF
-C105 switch_5t_3/transmission_gate_1/in switch_5t_2/en_b 0.09fF
-C106 switch_5t_1/en s0 0.03fF
-C107 switch_5t_2/en_b sky130_fd_sc_hd__nand2_1_1/a_113_47# -0.00fF
-C108 switch_5t_3/in switch_5t_2/transmission_gate_1/in 0.06fF
-C109 switch_5t_0/in en 0.12fF
-C110 switch_5t_0/in VDD 0.60fF
-C111 switch_5t_1/en switch_5t_0/en_b 0.02fF
-C112 switch_5t_2/en_b s0 0.34fF
-C113 s0 switch_5t_1/en_b 0.08fF
-C114 switch_5t_2/in switch_5t_3/en_b 0.09fF
-C115 switch_5t_2/en_b switch_5t_0/en_b 0.23fF
-C116 switch_5t_0/en_b switch_5t_1/en_b 0.47fF
-C117 sky130_fd_sc_hd__nand2_1_2/a_113_47# s1 0.01fF
-C118 switch_5t_1/in switch_5t_0/transmission_gate_1/in 0.10fF
-C119 switch_5t_2/en switch_5t_2/en_b 0.61fF
-C120 in2 s0 0.00fF
-C121 sky130_fd_sc_hd__inv_1_1/Y switch_5t_0/in 0.07fF
-C122 switch_5t_1/en en 0.07fF
-C123 switch_5t_1/en VDD 0.08fF
-C124 s0 switch_5t_0/en 0.02fF
-C125 switch_5t_0/en_b switch_5t_0/en 0.23fF
-C126 switch_5t_2/en_b en 0.03fF
-C127 switch_5t_2/en_b VDD 0.33fF
-C128 en switch_5t_1/en_b 0.07fF
-C129 VDD switch_5t_1/en_b 0.02fF
-C130 switch_5t_0/in switch_5t_2/transmission_gate_1/in 0.07fF
-C131 switch_5t_2/en switch_5t_0/en 0.16fF
-C132 switch_5t_3/en transmission_gate_3/en_b 0.00fF
-C133 switch_5t_2/in switch_5t_0/transmission_gate_1/in 0.06fF
-C134 switch_5t_1/en out 0.02fF
-C135 switch_5t_2/in switch_5t_3/in 0.35fF
-C136 in2 en 0.07fF
-C137 in2 VDD 0.00fF
-C138 switch_5t_1/transmission_gate_1/in switch_5t_0/transmission_gate_1/in 0.41fF
-C139 in1 transmission_gate_3/en_b 0.10fF
-C140 sky130_fd_sc_hd__inv_1_1/Y switch_5t_2/en_b 0.00fF
-C141 VDD switch_5t_0/en 0.23fF
-C142 switch_5t_2/en_b out 0.08fF
-C143 sky130_fd_sc_hd__inv_1_1/Y switch_5t_1/en_b 0.00fF
-C144 switch_5t_1/in switch_5t_0/in 0.54fF
-C145 out switch_5t_1/en_b 0.07fF
-C146 s1 sky130_fd_sc_hd__inv_1_0/Y 0.46fF
-C147 switch_5t_2/en_b switch_5t_2/transmission_gate_1/in 0.05fF
-C148 sky130_fd_sc_hd__inv_1_1/Y switch_5t_0/en 0.00fF
-C149 out switch_5t_0/en 0.08fF
-C150 in0 switch_5t_0/in 0.09fF
-C151 switch_5t_3/in in3 0.00fF
-C152 switch_5t_1/in switch_5t_1/en 0.11fF
-C153 switch_5t_3/transmission_gate_1/in switch_5t_3/en 0.01fF
-C154 switch_5t_0/in switch_5t_2/in 0.30fF
-C155 s0 transmission_gate_3/en_b 0.47fF
-C156 switch_5t_3/en_b s1 0.03fF
-C157 switch_5t_3/en s0 0.01fF
-C158 switch_5t_0/en_b transmission_gate_3/en_b 0.04fF
-C159 switch_5t_1/transmission_gate_1/in switch_5t_0/in 0.06fF
-C160 switch_5t_2/transmission_gate_1/in switch_5t_0/en 0.02fF
-C161 switch_5t_1/in switch_5t_1/en_b 0.09fF
-C162 in1 s0 0.00fF
-C163 switch_5t_2/en transmission_gate_3/en_b 0.04fF
-C164 switch_5t_3/en switch_5t_2/en 0.25fF
-C165 switch_5t_3/en_b sky130_fd_sc_hd__inv_1_0/Y 0.00fF
-C166 switch_5t_1/in switch_5t_0/en 0.13fF
-C167 en transmission_gate_3/en_b 2.71fF
-C168 VDD transmission_gate_3/en_b 0.47fF
-C169 switch_5t_1/transmission_gate_1/in switch_5t_1/en 0.06fF
-C170 switch_5t_2/en_b switch_5t_2/in 0.15fF
-C171 switch_5t_3/en VDD 0.21fF
-C172 switch_5t_2/in switch_5t_1/en_b 0.00fF
-C173 switch_5t_1/transmission_gate_1/in switch_5t_1/en_b 0.03fF
-C174 in1 en 0.06fF
-C175 in1 VDD -0.02fF
-C176 sky130_fd_sc_hd__nand2_1_1/a_113_47# s0 0.00fF
-C177 s1 switch_5t_3/in 0.02fF
-C178 switch_5t_2/in in2 0.00fF
-C179 sky130_fd_sc_hd__inv_1_1/Y transmission_gate_3/en_b 0.04fF
-C180 s0 switch_5t_0/en_b 0.10fF
-C181 switch_5t_3/transmission_gate_1/in switch_5t_2/en 0.02fF
-C182 switch_5t_2/in switch_5t_0/en 0.01fF
-C183 switch_5t_3/en out 0.06fF
-C184 switch_5t_1/transmission_gate_1/in switch_5t_0/en 0.11fF
-C185 switch_5t_2/en s0 0.09fF
-C186 in1 sky130_fd_sc_hd__inv_1_1/Y 0.01fF
-C187 switch_5t_0/transmission_gate_1/in sky130_fd_sc_hd__inv_1_0/Y 0.02fF
-C188 switch_5t_2/en switch_5t_0/en_b 0.42fF
-C189 switch_5t_3/transmission_gate_1/in VDD 0.07fF
-C190 switch_5t_3/en switch_5t_2/transmission_gate_1/in 0.09fF
-C191 en s0 0.55fF
-C192 s0 VDD 0.90fF
-C193 en switch_5t_0/en_b 0.03fF
-C194 VDD switch_5t_0/en_b 0.30fF
-C195 switch_5t_0/in s1 0.08fF
-C196 in2 in3 0.23fF
-C197 switch_5t_1/in transmission_gate_3/en_b 0.32fF
-C198 switch_5t_3/en_b switch_5t_3/in 0.09fF
-C199 switch_5t_2/en en 0.03fF
-C200 switch_5t_2/en VDD 0.20fF
-C201 switch_5t_3/transmission_gate_1/in out 0.14fF
-C202 sky130_fd_sc_hd__inv_1_1/Y s0 0.29fF
-C203 in1 switch_5t_1/in 0.07fF
-C204 sky130_fd_sc_hd__inv_1_1/Y switch_5t_0/en_b 0.15fF
-C205 en VDD 0.17fF
-C206 out switch_5t_0/en_b 0.08fF
-C207 switch_5t_3/transmission_gate_1/in switch_5t_2/transmission_gate_1/in 0.30fF
-C208 switch_5t_0/in sky130_fd_sc_hd__inv_1_0/Y 0.08fF
-C209 switch_5t_1/en s1 0.03fF
-C210 in0 transmission_gate_3/en_b 0.16fF
-C211 s0 switch_5t_2/transmission_gate_1/in 0.02fF
-C212 switch_5t_2/en_b s1 0.07fF
-C213 switch_5t_2/en out 0.07fF
-C214 switch_5t_2/in transmission_gate_3/en_b 0.17fF
-C215 s1 switch_5t_1/en_b 0.07fF
-C216 switch_5t_0/en_b switch_5t_2/transmission_gate_1/in 0.09fF
-C217 switch_5t_3/en switch_5t_2/in 0.07fF
-C218 switch_5t_1/transmission_gate_1/in transmission_gate_3/en_b 0.02fF
-C219 in0 in1 0.33fF
-C220 sky130_fd_sc_hd__inv_1_1/Y en 0.03fF
-C221 sky130_fd_sc_hd__inv_1_1/Y VDD 0.66fF
-C222 switch_5t_2/en switch_5t_2/transmission_gate_1/in 0.00fF
-C223 in1 switch_5t_2/in 0.06fF
-C224 out VDD 0.97fF
-C225 switch_5t_1/en sky130_fd_sc_hd__inv_1_0/Y 0.01fF
-C226 in2 s1 0.00fF
-C227 switch_5t_1/in s0 0.04fF
-C228 s1 switch_5t_0/en 0.02fF
-C229 switch_5t_2/en_b sky130_fd_sc_hd__inv_1_0/Y 0.04fF
-C230 switch_5t_1/in switch_5t_0/en_b 0.05fF
-C231 sky130_fd_sc_hd__inv_1_0/Y VSS 18.63fF
-C232 s1 VSS 33.39fF
-C233 s0 VSS 54.12fF
++ VSS VDD switch_5t_0/en_b VSS VDD sky130_fd_sc_hd__nand2_1_3/a_113_47# sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_0/Y s1 VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_1 sky130_fd_sc_hd__inv_1_1/Y s0 VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_3 switch_5t_1/en switch_5t_1/en_b VSS VDD VSS VDD sky130_fd_sc_hd__inv_1
+C0 switch_5t_1/en switch_5t_1/transmission_gate_1/in 0.02fF
+C1 switch_5t_3/in switch_5t_3/en_b 0.10fF
+C2 VDD switch_5t_2/transmission_gate_1/in 0.50fF
+C3 transmission_gate_3/en_b switch_5t_0/in 0.39fF
+C4 switch_5t_1/en_b switch_5t_0/en 0.02fF
+C5 VDD in2 0.07fF
+C6 VDD switch_5t_0/transmission_gate_1/in 0.45fF
+C7 switch_5t_2/transmission_gate_1/in switch_5t_2/in 0.02fF
+C8 VDD in1 0.10fF
+C9 in2 switch_5t_2/in 0.00fF
+C10 out switch_5t_1/transmission_gate_1/in 0.34fF
+C11 s0 switch_5t_1/en_b 0.10fF
+C12 switch_5t_1/en switch_5t_1/en_b 0.22fF
+C13 in1 switch_5t_2/in 0.06fF
+C14 out switch_5t_1/en_b 0.04fF
+C15 switch_5t_3/in switch_5t_3/en 0.11fF
+C16 transmission_gate_3/en_b switch_5t_1/en_b 0.04fF
+C17 s0 switch_5t_3/en_b 0.10fF
+C18 switch_5t_3/in in3 0.00fF
+C19 en switch_5t_2/en 0.03fF
+C20 en switch_5t_1/in 0.20fF
+C21 in2 in1 0.22fF
+C22 sky130_fd_sc_hd__inv_1_0/Y switch_5t_0/en 0.01fF
+C23 switch_5t_2/en switch_5t_2/en_b 0.60fF
+C24 switch_5t_1/in switch_5t_2/en_b 0.01fF
+C25 out switch_5t_3/en_b 0.01fF
+C26 transmission_gate_3/en_b switch_5t_3/en_b 0.04fF
+C27 s1 en 0.66fF
+C28 s0 sky130_fd_sc_hd__inv_1_0/Y 0.97fF
+C29 VDD switch_5t_2/en 0.32fF
+C30 VDD switch_5t_1/in 0.80fF
+C31 sky130_fd_sc_hd__inv_1_0/Y switch_5t_1/en 0.02fF
+C32 switch_5t_0/en_b en 0.07fF
+C33 sky130_fd_sc_hd__inv_1_1/Y en 0.03fF
+C34 switch_5t_3/transmission_gate_1/in switch_5t_2/en_b 0.05fF
+C35 switch_5t_2/en switch_5t_2/in 0.09fF
+C36 s0 switch_5t_3/en 0.01fF
+C37 switch_5t_1/in switch_5t_2/in 0.30fF
+C38 en switch_5t_0/in 0.23fF
+C39 s1 switch_5t_2/en_b 0.07fF
+C40 switch_5t_3/transmission_gate_1/in VDD 0.28fF
+C41 switch_5t_0/en_b switch_5t_2/en_b 0.01fF
+C42 s0 switch_5t_3/in 0.01fF
+C43 sky130_fd_sc_hd__inv_1_1/Y switch_5t_2/en_b 0.00fF
+C44 transmission_gate_3/en_b sky130_fd_sc_hd__inv_1_0/Y 0.10fF
+C45 VDD s1 0.65fF
+C46 switch_5t_3/transmission_gate_1/in switch_5t_2/in 0.07fF
+C47 switch_5t_0/en_b VDD 0.13fF
+C48 VDD sky130_fd_sc_hd__inv_1_1/Y 0.72fF
+C49 out switch_5t_3/en 0.03fF
+C50 s1 switch_5t_2/in 0.30fF
+C51 transmission_gate_3/en_b switch_5t_3/en 0.00fF
+C52 switch_5t_0/en_b switch_5t_2/in 0.00fF
+C53 VDD switch_5t_0/in 1.07fF
+C54 sky130_fd_sc_hd__nand2_1_0/a_113_47# switch_5t_3/en_b 0.01fF
+C55 sky130_fd_sc_hd__inv_1_1/Y switch_5t_2/in 0.02fF
+C56 transmission_gate_3/en_b switch_5t_3/in 0.16fF
+C57 switch_5t_1/transmission_gate_1/in switch_5t_2/en_b 0.01fF
+C58 transmission_gate_3/en_b in3 0.29fF
+C59 switch_5t_2/transmission_gate_1/in switch_5t_2/en 0.02fF
+C60 switch_5t_2/transmission_gate_1/in switch_5t_1/in 0.07fF
+C61 en switch_5t_1/en_b 0.03fF
+C62 in2 switch_5t_1/in 0.07fF
+C63 VDD switch_5t_1/transmission_gate_1/in 0.54fF
+C64 s0 switch_5t_0/en 0.03fF
+C65 switch_5t_1/in switch_5t_0/transmission_gate_1/in 0.06fF
+C66 switch_5t_1/en switch_5t_0/en 0.20fF
+C67 in1 switch_5t_1/in 0.15fF
+C68 switch_5t_1/transmission_gate_1/in switch_5t_2/in 0.06fF
+C69 switch_5t_3/transmission_gate_1/in switch_5t_2/transmission_gate_1/in 0.30fF
+C70 switch_5t_1/en_b switch_5t_2/en_b 0.23fF
+C71 s0 switch_5t_1/en 0.02fF
+C72 transmission_gate_3/en_b in0 0.23fF
+C73 switch_5t_2/transmission_gate_1/in s1 0.01fF
+C74 s1 in2 0.01fF
+C75 out switch_5t_0/en 0.01fF
+C76 VDD switch_5t_1/en_b 0.34fF
+C77 transmission_gate_3/en_b switch_5t_0/en 0.07fF
+C78 en switch_5t_3/en_b 0.06fF
+C79 switch_5t_0/en_b switch_5t_0/transmission_gate_1/in 0.07fF
+C80 switch_5t_1/en_b switch_5t_2/in 0.03fF
+C81 in1 sky130_fd_sc_hd__inv_1_1/Y 0.01fF
+C82 transmission_gate_3/en_b s0 0.48fF
+C83 switch_5t_0/in switch_5t_0/transmission_gate_1/in 0.10fF
+C84 out switch_5t_1/en 0.04fF
+C85 transmission_gate_3/en_b switch_5t_1/en 0.01fF
+C86 s0 sky130_fd_sc_hd__nand2_1_1/a_113_47# 0.00fF
+C87 in1 switch_5t_0/in 0.07fF
+C88 switch_5t_2/en_b switch_5t_3/en_b 0.38fF
+C89 switch_5t_2/transmission_gate_1/in switch_5t_1/transmission_gate_1/in 0.30fF
+C90 VDD switch_5t_3/en_b 0.19fF
+C91 switch_5t_1/transmission_gate_1/in switch_5t_0/transmission_gate_1/in 0.32fF
+C92 sky130_fd_sc_hd__inv_1_0/Y en 0.07fF
+C93 switch_5t_3/en_b switch_5t_2/in 0.09fF
+C94 switch_5t_2/en switch_5t_1/in 0.02fF
+C95 switch_5t_2/transmission_gate_1/in switch_5t_1/en_b 0.05fF
+C96 sky130_fd_sc_hd__inv_1_0/Y switch_5t_2/en_b 0.04fF
+C97 in3 en 0.28fF
+C98 switch_5t_3/in en 0.17fF
+C99 switch_5t_1/en_b switch_5t_0/transmission_gate_1/in 0.02fF
+C100 sky130_fd_sc_hd__inv_1_0/Y VDD 0.88fF
+C101 switch_5t_3/en switch_5t_2/en_b 0.56fF
+C102 switch_5t_3/transmission_gate_1/in switch_5t_2/en 0.01fF
+C103 sky130_fd_sc_hd__inv_1_0/Y switch_5t_2/in 0.08fF
+C104 s1 switch_5t_2/en 0.03fF
+C105 switch_5t_3/in switch_5t_2/en_b 0.07fF
+C106 VDD switch_5t_3/en 0.34fF
+C107 s1 switch_5t_1/in 0.08fF
+C108 switch_5t_0/en_b switch_5t_1/in 0.10fF
+C109 switch_5t_2/transmission_gate_1/in switch_5t_3/en_b 0.05fF
+C110 sky130_fd_sc_hd__inv_1_1/Y switch_5t_1/in 0.07fF
+C111 VDD switch_5t_3/in 0.27fF
+C112 VDD in3 -0.11fF
+C113 switch_5t_3/en switch_5t_2/in 0.04fF
+C114 in0 en 0.18fF
+C115 switch_5t_0/in switch_5t_1/in 0.45fF
+C116 switch_5t_3/in switch_5t_2/in 0.34fF
+C117 en switch_5t_0/en 0.07fF
+C118 in3 switch_5t_2/in 0.07fF
+C119 switch_5t_0/en_b s1 0.07fF
+C120 switch_5t_2/en switch_5t_1/transmission_gate_1/in 0.04fF
+C121 switch_5t_1/transmission_gate_1/in switch_5t_1/in 0.06fF
+C122 s1 sky130_fd_sc_hd__inv_1_1/Y 0.30fF
+C123 s0 en 0.55fF
+C124 switch_5t_0/en_b sky130_fd_sc_hd__inv_1_1/Y 0.00fF
+C125 sky130_fd_sc_hd__inv_1_0/Y switch_5t_2/transmission_gate_1/in 0.00fF
+C126 VDD in0 0.03fF
+C127 s1 switch_5t_0/in 0.06fF
+C128 sky130_fd_sc_hd__inv_1_0/Y in2 0.02fF
+C129 switch_5t_0/en_b switch_5t_0/in 0.11fF
+C130 sky130_fd_sc_hd__inv_1_1/Y switch_5t_0/in 0.02fF
+C131 VDD switch_5t_0/en 0.23fF
+C132 s0 switch_5t_2/en_b 0.32fF
+C133 switch_5t_2/transmission_gate_1/in switch_5t_3/en 0.04fF
+C134 switch_5t_1/en switch_5t_2/en_b 0.00fF
+C135 switch_5t_1/en_b switch_5t_2/en 0.44fF
+C136 switch_5t_1/en_b switch_5t_1/in 0.31fF
+C137 transmission_gate_3/en_b en 2.59fF
+C138 switch_5t_2/transmission_gate_1/in switch_5t_3/in 0.06fF
+C139 switch_5t_0/en_b switch_5t_1/transmission_gate_1/in 0.07fF
+C140 s0 VDD 0.85fF
+C141 switch_5t_3/in in2 0.06fF
+C142 in3 in2 0.22fF
+C143 sky130_fd_sc_hd__inv_1_1/Y switch_5t_1/transmission_gate_1/in 0.02fF
+C144 VDD switch_5t_1/en 0.35fF
+C145 switch_5t_0/in switch_5t_1/transmission_gate_1/in 0.07fF
+C146 s0 switch_5t_2/in 0.46fF
+C147 out switch_5t_2/en_b 0.04fF
+C148 switch_5t_1/en switch_5t_2/in 0.01fF
+C149 transmission_gate_3/en_b switch_5t_2/en_b 0.04fF
+C150 sky130_fd_sc_hd__nand2_1_1/a_113_47# switch_5t_2/en_b -0.00fF
+C151 s1 switch_5t_1/en_b 0.27fF
+C152 VDD out 1.58fF
+C153 switch_5t_0/en_b switch_5t_1/en_b 0.47fF
+C154 transmission_gate_3/en_b VDD 0.93fF
+C155 switch_5t_2/en switch_5t_3/en_b 0.18fF
+C156 sky130_fd_sc_hd__inv_1_1/Y switch_5t_1/en_b 0.15fF
+C157 switch_5t_1/en_b switch_5t_0/in 0.04fF
+C158 transmission_gate_3/en_b switch_5t_2/in 0.25fF
+C159 in0 in1 0.24fF
+C160 switch_5t_3/transmission_gate_1/in switch_5t_3/en_b 0.02fF
+C161 switch_5t_0/en switch_5t_0/transmission_gate_1/in 0.07fF
+C162 s0 switch_5t_2/transmission_gate_1/in 0.02fF
+C163 switch_5t_1/en_b switch_5t_1/transmission_gate_1/in 0.08fF
+C164 s0 in2 0.00fF
+C165 s1 switch_5t_3/en_b 0.03fF
+C166 switch_5t_2/transmission_gate_1/in switch_5t_1/en 0.01fF
+C167 switch_5t_0/en_b switch_5t_3/en_b 0.00fF
+C168 switch_5t_0/en_b sky130_fd_sc_hd__nand2_1_3/a_113_47# -0.00fF
+C169 sky130_fd_sc_hd__inv_1_0/Y switch_5t_2/en 0.01fF
+C170 sky130_fd_sc_hd__inv_1_0/Y switch_5t_1/in 0.08fF
+C171 switch_5t_1/en switch_5t_0/transmission_gate_1/in 0.05fF
+C172 s0 in1 0.01fF
+C173 s1 sky130_fd_sc_hd__nand2_1_2/a_113_47# 0.00fF
+C174 switch_5t_2/en switch_5t_3/en 0.29fF
+C175 switch_5t_2/transmission_gate_1/in out 0.34fF
+C176 switch_5t_3/in switch_5t_2/en 0.04fF
+C177 transmission_gate_3/en_b in2 0.32fF
+C178 out switch_5t_0/transmission_gate_1/in 0.20fF
+C179 sky130_fd_sc_hd__inv_1_0/Y s1 0.46fF
+C180 transmission_gate_3/en_b switch_5t_0/transmission_gate_1/in 0.02fF
+C181 switch_5t_3/transmission_gate_1/in switch_5t_3/en -0.00fF
+C182 switch_5t_0/en_b sky130_fd_sc_hd__inv_1_0/Y 0.10fF
+C183 transmission_gate_3/en_b in1 0.31fF
+C184 sky130_fd_sc_hd__inv_1_0/Y sky130_fd_sc_hd__inv_1_1/Y 0.42fF
+C185 switch_5t_3/transmission_gate_1/in switch_5t_3/in 0.02fF
+C186 sky130_fd_sc_hd__inv_1_0/Y switch_5t_0/in 0.02fF
+C187 s1 switch_5t_3/in 0.02fF
+C188 en switch_5t_2/en_b 0.03fF
+C189 switch_5t_1/en_b switch_5t_3/en_b 0.01fF
+C190 in0 switch_5t_1/in 0.06fF
+C191 sky130_fd_sc_hd__inv_1_0/Y switch_5t_1/transmission_gate_1/in 0.02fF
+C192 sky130_fd_sc_hd__nand2_1_2/a_113_47# switch_5t_1/en_b 0.01fF
+C193 VDD en 2.11fF
+C194 switch_5t_0/en switch_5t_1/in 0.01fF
+C195 en switch_5t_2/in 0.18fF
+C196 s0 switch_5t_2/en 0.09fF
+C197 s0 switch_5t_1/in 0.07fF
+C198 switch_5t_1/en switch_5t_2/en 0.17fF
+C199 switch_5t_1/en switch_5t_1/in 0.11fF
+C200 VDD switch_5t_2/en_b 0.48fF
+C201 sky130_fd_sc_hd__inv_1_0/Y switch_5t_1/en_b 0.19fF
+C202 s1 switch_5t_0/en 0.03fF
+C203 switch_5t_2/en_b switch_5t_2/in 0.22fF
+C204 switch_5t_0/en_b switch_5t_0/en 0.15fF
+C205 in0 switch_5t_0/in 0.02fF
+C206 out switch_5t_2/en 0.04fF
+C207 transmission_gate_3/en_b switch_5t_2/en 0.04fF
+C208 VDD switch_5t_2/in 1.21fF
+C209 s0 s1 2.16fF
+C210 transmission_gate_3/en_b switch_5t_1/in 0.47fF
+C211 switch_5t_0/in switch_5t_0/en 0.11fF
+C212 s1 switch_5t_1/en 0.02fF
+C213 switch_5t_0/en_b s0 0.08fF
+C214 s0 sky130_fd_sc_hd__inv_1_1/Y 0.29fF
+C215 switch_5t_0/en_b switch_5t_1/en 0.64fF
+C216 switch_5t_1/en sky130_fd_sc_hd__inv_1_1/Y 0.00fF
+C217 switch_5t_3/transmission_gate_1/in out 0.14fF
+C218 s0 switch_5t_0/in 0.04fF
+C219 in2 en 0.32fF
+C220 sky130_fd_sc_hd__inv_1_0/Y switch_5t_3/en_b 0.00fF
+C221 switch_5t_1/en switch_5t_0/in 0.09fF
+C222 switch_5t_1/transmission_gate_1/in switch_5t_0/en 0.01fF
+C223 en switch_5t_0/transmission_gate_1/in 0.00fF
+C224 in1 en 0.31fF
+C225 transmission_gate_3/en_b s1 1.15fF
+C226 switch_5t_0/en_b out 0.03fF
+C227 switch_5t_3/en switch_5t_3/en_b 0.15fF
+C228 switch_5t_2/transmission_gate_1/in switch_5t_2/en_b 0.09fF
+C229 transmission_gate_3/en_b switch_5t_0/en_b 0.05fF
+C230 transmission_gate_3/en_b sky130_fd_sc_hd__inv_1_1/Y 0.04fF
+C231 sky130_fd_sc_hd__inv_1_1/Y VSS 14.58fF
+C232 sky130_fd_sc_hd__inv_1_0/Y VSS 42.07fF
+C233 s1 VSS 46.15fF
 C234 sky130_fd_sc_hd__nand2_1_3/a_113_47# VSS 0.01fF
-C235 sky130_fd_sc_hd__inv_1_1/Y VSS 24.03fF
-C236 sky130_fd_sc_hd__nand2_1_2/a_113_47# VSS -0.00fF
-C237 sky130_fd_sc_hd__nand2_1_1/a_113_47# VSS 0.01fF
+C235 sky130_fd_sc_hd__nand2_1_2/a_113_47# VSS -0.00fF
+C236 sky130_fd_sc_hd__nand2_1_1/a_113_47# VSS 0.01fF
+C237 s0 VSS 46.08fF
 C238 sky130_fd_sc_hd__nand2_1_0/a_113_47# VSS -0.00fF
-C239 en VSS 8.18fF
-C240 in3 VSS 0.44fF
-C241 transmission_gate_3/en_b VSS 7.83fF
-C242 VDD VSS -226.82fF
-C243 in2 VSS 0.19fF
-C244 in1 VSS 0.17fF
-C245 in0 VSS 0.84fF
-C246 switch_5t_3/en VSS 3.66fF
-C247 out VSS 1.82fF
-C248 switch_5t_3/transmission_gate_1/in VSS 1.79fF
-C249 switch_5t_3/en_b VSS 8.83fF
-C250 switch_5t_3/in VSS 1.04fF
-C251 switch_5t_2/en VSS 5.08fF
-C252 switch_5t_2/transmission_gate_1/in VSS 1.85fF
-C253 switch_5t_2/en_b VSS 11.60fF
-C254 switch_5t_2/in VSS 0.26fF
-C255 switch_5t_1/en VSS 4.64fF
-C256 switch_5t_1/transmission_gate_1/in VSS 1.87fF
-C257 switch_5t_1/en_b VSS 8.70fF
-C258 switch_5t_1/in VSS 2.76fF
-C259 switch_5t_0/en VSS 12.95fF
-C260 switch_5t_0/transmission_gate_1/in VSS 1.85fF
-C261 switch_5t_0/en_b VSS -2.59fF
-C262 switch_5t_0/in VSS 0.85fF
+C239 en VSS 36.88fF
+C240 switch_5t_3/in VSS 1.96fF
+C241 in3 VSS 1.22fF
+C242 transmission_gate_3/en_b VSS -3.38fF
+C243 VDD VSS -212.14fF
+C244 switch_5t_2/in VSS 3.00fF
+C245 in2 VSS 1.80fF
+C246 switch_5t_1/in VSS 1.78fF
+C247 in1 VSS 1.81fF
+C248 switch_5t_0/in VSS 3.17fF
+C249 in0 VSS 1.89fF
+C250 switch_5t_3/en VSS 5.10fF
+C251 out VSS 7.75fF
+C252 switch_5t_3/en_b VSS 6.20fF
+C253 switch_5t_3/transmission_gate_1/in VSS 1.26fF
+C254 switch_5t_2/en VSS 9.99fF
+C255 switch_5t_2/en_b VSS 12.62fF
+C256 switch_5t_2/transmission_gate_1/in VSS 1.33fF
+C257 switch_5t_1/en VSS 9.21fF
+C258 switch_5t_1/en_b VSS 16.28fF
+C259 switch_5t_1/transmission_gate_1/in VSS 1.33fF
+C260 switch_5t_0/en VSS 4.67fF
+C261 switch_5t_0/en_b VSS 16.88fF
+C262 switch_5t_0/transmission_gate_1/in VSS 1.32fF
 .ends
 

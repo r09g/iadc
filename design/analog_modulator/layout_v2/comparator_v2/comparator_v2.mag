@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654517900
+timestamp 1654601900
 << nwell >>
 rect -3152 6932 -2673 8059
 rect 1443 8056 2009 8212
@@ -6521,75 +6521,82 @@ rect 2444 249 2454 313
 rect 2370 244 2454 249
 rect 2380 242 2444 244
 use current_tail  current_tail_0
-timestamp 1654517900
-transform 1 0 1739 0 1 117
+timestamp 1654601900
+transform 1 0 1739 0 1 118
 box -1799 -310 1799 310
 use input_diff_pair  input_diff_pair_0
-timestamp 1654517900
+timestamp 1654601900
 transform 1 0 -2641 0 1 3815
 box -1 -3081 8763 375
 use latch_nmos_pair  latch_nmos_pair_0
-timestamp 1654517900
+timestamp 1654601900
 transform 1 0 -2642 0 1 6069
 box 0 -1320 8764 376
 use latch_pmos_pair  latch_pmos_pair_0
-timestamp 1654517900
+timestamp 1654601900
 transform 1 0 -2735 0 1 7455
 box -59 -566 8981 604
 use precharge_pmos  precharge_pmos_0
-timestamp 1654517900
-transform 0 1 -3735 -1 0 8007
-box -52 -53 2010 585
+timestamp 1654601900
+transform 0 1 -3736 -1 0 8008
+box -52 -52 2010 586
 use precharge_pmos  precharge_pmos_1
-timestamp 1654517900
-transform 0 1 -3735 -1 0 5597
-box -52 -53 2010 585
+timestamp 1654601900
+transform 0 1 -3734 -1 0 5598
+box -52 -52 2010 586
 use sky130_fd_pr__pfet_01v8_VCG74W  sky130_fd_pr__pfet_01v8_VCG74W_0
-timestamp 1654517900
-transform 0 -1 6931 -1 0 7028
+timestamp 1654601900
+transform 0 -1 6931 -1 0 7029
 box -1031 -319 1031 319
 use sky130_fd_pr__pfet_01v8_VCG74W  sky130_fd_pr__pfet_01v8_VCG74W_1
-timestamp 1654517900
-transform 0 -1 6931 -1 0 4618
+timestamp 1654601900
+transform 0 -1 6931 -1 0 4619
 box -1031 -319 1031 319
 use sky130_fd_sc_hd__buf_2  sky130_fd_sc_hd__buf_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654517900
+timestamp 1654601900
 transform 0 -1 2270 1 0 8241
 box -38 -48 406 592
 use sky130_fd_sc_hd__buf_2  sky130_fd_sc_hd__buf_2_1
-timestamp 1654517900
+timestamp 1654601900
 transform 0 1 1182 1 0 8241
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  sky130_fd_sc_hd__decap_12_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654517900
+timestamp 1654601900
 transform 0 1 1182 -1 0 10633
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  sky130_fd_sc_hd__decap_12_1
-timestamp 1654517900
+timestamp 1654601900
 transform 0 -1 2270 1 0 9529
 box -38 -48 1142 592
 use sky130_fd_sc_hd__nand2_4  sky130_fd_sc_hd__nand2_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654517900
+timestamp 1654601900
 transform 0 1 1182 -1 0 9437
 box -38 -48 866 592
 use sky130_fd_sc_hd__nand2_4  sky130_fd_sc_hd__nand2_4_1
-timestamp 1654517900
+timestamp 1654601900
 transform 0 -1 2270 -1 0 9437
 box -38 -48 866 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654517900
+timestamp 1654601900
 transform 0 1 1182 -1 0 9529
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1654517900
+timestamp 1654601900
 transform 0 -1 2270 1 0 9437
 box -38 -48 130 592
 << labels >>
 flabel metal1 1334 10724 1334 10724 5 FreeSans 400 0 0 0 outn
+port 5 s
 flabel metal1 2119 10721 2119 10721 1 FreeSans 400 0 0 0 outp
+port 4 n
 flabel metal3 1730 4459 1730 4459 1 FreeSans 400 0 0 0 clk
+port 1 n
 flabel metal1 -3776 8059 -3776 8059 1 FreeSans 400 0 0 0 VDD
+port 6 n power bidirectional
 flabel metal1 -3228 -136 -3228 -136 1 FreeSans 400 0 0 0 VSS
+port 7 n power bidirectional
 flabel metal2 6063 2476 6063 2476 1 FreeSans 400 0 0 0 in
+port 3 n
 flabel metal2 -2580 2466 -2580 2466 1 FreeSans 400 0 0 0 ip
+port 2 n
 << end >>
