@@ -128,17 +128,33 @@ C {devices/lab_pin.sym} 830 -410 3 1 {name=l77 sig_type=std_logic lab=p2d_b}
 C {devices/lab_pin.sym} 510 -700 0 0 {name=l78 sig_type=std_logic lab=clk}
 C {devices/ipin.sym} 200 -810 0 0 {name=p14 lab=clk}
 C {sky130_stdcells/mux4_1.sym} 230 -1470 0 0 {name=x16 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 190 -1530 0 0 {name=l79 sig_type=std_logic lab=p1}
+C {devices/lab_pin.sym} 190 -1490 0 0 {name=l80 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 190 -1450 0 0 {name=l81 sig_type=std_logic lab=p1_b}
+C {devices/lab_pin.sym} 190 -1410 0 0 {name=l82 sig_type=std_logic lab=A_b}
 C {devices/lab_pin.sym} 190 -1370 0 0 {name=l83 sig_type=std_logic lab=d_clk_grp_1_ctrl_0}
 C {devices/lab_pin.sym} 190 -1340 0 0 {name=l84 sig_type=std_logic lab=d_clk_grp_1_ctrl_1}
 C {devices/lab_pin.sym} 430 -1470 0 1 {name=l85 sig_type=std_logic lab=d_probe_0}
+C {devices/lab_pin.sym} 770 -1530 0 0 {name=l86 sig_type=std_logic lab=p2}
+C {devices/lab_pin.sym} 770 -1490 0 0 {name=l87 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 770 -1450 0 0 {name=l88 sig_type=std_logic lab=p2_b}
+C {devices/lab_pin.sym} 770 -1410 0 0 {name=l89 sig_type=std_logic lab=B_b}
 C {devices/lab_pin.sym} 770 -1370 0 0 {name=l90 sig_type=std_logic lab=d_clk_grp_1_ctrl_0}
 C {devices/lab_pin.sym} 770 -1340 0 0 {name=l91 sig_type=std_logic lab=d_clk_grp_1_ctrl_1}
 C {devices/lab_pin.sym} 1010 -1470 0 1 {name=l92 sig_type=std_logic lab=d_probe_1}
 C {sky130_stdcells/mux4_1.sym} 810 -1470 0 0 {name=x17 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/mux4_1.sym} 230 -1190 0 0 {name=x18 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 190 -1250 0 0 {name=l93 sig_type=std_logic lab=p1d}
+C {devices/lab_pin.sym} 190 -1210 0 0 {name=l94 sig_type=std_logic lab=Ad}
+C {devices/lab_pin.sym} 190 -1170 0 0 {name=l95 sig_type=std_logic lab=p1d_b}
+C {devices/lab_pin.sym} 190 -1130 0 0 {name=l96 sig_type=std_logic lab=Ad_b}
 C {devices/lab_pin.sym} 190 -1090 0 0 {name=l97 sig_type=std_logic lab=d_clk_grp_2_ctrl_0}
 C {devices/lab_pin.sym} 190 -1060 0 0 {name=l98 sig_type=std_logic lab=d_clk_grp_2_ctrl_1}
 C {devices/lab_pin.sym} 430 -1190 0 1 {name=l99 sig_type=std_logic lab=d_probe_2}
+C {devices/lab_pin.sym} 770 -1250 0 0 {name=l100 sig_type=std_logic lab=p2d}
+C {devices/lab_pin.sym} 770 -1210 0 0 {name=l101 sig_type=std_logic lab=Bd}
+C {devices/lab_pin.sym} 770 -1170 0 0 {name=l102 sig_type=std_logic lab=p2d_b}
+C {devices/lab_pin.sym} 770 -1130 0 0 {name=l103 sig_type=std_logic lab=Bd_b}
 C {devices/lab_pin.sym} 770 -1090 0 0 {name=l104 sig_type=std_logic lab=d_clk_grp_2_ctrl_0}
 C {devices/lab_pin.sym} 770 -1060 0 0 {name=l105 sig_type=std_logic lab=d_clk_grp_2_ctrl_1}
 C {devices/lab_pin.sym} 1010 -1190 0 1 {name=l106 sig_type=std_logic lab=d_probe_3}

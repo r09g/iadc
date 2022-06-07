@@ -15,16 +15,16 @@ x9 s1_b s0_b VSS VSS VDD VDD en0_b sky130_fd_sc_hd__nand2_1
 x10 s1 s0_b VSS VSS VDD VDD en1_b sky130_fd_sc_hd__nand2_1
 x11 s0 s1_b VSS VSS VDD VDD en2_b sky130_fd_sc_hd__nand2_1
 x12 s0 s1 VSS VSS VDD VDD en3_b sky130_fd_sc_hd__nand2_1
-x15 in0 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x16 in1 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x17 in2 net3 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x18 in3 net4 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x15 in0 net1 en en_b VDD VSS transmission_gate
+x16 in1 net2 en en_b VDD VSS transmission_gate
+x17 in2 net3 en en_b VDD VSS transmission_gate
+x18 in3 net4 en en_b VDD VSS transmission_gate
 x19 en VSS VSS VDD VDD en_b sky130_fd_sc_hd__inv_1
 .ends
 
 .subckt switch_5t  in out en en_b  VDD  VSS
-x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 in net1 en en_b VDD VSS transmission_gate
+x2 net1 out en en_b VDD VSS transmission_gate
 XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
