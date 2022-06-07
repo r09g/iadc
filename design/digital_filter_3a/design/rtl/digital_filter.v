@@ -13,7 +13,10 @@ module digital_filter (
     wire unsigned [8:0] int_1_out;
     wire unsigned [17:0] int_2_out;
     wire unsigned [26:0] int_3_out;
+    wire [26:0] decim_out;
     reg rst_n_d1, rst_n_d2, rst_n_d3;
+
+    assign data_out = decim_out[26:15];
 
     always @(posedge clk) begin
         rst_n_d1 <= rst_n;
@@ -54,8 +57,8 @@ module digital_filter (
     decimator decim (
         .clk(clk),
         .rst_n(rst_n_d3),
-        .data_in(int_3_out[26:15]),
-        .data_out(data_out),
+        .data_in(int_3_out),
+        .data_out(decim_out),
         .new_data(new_data)
     );
     
@@ -64,7 +67,7 @@ module digital_filter (
         .sclk(sclk),
         .cs_n(cs_n),
         .load(new_data),
-        .data_in(data_out),
+        .data_in(decim_out),
         .serial_out(serial_data_out)
     );
 

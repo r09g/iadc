@@ -1,0 +1,2 @@
+LVS_DESIGN_NAME="ota_v2"
+netgen -batch lvs "../../netlist/${LVS_DESIGN_NAME}/${LVS_DESIGN_NAME}.spice ${LVS_DESIGN_NAME}" "../../netlist/${LVS_DESIGN_NAME}/${LVS_DESIGN_NAME}_layout_lvs.spice ${LVS_DESIGN_NAME}" $PDK_ROOT/sky130A/libs.tech/netgen/sky130A_setup.tcl

@@ -8,11 +8,11 @@ module spi_interf (
     input wire sclk,
     input wire cs_n,
     input wire load,
-    input wire [11:0] data_in,
+    input wire [26:0] data_in,
     output wire serial_out
 );
 
-    reg [11:0] data;
+    reg [26:0] data;
     reg [1:0] sclk_r;
     reg [1:0] cs_n_r;
     
@@ -25,7 +25,7 @@ module spi_interf (
     always @(posedge clk) begin
         if(!cs_n) begin
             if(sclk_ne) begin
-                data <= {data[10:0], data[11]};
+                data <= {data[25:0], data[26]};
             end
         end
         else begin
@@ -35,7 +35,7 @@ module spi_interf (
         end
     end
 
-    assign serial_out = data[11];
+    assign serial_out = data[26];
 
 endmodule
 

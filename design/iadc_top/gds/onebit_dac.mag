@@ -1,0 +1,114 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654583101
+<< metal1 >>
+rect 1427 1062 1892 1114
+rect -133 934 0 986
+rect -300 438 -238 490
+rect -186 438 -176 490
+rect -298 -38 -236 14
+rect -184 -38 -174 14
+rect -133 -326 -81 934
+rect 1387 596 1727 630
+rect -10 438 0 490
+rect 52 438 62 490
+rect 1465 447 1530 481
+rect 1368 281 1378 333
+rect 1430 281 1440 333
+rect -31 14 21 179
+rect -41 -38 -31 14
+rect 21 -38 31 14
+rect 1496 5 1530 447
+rect 1571 281 1581 333
+rect 1633 281 1643 333
+rect -31 -218 21 -38
+rect 1477 -47 1487 5
+rect 1539 -47 1549 5
+rect -313 -378 -81 -326
+rect -300 -715 -238 -663
+rect -186 -715 -176 -663
+rect -133 -973 -81 -378
+rect 1362 -557 1372 -505
+rect 1424 -557 1434 -505
+rect -17 -715 -7 -663
+rect 45 -715 55 -663
+rect 1496 -671 1530 -47
+rect 1483 -705 1530 -671
+rect 1590 -820 1624 281
+rect 1693 -505 1727 596
+rect 1782 -47 1792 5
+rect 1844 -47 1895 5
+rect 1674 -557 1684 -505
+rect 1736 -557 1746 -505
+rect 1381 -854 1624 -820
+rect -133 -1025 -6 -973
+rect 1374 -1154 1885 -1102
+<< via1 >>
+rect -238 438 -186 490
+rect -236 -38 -184 14
+rect 0 438 52 490
+rect 1378 281 1430 333
+rect -31 -38 21 14
+rect 1581 281 1633 333
+rect 1487 -47 1539 5
+rect -238 -715 -186 -663
+rect 1372 -557 1424 -505
+rect -7 -715 45 -663
+rect 1792 -47 1844 5
+rect 1684 -557 1736 -505
+<< metal2 >>
+rect -238 490 -186 500
+rect 0 490 52 500
+rect -186 438 0 490
+rect -238 428 -186 438
+rect 0 428 52 438
+rect 1378 333 1430 343
+rect 1581 333 1633 343
+rect 1430 281 1581 333
+rect 1378 271 1430 281
+rect 1581 271 1633 281
+rect -236 14 -184 24
+rect -31 14 21 24
+rect -184 -38 -31 14
+rect -236 -48 -184 -38
+rect -31 -48 21 -38
+rect 1487 5 1539 15
+rect 1792 5 1844 15
+rect 1539 -47 1792 5
+rect 1487 -57 1539 -47
+rect 1792 -57 1844 -47
+rect 1372 -505 1424 -495
+rect 1684 -505 1736 -495
+rect 1424 -557 1684 -505
+rect 1372 -567 1424 -557
+rect 1684 -567 1736 -557
+rect -238 -663 -186 -653
+rect -7 -663 45 -653
+rect -186 -715 -7 -663
+rect -238 -725 -186 -715
+rect -7 -725 45 -715
+use transmission_gate  transmission_gate_0
+timestamp 1654583101
+transform 1 0 216 0 1 51
+box -216 -51 1283 1063
+use transmission_gate  transmission_gate_1
+timestamp 1654583101
+transform 1 0 210 0 1 -1101
+box -216 -51 1283 1063
+<< labels >>
+flabel metal1 s -285 464 -285 464 1 FreeSans 500 0 0 0 v_hi
+port 1 nsew
+flabel metal1 s -280 -690 -280 -690 1 FreeSans 500 0 0 0 v_lo
+port 2 nsew
+flabel metal1 s -275 -14 -275 -14 1 FreeSans 500 0 0 0 v
+port 3 nsew
+flabel metal1 s -286 -352 -286 -352 1 FreeSans 500 0 0 0 v_b
+port 4 nsew
+flabel metal1 s 1879 -24 1879 -24 1 FreeSans 500 0 0 0 out
+port 5 nsew
+flabel metal1 s 1868 1086 1868 1086 1 FreeSans 500 0 0 0 VDD
+port 6 nsew
+flabel metal1 s 1867 -1131 1867 -1131 1 FreeSans 500 0 0 0 VSS
+port 7 nsew
+<< end >>

@@ -3,20 +3,20 @@
 .subckt sc_cmfb on cm bias_a op cmc phi2_b phi2 phi1_b phi1 VDD VSS
 XC3 op cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
 XC4 on cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
-x1 net1 op phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x3 net3 on phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x4 cm net1 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x6 cm net3 phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x1 net1 op phi2 phi2_b VDD VSS transmission_gate
+x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate
+x3 net3 on phi2 phi2_b VDD VSS transmission_gate
+x4 cm net1 phi1 phi1_b VDD VSS transmission_gate
+x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate
+x6 cm net3 phi1 phi1_b VDD VSS transmission_gate
 XC1 net1 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC2 net3 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
-x7 cm net4 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x9 cm net6 phi2 phi2_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x10 net4 op phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-x12 net6 on phi1 phi1_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x7 cm net4 phi2 phi2_b VDD VSS transmission_gate
+x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate
+x9 cm net6 phi2 phi2_b VDD VSS transmission_gate
+x10 net4 op phi1 phi1_b VDD VSS transmission_gate
+x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate
+x12 net6 on phi1 phi1_b VDD VSS transmission_gate
 XC5 net4 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC6 net6 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XCdummy __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=20 m=20

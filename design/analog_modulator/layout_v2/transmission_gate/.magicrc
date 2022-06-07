@@ -33,7 +33,7 @@ source $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tcl
 
 # load bind keys (optional)
 # source $PDK_ROOT/sky130A/libs.tech/magic/sky130A-BindKeys
-source $env(DESIGN_DIR)/design/analog_modulator/layout/sky130A_BindKeys.tcl
+source $env(DESIGN_DIR)/design/analog_modulator/layout_v2/sky130A_BindKeys.tcl
 
 # set units to lambda grid 
 snap lambda

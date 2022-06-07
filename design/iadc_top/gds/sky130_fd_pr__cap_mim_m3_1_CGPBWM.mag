@@ -1,0 +1,21 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654583101
+<< metal3 >>
+rect -1031 -980 975 980
+<< mimcap >>
+rect -931 832 829 880
+rect -931 -832 -883 832
+rect 781 -832 829 832
+rect -931 -880 829 -832
+<< mimcapcontact >>
+rect -883 -832 781 832
+<< metal4 >>
+rect -892 832 790 841
+rect -892 -832 -883 832
+rect 781 -832 790 832
+rect -892 -841 790 -832
+<< properties >>
+string FIXED_BBOX -1030 -980 930 980
+<< end >>

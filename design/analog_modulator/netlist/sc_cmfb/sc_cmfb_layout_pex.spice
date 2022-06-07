@@ -1,8 +1,8 @@
 * NGSPICE file created from sc_cmfb.ext - technology: sky130A
 
-.subckt sky130_fd_pr__pfet_01v8_UNG2NQ a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136#
-+ a_64_n136# a_160_n136# a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136#
-+ a_n512_n234# a_256_n136# VSUBS
+.subckt pmos_tgate a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136# a_64_n136# a_160_n136#
++ a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136# a_n512_n234# a_256_n136#
++ VSUBS
 X0 a_n224_n136# a_n512_n234# a_n320_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
 X1 a_352_n136# a_n512_n234# a_256_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
 X2 a_n128_n136# a_n512_n234# a_n224_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
@@ -13,218 +13,226 @@ X6 a_n32_n136# a_n512_n234# a_n128_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad
 X7 a_448_n136# a_n512_n234# a_352_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.216e+11p pd=3.34e+06u as=0p ps=0u w=1.36e+06u l=150000u
 X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
 X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-C0 w_n646_n356# a_n512_n234# 1.13fF
-C1 a_64_n136# a_n512_n234# 0.06fF
-C2 a_n32_n136# a_n224_n136# 0.12fF
-C3 w_n646_n356# a_n128_n136# 0.05fF
-C4 a_64_n136# a_n128_n136# 0.12fF
-C5 a_n32_n136# a_160_n136# 0.12fF
-C6 a_352_n136# a_n128_n136# 0.04fF
-C7 a_n224_n136# a_160_n136# 0.05fF
-C8 a_n32_n136# a_256_n136# 0.07fF
-C9 a_n224_n136# a_256_n136# 0.04fF
-C10 w_n646_n356# a_n508_n136# 0.13fF
-C11 a_64_n136# a_n508_n136# 0.03fF
-C12 a_n508_n136# a_352_n136# 0.02fF
-C13 a_n32_n136# a_448_n136# 0.04fF
-C14 a_160_n136# a_256_n136# 0.33fF
-C15 a_n32_n136# a_n320_n136# 0.07fF
-C16 a_n224_n136# a_448_n136# 0.03fF
-C17 a_n224_n136# a_n320_n136# 0.33fF
-C18 a_n32_n136# a_n416_n136# 0.05fF
-C19 a_160_n136# a_448_n136# 0.07fF
-C20 a_160_n136# a_n320_n136# 0.04fF
-C21 a_n224_n136# a_n416_n136# 0.12fF
-C22 a_448_n136# a_256_n136# 0.12fF
-C23 a_256_n136# a_n320_n136# 0.03fF
-C24 a_160_n136# a_n416_n136# 0.03fF
-C25 a_256_n136# a_n416_n136# 0.03fF
-C26 a_448_n136# a_n320_n136# 0.02fF
-C27 a_448_n136# a_n416_n136# 0.02fF
-C28 w_n646_n356# a_64_n136# 0.05fF
-C29 w_n646_n356# a_352_n136# 0.08fF
-C30 a_n416_n136# a_n320_n136# 0.33fF
-C31 a_64_n136# a_352_n136# 0.07fF
-C32 a_n32_n136# a_n128_n136# 0.33fF
-C33 a_n512_n234# a_256_n136# 0.06fF
+C0 a_n224_n136# a_160_n136# 0.05fF
+C1 w_n646_n356# a_n320_n136# 0.06fF
+C2 a_352_n136# a_448_n136# 0.33fF
+C3 a_n224_n136# a_n512_n234# 0.03fF
+C4 a_448_n136# a_n32_n136# 0.04fF
+C5 a_352_n136# a_n32_n136# 0.05fF
+C6 a_160_n136# a_n128_n136# 0.07fF
+C7 a_n512_n234# a_n128_n136# 0.03fF
+C8 a_256_n136# a_n416_n136# 0.03fF
+C9 a_64_n136# a_256_n136# 0.12fF
+C10 a_448_n136# a_n320_n136# 0.02fF
+C11 a_352_n136# a_n320_n136# 0.03fF
+C12 w_n646_n356# a_n508_n136# 0.13fF
+C13 a_64_n136# a_n416_n136# 0.04fF
+C14 a_n320_n136# a_n32_n136# 0.07fF
+C15 a_n224_n136# a_256_n136# 0.04fF
+C16 w_n646_n356# a_160_n136# 0.06fF
+C17 w_n646_n356# a_n512_n234# 1.47fF
+C18 a_n128_n136# a_256_n136# 0.05fF
+C19 a_n224_n136# a_n416_n136# 0.12fF
+C20 a_448_n136# a_n508_n136# 0.02fF
+C21 a_352_n136# a_n508_n136# 0.02fF
+C22 a_64_n136# a_n224_n136# 0.07fF
+C23 a_n508_n136# a_n32_n136# 0.04fF
+C24 a_n128_n136# a_n416_n136# 0.07fF
+C25 a_448_n136# a_160_n136# 0.07fF
+C26 a_352_n136# a_160_n136# 0.12fF
+C27 a_64_n136# a_n128_n136# 0.12fF
+C28 a_448_n136# a_n512_n234# 0.03fF
+C29 a_352_n136# a_n512_n234# 0.03fF
+C30 a_160_n136# a_n32_n136# 0.12fF
+C31 a_n512_n234# a_n32_n136# 0.03fF
+C32 a_n320_n136# a_n508_n136# 0.12fF
+C33 w_n646_n356# a_256_n136# 0.06fF
 C34 a_n224_n136# a_n128_n136# 0.33fF
-C35 a_n512_n234# a_448_n136# 0.06fF
-C36 a_160_n136# a_n128_n136# 0.07fF
-C37 a_n512_n234# a_n320_n136# 0.06fF
-C38 a_n32_n136# a_n508_n136# 0.04fF
-C39 a_256_n136# a_n128_n136# 0.05fF
-C40 a_n508_n136# a_n224_n136# 0.07fF
-C41 a_n508_n136# a_160_n136# 0.03fF
-C42 a_448_n136# a_n128_n136# 0.03fF
-C43 a_n128_n136# a_n320_n136# 0.12fF
-C44 a_n508_n136# a_256_n136# 0.02fF
-C45 a_n128_n136# a_n416_n136# 0.07fF
-C46 a_n508_n136# a_448_n136# 0.02fF
-C47 a_n508_n136# a_n320_n136# 0.12fF
-C48 a_n508_n136# a_n416_n136# 0.33fF
-C49 a_n512_n234# a_n128_n136# 0.06fF
-C50 a_n32_n136# w_n646_n356# 0.05fF
-C51 a_n32_n136# a_64_n136# 0.33fF
-C52 a_n32_n136# a_352_n136# 0.05fF
-C53 w_n646_n356# a_n224_n136# 0.06fF
-C54 a_64_n136# a_n224_n136# 0.07fF
-C55 a_n224_n136# a_352_n136# 0.03fF
-C56 w_n646_n356# a_160_n136# 0.06fF
-C57 a_64_n136# a_160_n136# 0.33fF
-C58 a_n512_n234# a_n508_n136# 0.06fF
-C59 a_160_n136# a_352_n136# 0.12fF
-C60 w_n646_n356# a_256_n136# 0.06fF
-C61 a_64_n136# a_256_n136# 0.12fF
-C62 a_352_n136# a_256_n136# 0.33fF
-C63 w_n646_n356# a_448_n136# 0.13fF
-C64 a_64_n136# a_448_n136# 0.05fF
-C65 w_n646_n356# a_n320_n136# 0.06fF
-C66 a_352_n136# a_448_n136# 0.33fF
-C67 a_n508_n136# a_n128_n136# 0.05fF
-C68 a_64_n136# a_n320_n136# 0.05fF
-C69 a_352_n136# a_n320_n136# 0.03fF
-C70 w_n646_n356# a_n416_n136# 0.08fF
-C71 a_64_n136# a_n416_n136# 0.04fF
-C72 a_352_n136# a_n416_n136# 0.02fF
-C73 w_n646_n356# VSUBS 2.52fF
+C35 a_n320_n136# a_160_n136# 0.04fF
+C36 w_n646_n356# a_n416_n136# 0.08fF
+C37 a_n320_n136# a_n512_n234# 0.03fF
+C38 w_n646_n356# a_64_n136# 0.05fF
+C39 a_448_n136# a_256_n136# 0.12fF
+C40 a_352_n136# a_256_n136# 0.33fF
+C41 a_256_n136# a_n32_n136# 0.07fF
+C42 a_448_n136# a_n416_n136# 0.02fF
+C43 a_352_n136# a_n416_n136# 0.02fF
+C44 a_160_n136# a_n508_n136# 0.03fF
+C45 w_n646_n356# a_n224_n136# 0.06fF
+C46 a_n512_n234# a_n508_n136# 0.03fF
+C47 a_n32_n136# a_n416_n136# 0.05fF
+C48 a_448_n136# a_64_n136# 0.05fF
+C49 a_352_n136# a_64_n136# 0.07fF
+C50 w_n646_n356# a_n128_n136# 0.05fF
+C51 a_64_n136# a_n32_n136# 0.33fF
+C52 a_n320_n136# a_256_n136# 0.03fF
+C53 a_n512_n234# a_160_n136# 0.03fF
+C54 a_n320_n136# a_n416_n136# 0.33fF
+C55 a_448_n136# a_n224_n136# 0.03fF
+C56 a_352_n136# a_n224_n136# 0.03fF
+C57 a_64_n136# a_n320_n136# 0.05fF
+C58 a_n224_n136# a_n32_n136# 0.12fF
+C59 a_448_n136# a_n128_n136# 0.03fF
+C60 a_352_n136# a_n128_n136# 0.04fF
+C61 a_n128_n136# a_n32_n136# 0.33fF
+C62 a_n508_n136# a_256_n136# 0.02fF
+C63 a_n320_n136# a_n224_n136# 0.33fF
+C64 a_160_n136# a_256_n136# 0.33fF
+C65 a_n508_n136# a_n416_n136# 0.33fF
+C66 a_n512_n234# a_256_n136# 0.03fF
+C67 a_64_n136# a_n508_n136# 0.03fF
+C68 a_n320_n136# a_n128_n136# 0.12fF
+C69 a_160_n136# a_n416_n136# 0.03fF
+C70 w_n646_n356# a_448_n136# 0.13fF
+C71 w_n646_n356# a_352_n136# 0.08fF
+C72 a_n512_n234# a_n416_n136# 0.03fF
+C73 a_64_n136# a_160_n136# 0.33fF
+C74 w_n646_n356# a_n32_n136# 0.05fF
+C75 a_64_n136# a_n512_n234# 0.03fF
+C76 a_n224_n136# a_n508_n136# 0.07fF
+C77 a_n128_n136# a_n508_n136# 0.05fF
+C78 w_n646_n356# VSUBS 2.52fF
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_6J4AMR a_256_n52# a_n32_n52# a_n224_n52# a_448_n52#
-+ a_n416_n52# a_160_n52# a_n610_n226# a_n128_n52# a_n512_n140# a_352_n52# a_n320_n52#
-+ a_n508_n52# a_64_n52#
-X0 a_n32_n52# a_n512_n140# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X1 a_n416_n52# a_n512_n140# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
-X2 a_n224_n52# a_n512_n140# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X3 a_n128_n52# a_n512_n140# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X4 a_n320_n52# a_n512_n140# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X5 a_160_n52# a_n512_n140# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X6 a_352_n52# a_n512_n140# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
-X7 a_256_n52# a_n512_n140# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X8 a_448_n52# a_n512_n140# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
-X9 a_64_n52# a_n512_n140# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-C0 a_256_n52# a_n508_n52# 0.01fF
-C1 a_448_n52# a_n32_n52# 0.02fF
-C2 a_256_n52# a_n416_n52# 0.01fF
-C3 a_352_n52# a_160_n52# 0.05fF
-C4 a_256_n52# a_n224_n52# 0.02fF
-C5 a_n128_n52# a_n32_n52# 0.13fF
-C6 a_352_n52# a_n508_n52# 0.01fF
-C7 a_64_n52# a_n32_n52# 0.13fF
-C8 a_256_n52# a_n320_n52# 0.01fF
-C9 a_352_n52# a_n416_n52# 0.01fF
-C10 a_256_n52# a_448_n52# 0.05fF
-C11 a_n512_n140# a_n508_n52# 0.09fF
-C12 a_352_n52# a_n224_n52# 0.01fF
-C13 a_352_n52# a_n320_n52# 0.01fF
-C14 a_256_n52# a_n128_n52# 0.02fF
-C15 a_256_n52# a_64_n52# 0.05fF
-C16 a_160_n52# a_n508_n52# 0.01fF
-C17 a_352_n52# a_448_n52# 0.13fF
-C18 a_n320_n52# a_n512_n140# 0.09fF
-C19 a_160_n52# a_n416_n52# 0.01fF
-C20 a_n416_n52# a_n508_n52# 0.13fF
-C21 a_n224_n52# a_160_n52# 0.02fF
-C22 a_448_n52# a_n512_n140# 0.09fF
-C23 a_352_n52# a_n128_n52# 0.02fF
-C24 a_352_n52# a_64_n52# 0.03fF
-C25 a_n320_n52# a_160_n52# 0.02fF
-C26 a_n224_n52# a_n508_n52# 0.03fF
-C27 a_256_n52# a_n32_n52# 0.03fF
-C28 a_n320_n52# a_n508_n52# 0.05fF
-C29 a_n224_n52# a_n416_n52# 0.05fF
-C30 a_n320_n52# a_n416_n52# 0.13fF
-C31 a_n512_n140# a_n128_n52# 0.09fF
-C32 a_n512_n140# a_64_n52# 0.09fF
-C33 a_448_n52# a_160_n52# 0.03fF
-C34 a_448_n52# a_n508_n52# 0.01fF
-C35 a_352_n52# a_n32_n52# 0.02fF
-C36 a_n224_n52# a_n320_n52# 0.13fF
-C37 a_448_n52# a_n416_n52# 0.01fF
-C38 a_160_n52# a_n128_n52# 0.03fF
-C39 a_160_n52# a_64_n52# 0.13fF
-C40 a_n128_n52# a_n508_n52# 0.02fF
-C41 a_n224_n52# a_448_n52# 0.01fF
-C42 a_64_n52# a_n508_n52# 0.01fF
-C43 a_448_n52# a_n320_n52# 0.01fF
-C44 a_n128_n52# a_n416_n52# 0.03fF
-C45 a_64_n52# a_n416_n52# 0.02fF
-C46 a_n224_n52# a_n128_n52# 0.13fF
-C47 a_n224_n52# a_64_n52# 0.03fF
-C48 a_352_n52# a_256_n52# 0.13fF
-C49 a_160_n52# a_n32_n52# 0.05fF
-C50 a_n320_n52# a_n128_n52# 0.05fF
-C51 a_n320_n52# a_64_n52# 0.02fF
-C52 a_n32_n52# a_n508_n52# 0.02fF
-C53 a_n32_n52# a_n416_n52# 0.02fF
-C54 a_256_n52# a_n512_n140# 0.09fF
-C55 a_448_n52# a_n128_n52# 0.01fF
-C56 a_448_n52# a_64_n52# 0.02fF
-C57 a_n224_n52# a_n32_n52# 0.05fF
-C58 a_n320_n52# a_n32_n52# 0.03fF
-C59 a_256_n52# a_160_n52# 0.13fF
-C60 a_64_n52# a_n128_n52# 0.05fF
-C61 a_448_n52# a_n610_n226# 0.07fF
-C62 a_352_n52# a_n610_n226# 0.05fF
-C63 a_256_n52# a_n610_n226# 0.04fF
-C64 a_160_n52# a_n610_n226# 0.04fF
-C65 a_64_n52# a_n610_n226# 0.04fF
-C66 a_n32_n52# a_n610_n226# 0.04fF
-C67 a_n128_n52# a_n610_n226# 0.04fF
-C68 a_n224_n52# a_n610_n226# 0.04fF
-C69 a_n320_n52# a_n610_n226# 0.04fF
-C70 a_n416_n52# a_n610_n226# 0.05fF
-C71 a_n508_n52# a_n610_n226# 0.07fF
-C72 a_n512_n140# a_n610_n226# 1.45fF
+.subckt nmos_tgate a_256_n52# a_n32_n52# a_n224_n52# a_448_n52# a_n416_n52# a_160_n52#
++ a_n610_n226# a_n128_n52# a_352_n52# a_n320_n52# a_n508_n52# a_n512_n149# a_64_n52#
+X0 a_n32_n52# a_n512_n149# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X1 a_n416_n52# a_n512_n149# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
+X2 a_n224_n52# a_n512_n149# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X3 a_n128_n52# a_n512_n149# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X4 a_n320_n52# a_n512_n149# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X5 a_160_n52# a_n512_n149# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X6 a_352_n52# a_n512_n149# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X7 a_256_n52# a_n512_n149# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_448_n52# a_n512_n149# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
+X9 a_64_n52# a_n512_n149# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+C0 a_64_n52# a_n320_n52# 0.02fF
+C1 a_n320_n52# a_n508_n52# 0.05fF
+C2 a_n512_n149# a_n416_n52# 0.03fF
+C3 a_352_n52# a_256_n52# 0.13fF
+C4 a_64_n52# a_n224_n52# 0.03fF
+C5 a_n224_n52# a_n508_n52# 0.03fF
+C6 a_n128_n52# a_n320_n52# 0.05fF
+C7 a_448_n52# a_n32_n52# 0.02fF
+C8 a_64_n52# a_n508_n52# 0.01fF
+C9 a_n512_n149# a_n320_n52# 0.03fF
+C10 a_n416_n52# a_256_n52# 0.01fF
+C11 a_n128_n52# a_n224_n52# 0.13fF
+C12 a_n32_n52# a_160_n52# 0.05fF
+C13 a_n128_n52# a_64_n52# 0.05fF
+C14 a_n128_n52# a_n508_n52# 0.02fF
+C15 a_n512_n149# a_n224_n52# 0.03fF
+C16 a_64_n52# a_n512_n149# 0.03fF
+C17 a_n512_n149# a_n508_n52# 0.03fF
+C18 a_448_n52# a_160_n52# 0.03fF
+C19 a_n320_n52# a_256_n52# 0.01fF
+C20 a_n32_n52# a_352_n52# 0.02fF
+C21 a_n128_n52# a_n512_n149# 0.03fF
+C22 a_256_n52# a_n224_n52# 0.02fF
+C23 a_448_n52# a_352_n52# 0.13fF
+C24 a_64_n52# a_256_n52# 0.05fF
+C25 a_n32_n52# a_n416_n52# 0.02fF
+C26 a_256_n52# a_n508_n52# 0.01fF
+C27 a_448_n52# a_n416_n52# 0.01fF
+C28 a_160_n52# a_352_n52# 0.05fF
+C29 a_n128_n52# a_256_n52# 0.02fF
+C30 a_n32_n52# a_n320_n52# 0.03fF
+C31 a_n512_n149# a_256_n52# 0.03fF
+C32 a_160_n52# a_n416_n52# 0.01fF
+C33 a_448_n52# a_n320_n52# 0.01fF
+C34 a_n32_n52# a_n224_n52# 0.05fF
+C35 a_n32_n52# a_64_n52# 0.13fF
+C36 a_n32_n52# a_n508_n52# 0.02fF
+C37 a_352_n52# a_n416_n52# 0.01fF
+C38 a_448_n52# a_n224_n52# 0.01fF
+C39 a_160_n52# a_n320_n52# 0.02fF
+C40 a_448_n52# a_64_n52# 0.02fF
+C41 a_448_n52# a_n508_n52# 0.01fF
+C42 a_n32_n52# a_n128_n52# 0.13fF
+C43 a_160_n52# a_n224_n52# 0.02fF
+C44 a_352_n52# a_n320_n52# 0.01fF
+C45 a_n32_n52# a_n512_n149# 0.03fF
+C46 a_160_n52# a_64_n52# 0.13fF
+C47 a_448_n52# a_n128_n52# 0.01fF
+C48 a_160_n52# a_n508_n52# 0.01fF
+C49 a_448_n52# a_n512_n149# 0.03fF
+C50 a_n416_n52# a_n320_n52# 0.13fF
+C51 a_352_n52# a_n224_n52# 0.01fF
+C52 a_64_n52# a_352_n52# 0.03fF
+C53 a_n128_n52# a_160_n52# 0.03fF
+C54 a_352_n52# a_n508_n52# 0.01fF
+C55 a_n32_n52# a_256_n52# 0.03fF
+C56 a_160_n52# a_n512_n149# 0.03fF
+C57 a_n416_n52# a_n224_n52# 0.05fF
+C58 a_448_n52# a_256_n52# 0.05fF
+C59 a_64_n52# a_n416_n52# 0.02fF
+C60 a_n416_n52# a_n508_n52# 0.13fF
+C61 a_n128_n52# a_352_n52# 0.02fF
+C62 a_352_n52# a_n512_n149# 0.03fF
+C63 a_n320_n52# a_n224_n52# 0.13fF
+C64 a_160_n52# a_256_n52# 0.13fF
+C65 a_n128_n52# a_n416_n52# 0.03fF
+C66 a_448_n52# a_n610_n226# 0.07fF
+C67 a_352_n52# a_n610_n226# 0.05fF
+C68 a_256_n52# a_n610_n226# 0.04fF
+C69 a_160_n52# a_n610_n226# 0.04fF
+C70 a_64_n52# a_n610_n226# 0.04fF
+C71 a_n32_n52# a_n610_n226# 0.04fF
+C72 a_n128_n52# a_n610_n226# 0.04fF
+C73 a_n224_n52# a_n610_n226# 0.04fF
+C74 a_n320_n52# a_n610_n226# 0.04fF
+C75 a_n416_n52# a_n610_n226# 0.05fF
+C76 a_n508_n52# a_n610_n226# 0.07fF
+C77 a_n512_n149# a_n610_n226# 1.83fF
 .ends
 
-.subckt transmission_gate en VDD in out VSS en_b
-Xsky130_fd_pr__pfet_01v8_UNG2NQ_0 in in out in out in out VDD in out out en_b out
-+ VSS sky130_fd_pr__pfet_01v8_UNG2NQ
-Xsky130_fd_pr__nfet_01v8_6J4AMR_0 out in in out in in VSS out en in out out out sky130_fd_pr__nfet_01v8_6J4AMR
-C0 out in 0.71fF
-C1 en in 1.30fF
-C2 VDD in 0.92fF
-C3 en_b in 1.18fF
-C4 out en 0.05fF
-C5 out VDD 0.40fF
-C6 VDD en 0.05fF
-C7 out en_b 0.03fF
-C8 en_b en 0.14fF
-C9 VDD en_b 0.10fF
-C10 en VSS 1.66fF
-C11 out VSS 1.04fF
-C12 in VSS 1.15fF
-C13 en_b VSS 0.24fF
-C14 VDD VSS 3.18fF
+.subckt transmission_gate en en_b VDD in out VSS
+Xpmos_tgate_0 in in out in out in out VDD in out out en_b out VSS pmos_tgate
+Xnmos_tgate_0 out in in out in in VSS out in out out en out nmos_tgate
+C0 en_b out 0.01fF
+C1 en out 0.01fF
+C2 in out 0.77fF
+C3 VDD out 0.29fF
+C4 en en_b 0.07fF
+C5 en_b in 0.15fF
+C6 en_b VDD -0.11fF
+C7 en in 0.13fF
+C8 en VDD 0.12fF
+C9 VDD in 0.70fF
+C10 en VSS 1.70fF
+C11 out VSS 0.57fF
+C12 in VSS 1.13fF
+C13 en_b VSS 0.09fF
+C14 VDD VSS 3.16fF
 .ends
 
 .subckt unit_cap_mim_m3m4 c1_n530_n480# m3_n630_n580# VSUBS
 X0 c1_n530_n480# m3_n630_n580# sky130_fd_pr__cap_mim_m3_1 l=4.8e+06u w=4.8e+06u
-C0 m3_n630_n580# c1_n530_n480# 2.88fF
+C0 c1_n530_n480# m3_n630_n580# 2.88fF
 C1 m3_n630_n580# VSUBS 1.37fF
 .ends
 
 .subckt sc_cmfb on cm bias_a op cmc p2_b p2 p1_b p1 VDD VSS
-Xtransmission_gate_10 p1 VDD transmission_gate_3/out on VSS p1_b transmission_gate
-Xtransmission_gate_11 p1 VDD transmission_gate_4/out op VSS p1_b transmission_gate
-Xtransmission_gate_0 p1 VDD cm transmission_gate_7/in VSS p1_b transmission_gate
-Xtransmission_gate_1 p1 VDD cm transmission_gate_6/in VSS p1_b transmission_gate
-Xtransmission_gate_2 p1 VDD bias_a transmission_gate_8/in VSS p1_b transmission_gate
-Xtransmission_gate_3 p2 VDD cm transmission_gate_3/out VSS p2_b transmission_gate
+Xtransmission_gate_10 p1 p1_b VDD transmission_gate_3/out on VSS transmission_gate
+Xtransmission_gate_11 p1 p1_b VDD transmission_gate_4/out op VSS transmission_gate
+Xtransmission_gate_0 p1 p1_b VDD cm transmission_gate_7/in VSS transmission_gate
+Xtransmission_gate_1 p1 p1_b VDD cm transmission_gate_6/in VSS transmission_gate
+Xtransmission_gate_2 p1 p1_b VDD bias_a transmission_gate_8/in VSS transmission_gate
+Xtransmission_gate_3 p2 p2_b VDD cm transmission_gate_3/out VSS transmission_gate
 Xunit_cap_mim_m3m4_0 transmission_gate_4/out transmission_gate_9/in VSS unit_cap_mim_m3m4
-Xtransmission_gate_4 p2 VDD cm transmission_gate_4/out VSS p2_b transmission_gate
+Xtransmission_gate_4 p2 p2_b VDD cm transmission_gate_4/out VSS transmission_gate
 Xunit_cap_mim_m3m4_1 on cmc VSS unit_cap_mim_m3m4
-Xtransmission_gate_5 p2 VDD bias_a transmission_gate_9/in VSS p2_b transmission_gate
+Xtransmission_gate_5 p2 p2_b VDD bias_a transmission_gate_9/in VSS transmission_gate
 Xunit_cap_mim_m3m4_2 op cmc VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_30 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
-Xtransmission_gate_6 p2 VDD transmission_gate_6/in op VSS p2_b transmission_gate
+Xtransmission_gate_6 p2 p2_b VDD transmission_gate_6/in op VSS transmission_gate
 Xunit_cap_mim_m3m4_20 unit_cap_mim_m3m4_20/c1_n530_n480# unit_cap_mim_m3m4_20/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_3 transmission_gate_7/in transmission_gate_8/in VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_31 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
-Xtransmission_gate_7 p2 VDD transmission_gate_7/in on VSS p2_b transmission_gate
+Xtransmission_gate_7 p2 p2_b VDD transmission_gate_7/in on VSS transmission_gate
 Xunit_cap_mim_m3m4_10 transmission_gate_6/in transmission_gate_8/in VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_21 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_21/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
@@ -233,7 +241,7 @@ Xunit_cap_mim_m3m4_32 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_32/m3
 + VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_12 transmission_gate_4/out transmission_gate_9/in VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_11 on cmc VSS unit_cap_mim_m3m4
-Xtransmission_gate_8 p2 VDD transmission_gate_8/in cmc VSS p2_b transmission_gate
+Xtransmission_gate_8 p2 p2_b VDD transmission_gate_8/in cmc VSS transmission_gate
 Xunit_cap_mim_m3m4_5 transmission_gate_6/in transmission_gate_8/in VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_22 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_22/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
@@ -248,7 +256,7 @@ Xunit_cap_mim_m3m4_24 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3
 Xunit_cap_mim_m3m4_13 on cmc VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_6 transmission_gate_3/out transmission_gate_9/in VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_7 op cmc VSS unit_cap_mim_m3m4
-Xtransmission_gate_9 p1 VDD transmission_gate_9/in cmc VSS p1_b transmission_gate
+Xtransmission_gate_9 p1 p1_b VDD transmission_gate_9/in cmc VSS transmission_gate
 Xunit_cap_mim_m3m4_35 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_35/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_25 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_25/m3_n630_n580#
@@ -273,344 +281,330 @@ Xunit_cap_mim_m3m4_18 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_18/m3
 + VSS unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_19 unit_cap_mim_m3m4_19/c1_n530_n480# unit_cap_mim_m3m4_19/m3_n630_n580#
 + VSS unit_cap_mim_m3m4
-C0 op transmission_gate_8/in 0.88fF
-C1 unit_cap_mim_m3m4_29/m3_n630_n580# VDD 0.35fF
-C2 bias_a p1 0.06fF
-C3 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_16/c1_n530_n480# 0.06fF
-C4 transmission_gate_7/in unit_cap_mim_m3m4_28/c1_n530_n480# 0.06fF
-C5 unit_cap_mim_m3m4_23/m3_n630_n580# unit_cap_mim_m3m4_30/m3_n630_n580# 0.10fF
-C6 VDD unit_cap_mim_m3m4_18/c1_n530_n480# -0.06fF
-C7 transmission_gate_8/in transmission_gate_3/out 0.24fF
-C8 unit_cap_mim_m3m4_29/m3_n630_n580# p2_b -0.58fF
-C9 p2 transmission_gate_8/in -0.01fF
-C10 transmission_gate_6/in transmission_gate_8/in -0.10fF
-C11 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_20/c1_n530_n480# 0.06fF
-C12 on unit_cap_mim_m3m4_20/m3_n630_n580# 0.40fF
-C13 unit_cap_mim_m3m4_19/c1_n530_n480# cm -0.22fF
-C14 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3_n630_n580# -0.24fF
-C15 cmc transmission_gate_8/in 8.00fF
-C16 unit_cap_mim_m3m4_22/m3_n630_n580# unit_cap_mim_m3m4_23/m3_n630_n580# 0.17fF
-C17 transmission_gate_8/in cm 0.03fF
-C18 p1 transmission_gate_7/in 0.02fF
-C19 p2_b VDD 0.27fF
-C20 p1_b unit_cap_mim_m3m4_18/c1_n530_n480# -0.07fF
-C21 unit_cap_mim_m3m4_31/m3_n630_n580# unit_cap_mim_m3m4_32/m3_n630_n580# 0.17fF
-C22 on unit_cap_mim_m3m4_23/m3_n630_n580# 0.02fF
-C23 unit_cap_mim_m3m4_18/m3_n630_n580# unit_cap_mim_m3m4_18/c1_n530_n480# -0.15fF
-C24 transmission_gate_4/out transmission_gate_8/in 0.26fF
-C25 p1_b VDD 0.07fF
-C26 unit_cap_mim_m3m4_18/m3_n630_n580# VDD -0.26fF
-C27 op transmission_gate_9/in 0.68fF
-C28 unit_cap_mim_m3m4_24/m3_n630_n580# unit_cap_mim_m3m4_25/m3_n630_n580# 0.17fF
-C29 p2_b p1_b 0.01fF
-C30 transmission_gate_9/in transmission_gate_3/out 2.49fF
-C31 p2 transmission_gate_9/in 0.02fF
-C32 unit_cap_mim_m3m4_32/m3_n630_n580# unit_cap_mim_m3m4_33/m3_n630_n580# 0.12fF
-C33 transmission_gate_6/in transmission_gate_9/in 0.09fF
-C34 unit_cap_mim_m3m4_16/c1_n530_n480# unit_cap_mim_m3m4_16/m3_n630_n580# -0.35fF
-C35 unit_cap_mim_m3m4_20/m3_n630_n580# transmission_gate_7/in 0.64fF
-C36 unit_cap_mim_m3m4_18/m3_n630_n580# p1_b -0.41fF
-C37 transmission_gate_7/in unit_cap_mim_m3m4_20/c1_n530_n480# 0.07fF
-C38 cmc transmission_gate_9/in 6.71fF
-C39 unit_cap_mim_m3m4_19/m3_n630_n580# unit_cap_mim_m3m4_19/c1_n530_n480# -0.34fF
-C40 transmission_gate_9/in cm 0.04fF
-C41 unit_cap_mim_m3m4_24/m3_n630_n580# unit_cap_mim_m3m4_16/m3_n630_n580# 0.12fF
-C42 unit_cap_mim_m3m4_19/m3_n630_n580# transmission_gate_8/in 0.17fF
-C43 unit_cap_mim_m3m4_35/c1_n530_n480# VDD -0.06fF
-C44 on unit_cap_mim_m3m4_32/c1_n530_n480# 0.06fF
-C45 unit_cap_mim_m3m4_17/m3_n630_n580# unit_cap_mim_m3m4_16/m3_n630_n580# 0.10fF
-C46 unit_cap_mim_m3m4_29/c1_n530_n480# unit_cap_mim_m3m4_28/c1_n530_n480# 0.06fF
-C47 transmission_gate_4/out transmission_gate_9/in 3.03fF
-C48 op unit_cap_mim_m3m4_29/m3_n630_n580# 0.42fF
-C49 on transmission_gate_8/in 0.83fF
-C50 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_20/m3_n630_n580# 0.10fF
-C51 unit_cap_mim_m3m4_35/m3_n630_n580# unit_cap_mim_m3m4_19/m3_n630_n580# 0.10fF
-C52 unit_cap_mim_m3m4_35/c1_n530_n480# p1_b -0.07fF
-C53 bias_a transmission_gate_8/in 0.04fF
-C54 p2 unit_cap_mim_m3m4_29/m3_n630_n580# -0.78fF
-C55 transmission_gate_6/in unit_cap_mim_m3m4_29/m3_n630_n580# 0.63fF
-C56 op VDD 0.19fF
-C57 unit_cap_mim_m3m4_27/c1_n530_n480# op -0.09fF
-C58 unit_cap_mim_m3m4_23/m3_n630_n580# p1 -0.71fF
-C59 op unit_cap_mim_m3m4_31/m3_n630_n580# 0.02fF
-C60 transmission_gate_6/in unit_cap_mim_m3m4_18/c1_n530_n480# -0.03fF
-C61 unit_cap_mim_m3m4_28/m3_n630_n580# transmission_gate_8/in 0.12fF
-C62 op p2_b 0.17fF
-C63 VDD transmission_gate_3/out 0.27fF
-C64 unit_cap_mim_m3m4_22/m3_n630_n580# transmission_gate_9/in 0.59fF
-C65 p2 VDD 0.15fF
-C66 transmission_gate_6/in VDD 0.31fF
-C67 bias_a unit_cap_mim_m3m4_35/m3_n630_n580# 0.33fF
-C68 cm unit_cap_mim_m3m4_18/c1_n530_n480# -0.22fF
-C69 unit_cap_mim_m3m4_27/c1_n530_n480# transmission_gate_6/in -0.04fF
-C70 unit_cap_mim_m3m4_19/c1_n530_n480# transmission_gate_7/in 0.03fF
-C71 unit_cap_mim_m3m4_33/c1_n530_n480# unit_cap_mim_m3m4_33/m3_n630_n580# -0.20fF
-C72 op p1_b 0.10fF
-C73 unit_cap_mim_m3m4_20/m3_n630_n580# unit_cap_mim_m3m4_20/c1_n530_n480# -0.20fF
-C74 transmission_gate_7/in transmission_gate_8/in -0.06fF
-C75 cmc VDD 0.66fF
-C76 on transmission_gate_9/in 0.79fF
-C77 VDD cm 0.00fF
-C78 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
-C79 p2 p2_b 2.48fF
-C80 transmission_gate_6/in p2_b 0.02fF
-C81 unit_cap_mim_m3m4_34/m3_n630_n580# transmission_gate_8/in 0.56fF
-C82 op unit_cap_mim_m3m4_30/c1_n530_n480# 0.05fF
-C83 cmc unit_cap_mim_m3m4_32/m3_n630_n580# 0.10fF
-C84 p1_b transmission_gate_3/out 0.08fF
-C85 cmc p2_b 0.03fF
-C86 unit_cap_mim_m3m4_29/c1_n530_n480# unit_cap_mim_m3m4_20/c1_n530_n480# 0.06fF
-C87 p2 p1_b 0.29fF
-C88 transmission_gate_6/in p1_b 0.04fF
-C89 transmission_gate_6/in unit_cap_mim_m3m4_18/m3_n630_n580# 0.62fF
-C90 p2_b cm 0.16fF
-C91 bias_a transmission_gate_9/in 0.02fF
-C92 transmission_gate_4/out VDD 0.20fF
-C93 cmc p1_b 0.31fF
-C94 cmc unit_cap_mim_m3m4_18/m3_n630_n580# 0.17fF
-C95 transmission_gate_4/out unit_cap_mim_m3m4_31/m3_n630_n580# 0.53fF
-C96 p1 unit_cap_mim_m3m4_19/c1_n530_n480# -0.30fF
-C97 p1_b cm 0.27fF
-C98 unit_cap_mim_m3m4_18/m3_n630_n580# cm 0.39fF
-C99 unit_cap_mim_m3m4_23/c1_n530_n480# p1_b 0.13fF
-C100 unit_cap_mim_m3m4_35/m3_n630_n580# unit_cap_mim_m3m4_34/m3_n630_n580# 0.17fF
-C101 unit_cap_mim_m3m4_21/m3_n630_n580# transmission_gate_8/in 0.59fF
-C102 p1 transmission_gate_8/in 0.02fF
-C103 transmission_gate_4/out p2_b 0.03fF
-C104 cmc unit_cap_mim_m3m4_33/m3_n630_n580# 0.10fF
-C105 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_30/c1_n530_n480# 0.06fF
-C106 unit_cap_mim_m3m4_30/m3_n630_n580# VDD 0.28fF
-C107 transmission_gate_4/out p1_b -0.01fF
-C108 transmission_gate_7/in transmission_gate_9/in 0.02fF
-C109 unit_cap_mim_m3m4_30/m3_n630_n580# unit_cap_mim_m3m4_31/m3_n630_n580# 0.17fF
-C110 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_31/c1_n530_n480# 0.06fF
-C111 op unit_cap_mim_m3m4_33/c1_n530_n480# 0.06fF
-C112 unit_cap_mim_m3m4_19/m3_n630_n580# VDD -0.52fF
-C113 unit_cap_mim_m3m4_24/c1_n530_n480# transmission_gate_9/in -0.01fF
-C114 unit_cap_mim_m3m4_35/m3_n630_n580# p1 -0.25fF
-C115 unit_cap_mim_m3m4_22/m3_n630_n580# VDD 0.33fF
-C116 unit_cap_mim_m3m4_17/c1_n530_n480# unit_cap_mim_m3m4_18/c1_n530_n480# 0.06fF
-C117 on unit_cap_mim_m3m4_18/c1_n530_n480# 0.06fF
-C118 unit_cap_mim_m3m4_24/m3_n630_n580# transmission_gate_9/in 0.58fF
-C119 unit_cap_mim_m3m4_20/m3_n630_n580# transmission_gate_8/in 0.17fF
-C120 unit_cap_mim_m3m4_30/m3_n630_n580# p1_b -0.72fF
-C121 unit_cap_mim_m3m4_17/c1_n530_n480# VDD -0.06fF
-C122 on VDD 0.45fF
-C123 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580# -0.13fF
-C124 unit_cap_mim_m3m4_26/m3_n630_n580# cmc 0.12fF
-C125 unit_cap_mim_m3m4_19/m3_n630_n580# p1_b -0.65fF
-C126 unit_cap_mim_m3m4_28/m3_n630_n580# unit_cap_mim_m3m4_29/m3_n630_n580# 0.17fF
-C127 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_26/c1_n530_n480# -0.20fF
-C128 unit_cap_mim_m3m4_19/m3_n630_n580# unit_cap_mim_m3m4_18/m3_n630_n580# 0.17fF
-C129 p1 transmission_gate_9/in 0.01fF
-C130 op transmission_gate_3/out 0.42fF
-C131 unit_cap_mim_m3m4_25/m3_n630_n580# transmission_gate_9/in 0.43fF
-C132 unit_cap_mim_m3m4_17/c1_n530_n480# p2_b -0.07fF
-C133 unit_cap_mim_m3m4_22/m3_n630_n580# p1_b -0.63fF
-C134 on p2_b 0.11fF
-C135 op p2 0.04fF
-C136 bias_a VDD -0.01fF
-C137 op transmission_gate_6/in 0.68fF
-C138 on p1_b 0.12fF
-C139 op cmc 4.31fF
-C140 unit_cap_mim_m3m4_23/c1_n530_n480# op 0.13fF
-C141 p2 transmission_gate_3/out 0.02fF
-C142 bias_a p2_b 0.06fF
-C143 transmission_gate_6/in transmission_gate_3/out 0.76fF
-C144 transmission_gate_6/in p2 0.00fF
-C145 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_27/m3_n630_n580# -0.13fF
-C146 cmc transmission_gate_3/out 0.79fF
-C147 bias_a p1_b 0.04fF
-C148 cm transmission_gate_3/out 0.19fF
-C149 p2 cmc 0.61fF
-C150 transmission_gate_6/in cmc 0.92fF
-C151 op transmission_gate_4/out 1.08fF
-C152 unit_cap_mim_m3m4_16/c1_n530_n480# VDD -0.06fF
-C153 p2 cm 0.21fF
-C154 unit_cap_mim_m3m4_16/m3_n630_n580# transmission_gate_9/in 0.17fF
-C155 transmission_gate_6/in cm 0.19fF
-C156 VDD transmission_gate_7/in 0.25fF
-C157 unit_cap_mim_m3m4_24/c1_n530_n480# VDD -0.06fF
-C158 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_28/c1_n530_n480# 0.06fF
-C159 unit_cap_mim_m3m4_16/c1_n530_n480# p2_b -0.07fF
-C160 unit_cap_mim_m3m4_24/m3_n630_n580# VDD -0.50fF
-C161 transmission_gate_4/out transmission_gate_3/out 0.37fF
-C162 unit_cap_mim_m3m4_23/m3_n630_n580# transmission_gate_9/in 0.17fF
-C163 p2_b transmission_gate_7/in 0.00fF
-C164 transmission_gate_4/out p2 0.02fF
-C165 transmission_gate_6/in transmission_gate_4/out 0.46fF
-C166 op unit_cap_mim_m3m4_30/m3_n630_n580# 0.31fF
-C167 unit_cap_mim_m3m4_24/c1_n530_n480# p2_b -0.07fF
-C168 p1 unit_cap_mim_m3m4_18/c1_n530_n480# -0.30fF
-C169 unit_cap_mim_m3m4_17/m3_n630_n580# VDD -0.16fF
-C170 p1_b transmission_gate_7/in 0.03fF
-C171 transmission_gate_4/out cmc 0.10fF
-C172 unit_cap_mim_m3m4_24/m3_n630_n580# p2_b -0.55fF
-C173 transmission_gate_4/out cm 0.08fF
-C174 unit_cap_mim_m3m4_23/c1_n530_n480# transmission_gate_4/out 0.06fF
-C175 bias_a unit_cap_mim_m3m4_35/c1_n530_n480# -0.22fF
-C176 unit_cap_mim_m3m4_21/m3_n630_n580# VDD 0.33fF
-C177 VDD p1 0.08fF
-C178 unit_cap_mim_m3m4_17/m3_n630_n580# p2_b -0.46fF
-C179 unit_cap_mim_m3m4_34/m3_n630_n580# unit_cap_mim_m3m4_33/m3_n630_n580# 0.12fF
-C180 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_35/c1_n530_n480# 0.06fF
-C181 unit_cap_mim_m3m4_29/m3_n630_n580# unit_cap_mim_m3m4_20/m3_n630_n580# 0.12fF
-C182 unit_cap_mim_m3m4_21/m3_n630_n580# p2_b -0.72fF
-C183 op unit_cap_mim_m3m4_17/c1_n530_n480# 0.06fF
-C184 unit_cap_mim_m3m4_35/m3_n630_n580# transmission_gate_8/in 0.58fF
-C185 on op 1.88fF
-C186 unit_cap_mim_m3m4_18/m3_n630_n580# unit_cap_mim_m3m4_17/m3_n630_n580# 0.17fF
-C187 p2 unit_cap_mim_m3m4_21/c1_n530_n480# 0.03fF
-C188 p1_b p1 2.54fF
-C189 unit_cap_mim_m3m4_18/m3_n630_n580# p1 -0.55fF
-C190 unit_cap_mim_m3m4_17/c1_n530_n480# transmission_gate_3/out -0.03fF
-C191 unit_cap_mim_m3m4_19/m3_n630_n580# cm 0.38fF
-C192 on transmission_gate_3/out 0.48fF
-C193 unit_cap_mim_m3m4_29/m3_n630_n580# unit_cap_mim_m3m4_29/c1_n530_n480# -0.13fF
-C194 cmc unit_cap_mim_m3m4_22/m3_n630_n580# 0.60fF
-C195 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580# -0.49fF
-C196 p2 unit_cap_mim_m3m4_17/c1_n530_n480# -0.25fF
-C197 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_33/c1_n530_n480# 0.06fF
-C198 on p2 0.28fF
-C199 on transmission_gate_6/in 0.40fF
-C200 unit_cap_mim_m3m4_20/m3_n630_n580# VDD 0.33fF
-C201 VDD unit_cap_mim_m3m4_16/m3_n630_n580# -0.43fF
-C202 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_27/m3_n630_n580# 0.12fF
-C203 transmission_gate_4/out unit_cap_mim_m3m4_30/m3_n630_n580# 0.57fF
-C204 transmission_gate_8/in transmission_gate_9/in 3.34fF
-C205 on cmc 2.26fF
-C206 on unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
-C207 unit_cap_mim_m3m4_17/c1_n530_n480# cm -0.22fF
-C208 unit_cap_mim_m3m4_26/c1_n530_n480# unit_cap_mim_m3m4_25/c1_n530_n480# 0.06fF
-C209 bias_a transmission_gate_3/out 0.05fF
-C210 op unit_cap_mim_m3m4_28/m3_n630_n580# 0.66fF
-C211 unit_cap_mim_m3m4_20/m3_n630_n580# p2_b -0.65fF
-C212 p2_b unit_cap_mim_m3m4_16/m3_n630_n580# -0.37fF
-C213 bias_a p2 0.05fF
-C214 bias_a transmission_gate_6/in 0.05fF
-C215 unit_cap_mim_m3m4_23/m3_n630_n580# VDD 0.33fF
-C216 op unit_cap_mim_m3m4_27/m3_n630_n580# 0.28fF
-C217 bias_a cm 0.91fF
-C218 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_31/c1_n530_n480# 0.06fF
-C219 op transmission_gate_7/in 2.64fF
-C220 on transmission_gate_4/out 3.14fF
-C221 transmission_gate_4/out unit_cap_mim_m3m4_25/c1_n530_n480# 0.06fF
-C222 unit_cap_mim_m3m4_35/c1_n530_n480# p1 -0.30fF
-C223 transmission_gate_6/in unit_cap_mim_m3m4_28/m3_n630_n580# -1.01fF
-C224 transmission_gate_6/in unit_cap_mim_m3m4_27/m3_n630_n580# 0.21fF
-C225 op unit_cap_mim_m3m4_28/c1_n530_n480# 0.17fF
-C226 unit_cap_mim_m3m4_23/m3_n630_n580# p1_b -1.03fF
-C227 transmission_gate_7/in transmission_gate_3/out 0.28fF
-C228 p2 unit_cap_mim_m3m4_16/c1_n530_n480# -0.30fF
-C229 bias_a transmission_gate_4/out 0.09fF
-C230 unit_cap_mim_m3m4_27/m3_n630_n580# cmc 0.12fF
-C231 p2 transmission_gate_7/in -0.01fF
-C232 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_25/m3_n630_n580# 0.12fF
-C233 unit_cap_mim_m3m4_22/c1_n530_n480# op 0.07fF
-C234 transmission_gate_6/in transmission_gate_7/in 0.44fF
-C235 unit_cap_mim_m3m4_24/c1_n530_n480# p2 -0.30fF
-C236 transmission_gate_6/in unit_cap_mim_m3m4_28/c1_n530_n480# -0.32fF
-C237 unit_cap_mim_m3m4_16/c1_n530_n480# cm -0.22fF
-C238 cmc transmission_gate_7/in 0.07fF
-C239 unit_cap_mim_m3m4_24/m3_n630_n580# p2 -0.47fF
-C240 transmission_gate_7/in cm 0.11fF
-C241 unit_cap_mim_m3m4_19/c1_n530_n480# unit_cap_mim_m3m4_18/c1_n530_n480# 0.06fF
-C242 op p1 0.10fF
-C243 unit_cap_mim_m3m4_17/m3_n630_n580# transmission_gate_3/out 0.62fF
-C244 VDD unit_cap_mim_m3m4_19/c1_n530_n480# -0.06fF
-C245 on unit_cap_mim_m3m4_21/c1_n530_n480# 0.06fF
-C246 p2 unit_cap_mim_m3m4_17/m3_n630_n580# -0.56fF
-C247 transmission_gate_4/out unit_cap_mim_m3m4_16/c1_n530_n480# 0.03fF
-C248 VDD transmission_gate_8/in 0.21fF
-C249 transmission_gate_4/out transmission_gate_7/in 0.61fF
-C250 p1 transmission_gate_3/out -0.00fF
-C251 unit_cap_mim_m3m4_21/m3_n630_n580# p2 -1.16fF
-C252 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_32/m3_n630_n580# -0.15fF
-C253 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_23/c1_n530_n480# 0.06fF
-C254 p2 p1 0.01fF
-C255 cmc unit_cap_mim_m3m4_17/m3_n630_n580# 0.17fF
-C256 unit_cap_mim_m3m4_17/m3_n630_n580# cm 0.41fF
-C257 op unit_cap_mim_m3m4_31/c1_n530_n480# 0.05fF
-C258 unit_cap_mim_m3m4_21/m3_n630_n580# cmc 0.58fF
-C259 p2_b transmission_gate_8/in -0.02fF
-C260 cmc p1 0.03fF
-C261 p1 cm 0.12fF
-C262 p1_b unit_cap_mim_m3m4_19/c1_n530_n480# 0.07fF
-C263 unit_cap_mim_m3m4_35/m3_n630_n580# VDD -0.40fF
-C264 p1_b transmission_gate_8/in 0.02fF
-C265 transmission_gate_4/out p1 0.01fF
-C266 unit_cap_mim_m3m4_19/m3_n630_n580# transmission_gate_7/in 0.63fF
-C267 p2 unit_cap_mim_m3m4_20/m3_n630_n580# -0.71fF
-C268 p2 unit_cap_mim_m3m4_16/m3_n630_n580# -0.29fF
-C269 unit_cap_mim_m3m4_17/c1_n530_n480# unit_cap_mim_m3m4_16/c1_n530_n480# 0.06fF
-C270 unit_cap_mim_m3m4_35/m3_n630_n580# p1_b -0.40fF
-C271 VDD transmission_gate_9/in 0.21fF
-C272 unit_cap_mim_m3m4_16/m3_n630_n580# cm 0.36fF
-C273 unit_cap_mim_m3m4_23/m3_n630_n580# transmission_gate_3/out 0.61fF
-C274 on transmission_gate_7/in 3.18fF
-C275 unit_cap_mim_m3m4_31/m3_n630_n580# transmission_gate_9/in 0.10fF
-C276 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_19/c1_n530_n480# 0.06fF
-C277 unit_cap_mim_m3m4_30/m3_n630_n580# p1 -0.67fF
-C278 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_22/m3_n630_n580# -0.20fF
-C279 transmission_gate_4/out unit_cap_mim_m3m4_31/c1_n530_n480# 0.06fF
-C280 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_25/c1_n530_n480# 0.06fF
-C281 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_21/c1_n530_n480# 0.06fF
-C282 unit_cap_mim_m3m4_35/c1_n530_n480# transmission_gate_8/in -0.01fF
-C283 p2_b transmission_gate_9/in 0.03fF
-C284 bias_a transmission_gate_7/in 0.09fF
-C285 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_23/m3_n630_n580# -0.20fF
-C286 transmission_gate_4/out unit_cap_mim_m3m4_16/m3_n630_n580# 0.62fF
-C287 unit_cap_mim_m3m4_19/m3_n630_n580# p1 -0.29fF
-C288 unit_cap_mim_m3m4_27/m3_n630_n580# unit_cap_mim_m3m4_28/m3_n630_n580# 0.17fF
-C289 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_22/m3_n630_n580# 0.17fF
-C290 unit_cap_mim_m3m4_22/m3_n630_n580# p1 -0.76fF
-C291 p1_b transmission_gate_9/in 0.00fF
-C292 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_21/c1_n530_n480# -0.20fF
-C293 unit_cap_mim_m3m4_17/c1_n530_n480# unit_cap_mim_m3m4_17/m3_n630_n580# -0.15fF
-C294 bias_a unit_cap_mim_m3m4_24/c1_n530_n480# -0.22fF
-C295 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_33/c1_n530_n480# 0.06fF
-C296 bias_a unit_cap_mim_m3m4_24/m3_n630_n580# 0.35fF
-C297 unit_cap_mim_m3m4_34/c1_n530_n480# transmission_gate_7/in 0.06fF
-C298 on p1 0.22fF
-C299 unit_cap_mim_m3m4_25/m3_n630_n580# unit_cap_mim_m3m4_25/c1_n530_n480# -0.19fF
-C300 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_34/m3_n630_n580# -0.19fF
-C301 unit_cap_mim_m3m4_35/m3_n630_n580# unit_cap_mim_m3m4_35/c1_n530_n480# -0.33fF
-C302 unit_cap_mim_m3m4_28/m3_n630_n580# unit_cap_mim_m3m4_28/c1_n530_n480# -0.17fF
-C303 unit_cap_mim_m3m4_19/m3_n630_n580# VSS 0.98fF
-C304 unit_cap_mim_m3m4_18/m3_n630_n580# VSS 1.16fF
-C305 unit_cap_mim_m3m4_29/m3_n630_n580# VSS 1.56fF
-C306 unit_cap_mim_m3m4_17/m3_n630_n580# VSS 1.16fF
-C307 unit_cap_mim_m3m4_28/m3_n630_n580# VSS 1.37fF
-C308 unit_cap_mim_m3m4_16/m3_n630_n580# VSS 0.98fF
-C309 unit_cap_mim_m3m4_27/m3_n630_n580# VSS 1.37fF
-C310 unit_cap_mim_m3m4_26/m3_n630_n580# VSS 1.37fF
-C311 unit_cap_mim_m3m4_25/m3_n630_n580# VSS 1.37fF
-C312 unit_cap_mim_m3m4_35/m3_n630_n580# VSS 1.12fF
-C313 cmc VSS -12.06fF
-C314 transmission_gate_9/in VSS -27.53fF
-C315 unit_cap_mim_m3m4_24/m3_n630_n580# VSS 1.20fF
-C316 unit_cap_mim_m3m4_33/m3_n630_n580# VSS 1.37fF
-C317 unit_cap_mim_m3m4_34/m3_n630_n580# VSS 1.37fF
-C318 unit_cap_mim_m3m4_23/m3_n630_n580# VSS 1.55fF
-C319 unit_cap_mim_m3m4_22/m3_n630_n580# VSS 1.56fF
-C320 p2 VSS 9.30fF
-C321 p2_b VSS 1.84fF
-C322 unit_cap_mim_m3m4_32/m3_n630_n580# VSS 1.37fF
-C323 unit_cap_mim_m3m4_21/m3_n630_n580# VSS 1.55fF
-C324 unit_cap_mim_m3m4_31/m3_n630_n580# VSS 1.37fF
-C325 unit_cap_mim_m3m4_20/m3_n630_n580# VSS 1.55fF
-C326 unit_cap_mim_m3m4_30/m3_n630_n580# VSS 1.53fF
-C327 transmission_gate_4/out VSS 1.26fF
-C328 transmission_gate_3/out VSS -4.23fF
-C329 transmission_gate_8/in VSS -0.18fF
-C330 bias_a VSS 7.51fF
-C331 transmission_gate_6/in VSS 2.86fF
-C332 transmission_gate_7/in VSS 2.35fF
-C333 cm VSS 0.43fF
-C334 p1 VSS 10.10fF
-C335 op VSS 11.93fF
-C336 p1_b VSS 2.50fF
-C337 VDD VSS 16.22fF
-C338 on VSS -9.15fF
+C0 p2 unit_cap_mim_m3m4_29/c1_n530_n480# 0.04fF
+C1 unit_cap_mim_m3m4_21/m3_n630_n580# p1_b 0.05fF
+C2 transmission_gate_8/in op 0.82fF
+C3 unit_cap_mim_m3m4_33/m3_n630_n580# cmc 0.12fF
+C4 on transmission_gate_4/out 3.23fF
+C5 p2 transmission_gate_8/in 0.63fF
+C6 unit_cap_mim_m3m4_21/m3_n630_n580# cmc 0.68fF
+C7 transmission_gate_7/in on 3.11fF
+C8 transmission_gate_6/in unit_cap_mim_m3m4_29/c1_n530_n480# -0.25fF
+C9 unit_cap_mim_m3m4_32/m3_n630_n580# cmc 0.12fF
+C10 transmission_gate_9/in transmission_gate_3/out 1.28fF
+C11 unit_cap_mim_m3m4_34/m3_n630_n580# unit_cap_mim_m3m4_33/m3_n630_n580# 0.17fF
+C12 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3_n630_n580# -0.30fF
+C13 bias_a transmission_gate_9/in 0.02fF
+C14 p1_b cmc 0.52fF
+C15 on unit_cap_mim_m3m4_32/c1_n530_n480# 0.06fF
+C16 transmission_gate_9/in p2_b 0.02fF
+C17 transmission_gate_3/out p1 0.71fF
+C18 bias_a p1 0.81fF
+C19 transmission_gate_6/in transmission_gate_8/in -0.36fF
+C20 p2_b p1 2.16fF
+C21 unit_cap_mim_m3m4_24/m3_n630_n580# unit_cap_mim_m3m4_16/m3_n630_n580# 0.10fF
+C22 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_35/m3_n630_n580# -0.13fF
+C23 unit_cap_mim_m3m4_28/c1_n530_n480# p1 0.11fF
+C24 transmission_gate_3/out p1_b 0.59fF
+C25 bias_a p1_b 0.52fF
+C26 unit_cap_mim_m3m4_25/c1_n530_n480# transmission_gate_4/out 0.06fF
+C27 transmission_gate_9/in on 1.03fF
+C28 p2 unit_cap_mim_m3m4_24/c1_n530_n480# 0.04fF
+C29 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_35/c1_n530_n480# 0.06fF
+C30 p2_b p1_b 2.92fF
+C31 transmission_gate_4/out VDD -0.03fF
+C32 transmission_gate_9/in unit_cap_mim_m3m4_25/m3_n630_n580# 0.38fF
+C33 transmission_gate_7/in VDD -0.11fF
+C34 transmission_gate_3/out cmc 1.02fF
+C35 unit_cap_mim_m3m4_19/m3_n630_n580# transmission_gate_8/in 0.17fF
+C36 transmission_gate_7/in unit_cap_mim_m3m4_20/c1_n530_n480# -0.19fF
+C37 on p1 0.49fF
+C38 p2 cm 1.33fF
+C39 transmission_gate_9/in unit_cap_mim_m3m4_23/m3_n630_n580# 0.17fF
+C40 p2 unit_cap_mim_m3m4_24/m3_n630_n580# 0.05fF
+C41 p2_b cmc 0.12fF
+C42 p2 unit_cap_mim_m3m4_16/m3_n630_n580# 0.05fF
+C43 unit_cap_mim_m3m4_28/c1_n530_n480# p1_b 0.06fF
+C44 unit_cap_mim_m3m4_23/m3_n630_n580# p1 0.06fF
+C45 on unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
+C46 transmission_gate_6/in cm 0.19fF
+C47 unit_cap_mim_m3m4_29/m3_n630_n580# p1 0.06fF
+C48 unit_cap_mim_m3m4_30/m3_n630_n580# transmission_gate_4/out -0.62fF
+C49 on p1_b 0.45fF
+C50 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_27/m3_n630_n580# 0.12fF
+C51 bias_a transmission_gate_3/out 0.05fF
+C52 unit_cap_mim_m3m4_17/m3_n630_n580# unit_cap_mim_m3m4_16/m3_n630_n580# 0.17fF
+C53 p2 op 0.16fF
+C54 unit_cap_mim_m3m4_22/m3_n630_n580# unit_cap_mim_m3m4_22/c1_n530_n480# -0.19fF
+C55 transmission_gate_3/out p2_b 0.10fF
+C56 on cmc 1.98fF
+C57 transmission_gate_9/in VDD -0.09fF
+C58 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580# -0.26fF
+C59 unit_cap_mim_m3m4_23/m3_n630_n580# p1_b 0.05fF
+C60 unit_cap_mim_m3m4_27/c1_n530_n480# op 0.02fF
+C61 bias_a p2_b 0.48fF
+C62 unit_cap_mim_m3m4_25/c1_n530_n480# p1 0.11fF
+C63 unit_cap_mim_m3m4_31/m3_n630_n580# transmission_gate_4/out 0.53fF
+C64 unit_cap_mim_m3m4_19/m3_n630_n580# unit_cap_mim_m3m4_35/m3_n630_n580# 0.12fF
+C65 p1 VDD 1.10fF
+C66 unit_cap_mim_m3m4_22/c1_n530_n480# op 0.07fF
+C67 p2 unit_cap_mim_m3m4_27/c1_n530_n480# 0.04fF
+C68 transmission_gate_6/in op 0.59fF
+C69 transmission_gate_4/out transmission_gate_8/in 0.26fF
+C70 unit_cap_mim_m3m4_23/c1_n530_n480# op 0.13fF
+C71 transmission_gate_7/in transmission_gate_8/in 0.73fF
+C72 unit_cap_mim_m3m4_29/m3_n630_n580# p1_b 0.05fF
+C73 transmission_gate_7/in unit_cap_mim_m3m4_20/m3_n630_n580# -0.57fF
+C74 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
+C75 p2 transmission_gate_6/in 0.61fF
+C76 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_21/c1_n530_n480# -0.19fF
+C77 transmission_gate_6/in unit_cap_mim_m3m4_27/c1_n530_n480# -0.12fF
+C78 op unit_cap_mim_m3m4_27/m3_n630_n580# 0.49fF
+C79 op unit_cap_mim_m3m4_17/c1_n530_n480# 0.06fF
+C80 unit_cap_mim_m3m4_25/c1_n530_n480# p1_b 0.06fF
+C81 p2 unit_cap_mim_m3m4_17/m3_n630_n580# 0.04fF
+C82 transmission_gate_3/out on 0.39fF
+C83 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_22/c1_n530_n480# 0.06fF
+C84 p1_b VDD 1.00fF
+C85 unit_cap_mim_m3m4_21/c1_n530_n480# cmc 0.12fF
+C86 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_27/m3_n630_n580# -0.37fF
+C87 unit_cap_mim_m3m4_30/m3_n630_n580# p1 0.06fF
+C88 p2_b on 0.37fF
+C89 transmission_gate_3/out unit_cap_mim_m3m4_23/m3_n630_n580# -0.11fF
+C90 VDD cmc 0.82fF
+C91 transmission_gate_6/in unit_cap_mim_m3m4_27/m3_n630_n580# 0.14fF
+C92 transmission_gate_9/in unit_cap_mim_m3m4_31/m3_n630_n580# 0.12fF
+C93 p1 unit_cap_mim_m3m4_29/c1_n530_n480# 0.11fF
+C94 transmission_gate_9/in transmission_gate_8/in 3.35fF
+C95 p1 transmission_gate_8/in 0.39fF
+C96 unit_cap_mim_m3m4_17/m3_n630_n580# unit_cap_mim_m3m4_17/c1_n530_n480# -0.20fF
+C97 p1 unit_cap_mim_m3m4_20/m3_n630_n580# 0.06fF
+C98 transmission_gate_4/out cm 0.08fF
+C99 transmission_gate_7/in cm 0.11fF
+C100 unit_cap_mim_m3m4_30/m3_n630_n580# p1_b 0.01fF
+C101 transmission_gate_4/out unit_cap_mim_m3m4_16/m3_n630_n580# -0.29fF
+C102 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580# -0.12fF
+C103 unit_cap_mim_m3m4_34/c1_n530_n480# transmission_gate_7/in 0.06fF
+C104 transmission_gate_3/out VDD -0.01fF
+C105 p1_b unit_cap_mim_m3m4_29/c1_n530_n480# 0.06fF
+C106 bias_a VDD 0.69fF
+C107 unit_cap_mim_m3m4_32/m3_n630_n580# unit_cap_mim_m3m4_31/m3_n630_n580# 0.12fF
+C108 unit_cap_mim_m3m4_23/m3_n630_n580# on 0.48fF
+C109 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_33/c1_n530_n480# 0.06fF
+C110 p2_b VDD 1.69fF
+C111 unit_cap_mim_m3m4_21/m3_n630_n580# transmission_gate_8/in -0.97fF
+C112 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_20/m3_n630_n580# 0.17fF
+C113 transmission_gate_8/in p1_b 0.17fF
+C114 transmission_gate_6/in unit_cap_mim_m3m4_18/m3_n630_n580# 0.06fF
+C115 unit_cap_mim_m3m4_20/m3_n630_n580# p1_b 0.05fF
+C116 unit_cap_mim_m3m4_31/c1_n530_n480# op 0.05fF
+C117 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_17/c1_n530_n480# 0.06fF
+C118 transmission_gate_4/out op 1.08fF
+C119 transmission_gate_7/in op 2.63fF
+C120 transmission_gate_8/in cmc 8.39fF
+C121 unit_cap_mim_m3m4_18/m3_n630_n580# unit_cap_mim_m3m4_17/m3_n630_n580# 0.17fF
+C122 unit_cap_mim_m3m4_24/c1_n530_n480# p1 0.11fF
+C123 p2 transmission_gate_4/out 0.15fF
+C124 transmission_gate_9/in cm 0.04fF
+C125 unit_cap_mim_m3m4_21/c1_n530_n480# on 0.06fF
+C126 p2 transmission_gate_7/in 0.60fF
+C127 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_28/m3_n630_n580# -0.32fF
+C128 unit_cap_mim_m3m4_35/m3_n630_n580# p1 0.07fF
+C129 transmission_gate_9/in unit_cap_mim_m3m4_24/m3_n630_n580# 0.16fF
+C130 unit_cap_mim_m3m4_33/c1_n530_n480# op 0.06fF
+C131 unit_cap_mim_m3m4_34/m3_n630_n580# transmission_gate_8/in 0.57fF
+C132 transmission_gate_9/in unit_cap_mim_m3m4_16/m3_n630_n580# 0.17fF
+C133 p1 cm 1.50fF
+C134 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_25/m3_n630_n580# -0.32fF
+C135 on VDD -0.02fF
+C136 p1 unit_cap_mim_m3m4_24/m3_n630_n580# 0.08fF
+C137 on unit_cap_mim_m3m4_20/c1_n530_n480# 0.15fF
+C138 transmission_gate_6/in transmission_gate_4/out 0.46fF
+C139 p1 unit_cap_mim_m3m4_16/m3_n630_n580# 0.08fF
+C140 unit_cap_mim_m3m4_23/c1_n530_n480# transmission_gate_4/out 0.06fF
+C141 transmission_gate_7/in transmission_gate_6/in 0.45fF
+C142 unit_cap_mim_m3m4_19/m3_n630_n580# unit_cap_mim_m3m4_18/m3_n630_n580# 0.12fF
+C143 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_26/c1_n530_n480# -0.36fF
+C144 transmission_gate_9/in unit_cap_mim_m3m4_22/m3_n630_n580# -0.62fF
+C145 unit_cap_mim_m3m4_24/c1_n530_n480# p1_b 0.06fF
+C146 transmission_gate_3/out transmission_gate_8/in 0.23fF
+C147 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_16/c1_n530_n480# 0.06fF
+C148 bias_a transmission_gate_8/in 0.03fF
+C149 unit_cap_mim_m3m4_35/m3_n630_n580# p1_b 0.01fF
+C150 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_18/m3_n630_n580# -0.20fF
+C151 unit_cap_mim_m3m4_22/m3_n630_n580# p1 0.06fF
+C152 transmission_gate_9/in op 0.67fF
+C153 p2_b transmission_gate_8/in 0.40fF
+C154 p1_b cm 1.15fF
+C155 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_29/c1_n530_n480# 0.06fF
+C156 p1_b unit_cap_mim_m3m4_24/m3_n630_n580# 0.06fF
+C157 p1_b unit_cap_mim_m3m4_16/m3_n630_n580# 0.06fF
+C158 p1 op 0.52fF
+C159 p2 transmission_gate_9/in 0.14fF
+C160 unit_cap_mim_m3m4_16/c1_n530_n480# unit_cap_mim_m3m4_16/m3_n630_n580# -0.21fF
+C161 unit_cap_mim_m3m4_29/m3_n630_n580# unit_cap_mim_m3m4_28/m3_n630_n580# 0.17fF
+C162 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_20/c1_n530_n480# 0.06fF
+C163 unit_cap_mim_m3m4_26/m3_n630_n580# cmc 0.10fF
+C164 unit_cap_mim_m3m4_19/m3_n630_n580# transmission_gate_7/in -0.29fF
+C165 unit_cap_mim_m3m4_34/m3_n630_n580# unit_cap_mim_m3m4_35/m3_n630_n580# 0.17fF
+C166 p2 p1 2.82fF
+C167 transmission_gate_9/in unit_cap_mim_m3m4_22/c1_n530_n480# -0.25fF
+C168 unit_cap_mim_m3m4_27/c1_n530_n480# p1 0.11fF
+C169 unit_cap_mim_m3m4_30/m3_n630_n580# unit_cap_mim_m3m4_23/m3_n630_n580# 0.12fF
+C170 unit_cap_mim_m3m4_21/m3_n630_n580# unit_cap_mim_m3m4_22/m3_n630_n580# 0.17fF
+C171 transmission_gate_9/in transmission_gate_6/in 0.09fF
+C172 unit_cap_mim_m3m4_22/m3_n630_n580# p1_b 0.05fF
+C173 p2 unit_cap_mim_m3m4_26/c1_n530_n480# 0.04fF
+C174 transmission_gate_6/in p1 0.37fF
+C175 unit_cap_mim_m3m4_34/m3_n630_n580# unit_cap_mim_m3m4_34/c1_n530_n480# -0.14fF
+C176 on transmission_gate_8/in 0.86fF
+C177 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
+C178 on unit_cap_mim_m3m4_20/m3_n630_n580# 0.60fF
+C179 op p1_b 0.28fF
+C180 unit_cap_mim_m3m4_22/m3_n630_n580# cmc 0.69fF
+C181 unit_cap_mim_m3m4_30/c1_n530_n480# op 0.17fF
+C182 unit_cap_mim_m3m4_17/m3_n630_n580# p1 0.08fF
+C183 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_19/c1_n530_n480# 0.06fF
+C184 p2 p1_b 5.94fF
+C185 transmission_gate_3/out cm 0.19fF
+C186 unit_cap_mim_m3m4_29/m3_n630_n580# unit_cap_mim_m3m4_29/c1_n530_n480# -0.29fF
+C187 op cmc 4.14fF
+C188 bias_a cm 0.91fF
+C189 unit_cap_mim_m3m4_27/c1_n530_n480# p1_b 0.06fF
+C190 p2_b cm 1.01fF
+C191 p2 cmc 0.25fF
+C192 transmission_gate_6/in p1_b 0.41fF
+C193 unit_cap_mim_m3m4_29/m3_n630_n580# unit_cap_mim_m3m4_20/m3_n630_n580# 0.10fF
+C194 unit_cap_mim_m3m4_31/c1_n530_n480# transmission_gate_4/out 0.06fF
+C195 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_30/c1_n530_n480# 0.06fF
+C196 unit_cap_mim_m3m4_19/m3_n630_n580# p1 0.08fF
+C197 unit_cap_mim_m3m4_22/c1_n530_n480# cmc 0.12fF
+C198 transmission_gate_7/in transmission_gate_4/out 0.61fF
+C199 unit_cap_mim_m3m4_20/c1_n530_n480# unit_cap_mim_m3m4_29/c1_n530_n480# 0.06fF
+C200 unit_cap_mim_m3m4_21/c1_n530_n480# transmission_gate_8/in -0.31fF
+C201 transmission_gate_6/in cmc 1.17fF
+C202 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_32/c1_n530_n480# 0.06fF
+C203 unit_cap_mim_m3m4_17/m3_n630_n580# p1_b 0.06fF
+C204 unit_cap_mim_m3m4_16/c1_n530_n480# unit_cap_mim_m3m4_17/c1_n530_n480# 0.06fF
+C205 transmission_gate_3/out op 0.56fF
+C206 transmission_gate_8/in VDD 0.00fF
+C207 unit_cap_mim_m3m4_17/m3_n630_n580# cmc 0.17fF
+C208 unit_cap_mim_m3m4_27/m3_n630_n580# cmc 0.10fF
+C209 unit_cap_mim_m3m4_20/m3_n630_n580# unit_cap_mim_m3m4_20/c1_n530_n480# -0.19fF
+C210 p2 transmission_gate_3/out 0.15fF
+C211 p2_b op 0.42fF
+C212 unit_cap_mim_m3m4_33/c1_n530_n480# unit_cap_mim_m3m4_32/c1_n530_n480# 0.06fF
+C213 transmission_gate_8/in unit_cap_mim_m3m4_28/m3_n630_n580# 0.10fF
+C214 unit_cap_mim_m3m4_18/m3_n630_n580# p1 0.08fF
+C215 p2 bias_a 0.60fF
+C216 unit_cap_mim_m3m4_26/m3_n630_n580# unit_cap_mim_m3m4_25/m3_n630_n580# 0.17fF
+C217 unit_cap_mim_m3m4_24/m3_n630_n580# unit_cap_mim_m3m4_25/m3_n630_n580# 0.17fF
+C218 unit_cap_mim_m3m4_19/m3_n630_n580# p1_b 0.06fF
+C219 p2 p2_b 6.60fF
+C220 transmission_gate_3/out transmission_gate_6/in 0.76fF
+C221 unit_cap_mim_m3m4_28/c1_n530_n480# op 0.18fF
+C222 transmission_gate_3/out unit_cap_mim_m3m4_23/c1_n530_n480# -0.13fF
+C223 bias_a transmission_gate_6/in 0.05fF
+C224 unit_cap_mim_m3m4_30/m3_n630_n580# unit_cap_mim_m3m4_31/m3_n630_n580# 0.17fF
+C225 unit_cap_mim_m3m4_19/m3_n630_n580# unit_cap_mim_m3m4_19/c1_n530_n480# -0.21fF
+C226 transmission_gate_6/in p2_b 0.42fF
+C227 transmission_gate_9/in transmission_gate_4/out 3.08fF
+C228 p2 unit_cap_mim_m3m4_28/c1_n530_n480# 0.04fF
+C229 transmission_gate_9/in transmission_gate_7/in 0.02fF
+C230 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_27/c1_n530_n480# 0.06fF
+C231 transmission_gate_3/out unit_cap_mim_m3m4_17/m3_n630_n580# -0.21fF
+C232 unit_cap_mim_m3m4_18/m3_n630_n580# p1_b 0.06fF
+C233 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_24/c1_n530_n480# 0.06fF
+C234 transmission_gate_4/out p1 0.80fF
+C235 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_19/c1_n530_n480# 0.06fF
+C236 on op 1.84fF
+C237 transmission_gate_7/in p1 0.39fF
+C238 unit_cap_mim_m3m4_22/m3_n630_n580# unit_cap_mim_m3m4_23/m3_n630_n580# 0.12fF
+C239 unit_cap_mim_m3m4_28/c1_n530_n480# transmission_gate_6/in 0.05fF
+C240 unit_cap_mim_m3m4_18/m3_n630_n580# cmc 0.17fF
+C241 p2 on 0.24fF
+C242 VDD cm 1.33fF
+C243 transmission_gate_8/in unit_cap_mim_m3m4_20/m3_n630_n580# 0.17fF
+C244 transmission_gate_6/in on 0.40fF
+C245 unit_cap_mim_m3m4_23/c1_n530_n480# on 0.21fF
+C246 transmission_gate_4/out p1_b 0.55fF
+C247 unit_cap_mim_m3m4_29/m3_n630_n580# op 0.39fF
+C248 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_30/c1_n530_n480# 0.06fF
+C249 unit_cap_mim_m3m4_33/m3_n630_n580# unit_cap_mim_m3m4_33/c1_n530_n480# -0.19fF
+C250 transmission_gate_7/in p1_b 0.40fF
+C251 transmission_gate_4/out unit_cap_mim_m3m4_16/c1_n530_n480# 0.06fF
+C252 unit_cap_mim_m3m4_30/c1_n530_n480# transmission_gate_4/out -0.25fF
+C253 unit_cap_mim_m3m4_32/m3_n630_n580# unit_cap_mim_m3m4_32/c1_n530_n480# -0.20fF
+C254 transmission_gate_4/out cmc 0.10fF
+C255 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_23/m3_n630_n580# -0.19fF
+C256 transmission_gate_7/in cmc 0.07fF
+C257 transmission_gate_9/in p1 0.70fF
+C258 transmission_gate_7/in unit_cap_mim_m3m4_19/c1_n530_n480# 0.06fF
+C259 op VDD -0.48fF
+C260 transmission_gate_6/in unit_cap_mim_m3m4_29/m3_n630_n580# -0.62fF
+C261 p2 unit_cap_mim_m3m4_25/c1_n530_n480# 0.04fF
+C262 p2 VDD 4.16fF
+C263 op unit_cap_mim_m3m4_28/m3_n630_n580# 0.67fF
+C264 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_21/c1_n530_n480# 0.06fF
+C265 unit_cap_mim_m3m4_35/m3_n630_n580# transmission_gate_8/in -0.17fF
+C266 p1 unit_cap_mim_m3m4_26/c1_n530_n480# 0.11fF
+C267 unit_cap_mim_m3m4_18/c1_n530_n480# on 0.06fF
+C268 transmission_gate_8/in cm 0.03fF
+C269 transmission_gate_9/in p1_b 0.59fF
+C270 transmission_gate_6/in VDD 0.06fF
+C271 transmission_gate_3/out transmission_gate_4/out 0.37fF
+C272 transmission_gate_3/out transmission_gate_7/in 0.29fF
+C273 bias_a transmission_gate_4/out 0.09fF
+C274 bias_a transmission_gate_7/in 0.09fF
+C275 unit_cap_mim_m3m4_21/m3_n630_n580# p1 0.06fF
+C276 p2_b transmission_gate_4/out 0.06fF
+C277 transmission_gate_6/in unit_cap_mim_m3m4_28/m3_n630_n580# -0.12fF
+C278 p1 p1_b 8.88fF
+C279 unit_cap_mim_m3m4_30/m3_n630_n580# op 0.55fF
+C280 transmission_gate_7/in p2_b 0.41fF
+C281 transmission_gate_9/in cmc 6.93fF
+C282 p1 cmc 0.49fF
+C283 unit_cap_mim_m3m4_33/m3_n630_n580# unit_cap_mim_m3m4_32/m3_n630_n580# 0.12fF
+C284 op unit_cap_mim_m3m4_29/c1_n530_n480# 0.03fF
+C285 unit_cap_mim_m3m4_27/m3_n630_n580# unit_cap_mim_m3m4_28/m3_n630_n580# 0.12fF
+C286 p1_b unit_cap_mim_m3m4_26/c1_n530_n480# 0.06fF
+C287 transmission_gate_7/in unit_cap_mim_m3m4_28/c1_n530_n480# 0.06fF
+C288 unit_cap_mim_m3m4_31/m3_n630_n580# op 0.03fF
+C289 unit_cap_mim_m3m4_19/m3_n630_n580# VSS 1.37fF
+C290 unit_cap_mim_m3m4_18/m3_n630_n580# VSS 1.37fF
+C291 unit_cap_mim_m3m4_29/m3_n630_n580# VSS 1.39fF
+C292 unit_cap_mim_m3m4_17/m3_n630_n580# VSS 1.37fF
+C293 unit_cap_mim_m3m4_28/m3_n630_n580# VSS 1.51fF
+C294 unit_cap_mim_m3m4_16/m3_n630_n580# VSS 1.37fF
+C295 unit_cap_mim_m3m4_27/m3_n630_n580# VSS 1.74fF
+C296 unit_cap_mim_m3m4_26/m3_n630_n580# VSS 1.51fF
+C297 unit_cap_mim_m3m4_25/m3_n630_n580# VSS 1.52fF
+C298 unit_cap_mim_m3m4_35/m3_n630_n580# VSS 1.56fF
+C299 cmc VSS -29.29fF
+C300 transmission_gate_9/in VSS 3.31fF
+C301 unit_cap_mim_m3m4_24/m3_n630_n580# VSS 1.60fF
+C302 unit_cap_mim_m3m4_33/m3_n630_n580# VSS 1.61fF
+C303 unit_cap_mim_m3m4_34/m3_n630_n580# VSS 1.54fF
+C304 unit_cap_mim_m3m4_23/m3_n630_n580# VSS 1.37fF
+C305 unit_cap_mim_m3m4_22/m3_n630_n580# VSS 1.37fF
+C306 p2 VSS 101.65fF
+C307 p2_b VSS 36.06fF
+C308 unit_cap_mim_m3m4_32/m3_n630_n580# VSS 1.84fF
+C309 unit_cap_mim_m3m4_21/m3_n630_n580# VSS 1.37fF
+C310 unit_cap_mim_m3m4_31/m3_n630_n580# VSS 1.40fF
+C311 unit_cap_mim_m3m4_20/m3_n630_n580# VSS 1.37fF
+C312 unit_cap_mim_m3m4_30/m3_n630_n580# VSS 1.03fF
+C313 transmission_gate_4/out VSS -4.34fF
+C314 transmission_gate_3/out VSS 0.32fF
+C315 transmission_gate_8/in VSS 3.12fF
+C316 bias_a VSS 6.68fF
+C317 transmission_gate_6/in VSS -13.34fF
+C318 transmission_gate_7/in VSS 9.47fF
+C319 cm VSS 5.76fF
+C320 p1 VSS 85.98fF
+C321 op VSS -0.11fF
+C322 p1_b VSS 109.11fF
+C323 VDD VSS 69.52fF
+C324 on VSS -13.19fF
 .ends
 

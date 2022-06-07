@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1654583406
+use digital_filter  digital_filter_0
+timestamp 1654583406
+transform 1 0 0 0 1 0
+box 0 0 14398 13872
+<< end >>

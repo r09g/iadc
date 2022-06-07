@@ -1,8 +1,8 @@
 module decimator (
     input wire clk,
     input wire rst_n,
-    input wire unsigned [11:0] data_in,
-    output reg unsigned [11:0] data_out,
+    input wire unsigned [26:0] data_in,
+    output reg unsigned [26:0] data_out,
     output reg new_data
 );
     

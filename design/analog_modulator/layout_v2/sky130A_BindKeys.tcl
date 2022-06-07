@@ -1,6 +1,13 @@
 #
 # Cadence-compatibility bindings except where marked.
 #
+
+macro q "sky130::mcon_draw"
+macro 1 "sky130::via1_draw"
+macro 2 "sky130::via2_draw"
+macro 3 "sky130::via3_draw"
+macro 4 "sky130::via4_draw"
+
 # macro f  "view"	     ;# zoom to fit window
 macro ^z "zoom 0.5"  ;# zoom in
 macro Z  "zoom 2"    ;# zoom out

@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1653078006
+<< pwell >>
+rect -100 -66 16 48
+<< psubdiff >>
+rect -82 8 -2 32
+rect -82 -26 -59 8
+rect -25 -26 -2 8
+rect -82 -50 -2 -26
+<< psubdiffcont >>
+rect -59 -26 -25 8
+<< locali >>
+rect -82 8 -2 32
+rect -82 -26 -59 8
+rect -25 -26 -2 8
+rect -82 -50 -2 -26
+<< end >>

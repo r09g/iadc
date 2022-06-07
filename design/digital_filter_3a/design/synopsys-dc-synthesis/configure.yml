@@ -70,7 +70,7 @@ postconditions:
 - |
   from assertion_helpers import percent_clock_gated, n_regs
   if n_regs() > 100:
-    assert percent_clock_gated() > 0.50
+    assert percent_clock_gated() > 0.10
 
 preconditions:
 - assert Tool( 'dc_shell-xg-t' )
