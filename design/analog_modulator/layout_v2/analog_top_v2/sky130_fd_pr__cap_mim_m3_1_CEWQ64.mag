@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1654711401
+timestamp 1654720150
 << metal3 >>
 rect -180 -155 130 155
 << mimcap >>
@@ -10,11 +10,6 @@ rect 60 -85 80 85
 rect -130 -105 80 -85
 << mimcapcontact >>
 rect -110 -85 60 85
-<< metal4 >>
-rect -110 85 60 85
-rect -110 -85 -110 85
-rect 60 -85 60 85
-rect -110 -85 60 -85
 << properties >>
 string FIXED_BBOX -180 -155 130 155
 string gencell sky130_fd_pr__cap_mim_m3_1
