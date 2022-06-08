@@ -16,46 +16,6 @@ N 940 -120 960 -120 { lab=bias_a}
 N 300 -100 320 -100 { lab=cm}
 N 660 -480 660 -260 { lab=op}
 N 680 -480 680 -120 { lab=on}
-N 1300 -300 1320 -300 { lab=VDD}
-N 1320 -330 1320 -300 { lab=VDD}
-N 1300 -270 1300 -250 { lab=VDD}
-N 1300 -250 1320 -250 { lab=VDD}
-N 1320 -300 1320 -250 { lab=VDD}
-N 1240 -250 1300 -250 { lab=VDD}
-N 1240 -330 1240 -250 { lab=VDD}
-N 1240 -300 1260 -300 { lab=VDD}
-N 1140 -300 1160 -300 { lab=VDD}
-N 1160 -330 1160 -300 { lab=VDD}
-N 1140 -270 1140 -250 { lab=VDD}
-N 1140 -250 1160 -250 { lab=VDD}
-N 1160 -300 1160 -250 { lab=VDD}
-N 1080 -250 1140 -250 { lab=VDD}
-N 1080 -330 1080 -250 { lab=VDD}
-N 1080 -300 1100 -300 { lab=VDD}
-N 1080 -350 1080 -330 { lab=VDD}
-N 1080 -350 1140 -350 { lab=VDD}
-N 1140 -350 1140 -330 { lab=VDD}
-N 1140 -370 1140 -350 { lab=VDD}
-N 1140 -350 1160 -350 { lab=VDD}
-N 1160 -350 1160 -330 { lab=VDD}
-N 1240 -350 1240 -330 { lab=VDD}
-N 1240 -350 1300 -350 { lab=VDD}
-N 1300 -350 1300 -330 { lab=VDD}
-N 1300 -350 1320 -350 { lab=VDD}
-N 1320 -350 1320 -330 { lab=VDD}
-N 1300 -370 1300 -350 { lab=VDD}
-N 1080 -160 1100 -160 { lab=VSS}
-N 1080 -210 1080 -160 { lab=VSS}
-N 1080 -210 1140 -210 { lab=VSS}
-N 1140 -210 1140 -190 { lab=VSS}
-N 1080 -160 1080 -120 { lab=VSS}
-N 1080 -120 1080 -110 { lab=VSS}
-N 1080 -110 1140 -110 { lab=VSS}
-N 1140 -130 1140 -110 { lab=VSS}
-N 1140 -160 1160 -160 { lab=VSS}
-N 1160 -160 1160 -110 { lab=VSS}
-N 1140 -110 1160 -110 { lab=VSS}
-N 1140 -110 1140 -80 { lab=VSS}
 C {devices/lab_wire.sym} 320 -180 0 1 {name=l1 sig_type=std_logic lab=bias_a}
 C {devices/lab_wire.sym} 320 -160 0 1 {name=l2 sig_type=std_logic lab=bias_b}
 C {devices/lab_wire.sym} 320 -140 0 1 {name=l3 sig_type=std_logic lab=bias_c}
@@ -86,48 +46,3 @@ C {folded_cascode_3_bias.sym} 60 -60 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {devices/opin.sym} 130 -270 0 0 {name=p10 lab=cm}
 C {sc_cmfb.sym} 700 -80 0 0 {name=x3 VDD=VDD VSS=VSS}
 C {folded_cascode_3_core.sym} 380 -60 0 0 {name=x2 VDD=VDD VSS=VSS}
-C {devices/vdd.sym} 1300 -370 0 0 {name=l67 lab=VDD}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1280 -300 0 0 {name=M43
-L=0.6
-W=1.4
-nf=1
-mult=8
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 1120 -300 0 0 {name=M45
-L=0.6
-W=1.4
-nf=1
-mult=6
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/vdd.sym} 1140 -370 0 0 {name=l47 lab=VDD}
-C {sky130_fd_pr/nfet_01v8.sym} 1120 -160 0 0 {name=M9
-L=0.6
-W=1.4
-nf=1
-mult=23
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 1140 -80 1 1 {name=l46 sig_type=std_logic lab=VSS}

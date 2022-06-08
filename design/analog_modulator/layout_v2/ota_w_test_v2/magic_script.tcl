@@ -1,35 +1,34 @@
-set MGC_DESIGN_NAME "ota_v2"
-set MGC_PORT_LIST {ip in p1 p1_b p2 p2_b op on i_bias cm}
+set MGC_DESIGN_NAME "ota_w_test_v2"
+set MGC_PORT_LIST {ip in p1 p1_b p2 p2_b op on i_bias cm bias_a bias_b bias_c bias_d cmc}
 set FLAT 0
 
 # flatten design and make ports
 
 load "${MGC_DESIGN_NAME}.mag"
+if {$FLAT} {
+    box 0 0 0 0
+    select
+    flatten "${MGC_DESIGN_NAME}_flat"
+    load "${MGC_DESIGN_NAME}_flat"
+}
+box 0 0 0 0
+select
 
-# if {$FLAT} {
-#     box 0 0 0 0
-#     select
-#     flatten "${MGC_DESIGN_NAME}_flat"
-#     load "${MGC_DESIGN_NAME}_flat"
-# }
-# box 0 0 0 0
-# select
+foreach port $MGC_PORT_LIST {
+    findlabel $port
+    port make
+}
 
-# foreach port $MGC_PORT_LIST {
-#     findlabel $port
-#     port make
-# }
+# special handling of power ports
+findlabel VDD
+port make 
+port use power
+port class inout
 
-# # special handling of power ports
-# findlabel VDD
-# port make 
-# port use power
-# port class inout
-
-# findlabel VSS
-# port make 
-# port use power
-# port class inout
+findlabel VSS
+port make 
+port use power
+port class inout
 
 if {$FLAT} {save "${MGC_DESIGN_NAME}_flat.mag"}
 

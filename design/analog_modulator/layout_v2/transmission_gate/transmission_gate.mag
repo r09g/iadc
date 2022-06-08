@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654598425
+timestamp 1654656593
 << locali >>
 rect 1171 993 1205 1027
 rect 81 883 97 933
@@ -35,11 +35,11 @@ rect 769 19 803 180
 rect 961 19 995 180
 rect -53 -15 995 19
 use nmos_tgate  nmos_tgate_0
-timestamp 1654598415
+timestamp 1654656593
 transform 1 0 593 0 1 213
 box -646 -262 648 200
 use pmos_tgate  pmos_tgate_0
-timestamp 1654598415
+timestamp 1654656593
 transform -1 0 595 0 -1 707
 box -646 -356 648 294
 << labels >>

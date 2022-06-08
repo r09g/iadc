@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654655679
+timestamp 1654656593
 << locali >>
 rect 6609 19960 6865 20216
 rect -61 8576 5805 8582
@@ -56,6 +56,7 @@ rect 23741 8325 23753 8569
 rect 19650 8319 23753 8325
 rect 2937 4263 2993 5118
 rect 4720 4263 4776 5118
+rect 9761 4008 17630 4125
 rect 647 3692 657 3802
 rect 767 3692 777 3802
 rect 21251 1092 22312 1220
@@ -101,6 +102,8 @@ rect 6342 3859 6540 10899
 rect 22387 9835 22593 9877
 rect 22387 9295 22399 9835
 rect 22509 9295 22593 9835
+rect 19353 4834 19411 5532
+rect 20331 5141 20462 5841
 rect 8757 4244 8881 4254
 rect 8757 4029 8881 4039
 rect 6342 3849 6541 3859
@@ -183,37 +186,30 @@ rect 7353 20556 21191 20620
 rect 7272 20156 7581 20220
 rect 7272 19756 7872 19820
 rect 7272 19356 8182 19420
-use ota_v2_without_cmfb  ota_v2_without_cmfb_0
-timestamp 1654652243
+use ota_w_test_v2_without_cmfb  ota_w_test_v2_without_cmfb_0
+timestamp 1654656593
 transform -1 0 21026 0 1 335
-box -1045 -334 21142 6713
+box -1147 -334 21142 6744
 use sc_cmfb  sc_cmfb_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/sc_cmfb
-timestamp 1654608098
+timestamp 1654656593
 transform 1 0 11071 0 1 10659
 box -5314 -2919 11422 9969
 << labels >>
 flabel metal1 2965 4960 2965 4960 1 FreeSans 800 0 0 0 in
-port 2 n
 flabel metal1 4751 4964 4751 4964 1 FreeSans 800 0 0 0 ip
-port 1 n
 flabel metal4 7524 20588 7524 20588 1 FreeSans 800 0 0 0 p2_b
-port 6 n
 flabel metal4 7520 20183 7520 20183 1 FreeSans 800 0 0 0 p2
-port 5 n
 flabel metal4 7522 19788 7522 19788 1 FreeSans 800 0 0 0 p1_b
-port 4 n
 flabel metal4 7522 19380 7522 19380 1 FreeSans 800 0 0 0 p1
-port 3 n
 flabel metal2 5790 8141 5790 8141 1 FreeSans 800 0 0 0 op
-port 7 n
 flabel metal2 6403 8150 6403 8150 1 FreeSans 800 0 0 0 on
-port 8 n
 flabel metal1 22248 1153 22248 1153 1 FreeSans 800 0 0 0 i_bias
-port 9 n
 flabel metal3 -153 2588 -153 2588 1 FreeSans 800 0 0 0 cm
-port 10 n
 flabel locali 6730 20089 6730 20089 1 FreeSans 800 0 0 0 VDD
-port 11 n power bidirectional
 flabel locali 11 93 11 93 1 FreeSans 800 0 0 0 VSS
-port 12 n power bidirectional
+flabel metal2 22492 5814 22492 5814 1 FreeSans 800 0 0 0 bias_a
+flabel metal2 19379 5290 19379 5290 1 FreeSans 800 0 0 0 bias_c
+flabel metal2 20397 5292 20397 5292 1 FreeSans 800 0 0 0 bias_b
+flabel metal2 708 5110 708 5110 1 FreeSans 800 0 0 0 cmc
+flabel metal1 16024 4072 16024 4072 1 FreeSans 800 0 0 0 bias_d
 << end >>
