@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654647308
+use ota_v2_without_cmfb  ota_v2_without_cmfb_0
+timestamp 1654647308
+transform -1 0 21026 0 1 335
+box -1045 -334 21142 6713
+use sc_cmfb  sc_cmfb_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/sc_cmfb
+timestamp 1654608098
+transform 1 0 11071 0 1 10659
+box -5314 -2919 11422 9969
+<< end >>
