@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654674269
+timestamp 1654713294
 << locali >>
 rect -4462 9301 10769 9557
 rect -4462 8125 -4206 9301
@@ -121,17 +121,17 @@ rect 9135 8128 9145 8192
 rect 9209 8128 9219 8192
 rect 10099 8131 10109 8195
 rect 10173 8131 10183 8195
-rect -5314 7637 -3748 7701
+rect -5376 7701 -4004 7773
+rect -5376 7637 -3748 7701
 rect -2635 7697 -335 7701
-rect -5314 -1301 -5239 7637
+rect -5376 7566 -4004 7637
 rect -2852 7631 -2842 7695
 rect -2778 7631 -2768 7695
 rect -2635 7637 2411 7697
 rect -485 7633 2411 7637
 rect 6681 7633 6691 7697
 rect 6755 7633 9170 7697
-rect 10294 7681 11419 7686
-rect 10294 7634 11420 7681
+rect -5376 -1267 -5169 7566
 rect -3789 7318 -3779 7382
 rect -3715 7318 -3705 7382
 rect -2834 7314 -2824 7378
@@ -142,15 +142,16 @@ rect -3794 6328 -3784 6392
 rect -3720 6328 -3710 6392
 rect -2832 6331 -2822 6395
 rect -2758 6331 -2748 6395
-rect -4705 5881 -3748 5899
-rect -4706 5835 -3748 5881
-rect -4706 497 -4631 5835
+rect -4764 5899 -3996 5953
+rect -4764 5835 -3748 5899
+rect -4764 5746 -3996 5835
 rect -2858 5831 -2848 5895
 rect -2784 5831 -2774 5895
 rect -2637 5893 -431 5894
 rect -2637 5830 -477 5893
 rect -487 5829 -477 5830
 rect -413 5829 -403 5893
+rect -4764 577 -4557 5746
 rect -3791 5517 -3781 5581
 rect -3717 5517 -3707 5581
 rect -2833 5517 -2823 5581
@@ -159,8 +160,9 @@ rect -3795 4527 -3785 4591
 rect -3721 4527 -3711 4591
 rect -2834 4527 -2824 4591
 rect -2760 4527 -2750 4591
-rect -4248 4036 -3746 4100
-rect -4248 2301 -4173 4036
+rect -4279 4100 -4072 4168
+rect -4279 4036 -3746 4100
+rect -4279 2301 -4072 4036
 rect -2854 4031 -2844 4095
 rect -2780 4031 -2770 4095
 rect -2627 4094 -374 4098
@@ -169,6 +171,7 @@ rect -444 4030 -434 4034
 rect -370 4030 -360 4094
 rect 1628 3846 1692 6412
 rect 2347 4563 2411 7633
+rect 10290 7561 11546 7768
 rect 9134 7312 9144 7376
 rect 9208 7312 9218 7376
 rect 10101 7315 10111 7379
@@ -181,8 +184,8 @@ rect 6728 5895 6822 5896
 rect 6694 5831 6704 5895
 rect 6768 5893 6822 5895
 rect 6768 5831 9181 5893
-rect 10303 5838 10909 5890
 rect 6728 5829 9181 5831
+rect 10294 5758 10980 5965
 rect 3147 5494 3157 5558
 rect 3221 5494 3231 5558
 rect 9137 5516 9147 5580
@@ -223,7 +226,8 @@ rect -3796 2725 -3786 2789
 rect -3722 2725 -3712 2789
 rect -2829 2727 -2819 2791
 rect -2755 2727 -2745 2791
-rect -4248 2237 -3737 2301
+rect -4279 2237 -3737 2301
+rect -4279 2193 -4072 2237
 rect -2857 2231 -2847 2295
 rect -2783 2231 -2773 2295
 rect -2634 2291 -387 2298
@@ -232,10 +236,10 @@ rect -444 2227 -434 2234
 rect -370 2227 -360 2291
 rect 3308 2223 3371 4085
 rect 4874 3642 4938 4326
+rect 10773 4159 10980 5758
 rect 6749 4031 6759 4095
 rect 6823 4031 9191 4095
-rect 10834 4089 10909 5838
-rect 10303 4037 10909 4089
+rect 10287 3952 10980 4159
 rect 9136 3714 9146 3778
 rect 9210 3714 9220 3778
 rect 10099 3719 10109 3783
@@ -246,12 +250,12 @@ rect 9137 2727 9147 2791
 rect 9211 2727 9221 2791
 rect 10097 2727 10107 2791
 rect 10171 2727 10181 2791
+rect 10773 2355 10980 3952
 rect 6754 2233 6764 2297
 rect 6828 2233 9179 2297
-rect 10834 2291 10909 4037
-rect 10296 2239 10909 2291
 rect 3298 2159 3308 2223
 rect 3372 2159 3382 2223
+rect 10290 2148 10980 2355
 rect -3794 1917 -3784 1981
 rect -3720 1917 -3710 1981
 rect -2828 1919 -2818 1983
@@ -266,7 +270,8 @@ rect -3794 928 -3784 992
 rect -3720 928 -3710 992
 rect -2831 928 -2821 992
 rect -2757 928 -2747 992
-rect -4706 433 -3751 497
+rect -4764 497 -4115 577
+rect -4764 433 -3751 497
 rect -2850 433 -2840 497
 rect -2776 433 -2766 497
 rect -364 494 -300 1576
@@ -280,13 +285,14 @@ rect 9136 926 9146 990
 rect 9210 926 9220 990
 rect 10101 927 10111 991
 rect 10175 927 10185 991
+rect 10773 602 10980 2148
+rect -4764 370 -4115 433
 rect -2631 430 -299 494
 rect 6722 493 9180 497
 rect 6690 429 6700 493
 rect 6764 433 9180 493
-rect 10834 488 10909 2239
-rect 10296 436 10912 488
 rect 6764 429 6774 433
+rect 10283 395 10980 602
 rect -3794 114 -3784 178
 rect -3720 114 -3710 178
 rect -2831 118 -2821 182
@@ -303,8 +309,11 @@ rect 9138 -873 9148 -809
 rect 9212 -873 9222 -809
 rect 10098 -873 10108 -809
 rect 10172 -873 10182 -809
-rect -5314 -1365 -3759 -1301
+rect 11339 -1197 11546 7561
+rect -5376 -1301 -4113 -1267
+rect -5376 -1365 -3759 -1301
 rect -512 -1302 -502 -1301
+rect -5376 -1474 -4113 -1365
 rect -2849 -1368 -2839 -1304
 rect -2775 -1368 -2765 -1304
 rect -2638 -1365 -502 -1302
@@ -312,10 +321,9 @@ rect -438 -1365 -428 -1301
 rect 6708 -1363 6718 -1299
 rect 6782 -1300 6792 -1299
 rect 6782 -1363 9185 -1300
-rect 11345 -1313 11420 7634
 rect 6767 -1364 9185 -1363
-rect 10286 -1365 11422 -1313
 rect -2638 -1366 -440 -1365
+rect 10286 -1404 11546 -1197
 rect -3791 -1686 -3781 -1622
 rect -3717 -1686 -3707 -1622
 rect -2834 -1684 -2824 -1620
@@ -1711,195 +1719,195 @@ rect -365 -1138 -364 -1074
 rect -300 -1138 -299 -1074
 rect -365 -1139 -299 -1138
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 51
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 1851
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_2
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 -1749
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_3
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 3651
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_4
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 5451
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_5
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 10253 0 1 7251
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_6
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 7251
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_7
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 5451
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_8
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 3651
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_9
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 1851
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_10
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 51
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_11
-timestamp 1654674269
+timestamp 1654712441
 transform -1 0 -2677 0 1 -1749
 box -53 -49 1241 1063
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_0
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_1
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_2
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_3
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_4
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_5
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_6
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_7
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_8
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_9
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_10
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_11
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_12
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_13
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_14
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_15
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_16
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_17
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_18
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_19
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_20
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 5980
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_21
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 4180
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_22
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 2380
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_23
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 580
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_24
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_25
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_26
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_27
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_28
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_29
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 7780
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_30
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -1170 0 1 -1220
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_31
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 630 0 1 -1220
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_32
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 2430 0 1 -1220
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_33
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 4230 0 1 -1220
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_34
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 6030 0 1 -1220
 box -630 -580 528 580
 use unit_cap_mim_m3m4  unit_cap_mim_m3m4_35
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 7830 0 1 -1220
 box -630 -580 528 580
 << labels >>

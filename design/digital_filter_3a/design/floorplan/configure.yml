@@ -2,6 +2,10 @@ name: floorplan
 
 outputs:
   - floorplan.tcl
+  - pin-assignments.tcl
+  - dont-use-cells.tcl
 
 commands:
   - cat floorplan.tcl > outputs/floorplan.tcl
+  - cat pin-assignments.tcl > outputs/pin-assignments.tcl
+  - cat dont-use-cells.tcl > outputs/dont-use-cells.tcl

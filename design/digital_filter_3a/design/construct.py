@@ -143,7 +143,7 @@ def construct():
 
     # Dynamically add edges
     # Use existing default steps with partial custom modifications
-    init.extend_inputs(['floorplan.tcl'])
+    init.extend_inputs ( floorplan.all_outputs()  )
 
     # Connect by name
     g.connect_by_name( adk,             dc              )
@@ -197,6 +197,9 @@ def construct():
 
     # Core place and route flow
     g.connect_by_name( floorplan,       init            )
+    order = init.get_param( 'order' )
+    order.append( 'dont-use-cells.tcl' )
+
     g.connect_by_name( init,            power           )
     g.connect_by_name( power,           place           )
     g.connect_by_name( place,           cts             ) 

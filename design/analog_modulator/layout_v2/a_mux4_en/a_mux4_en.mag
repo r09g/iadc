@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654674840
+timestamp 1654713294
 << nwell >>
 rect -1129 -2208 -869 -2205
 rect -599 -2208 -428 -2205
@@ -767,35 +767,35 @@ timestamp 1650294714
 transform 1 0 -704 0 1 -2653
 box -38 -48 130 592
 use switch_5t_mux4  switch_5t_mux4_0
-timestamp 1654674269
+timestamp 1654713294
 transform 1 0 123 0 -1 -62
 box 92 4 2995 1118
 use switch_5t_mux4  switch_5t_mux4_1
-timestamp 1654674269
+timestamp 1654713294
 transform 1 0 123 0 -1 -1396
 box 92 4 2995 1118
 use switch_5t_mux4  switch_5t_mux4_2
-timestamp 1654674269
+timestamp 1654713294
 transform 1 0 123 0 -1 -2774
 box 92 4 2995 1118
 use switch_5t_mux4  switch_5t_mux4_3
-timestamp 1654674269
+timestamp 1654713294
 transform 1 0 123 0 -1 -4152
 box 92 4 2995 1118
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -3213 0 1 -1129
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -3213 0 1 -2463
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_2
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -3213 0 1 -3841
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_3
-timestamp 1654674269
+timestamp 1654712441
 transform 1 0 -3213 0 1 -5219
 box -53 -49 1241 1063
 << labels >>

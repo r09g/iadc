@@ -1,12 +1,12 @@
 * OTA V2
 
-.subckt ota_v2 ip in phi1 phi1_b phi2 phi2_b op on i_bias cm VDD VSS
+.subckt ota_v2 ip in p1 p1_b p2 p2_b op on i_bias cm VDD VSS
 *.ipin ip
 *.ipin in
-*.ipin phi1
-*.ipin phi1_b
-*.ipin phi2
-*.ipin phi2_b
+*.ipin p1
+*.ipin p1_b
+*.ipin p2
+*.ipin p2_b
 *.opin op
 *.opin on
 *.ipin i_bias
@@ -17,7 +17,7 @@
 *.opin bias_d
 *.opin cmc
 x1 bias_a bias_b bias_c bias_d cm i_bias VDD VSS folded_cascode_3_bias
-x3 phi1 phi1_b op on cm bias_a cmc phi2 phi2_b VDD VSS sc_cmfb
+x3 p1 p1_b op on cm bias_a cmc p2 p2_b VDD VSS sc_cmfb
 x2 cmc ip in bias_a bias_b bias_c bias_d op on VDD VSS folded_cascode_3_core
 .ends
 
@@ -182,32 +182,32 @@ XM20 m5d VSS VSS VSS sky130_fd_pr__nfet_01v8 L=0.6 W=1.4 nf=1 ad='int((nf+1)/2) 
 *+ /home/users/rhyang/ee372/incremental_delta_sigma_adc/design/analog_modulator/schematic/sc_cmfb.sym
 * sch_path:
 *+ /home/users/rhyang/ee372/incremental_delta_sigma_adc/design/analog_modulator/schematic/sc_cmfb.sch
-.subckt sc_cmfb  phi1 phi1_b op on cm bias_a cmc phi2 phi2_b  VDD  VSS
+.subckt sc_cmfb  p1 p1_b op on cm bias_a cmc p2 p2_b  VDD  VSS
 *.ipin on
 *.ipin cm
 *.ipin bias_a
 *.ipin op
 *.opin cmc
-*.ipin phi2_b
-*.ipin phi2
-*.ipin phi1_b
-*.ipin phi1
+*.ipin p2_b
+*.ipin p2
+*.ipin p1_b
+*.ipin p1
 XC3 op cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
 XC4 on cmc sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=4 m=4
-x1 net1 op phi2 phi2_b VDD VSS transmission_gate
-x2 net2 cmc phi2 phi2_b VDD VSS transmission_gate
-x3 net3 on phi2 phi2_b VDD VSS transmission_gate
-x4 cm net1 phi1 phi1_b VDD VSS transmission_gate
-x5 bias_a net2 phi1 phi1_b VDD VSS transmission_gate
-x6 cm net3 phi1 phi1_b VDD VSS transmission_gate
+x1 net1 op p2 p2_b VDD VSS transmission_gate
+x2 net2 cmc p2 p2_b VDD VSS transmission_gate
+x3 net3 on p2 p2_b VDD VSS transmission_gate
+x4 cm net1 p1 p1_b VDD VSS transmission_gate
+x5 bias_a net2 p1 p1_b VDD VSS transmission_gate
+x6 cm net3 p1 p1_b VDD VSS transmission_gate
 XC1 net1 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC2 net3 net2 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
-x7 cm net4 phi2 phi2_b VDD VSS transmission_gate
-x8 bias_a net5 phi2 phi2_b VDD VSS transmission_gate
-x9 cm net6 phi2 phi2_b VDD VSS transmission_gate
-x10 net4 op phi1 phi1_b VDD VSS transmission_gate
-x11 net5 cmc phi1 phi1_b VDD VSS transmission_gate
-x12 net6 on phi1 phi1_b VDD VSS transmission_gate
+x7 cm net4 p2 p2_b VDD VSS transmission_gate
+x8 bias_a net5 p2 p2_b VDD VSS transmission_gate
+x9 cm net6 p2 p2_b VDD VSS transmission_gate
+x10 net4 op p1 p1_b VDD VSS transmission_gate
+x11 net5 cmc p1 p1_b VDD VSS transmission_gate
+x12 net6 on p1 p1_b VDD VSS transmission_gate
 XC5 net4 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XC6 net6 net5 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=2 m=2
 XCdummy __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 sky130_fd_pr__cap_mim_m3_1 W=4.8 L=4.8 MF=20 m=20
