@@ -1,11 +1,34 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654647308
+timestamp 1654650167
+<< metal1 >>
+rect 5728 9289 5738 9829
+rect 5848 9289 5858 9829
+<< via1 >>
+rect 5738 9289 5848 9829
+<< metal2 >>
+rect 5738 9829 5848 9839
+rect 5738 4151 5848 9289
+rect 5729 4041 5738 4151
+rect 5848 4041 5857 4151
+rect 8766 4146 8866 4155
+rect 8766 4037 8866 4046
+<< via2 >>
+rect 5738 4041 5848 4151
+rect 8766 4046 8866 4146
+<< metal3 >>
+rect 5733 4151 5853 4156
+rect 5733 4041 5738 4151
+rect 5848 4146 8871 4151
+rect 5848 4046 8766 4146
+rect 8866 4046 8871 4146
+rect 5848 4041 8871 4046
+rect 5733 4036 5853 4041
 use ota_v2_without_cmfb  ota_v2_without_cmfb_0
-timestamp 1654647308
+timestamp 1654650167
 transform -1 0 21026 0 1 335
-box -1045 -334 21142 6713
+box -1147 -334 21142 6744
 use sc_cmfb  sc_cmfb_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/sc_cmfb
 timestamp 1654608098
 transform 1 0 11071 0 1 10659

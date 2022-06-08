@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654648425
+timestamp 1654650167
 << nwell >>
 rect 5734 5006 13811 6712
 rect 7933 3685 13811 5006
@@ -3133,7 +3133,7 @@ rect 9466 4923 16768 4928
 rect 16860 4923 16865 5015
 rect 16763 4918 16865 4923
 use bias_circuit  bias_circuit_0
-timestamp 1654648425
+timestamp 1654650167
 transform 1 0 -615 0 1 276
 box -430 -610 8656 6437
 use sky130_fd_pr__nfet_01v8_AKSJZW  sky130_fd_pr__nfet_01v8_AKSJZW_0
