@@ -175,4 +175,4 @@ C {devices/ipin.sym} 200 -580 0 0 {name=p19 lab=d_clk_grp_1_ctrl_0}
 C {devices/ipin.sym} 200 -560 0 0 {name=p20 lab=d_clk_grp_1_ctrl_1}
 C {devices/ipin.sym} 200 -540 0 0 {name=p21 lab=d_clk_grp_2_ctrl_0}
 C {devices/ipin.sym} 200 -520 0 0 {name=p22 lab=d_clk_grp_2_ctrl_1}
-C {sky130_stdcells/clkinv_4.sym} 620 -60 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/clkinv_16.sym} 620 -60 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
