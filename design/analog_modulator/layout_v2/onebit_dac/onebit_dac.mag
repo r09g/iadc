@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654720150
+timestamp 1654728500
 << locali >>
 rect -6 1174 1554 1238
 rect -6 -86 58 1174
@@ -122,11 +122,11 @@ rect 682 -1040 734 -1030
 rect 874 -978 926 -706
 rect 874 -1040 926 -1030
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654720150
+timestamp 1654728500
 transform 1 0 216 0 1 51
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654720150
+timestamp 1654728500
 transform 1 0 210 0 1 -1101
 box -53 -49 1241 1063
 << labels >>

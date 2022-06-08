@@ -53,5 +53,5 @@ unset MGC_DESIGN_NAME
 unset MGC_PORT_LIST
 unset FLAT
 
-quit
+# quit
 

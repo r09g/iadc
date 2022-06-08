@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654717932
+timestamp 1654727055
 << nwell >>
 rect 7153 18323 8447 18973
 rect 20083 18323 21377 18973
@@ -40474,110 +40474,6 @@ flabel metal3 -153 2588 -153 2588 1 FreeSans 800 0 0 0 cm
 port 10 n
 flabel locali 6730 20089 6730 20089 1 FreeSans 800 0 0 0 VDD
 port 11 n power bidirectional
-flabel locali 11 93 11 93 1 FreeSans 800 0 0 0 VSS
-port 12 n power bidirectional
-flabel metal1 5767 14028 5767 14028 1 FreeSans 400 0 0 0 sc_cmfb_0/op
-flabel metal1 6379 14027 6379 14027 1 FreeSans 400 0 0 0 sc_cmfb_0/on
-flabel metal1 6839 14030 6839 14030 1 FreeSans 400 0 0 0 sc_cmfb_0/cmc
-flabel metal1 21971 13954 21971 13954 1 FreeSans 400 0 0 0 sc_cmfb_0/cm
-flabel metal1 22473 13957 22473 13957 1 FreeSans 400 0 0 0 sc_cmfb_0/bias_a
-flabel locali 9169 20082 9169 20082 1 FreeSans 400 0 0 0 sc_cmfb_0/VDD
-flabel locali 9187 19124 9187 19124 1 FreeSans 400 0 0 0 sc_cmfb_0/VSS
-flabel metal4 7420 20585 7420 20585 1 FreeSans 400 0 0 0 sc_cmfb_0/p2_b
-flabel metal4 7418 20189 7418 20189 1 FreeSans 400 0 0 0 sc_cmfb_0/p2
-flabel metal4 7419 19782 7419 19782 1 FreeSans 400 0 0 0 sc_cmfb_0/p1_b
-flabel metal4 7418 19392 7418 19392 1 FreeSans 400 0 0 0 sc_cmfb_0/p1
-flabel locali 7206 8912 7206 8912 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/VSS
-flabel locali 7206 9920 7206 9920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/VDD
-flabel metal1 8428 9320 8428 9320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/in
-flabel metal1 7320 9322 7320 9322 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/out
-flabel locali 8306 9008 8306 9008 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/en
-flabel locali 8306 9820 8306 9820 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_11/en_b
-flabel locali 7206 10712 7206 10712 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/VSS
-flabel locali 7206 11720 7206 11720 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/VDD
-flabel metal1 8428 11120 8428 11120 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/in
-flabel metal1 7320 11122 7320 11122 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/out
-flabel locali 8306 10808 8306 10808 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/en
-flabel locali 8306 11620 8306 11620 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_10/en_b
-flabel locali 7206 12512 7206 12512 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/VSS
-flabel locali 7206 13520 7206 13520 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/VDD
-flabel metal1 8428 12920 8428 12920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/in
-flabel metal1 7320 12922 7320 12922 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/out
-flabel locali 8306 12608 8306 12608 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/en
-flabel locali 8306 13420 8306 13420 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_9/en_b
-flabel locali 7206 14312 7206 14312 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/VSS
-flabel locali 7206 15320 7206 15320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/VDD
-flabel metal1 8428 14720 8428 14720 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/in
-flabel metal1 7320 14722 7320 14722 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/out
-flabel locali 8306 14408 8306 14408 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/en
-flabel locali 8306 15220 8306 15220 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_8/en_b
-flabel locali 7206 16112 7206 16112 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/VSS
-flabel locali 7206 17120 7206 17120 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/VDD
-flabel metal1 8428 16520 8428 16520 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/in
-flabel metal1 7320 16522 7320 16522 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/out
-flabel locali 8306 16208 8306 16208 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/en
-flabel locali 8306 17020 8306 17020 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_7/en_b
-flabel locali 7206 17912 7206 17912 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/VSS
-flabel locali 7206 18920 7206 18920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/VDD
-flabel metal1 8428 18320 8428 18320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/in
-flabel metal1 7320 18322 7320 18322 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/out
-flabel locali 8306 18008 8306 18008 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/en
-flabel locali 8306 18820 8306 18820 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_6/en_b
-flabel locali 20136 17912 20136 17912 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/VSS
-flabel locali 20136 18920 20136 18920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/VDD
-flabel metal1 21358 18320 21358 18320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/in
-flabel metal1 20250 18322 20250 18322 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/out
-flabel locali 21236 18008 21236 18008 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/en
-flabel locali 21236 18820 21236 18820 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_5/en_b
-flabel locali 20136 16112 20136 16112 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/VSS
-flabel locali 20136 17120 20136 17120 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/VDD
-flabel metal1 21358 16520 21358 16520 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/in
-flabel metal1 20250 16522 20250 16522 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/out
-flabel locali 21236 16208 21236 16208 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/en
-flabel locali 21236 17020 21236 17020 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_4/en_b
-flabel locali 20136 14312 20136 14312 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/VSS
-flabel locali 20136 15320 20136 15320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/VDD
-flabel metal1 21358 14720 21358 14720 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/in
-flabel metal1 20250 14722 20250 14722 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/out
-flabel locali 21236 14408 21236 14408 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/en
-flabel locali 21236 15220 21236 15220 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_3/en_b
-flabel locali 20136 8912 20136 8912 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/VSS
-flabel locali 20136 9920 20136 9920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/VDD
-flabel metal1 21358 9320 21358 9320 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/in
-flabel metal1 20250 9322 20250 9322 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/out
-flabel locali 21236 9008 21236 9008 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/en
-flabel locali 21236 9820 21236 9820 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_2/en_b
-flabel locali 20136 12512 20136 12512 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/VSS
-flabel locali 20136 13520 20136 13520 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/VDD
-flabel metal1 21358 12920 21358 12920 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/in
-flabel metal1 20250 12922 20250 12922 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/out
-flabel locali 21236 12608 21236 12608 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/en
-flabel locali 21236 13420 21236 13420 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_1/en_b
-flabel locali 20136 10712 20136 10712 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/VSS
-flabel locali 20136 11720 20136 11720 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/VDD
-flabel metal1 21358 11120 21358 11120 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/in
-flabel metal1 20250 11122 20250 11122 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/out
-flabel locali 21236 10808 21236 10808 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/en
-flabel locali 21236 11620 21236 11620 1 FreeSans 400 0 0 0 sc_cmfb_0/transmission_gate_0/en_b
-flabel metal1 714 3718 714 3718 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/cmc
-flabel metal1 4751 5099 4751 5099 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/ip
-flabel metal1 2965 5094 2965 5094 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/in
-flabel metal1 14888 2933 14888 2933 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_e
-flabel metal1 21565 1108 21565 1108 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/i_bias
-flabel metal1 22056 80 22056 80 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/VSS
-flabel metal1 21868 6983 21868 6983 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/VDD
-flabel metal1 5374 348 5374 348 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_a
-flabel metal2 11509 4000 11509 4000 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/on
-flabel metal2 8818 4007 8818 4007 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/op
-flabel metal2 20392 5317 20392 5317 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_b
-flabel space 13687 4065 13687 4065 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_d
-flabel metal2 20456 2783 20456 2783 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_c
-flabel metal2 20358 5383 20358 5383 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/bias_b
-flabel metal3 14892 3288 14892 3288 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/bias_e
-flabel metal2 20451 2884 20451 2884 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/bias_c
-flabel metal1 21684 1146 21684 1146 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/i_bias
-flabel metal1 13352 4057 13352 4057 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/bias_d
-flabel metal1 13085 361 13085 361 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/bias_a
-flabel locali 21942 86 21942 86 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/VSS
-flabel locali 22031 6978 22031 6978 1 FreeSans 800 0 0 0 ota_v2_without_cmfb_0/bias_circuit_0/VDD
+flabel locali 23610 146 23610 146 1 FreeSans 800 0 0 0 VSS
+port 12 n ground bidirectional
 << end >>

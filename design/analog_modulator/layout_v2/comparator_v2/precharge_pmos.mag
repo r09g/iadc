@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654720150
+timestamp 1654728500
 << error_p >>
 rect 230 448 288 454
 rect 422 448 480 454
@@ -52,7 +52,7 @@ rect 1286 80 1344 86
 rect 1478 80 1536 86
 rect 1670 80 1728 86
 use sky130_fd_pr__pfet_01v8_VCG74W  sky130_fd_pr__pfet_01v8_VCG74W_0
-timestamp 1654720150
+timestamp 1654728500
 transform 1 0 979 0 1 267
 box -1031 -319 1031 319
 << end >>
