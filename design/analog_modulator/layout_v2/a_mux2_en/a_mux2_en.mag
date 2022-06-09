@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654728500
+timestamp 1654734873
 << nwell >>
 rect -2386 -1234 -1092 -1157
 << pwell >>
@@ -204,35 +204,35 @@ rect 149 -1579 305 -1527
 rect 149 -1589 201 -1579
 rect -33 -2386 261 -2334
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -459 0 1 -1740
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -459 0 -1 -652
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -551 0 1 -1740
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -459 0 -1 -652
 box -38 -48 130 592
 use switch_5t_mux2  switch_5t_mux2_0
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -1396
-box 92 4 2995 1118
+box 92 4 2977 1118
 use switch_5t_mux2  switch_5t_mux2_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -62
-box 92 4 2995 1118
+box 92 4 2977 1118
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -2333 0 -1 -117
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -2333 0 1 -2277
 box -53 -49 1241 1063
 << labels >>

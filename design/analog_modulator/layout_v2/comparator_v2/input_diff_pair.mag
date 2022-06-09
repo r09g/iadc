@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654728500
+timestamp 1654734873
 << error_s >>
 rect 257 359 315 365
 rect 677 359 735 365
@@ -964,35 +964,35 @@ rect 7607 -3071 7665 -3065
 rect 8027 -3071 8085 -3065
 rect 8447 -3071 8505 -3065
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_0
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 187
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -253
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_2
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -693
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -1133
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_4
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -1573
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_5
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -2013
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_6
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -2453
 box -4382 -188 4382 188
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_7
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 4381 0 1 -2893
 box -4382 -188 4382 188
 << end >>

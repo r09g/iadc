@@ -126,10 +126,10 @@ macro Control_XK_Up            "stretch u 1g"
 macro Control_XK_Down          "stretch d 1g"
 
 # stretch 0.25um with arrows
-macro Control_Shift_XK_Left  "stretch l 5l"
-macro Control_Shift_XK_Right "stretch r 5l"
-macro Control_Shift_XK_Up    "stretch u 5l"
-macro Control_Shift_XK_Down  "stretch d 5l"
+macro Control_Shift_XK_Left  "stretch l 50l"
+macro Control_Shift_XK_Right "stretch r 50l"
+macro Control_Shift_XK_Up    "stretch u 50l"
+macro Control_Shift_XK_Down  "stretch d 50l"
 
 # shift mouse wheel bindings for right-left shift
 macro Shift_XK_Pointer_Button4 "scroll r .05 w"  

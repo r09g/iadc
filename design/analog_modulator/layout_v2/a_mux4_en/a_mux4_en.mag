@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654728500
+timestamp 1654734873
 << nwell >>
 rect -1129 -2208 -869 -2205
 rect -599 -2208 -428 -2205
@@ -675,127 +675,127 @@ rect -500 -5141 245 -5089
 rect -1587 -5148 -1535 -5143
 rect -2163 -5159 -2111 -5149
 use sky130_fd_sc_hd__fill_2  sky130_fd_sc_hd__fill_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -704 0 -1 -2653
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_2  sky130_fd_sc_hd__fill_2_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -888 0 1 -2653
 box -38 -48 222 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -1164 0 -1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -1164 0 1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 1 -1565
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 -1 -477
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_5
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 -1 -3741
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_6
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 1 -4829
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_8
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -980 0 -1 -477
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 1 -3741
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 -1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_2
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 1 -2653
 box -38 -48 314 592
 use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -612 0 -1 -1565
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -1164 0 -1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -1256 0 1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -612 0 -1 -1565
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -704 0 1 -3741
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -704 0 1 -1565
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -612 0 -1 -477
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -612 0 -1 -3741
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -704 0 1 -4829
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
-timestamp 1654728500
+timestamp 1654734873
 transform -1 0 -612 0 -1 -2653
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -704 0 1 -2653
 box -38 -48 130 592
 use switch_5t_mux4_flat  switch_5t_mux4_0
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -62
 box 92 4 2977 1118
 use switch_5t_mux4_flat  switch_5t_mux4_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -1396
 box 92 4 2977 1118
 use switch_5t_mux4_flat  switch_5t_mux4_2
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -2774
 box 92 4 2977 1118
 use switch_5t_mux4_flat  switch_5t_mux4_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 123 0 -1 -4152
 box 92 4 2977 1118
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -3213 0 1 -1129
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -3213 0 1 -2463
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_2
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -3213 0 1 -3841
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_3
-timestamp 1654728500
+timestamp 1654734873
 transform 1 0 -3213 0 1 -5219
 box -53 -49 1241 1063
 << labels >>
