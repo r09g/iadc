@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654752884
+timestamp 1654894248
 << nwell >>
 rect -38 261 774 582
 << pwell >>
@@ -162,5 +162,8 @@ port 4 nsew
 rlabel comment s 0 0 0 0 4 decap_8
 << properties >>
 string FIXED_BBOX 0 0 736 544
-string path 0.000 0.000 3.680 0.000 
+string GDS_END 488602
+string GDS_FILE digital_filter_3a.gds
+string GDS_START 485132
+string path 0.000 0.000 18.400 0.000 
 << end >>

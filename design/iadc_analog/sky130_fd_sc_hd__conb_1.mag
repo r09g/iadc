@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654752884
+timestamp 1654894248
 << nwell >>
 rect -38 261 314 582
 << pwell >>
@@ -121,5 +121,8 @@ flabel comment s 186 258 186 258 0 FreeSans 200 90 0 0 no_jumper_check
 flabel comment s 83 258 83 258 0 FreeSans 200 90 0 0 no_jumper_check
 << properties >>
 string FIXED_BBOX 0 0 276 544
-string path 0.000 2.720 1.380 2.720 
+string GDS_END 461976
+string GDS_FILE digital_filter_3a.gds
+string GDS_START 458672
+string path 0.000 13.600 6.900 13.600 
 << end >>

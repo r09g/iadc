@@ -1,0 +1,1 @@
+klayout -b -rd input=../../gds/user_analog_project_wrapper.gds -rd feol=1 -rd beol=1 -rd offgrid=1 -rd seal=1 -rd floating_met=1 -rd report=sky130_drc_report.txt -r drc_sky130.drc

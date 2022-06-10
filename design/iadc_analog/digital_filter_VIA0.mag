@@ -1,4 +1,20 @@
 magic
 tech sky130A
-timestamp 1654752884
+timestamp 1654894248
+<< metal4 >>
+rect -155 139 155 155
+rect -155 -139 -139 139
+rect 139 -139 155 139
+rect -155 -155 155 -139
+<< via4 >>
+rect -139 -139 139 139
+<< metal5 >>
+rect -155 139 155 155
+rect -155 -139 -139 139
+rect 139 -139 155 139
+rect -155 -155 155 -139
+<< properties >>
+string GDS_END 505838
+string GDS_FILE digital_filter_3a.gds
+string GDS_START 505450
 << end >>

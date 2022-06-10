@@ -1,0 +1,9 @@
+name: rtl
+
+outputs:
+  - design.v
+  - design.vcs.v
+
+commands:
+  - cat digital_filter.v user_proj_example.v > outputs/design.v 
+  - cat digital_filter.v user_proj_example.v > outputs/design.vcs.v 

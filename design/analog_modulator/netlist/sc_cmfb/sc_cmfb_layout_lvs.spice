@@ -52,57 +52,57 @@ Xunit_cap_mim_m3m4_2 op cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_30 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xtransmission_gate_6 transmission_gate_6/in op p2 p2_b VDD VSS transmission_gate
+Xunit_cap_mim_m3m4_3 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_20 unit_cap_mim_m3m4_20/c1_n530_n480# unit_cap_mim_m3m4_20/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_3 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_31 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xtransmission_gate_7 transmission_gate_7/in on p2 p2_b VDD VSS transmission_gate
+Xunit_cap_mim_m3m4_4 on cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_10 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_21 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_21/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_4 on cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_32 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_32/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_12 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_11 on cmc unit_cap_mim_m3m4
 Xtransmission_gate_8 transmission_gate_8/in cmc p2 p2_b VDD VSS transmission_gate
 Xunit_cap_mim_m3m4_5 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_11 on cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_12 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_22 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_22/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_23 unit_cap_mim_m3m4_23/c1_n530_n480# unit_cap_mim_m3m4_23/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_34 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_34/m3_n630_n580#
-+ unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_33 unit_cap_mim_m3m4_33/c1_n530_n480# unit_cap_mim_m3m4_33/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_24 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3_n630_n580#
+Xunit_cap_mim_m3m4_34 unit_cap_mim_m3m4_34/c1_n530_n480# unit_cap_mim_m3m4_34/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_13 on cmc unit_cap_mim_m3m4
+Xtransmission_gate_9 transmission_gate_9/in cmc p1 p1_b VDD VSS transmission_gate
 Xunit_cap_mim_m3m4_6 transmission_gate_3/out transmission_gate_9/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_7 op cmc unit_cap_mim_m3m4
-Xtransmission_gate_9 transmission_gate_9/in cmc p1 p1_b VDD VSS transmission_gate
+Xunit_cap_mim_m3m4_13 on cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_24 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3_n630_n580#
++ unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_35 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_35/m3_n630_n580#
 + unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_8 op cmc unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_14 op cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_25 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_25/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_14 op cmc unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_8 op cmc unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_26 unit_cap_mim_m3m4_26/c1_n530_n480# unit_cap_mim_m3m4_26/m3_n630_n580#
-+ unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_15 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_9 transmission_gate_3/out transmission_gate_9/in unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_27 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_27/m3_n630_n580#
+Xunit_cap_mim_m3m4_15 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_26 unit_cap_mim_m3m4_26/c1_n530_n480# unit_cap_mim_m3m4_26/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_16 unit_cap_mim_m3m4_16/c1_n530_n480# unit_cap_mim_m3m4_16/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_28 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_28/m3_n630_n580#
+Xunit_cap_mim_m3m4_27 unit_cap_mim_m3m4_27/c1_n530_n480# unit_cap_mim_m3m4_27/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_17 unit_cap_mim_m3m4_17/c1_n530_n480# unit_cap_mim_m3m4_17/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xunit_cap_mim_m3m4_29 unit_cap_mim_m3m4_29/c1_n530_n480# unit_cap_mim_m3m4_29/m3_n630_n580#
+Xunit_cap_mim_m3m4_28 unit_cap_mim_m3m4_28/c1_n530_n480# unit_cap_mim_m3m4_28/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_18 unit_cap_mim_m3m4_18/c1_n530_n480# unit_cap_mim_m3m4_18/m3_n630_n580#
++ unit_cap_mim_m3m4
+Xunit_cap_mim_m3m4_29 unit_cap_mim_m3m4_29/c1_n530_n480# unit_cap_mim_m3m4_29/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_19 unit_cap_mim_m3m4_19/c1_n530_n480# unit_cap_mim_m3m4_19/m3_n630_n580#
 + unit_cap_mim_m3m4

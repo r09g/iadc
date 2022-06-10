@@ -218,17 +218,17 @@ X2 a_149_n140# a_29_n195# a_n29_n140# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u 
 X3 a_n207_n140# a_n385_n140# a_n385_n140# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
 .ends
 
-.subckt sky130_fd_pr__pfet_01v8_lvt_SAWXCM a_n207_n140# a_29_n204# a_327_n140# a_n29_n140#
-+ a_149_n140# a_n505_n204# a_563_n204# a_n741_n140# a_n327_n204# a_385_n204# a_n563_n140#
-+ a_n149_n204# w_n777_n240# a_n385_n140# a_207_n204# a_505_n140#
-X0 a_505_n140# a_385_n204# a_327_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
-X1 a_n385_n140# a_n505_n204# a_n563_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
-X2 a_327_n140# a_207_n204# a_149_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
-X3 a_149_n140# a_29_n204# a_n29_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
-X4 a_n207_n140# a_n327_n204# a_n385_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=0p ps=0u w=1.4e+06u l=600000u
-X5 a_563_n204# a_563_n204# a_505_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=0p ps=0u w=1.4e+06u l=600000u
-X6 a_n29_n140# a_n149_n204# a_n207_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.4e+06u l=600000u
-X7 a_n563_n140# a_n741_n140# a_n741_n140# w_n777_n240# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
+.subckt sky130_fd_pr__pfet_01v8_lvt_SAWXCM a_n207_n140# a_29_n205# a_327_n140# a_n29_n140#
++ a_149_n140# a_n505_n205# a_563_n205# a_n741_n140# a_n327_n205# a_n563_n140# a_385_n205#
++ w_n777_n241# a_n149_n205# a_n385_n140# a_207_n205# a_505_n140#
+X0 a_505_n140# a_385_n205# a_327_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
+X1 a_n385_n140# a_n505_n205# a_n563_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
+X2 a_327_n140# a_207_n205# a_149_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
+X3 a_149_n140# a_29_n205# a_n29_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
+X4 a_n207_n140# a_n327_n205# a_n385_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=0p ps=0u w=1.4e+06u l=600000u
+X5 a_563_n205# a_563_n205# a_505_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=4.06e+11p pd=3.38e+06u as=0p ps=0u w=1.4e+06u l=600000u
+X6 a_n29_n140# a_n149_n205# a_n207_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.4e+06u l=600000u
+X7 a_n563_n140# a_n741_n140# a_n741_n140# w_n777_n241# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.06e+11p ps=3.38e+06u w=1.4e+06u l=600000u
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_lvt_28TRYY a_385_553# a_n1097_109# a_n149_55# a_919_n445#
@@ -390,11 +390,11 @@ Xsky130_fd_pr__pfet_01v8_JJWXCM_2 bias_e bias_c m1_5643_5997# m1_5643_5997# bias
 Xsky130_fd_pr__nfet_01v8_LJREPQ_0 m1_3551_3596# bias_d VSS bias_a bias_d m1_3551_3596#
 + VSS VSS sky130_fd_pr__nfet_01v8_LJREPQ
 Xsky130_fd_pr__pfet_01v8_lvt_SAWXCM_0 m1_1243_5997# bias_b VDD VDD m1_1243_5997# bias_b
-+ VDD VDD bias_b bias_b m1_1243_5997# bias_b VDD VDD bias_b m1_1243_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
++ VDD VDD bias_b m1_1243_5997# bias_b VDD bias_b VDD bias_b m1_1243_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
 Xsky130_fd_pr__pfet_01v8_lvt_SAWXCM_1 m1_3443_5997# bias_b VDD VDD m1_3443_5997# bias_b
-+ VDD VDD bias_b bias_b m1_3443_5997# bias_b VDD VDD bias_b m1_3443_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
++ VDD VDD bias_b m1_3443_5997# bias_b VDD bias_b VDD bias_b m1_3443_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
 Xsky130_fd_pr__pfet_01v8_lvt_SAWXCM_2 m1_5643_5997# bias_b VDD VDD m1_5643_5997# bias_b
-+ VDD VDD bias_b bias_b m1_5643_5997# bias_b VDD VDD bias_b m1_5643_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
++ VDD VDD bias_b m1_5643_5997# bias_b VDD bias_b VDD bias_b m1_5643_5997# sky130_fd_pr__pfet_01v8_lvt_SAWXCM
 Xsky130_fd_pr__nfet_01v8_lvt_28TRYY_0 bias_b bias_c bias_b bias_b bias_b bias_c bias_b
 + bias_b VSS bias_c bias_b bias_b bias_b bias_b bias_b bias_b bias_b bias_c bias_b
 + bias_b bias_b bias_c bias_c bias_b bias_b bias_b bias_b bias_b bias_b bias_c bias_b
@@ -442,26 +442,22 @@ X10 a_n919_n140# a_n1097_n140# a_n1097_n140# w_n1133_n241# sky130_fd_pr__pfet_01
 X11 a_505_n140# a_385_n205# a_327_n140# w_n1133_n241# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.4e+06u l=600000u
 .ends
 
-.subckt ota_v2_without_cmfb in bias_b bias_c bias_e op on cmc i_bias VDD VSS bias_a
-+ ip
+.subckt ota_v2_without_cmfb in bias_b bias_c bias_e op on cmc i_bias VDD bias_d VSS
++ bias_a ip
 Xsky130_fd_pr__pfet_01v8_lvt_YVTR7C_0 VDD bias_b bias_b li_8436_5651# bias_b VDD bias_b
 + li_8436_5651# VDD li_8436_5651# VDD bias_b li_8436_5651# bias_b VDD VDD bias_b bias_b
 + VDD bias_b li_8436_5651# VDD bias_b li_8436_5651# li_8436_5651# bias_b VDD bias_b
 + sky130_fd_pr__pfet_01v8_lvt_YVTR7C
-Xsky130_fd_pr__nfet_01v8_AKSJZW_8 bias_circuit_0/bias_d li_8434_570# bias_circuit_0/bias_d
-+ on VSS bias_circuit_0/bias_d on li_8434_570# on bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on bias_circuit_0/bias_d li_8434_570# VSS li_8434_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on li_8434_570# bias_circuit_0/bias_d on on bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_8 bias_d li_8434_570# bias_d on VSS bias_d on li_8434_570#
++ on bias_d bias_d bias_d on bias_d li_8434_570# VSS li_8434_570# bias_d bias_d on
++ li_8434_570# bias_d on on bias_d bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
 Xsky130_fd_pr__pfet_01v8_lvt_YVTR7C_1 VDD bias_b bias_b li_11122_5650# bias_b VDD
 + bias_b li_11122_5650# VDD li_11122_5650# VDD bias_b li_11122_5650# bias_b VDD VDD
 + bias_b bias_b VDD bias_b li_11122_5650# VDD bias_b li_11122_5650# li_11122_5650#
 + bias_b VDD bias_b sky130_fd_pr__pfet_01v8_lvt_YVTR7C
-Xsky130_fd_pr__nfet_01v8_AKSJZW_9 bias_circuit_0/bias_d li_11121_570# bias_circuit_0/bias_d
-+ op VSS bias_circuit_0/bias_d op li_11121_570# op bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op bias_circuit_0/bias_d li_11121_570# VSS li_11121_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op li_11121_570# bias_circuit_0/bias_d op op bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_9 bias_d li_11121_570# bias_d op VSS bias_d op li_11121_570#
++ op bias_d bias_d bias_d op bias_d li_11121_570# VSS li_11121_570# bias_d bias_d
++ op li_11121_570# bias_d op op bias_d bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
 Xsky130_fd_pr__pfet_01v8_lvt_YVTR7C_2 VDD bias_b bias_b li_8436_5651# bias_b VDD bias_b
 + li_8436_5651# VDD li_8436_5651# VDD bias_b li_8436_5651# bias_b VDD VDD bias_b bias_b
 + VDD bias_b li_8436_5651# VDD bias_b li_8436_5651# li_8436_5651# bias_b VDD bias_b
@@ -476,20 +472,16 @@ Xsky130_fd_pr__nfet_01v8_lvt_K7HVMB_0 VSS li_8436_5651# li_14138_570# ip li_8436
 Xsky130_fd_pr__nfet_01v8_lvt_K7HVMB_1 VSS li_11122_5650# li_14138_570# in li_11122_5650#
 + li_11122_5650# in li_14138_570# li_11122_5650# li_14138_570# li_14138_570# li_11122_5650#
 + li_11122_5650# in in li_14138_570# in li_14138_570# in VSS VSS sky130_fd_pr__nfet_01v8_lvt_K7HVMB
-Xsky130_fd_pr__nfet_01v8_AKSJZW_10 bias_circuit_0/bias_d li_11121_570# bias_circuit_0/bias_d
-+ op VSS bias_circuit_0/bias_d op li_11121_570# op bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op bias_circuit_0/bias_d li_11121_570# VSS li_11121_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op li_11121_570# bias_circuit_0/bias_d op op bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_10 bias_d li_11121_570# bias_d op VSS bias_d op li_11121_570#
++ op bias_d bias_d bias_d op bias_d li_11121_570# VSS li_11121_570# bias_d bias_d
++ op li_11121_570# bias_d op op bias_d bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
 Xsky130_fd_pr__nfet_01v8_S6RQQZ_0 bias_a VSS bias_a VSS bias_a li_14138_570# VSS bias_a
 + li_14138_570# bias_a VSS li_14138_570# bias_a bias_a bias_a li_14138_570# li_14138_570#
 + bias_a VSS bias_a bias_a VSS bias_a VSS li_14138_570# VSS bias_a VSS bias_a li_14138_570#
 + li_14138_570# bias_a bias_a VSS li_14138_570# VSS sky130_fd_pr__nfet_01v8_S6RQQZ
-Xsky130_fd_pr__nfet_01v8_AKSJZW_11 bias_circuit_0/bias_d li_11121_570# bias_circuit_0/bias_d
-+ op VSS bias_circuit_0/bias_d op li_11121_570# op bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op bias_circuit_0/bias_d li_11121_570# VSS li_11121_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d op li_11121_570# bias_circuit_0/bias_d op op bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_11 bias_d li_11121_570# bias_d op VSS bias_d op li_11121_570#
++ op bias_d bias_d bias_d op bias_d li_11121_570# VSS li_11121_570# bias_d bias_d
++ op li_11121_570# bias_d op op bias_d bias_d li_11121_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
 Xsky130_fd_pr__nfet_01v8_S6RQQZ_1 cmc VSS cmc VSS cmc li_14138_570# VSS cmc li_14138_570#
 + cmc VSS li_14138_570# cmc cmc cmc li_14138_570# li_14138_570# cmc VSS cmc cmc VSS
 + cmc VSS li_14138_570# VSS cmc VSS cmc li_14138_570# li_14138_570# cmc cmc VSS li_14138_570#
@@ -534,7 +526,7 @@ Xsky130_fd_pr__nfet_01v8_S6RQQZ_11 bias_a VSS bias_a VSS bias_a li_14138_570# VS
 + bias_a li_14138_570# bias_a VSS li_14138_570# bias_a bias_a bias_a li_14138_570#
 + li_14138_570# bias_a VSS bias_a bias_a VSS bias_a VSS li_14138_570# VSS bias_a VSS
 + bias_a li_14138_570# li_14138_570# bias_a bias_a VSS li_14138_570# VSS sky130_fd_pr__nfet_01v8_S6RQQZ
-Xbias_circuit_0 bias_b bias_c bias_circuit_0/bias_d bias_e i_bias VDD VSS bias_a bias_circuit
+Xbias_circuit_0 bias_b bias_c bias_d bias_e i_bias VDD VSS bias_a bias_circuit
 Xsky130_fd_pr__pfet_01v8_YVTMSC_0 on bias_c li_8436_5651# bias_c bias_c li_8436_5651#
 + on VDD bias_c li_8436_5651# bias_c on VDD bias_c on bias_c li_8436_5651# VDD on
 + bias_c li_8436_5651# bias_c on bias_c sky130_fd_pr__pfet_01v8_YVTMSC
@@ -565,16 +557,12 @@ Xsky130_fd_pr__nfet_01v8_AKSJZW_4 bias_a VSS bias_a li_11121_570# VSS bias_a li_
 Xsky130_fd_pr__nfet_01v8_AKSJZW_5 bias_a VSS bias_a li_11121_570# VSS bias_a li_11121_570#
 + VSS li_11121_570# bias_a bias_a bias_a li_11121_570# bias_a VSS VSS VSS bias_a bias_a
 + li_11121_570# VSS bias_a li_11121_570# li_11121_570# bias_a bias_a VSS VSS sky130_fd_pr__nfet_01v8_AKSJZW
-Xsky130_fd_pr__nfet_01v8_AKSJZW_6 bias_circuit_0/bias_d li_8434_570# bias_circuit_0/bias_d
-+ on VSS bias_circuit_0/bias_d on li_8434_570# on bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on bias_circuit_0/bias_d li_8434_570# VSS li_8434_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on li_8434_570# bias_circuit_0/bias_d on on bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
-Xsky130_fd_pr__nfet_01v8_AKSJZW_7 bias_circuit_0/bias_d li_8434_570# bias_circuit_0/bias_d
-+ on VSS bias_circuit_0/bias_d on li_8434_570# on bias_circuit_0/bias_d bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on bias_circuit_0/bias_d li_8434_570# VSS li_8434_570# bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d on li_8434_570# bias_circuit_0/bias_d on on bias_circuit_0/bias_d
-+ bias_circuit_0/bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_6 bias_d li_8434_570# bias_d on VSS bias_d on li_8434_570#
++ on bias_d bias_d bias_d on bias_d li_8434_570# VSS li_8434_570# bias_d bias_d on
++ li_8434_570# bias_d on on bias_d bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
+Xsky130_fd_pr__nfet_01v8_AKSJZW_7 bias_d li_8434_570# bias_d on VSS bias_d on li_8434_570#
++ on bias_d bias_d bias_d on bias_d li_8434_570# VSS li_8434_570# bias_d bias_d on
++ li_8434_570# bias_d on on bias_d bias_d li_8434_570# VSS sky130_fd_pr__nfet_01v8_AKSJZW
 .ends
 
 .subckt pmos_tgate a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136# a_64_n136# a_160_n136#
@@ -614,7 +602,7 @@ Xnmos_tgate_0 out in in out in in VSS out in out out en out nmos_tgate
 X0 c1_n530_n480# m3_n630_n580# sky130_fd_pr__cap_mim_m3_1 l=4.8e+06u w=4.8e+06u
 .ends
 
-.subckt sc_cmfb cm op cmc p2_b p2 p1_b p1 on bias_a VDD VSS
+.subckt sc_cmfb cm op cmc p2_b p2 p1_b p1 on bias_a VSS VDD
 Xtransmission_gate_10 transmission_gate_3/out on p1 p1_b VDD VSS transmission_gate
 Xtransmission_gate_11 transmission_gate_4/out op p1 p1_b VDD VSS transmission_gate
 Xtransmission_gate_0 cm transmission_gate_7/in p1 p1_b VDD VSS transmission_gate
@@ -687,7 +675,8 @@ Xunit_cap_mim_m3m4_19 unit_cap_mim_m3m4_19/c1_n530_n480# unit_cap_mim_m3m4_19/m3
 
 .subckt ota_v2 ip in p1 p1_b p2 p2_b op on i_bias cm VDD VSS
 Xota_v2_without_cmfb_0 in ota_v2_without_cmfb_0/bias_b ota_v2_without_cmfb_0/bias_c
-+ cm op on sc_cmfb_0/cmc i_bias VDD VSS sc_cmfb_0/bias_a ip ota_v2_without_cmfb
-Xsc_cmfb_0 cm op sc_cmfb_0/cmc p2_b p2 p1_b p1 on sc_cmfb_0/bias_a VDD VSS sc_cmfb
++ cm op on sc_cmfb_0/cmc i_bias VDD ota_v2_without_cmfb_0/bias_d VSS sc_cmfb_0/bias_a
++ ip ota_v2_without_cmfb
+Xsc_cmfb_0 cm op sc_cmfb_0/cmc p2_b p2 p1_b p1 on sc_cmfb_0/bias_a VSS VDD sc_cmfb
 .ends
 
