@@ -70,7 +70,6 @@ N 1090 -140 1090 -50 { lab=Ad_b}
 N 1150 -140 1150 -50 { lab=Ad}
 N 1210 -140 1210 -50 { lab=A_b}
 N 1270 -140 1270 -50 { lab=A}
-C {clock.sym} 200 -330 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {devices/gnd.sym} 240 -560 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 160 -590 0 0 {name=V1 value=0}
 C {devices/vsource.sym} 240 -590 0 0 {name=V2 value=1.8}
@@ -208,3 +207,4 @@ C {devices/lab_wire.sym} 910 -100 0 1 {name=l50 sig_type=std_logic lab=Bd}
 C {devices/lab_wire.sym} 1150 -100 0 1 {name=l51 sig_type=std_logic lab=Ad}
 C {devices/lab_wire.sym} 1030 -100 0 1 {name=l52 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 1270 -100 0 1 {name=l53 sig_type=std_logic lab=A}
+C {clock_v2.sym} 200 -330 0 0 {name=x1 VDD=VDD VSS=VSS}

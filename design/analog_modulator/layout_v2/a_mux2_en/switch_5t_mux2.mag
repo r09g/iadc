@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654898484
+timestamp 1655456512
 << nwell >>
 rect 1443 906 1802 1118
 rect 1427 468 1802 906
@@ -129,15 +129,15 @@ rect 1877 131 2785 178
 rect 1825 116 1877 126
 rect 2785 116 2837 126
 use nmos_PDN_mux2  nmos_PDN_mux2_0
-timestamp 1654898484
+timestamp 1655456512
 transform 1 0 1553 0 1 312
 box -73 -116 73 98
 use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout_v2/transmission_gate
-timestamp 1654898484
+timestamp 1655456512
 transform 1 0 215 0 1 55
 box -53 -49 1241 1063
 use transmission_gate  transmission_gate_1
-timestamp 1654898484
+timestamp 1655456512
 transform 1 0 1736 0 1 55
 box -53 -49 1241 1063
 << labels >>

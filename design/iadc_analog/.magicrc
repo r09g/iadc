@@ -26,6 +26,7 @@ if {[catch {set PDK_ROOT [file nativename $env(PDK_ROOT)]}]} {
 
 # loading technology
 tech load $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech
+# tech load $PDK_ROOT/sky130A/libs.tech/magic/sky130A-GDS.tech
 # tech load $PDK_ROOT/sky130A/libs.tech/magic/closed_sky130A.tech
 
 # load device generator
