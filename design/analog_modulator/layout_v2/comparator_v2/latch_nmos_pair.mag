@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1655484843
+timestamp 1655495960
 << error_s >>
 rect 129 180 158 183
 rect 339 180 368 183
@@ -819,19 +819,19 @@ rect 3804 -655 3833 -652
 rect 4014 -655 4043 -652
 rect 4224 -655 4253 -652
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_0
-timestamp 1655484843
+timestamp 1655495960
 transform 1 0 2191 0 1 94
 box -2191 -94 2191 94
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_1
-timestamp 1655484843
+timestamp 1655495960
 transform 1 0 2191 0 1 -126
 box -2191 -94 2191 94
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_2
-timestamp 1655484843
+timestamp 1655495960
 transform 1 0 2191 0 1 -346
 box -2191 -94 2191 94
 use sky130_fd_pr__nfet_01v8_J3WY8C  sky130_fd_pr__nfet_01v8_J3WY8C_3
-timestamp 1655484843
+timestamp 1655495960
 transform 1 0 2191 0 1 -566
 box -2191 -94 2191 94
 << end >>

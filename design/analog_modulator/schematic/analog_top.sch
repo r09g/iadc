@@ -188,3 +188,5 @@ C {devices/lab_pin.sym} 490 -1720 0 0 {name=l108 sig_type=std_logic lab=d_probe_
 C {devices/lab_pin.sym} 490 -1760 0 0 {name=l109 sig_type=std_logic lab=d_probe_2}
 C {devices/lab_pin.sym} 490 -1800 0 0 {name=l110 sig_type=std_logic lab=d_probe_3
 }
+C {devices/iopin.sym} 190 -270 0 0 {name=p18 lab=VDD}
+C {devices/iopin.sym} 190 -250 0 0 {name=p23 lab=VSS}
