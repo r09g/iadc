@@ -2,9 +2,9 @@
 
 .include "../sky130_fd_sc_hd.spice"
 
-.subckt analog_top_v2 ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 debug op
-+ a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_probe_0 d_probe_1 d_probe_2 d_probe_3 d_clk_grp_1_ctrl_0
-+ d_clk_grp_1_ctrl_1 d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VDD VSS
+.subckt analog_top_v2 ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1
++ debug op a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1
++ d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VDD VSS d_probe d_probe_ctrl_0 d_probe_ctrl_1
 *.ipin ip
 *.ipin in
 *.ipin rst_n
@@ -19,14 +19,13 @@
 *.opin a_probe_2
 *.opin a_probe_3
 *.ipin clk
-*.opin d_probe_0
-*.opin d_probe_1
-*.opin d_probe_2
-*.opin d_probe_3
+*.opin d_probe
 *.ipin d_clk_grp_1_ctrl_0
 *.ipin d_clk_grp_1_ctrl_1
 *.ipin d_clk_grp_2_ctrl_0
 *.ipin d_clk_grp_2_ctrl_1
+*.ipin d_probe_ctrl_0
+*.ipin d_probe_ctrl_1
 x1 ip in A A_b Ad Ad_b B B_b Bd Bd_b p1 p1_b p1d p1d_b p2 p2_b p2d p2d_b rst_n rst_n_b i_bias_1
 + i_bias_2 op bias_a bias_b bias_c bias_d cm1 cmc op2 op1 on1 on2 VDD VSS modulator_w_test
 x2 a_mod_grp_ctrl_1 a_mod_grp_ctrl_0 debug cm1 bias_b cmc net1 a_probe_2 VDD VSS a_mux4_en
@@ -57,6 +56,10 @@ x25 net9 VSS VSS VDD VDD d_probe_2 sky130_fd_sc_hd__clkinv_16
 x26 net6 VSS VSS VDD VDD net10 sky130_fd_sc_hd__clkinv_4
 x27 net10 VSS VSS VDD VDD d_probe_3 sky130_fd_sc_hd__clkinv_16
 x7 rst_n VSS VSS VDD VDD rst_n_b sky130_fd_sc_hd__clkinv_16
+x28 d_probe_3 d_probe_2 d_probe_1 d_probe_0 d_probe_ctrl_0 d_probe_ctrl_1 VSS VSS VDD VDD net11
++ sky130_fd_sc_hd__mux4_1
+x29 net11 VSS VSS VDD VDD net12 sky130_fd_sc_hd__clkinv_4
+x30 net12 VSS VSS VDD VDD d_probe sky130_fd_sc_hd__clkinv_16
 .ends
 
 * expanding   symbol:  modulator_w_test.sym # of pins=33

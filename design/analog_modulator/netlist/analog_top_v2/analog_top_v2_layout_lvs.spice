@@ -1,54 +1,78 @@
 * NGSPICE file created from analog_top_v2.ext - technology: sky130A
 
-.subckt esd_cell_flat esd VDD VSS
-X0 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+13p pd=1.058e+08u as=1.595e+13p ps=1.1638e+08u w=5e+06u l=500000u
-X1 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=1.595e+13p pd=1.1638e+08u as=1.45e+13p ps=1.058e+08u w=5e+06u l=500000u
-X2 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X3 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X4 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X5 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X6 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X7 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X8 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X9 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X10 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X11 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X12 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X13 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X14 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X15 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X16 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X17 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X18 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X19 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X20 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X21 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X22 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X23 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X24 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X25 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X26 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X27 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X28 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X29 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X30 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X31 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X32 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X33 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X34 esd VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X35 VSS VSS esd VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X36 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X37 esd VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X38 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
-X39 VDD VDD esd VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+.subckt sky130_fd_pr__nfet_g5v0d10v5_BRTJC6 a_n345_n500# a_1135_n588# a_n603_n588#
++ a_n1393_n588# a_n1609_n500# a_661_n588# a_n1135_n500# a_n977_n500# a_1293_n588#
++ a_n761_n588# a_n503_n500# a_n1551_n588# a_129_n500# a_n1293_n500# a_287_n500# a_n661_n500#
++ a_1451_n588# a_n1451_n500# a_919_n500# a_445_n500# a_1077_n500# a_29_n588# a_n129_n588#
++ a_603_n500# a_187_n588# a_1235_n500# a_n287_n588# a_761_n500# a_819_n588# a_345_n588#
++ a_n1077_n588# a_n29_n500# a_1393_n500# a_n919_n588# a_n1743_n722# a_n187_n500# a_977_n588#
++ a_n445_n588# a_503_n588# a_n1235_n588# a_1551_n500# a_n819_n500#
+X0 a_n819_n500# a_n919_n588# a_n977_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X1 a_n661_n500# a_n761_n588# a_n819_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X2 a_919_n500# a_819_n588# a_761_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X3 a_n187_n500# a_n287_n588# a_n345_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X4 a_761_n500# a_661_n588# a_603_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X5 a_287_n500# a_187_n588# a_129_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X6 a_n1293_n500# a_n1393_n588# a_n1451_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X7 a_1393_n500# a_1293_n588# a_1235_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X8 a_n345_n500# a_n445_n588# a_n503_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X9 a_129_n500# a_29_n588# a_n29_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X10 a_445_n500# a_345_n588# a_287_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X11 a_n1451_n500# a_n1551_n588# a_n1609_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X12 a_1551_n500# a_1451_n588# a_1393_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X13 a_n977_n500# a_n1077_n588# a_n1135_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X14 a_n503_n500# a_n603_n588# a_n661_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X15 a_1077_n500# a_977_n588# a_919_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X16 a_n29_n500# a_n129_n588# a_n187_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X17 a_603_n500# a_503_n588# a_445_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X18 a_n1135_n500# a_n1235_n588# a_n1293_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X19 a_1235_n500# a_1135_n588# a_1077_n500# a_n1743_n722# sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_CADZ46 a_n345_n500# a_n1609_n500# a_n1135_n500#
++ a_29_n597# a_n977_n500# a_n129_n597# a_187_n597# a_n503_n500# a_129_n500# a_n1293_n500#
++ a_n287_n597# a_819_n597# a_n1077_n597# a_287_n500# a_n661_n500# a_345_n597# a_n919_n597#
++ a_n1451_n500# a_977_n597# a_n445_n597# a_919_n500# a_n1235_n597# a_445_n500# a_503_n597#
++ w_n1809_n797# a_n603_n597# a_1077_n500# a_1135_n597# a_661_n597# a_n1393_n597# a_603_n500#
++ a_1293_n597# a_n761_n597# a_1235_n500# a_n1551_n597# a_761_n500# a_n29_n500# a_1451_n597#
++ a_1393_n500# a_n187_n500# a_1551_n500# a_n819_n500#
+X0 a_n819_n500# a_n919_n597# a_n977_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X1 a_n661_n500# a_n761_n597# a_n819_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X2 a_919_n500# a_819_n597# a_761_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X3 a_n187_n500# a_n287_n597# a_n345_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X4 a_761_n500# a_661_n597# a_603_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X5 a_287_n500# a_187_n597# a_129_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X6 a_n1293_n500# a_n1393_n597# a_n1451_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X7 a_1393_n500# a_1293_n597# a_1235_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X8 a_n345_n500# a_n445_n597# a_n503_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X9 a_129_n500# a_29_n597# a_n29_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X10 a_445_n500# a_345_n597# a_287_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X11 a_n1451_n500# a_n1551_n597# a_n1609_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X12 a_1551_n500# a_1451_n597# a_1393_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X13 a_n977_n500# a_n1077_n597# a_n1135_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=1.45e+12p ps=1.058e+07u w=5e+06u l=500000u
+X14 a_1077_n500# a_977_n597# a_919_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=500000u
+X15 a_n503_n500# a_n603_n597# a_n661_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X16 a_n29_n500# a_n129_n597# a_n187_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X17 a_603_n500# a_503_n597# a_445_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X18 a_n1135_n500# a_n1235_n597# a_n1293_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+X19 a_1235_n500# a_1135_n597# a_1077_n500# w_n1809_n797# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u
+.ends
+
+.subckt esd_cell esd VDD VSS
+Xsky130_fd_pr__nfet_g5v0d10v5_BRTJC6_0 VSS VSS VSS VSS VSS VSS esd VSS VSS VSS esd
++ VSS esd VSS VSS VSS VSS esd VSS esd esd VSS VSS VSS VSS VSS VSS esd VSS VSS VSS
++ VSS esd VSS VSS esd VSS VSS VSS VSS VSS esd sky130_fd_pr__nfet_g5v0d10v5_BRTJC6
+Xsky130_fd_pr__pfet_g5v0d10v5_CADZ46_0 VDD VDD esd VDD VDD VDD VDD esd esd VDD VDD
++ VDD VDD VDD VDD VDD VDD esd VDD VDD VDD VDD esd VDD VDD VDD esd VDD VDD VDD VDD
++ VDD VDD VDD VDD esd VDD VDD esd esd VDD esd sky130_fd_pr__pfet_g5v0d10v5_CADZ46
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_1_CEWQ64 c1_n260_n210# m3_n360_n310#
 X0 c1_n260_n210# m3_n360_n310# sky130_fd_pr__cap_mim_m3_1 l=2.1e+06u w=2.1e+06u
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_CGPBWM m3_n1030_n980# c1_n930_n880#
-X0 c1_n930_n880# m3_n1030_n980# sky130_fd_pr__cap_mim_m3_1 l=8.8e+06u w=8.79e+06u
+.subckt sky130_fd_pr__cap_mim_m3_1_CGPBWM m3_n1031_n980# c1_n931_n880#
+X0 c1_n931_n880# m3_n1031_n980# sky130_fd_pr__cap_mim_m3_1 l=8.8e+06u w=8.8e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__decap_12 VGND VPWR VNB VPB
@@ -70,8 +94,9 @@ X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4
 X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
 .ends
 
-.subckt nmos_tgate a_256_n52# a_n32_n52# a_n224_n52# a_448_n52# a_n416_n52# a_160_n52#
-+ a_n610_n226# a_n128_n52# a_352_n52# a_n320_n52# a_n508_n52# a_n512_n149# a_64_n52#
+.subckt nmos_tgate a_256_n52# a_n32_n52# a_n224_n52# w_n646_n262# a_448_n52# a_n416_n52#
++ a_160_n52# a_n610_n226# a_n128_n52# a_352_n52# a_n320_n52# a_n508_n52# a_n512_n149#
++ a_64_n52#
 X0 a_n32_n52# a_n512_n149# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
 X1 a_n416_n52# a_n512_n149# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
 X2 a_n224_n52# a_n512_n149# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
@@ -84,9 +109,10 @@ X8 a_448_n52# a_n512_n149# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.
 X9 a_64_n52# a_n512_n149# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
 .ends
 
-.subckt transmission_gate in out en VDD VSS en_b
+.subckt transmission_gate in out en VDD VSS nmos_tgate_0/w_n646_n262# en_b
 Xpmos_tgate_0 in in out in out in out VDD in out out en_b out pmos_tgate
-Xnmos_tgate_0 out in in out in in VSS out in out out en out nmos_tgate
+Xnmos_tgate_0 out in in nmos_tgate_0/w_n646_n262# out in in VSS out in out out en
++ out nmos_tgate
 .ends
 
 .subckt sky130_fd_sc_hd__clkinv_16 A VGND VPWR Y VNB VPB
@@ -702,26 +728,30 @@ X0 c1_n530_n480# m3_n630_n580# sky130_fd_pr__cap_mim_m3_1 l=4.8e+06u w=4.8e+06u
 .ends
 
 .subckt sc_cmfb cm op cmc p2_b p2 p1_b p1 on bias_a VSS VDD
-Xtransmission_gate_10 transmission_gate_3/out on p1 VDD VSS p1_b transmission_gate
-Xtransmission_gate_11 transmission_gate_4/out op p1 VDD VSS p1_b transmission_gate
-Xtransmission_gate_0 cm transmission_gate_7/in p1 VDD VSS p1_b transmission_gate
-Xtransmission_gate_1 cm transmission_gate_6/in p1 VDD VSS p1_b transmission_gate
-Xtransmission_gate_2 bias_a transmission_gate_8/in p1 VDD VSS p1_b transmission_gate
-Xtransmission_gate_3 cm transmission_gate_3/out p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_10 transmission_gate_3/out on p1 VDD VSS VSS p1_b transmission_gate
+Xtransmission_gate_11 transmission_gate_4/out op p1 VDD VSS VSS p1_b transmission_gate
+Xtransmission_gate_0 cm transmission_gate_7/in p1 VDD VSS transmission_gate_0/nmos_tgate_0/w_n646_n262#
++ p1_b transmission_gate
+Xtransmission_gate_1 cm transmission_gate_6/in p1 VDD VSS transmission_gate_1/nmos_tgate_0/w_n646_n262#
++ p1_b transmission_gate
+Xtransmission_gate_2 bias_a transmission_gate_8/in p1 VDD VSS VSS p1_b transmission_gate
+Xtransmission_gate_3 cm transmission_gate_3/out p2 VDD VSS VSS p2_b transmission_gate
 Xunit_cap_mim_m3m4_0 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
-Xtransmission_gate_4 cm transmission_gate_4/out p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_4 cm transmission_gate_4/out p2 VDD VSS transmission_gate_4/nmos_tgate_0/w_n646_n262#
++ p2_b transmission_gate
 Xunit_cap_mim_m3m4_1 on cmc unit_cap_mim_m3m4
-Xtransmission_gate_5 bias_a transmission_gate_9/in p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_5 bias_a transmission_gate_9/in p2 VDD VSS transmission_gate_5/nmos_tgate_0/w_n646_n262#
++ p2_b transmission_gate
 Xunit_cap_mim_m3m4_2 op cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_30 unit_cap_mim_m3m4_30/c1_n530_n480# unit_cap_mim_m3m4_30/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xtransmission_gate_6 transmission_gate_6/in op p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_6 transmission_gate_6/in op p2 VDD VSS VSS p2_b transmission_gate
 Xunit_cap_mim_m3m4_20 unit_cap_mim_m3m4_20/c1_n530_n480# unit_cap_mim_m3m4_20/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_3 transmission_gate_7/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_31 unit_cap_mim_m3m4_31/c1_n530_n480# unit_cap_mim_m3m4_31/m3_n630_n580#
 + unit_cap_mim_m3m4
-Xtransmission_gate_7 transmission_gate_7/in on p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_7 transmission_gate_7/in on p2 VDD VSS VSS p2_b transmission_gate
 Xunit_cap_mim_m3m4_10 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_21 unit_cap_mim_m3m4_21/c1_n530_n480# unit_cap_mim_m3m4_21/m3_n630_n580#
 + unit_cap_mim_m3m4
@@ -730,7 +760,7 @@ Xunit_cap_mim_m3m4_32 unit_cap_mim_m3m4_32/c1_n530_n480# unit_cap_mim_m3m4_32/m3
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_12 transmission_gate_4/out transmission_gate_9/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_11 on cmc unit_cap_mim_m3m4
-Xtransmission_gate_8 transmission_gate_8/in cmc p2 VDD VSS p2_b transmission_gate
+Xtransmission_gate_8 transmission_gate_8/in cmc p2 VDD VSS VSS p2_b transmission_gate
 Xunit_cap_mim_m3m4_5 transmission_gate_6/in transmission_gate_8/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_22 unit_cap_mim_m3m4_22/c1_n530_n480# unit_cap_mim_m3m4_22/m3_n630_n580#
 + unit_cap_mim_m3m4
@@ -745,7 +775,7 @@ Xunit_cap_mim_m3m4_24 unit_cap_mim_m3m4_24/c1_n530_n480# unit_cap_mim_m3m4_24/m3
 Xunit_cap_mim_m3m4_13 on cmc unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_6 transmission_gate_3/out transmission_gate_9/in unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_7 op cmc unit_cap_mim_m3m4
-Xtransmission_gate_9 transmission_gate_9/in cmc p1 VDD VSS p1_b transmission_gate
+Xtransmission_gate_9 transmission_gate_9/in cmc p1 VDD VSS VSS p1_b transmission_gate
 Xunit_cap_mim_m3m4_35 unit_cap_mim_m3m4_35/c1_n530_n480# unit_cap_mim_m3m4_35/m3_n630_n580#
 + unit_cap_mim_m3m4
 Xunit_cap_mim_m3m4_25 unit_cap_mim_m3m4_25/c1_n530_n480# unit_cap_mim_m3m4_25/m3_n630_n580#
@@ -793,8 +823,10 @@ X9 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1
 .ends
 
 .subckt onebit_dac v_hi v_lo v v_b out VDD VSS
-Xtransmission_gate_0 v_hi out v VDD VSS v_b transmission_gate
-Xtransmission_gate_1 v_lo out v_b VDD VSS v transmission_gate
+Xtransmission_gate_0 v_hi out v VDD VSS transmission_gate_0/nmos_tgate_0/w_n646_n262#
++ v_b transmission_gate
+Xtransmission_gate_1 v_lo out v_b VDD VSS transmission_gate_1/nmos_tgate_0/w_n646_n262#
++ v transmission_gate
 .ends
 
 .subckt nmos_PDN_mux2 a_n33_32# a_15_n90# a_n73_n90# VSUBS
@@ -803,8 +835,10 @@ X0 a_15_n90# a_n33_32# a_n73_n90# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=
 
 .subckt switch_5t_mux2 in out en en_b VDD VSS
 Xnmos_PDN_mux2_0 en_b transmission_gate_1/in VSS VSS nmos_PDN_mux2
-Xtransmission_gate_0 in transmission_gate_1/in en VDD VSS en_b transmission_gate
-Xtransmission_gate_1 transmission_gate_1/in out en VDD VSS en_b transmission_gate
+Xtransmission_gate_0 in transmission_gate_1/in en VDD VSS transmission_gate_0/nmos_tgate_0/w_n646_n262#
++ en_b transmission_gate
+Xtransmission_gate_1 transmission_gate_1/in out en VDD VSS transmission_gate_1/nmos_tgate_0/w_n646_n262#
++ en_b transmission_gate
 .ends
 
 .subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
@@ -815,8 +849,10 @@ X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p
 .subckt a_mux2_en en s0 in0 in1 out VDD VSS
 Xswitch_5t_mux2_0 switch_5t_mux2_0/in out s0 switch_5t_mux2_1/en VDD VSS switch_5t_mux2
 Xswitch_5t_mux2_1 switch_5t_mux2_1/in out switch_5t_mux2_1/en s0 VDD VSS switch_5t_mux2
-Xtransmission_gate_0 in0 switch_5t_mux2_1/in en VDD VSS transmission_gate_1/en_b transmission_gate
-Xtransmission_gate_1 in1 switch_5t_mux2_0/in en VDD VSS transmission_gate_1/en_b transmission_gate
+Xtransmission_gate_0 in0 switch_5t_mux2_1/in en VDD VSS transmission_gate_0/nmos_tgate_0/w_n646_n262#
++ transmission_gate_1/en_b transmission_gate
+Xtransmission_gate_1 in1 switch_5t_mux2_0/in en VDD VSS transmission_gate_1/nmos_tgate_0/w_n646_n262#
++ transmission_gate_1/en_b transmission_gate
 Xsky130_fd_sc_hd__inv_1_1 s0 VSS VDD switch_5t_mux2_1/en VSS VDD sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__inv_1_0 en VSS VDD transmission_gate_1/en_b VSS VDD sky130_fd_sc_hd__inv_1
 .ends
@@ -1801,47 +1837,47 @@ Xsky130_fd_sc_hd__decap_12_20 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 .ends
 
 .subckt switch_5t_mux4_flat in out en en_b VDD VSS
-X0 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=1.0088e+12p pd=1.012e+07u as=2.0118e+12p ps=2.02e+07u w=520000u l=150000u
-X1 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=8.58e+11p ps=8.5e+06u w=520000u l=150000u
-X2 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X3 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X4 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=2.244e+12p pd=1.69e+07u as=4.8824e+12p ps=3.71e+07u w=1.36e+06u l=150000u
-X5 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X6 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X7 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X8 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X9 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X10 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X11 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.6384e+12p ps=2.02e+07u w=1.36e+06u l=150000u
-X12 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X13 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X14 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X15 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X0 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=2.0118e+12p pd=2.02e+07u as=1.0088e+12p ps=1.012e+07u w=520000u l=150000u
+X1 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=4.8824e+12p pd=3.71e+07u as=2.6384e+12p ps=2.02e+07u w=1.36e+06u l=150000u
+X2 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X3 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X4 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X5 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=8.58e+11p ps=8.5e+06u w=520000u l=150000u
+X6 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X7 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X9 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X10 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X11 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X12 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X13 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=2.244e+12p pd=1.69e+07u as=0p ps=0u w=1.36e+06u l=150000u
+X14 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X15 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
 X16 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X17 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X18 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X19 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X20 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X21 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X17 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X18 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X19 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X20 in en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X21 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
 X22 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
 X23 a_300_216# en_b in VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X24 a_300_216# en_b out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X25 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
-X26 a_300_216# en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
-X27 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X28 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X29 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X30 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X31 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X32 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X33 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X24 out en_b a_300_216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X25 a_300_216# en_b VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
+X26 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X27 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X28 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X29 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X30 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X31 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X32 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X33 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
 X34 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X35 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X36 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X37 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X38 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X39 out en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
-X40 a_300_216# en out VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X35 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X36 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X37 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X38 a_300_216# en in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X39 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X40 in en a_300_216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
 .ends
 
 .subckt a_mux4_en en s1 s0 in0 in1 in2 in3 out VDD VSS
@@ -1854,10 +1890,14 @@ Xsky130_fd_sc_hd__inv_1_5 switch_5t_mux4_2/en_b VSS VDD switch_5t_mux4_2/en VSS 
 Xsky130_fd_sc_hd__inv_1_6 switch_5t_mux4_3/en_b VSS VDD switch_5t_mux4_3/en VSS VDD
 + sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__inv_1_8 en VSS VDD transmission_gate_3/en_b VSS VDD sky130_fd_sc_hd__inv_1
-Xtransmission_gate_0 in0 switch_5t_mux4_0/in en VDD VSS transmission_gate_3/en_b transmission_gate
-Xtransmission_gate_2 in2 switch_5t_mux4_2/in en VDD VSS transmission_gate_3/en_b transmission_gate
-Xtransmission_gate_1 in1 switch_5t_mux4_1/in en VDD VSS transmission_gate_3/en_b transmission_gate
-Xtransmission_gate_3 in3 switch_5t_mux4_3/in en VDD VSS transmission_gate_3/en_b transmission_gate
+Xtransmission_gate_0 in0 switch_5t_mux4_0/in en VDD VSS transmission_gate_0/nmos_tgate_0/w_n646_n262#
++ transmission_gate_3/en_b transmission_gate
+Xtransmission_gate_1 in1 switch_5t_mux4_1/in en VDD VSS transmission_gate_1/nmos_tgate_0/w_n646_n262#
++ transmission_gate_3/en_b transmission_gate
+Xtransmission_gate_2 in2 switch_5t_mux4_2/in en VDD VSS transmission_gate_2/nmos_tgate_0/w_n646_n262#
++ transmission_gate_3/en_b transmission_gate
+Xtransmission_gate_3 in3 switch_5t_mux4_3/in en VDD VSS transmission_gate_3/nmos_tgate_0/w_n646_n262#
++ transmission_gate_3/en_b transmission_gate
 Xsky130_fd_sc_hd__nand2_1_0 s0 s1 VSS VDD switch_5t_mux4_3/en_b VSS VDD sky130_fd_sc_hd__nand2_1
 Xsky130_fd_sc_hd__nand2_1_1 s0 sky130_fd_sc_hd__inv_1_0/Y VSS VDD switch_5t_mux4_2/en_b
 + VSS VDD sky130_fd_sc_hd__nand2_1
@@ -3121,56 +3161,55 @@ X2 a_n173_n64# a_n129_n152# a_n173_n64# a_n275_n238# sky130_fd_pr__nfet_01v8 ad=
 .ends
 
 .subckt analog_top_v2 ip in rst_n i_bias_1 i_bias_2 a_mod_grp_ctrl_0 a_mod_grp_ctrl_1
-+ debug op a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_probe_0 d_probe_1 d_probe_2
-+ d_probe_3 d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1 d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1
-+ VDD VSS
-Xesd_cell_5 i_bias_2 VDD VSS esd_cell_flat
++ debug op a_probe_0 a_probe_1 a_probe_2 a_probe_3 clk d_clk_grp_1_ctrl_0 d_clk_grp_1_ctrl_1
++ d_clk_grp_2_ctrl_0 d_clk_grp_2_ctrl_1 VDD VSS d_probe d_probe_ctrl_0 d_probe_ctrl_1
+Xesd_cell_5 i_bias_2 VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_2 sky130_fd_pr__cap_mim_m3_1_CEWQ64_2/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_2/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_18 sky130_fd_pr__cap_mim_m3_1_CGPBWM_18/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_18/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_29 sky130_fd_pr__cap_mim_m3_1_CGPBWM_29/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_29/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_18 sky130_fd_pr__cap_mim_m3_1_CGPBWM_18/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_18/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_29 sky130_fd_pr__cap_mim_m3_1_CGPBWM_29/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_29/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_sc_hd__decap_12_10 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
-Xtransmission_gate_20 a_mux2_en_0/in1 transmission_gate_21/in clock_v2_0/p1d VDD VSS
-+ clock_v2_0/p1d_b transmission_gate
 Xtransmission_gate_31 onebit_dac_1/out transmission_gate_31/out clock_v2_0/p2d VDD
-+ VSS clock_v2_0/p2d_b transmission_gate
++ VSS transmission_gate_31/nmos_tgate_0/w_n646_n262# clock_v2_0/p2d_b transmission_gate
+Xtransmission_gate_20 a_mux2_en_0/in1 transmission_gate_21/in clock_v2_0/p1d VDD VSS
++ transmission_gate_20/nmos_tgate_0/w_n646_n262# clock_v2_0/p1d_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_70 sky130_fd_pr__cap_mim_m3_1_CEWQ64_70/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_70/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_19 sky130_fd_pr__cap_mim_m3_1_CGPBWM_19/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_19/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xesd_cell_6 in VDD VSS esd_cell_flat
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_19 sky130_fd_pr__cap_mim_m3_1_CGPBWM_19/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_19/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xesd_cell_6 in VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_3 sky130_fd_pr__cap_mim_m3_1_CEWQ64_3/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_3/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_sc_hd__decap_12_11 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
-Xtransmission_gate_10 ip transmission_gate_32/out clock_v2_0/p1d VDD VSS clock_v2_0/p1d_b
-+ transmission_gate
-Xtransmission_gate_21 transmission_gate_21/in transmission_gate_21/out clock_v2_0/p2d
-+ VDD VSS clock_v2_0/p2d_b transmission_gate
 Xtransmission_gate_32 onebit_dac_0/out transmission_gate_32/out clock_v2_0/p2d VDD
-+ VSS clock_v2_0/p2d_b transmission_gate
++ VSS transmission_gate_32/nmos_tgate_0/w_n646_n262# clock_v2_0/p2d_b transmission_gate
+Xtransmission_gate_21 transmission_gate_21/in transmission_gate_21/out clock_v2_0/p2d
++ VDD VSS transmission_gate_21/nmos_tgate_0/w_n646_n262# clock_v2_0/p2d_b transmission_gate
+Xtransmission_gate_10 ip transmission_gate_32/out clock_v2_0/p1d VDD VSS transmission_gate_10/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/p1d_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_60 sky130_fd_pr__cap_mim_m3_1_CEWQ64_60/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_60/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_71 sky130_fd_pr__cap_mim_m3_1_CEWQ64_71/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_71/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_4 sky130_fd_pr__cap_mim_m3_1_CEWQ64_4/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_4/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xesd_cell_7 ip VDD VSS esd_cell_flat
+Xesd_cell_7 ip VDD VSS esd_cell
 Xsky130_fd_sc_hd__decap_12_12 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
-Xtransmission_gate_11 in transmission_gate_31/out clock_v2_0/p1d VDD VSS clock_v2_0/p1d_b
-+ transmission_gate
-Xtransmission_gate_22 transmission_gate_23/in ota_v2_0/ip ota_v2_0/p2 VDD VSS ota_v2_0/p2_b
-+ transmission_gate
+Xtransmission_gate_22 transmission_gate_23/in ota_v2_0/ip ota_v2_0/p2 VDD VSS transmission_gate_22/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p2_b transmission_gate
+Xtransmission_gate_11 in transmission_gate_31/out clock_v2_0/p1d VDD VSS transmission_gate_11/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/p1d_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_50 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_61 sky130_fd_pr__cap_mim_m3_1_CEWQ64_61/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_61/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_5 sky130_fd_pr__cap_mim_m3_1_CEWQ64_5/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_5/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xtransmission_gate_12 ota_w_test_v2_0/on a_mux2_en_0/in0 clock_v2_0/Bd VDD VSS clock_v2_0/Bd_b
-+ transmission_gate
-Xtransmission_gate_23 transmission_gate_23/in ota_v2_0/cm ota_v2_0/p1 VDD VSS ota_v2_0/p1_b
-+ transmission_gate
+Xtransmission_gate_23 transmission_gate_23/in ota_v2_0/cm ota_v2_0/p1 VDD VSS transmission_gate_23/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p1_b transmission_gate
+Xtransmission_gate_12 ota_w_test_v2_0/on a_mux2_en_0/in0 clock_v2_0/Bd VDD VSS transmission_gate_12/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/Bd_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_40 sky130_fd_pr__cap_mim_m3_1_CEWQ64_40/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_40/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_51 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3180,28 +3219,30 @@ Xsky130_fd_sc_hd__clkinv_16_0 rst_n VSS VDD transmission_gate_7/en VSS VDD sky13
 Xsky130_fd_sc_hd__decap_12_13 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_6 sky130_fd_pr__cap_mim_m3_1_CEWQ64_6/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_6/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xtransmission_gate_13 ota_w_test_v2_0/on a_mux2_en_0/in1 clock_v2_0/Ad VDD VSS clock_v2_0/Ad_b
-+ transmission_gate
-Xtransmission_gate_24 transmission_gate_25/in ota_v2_0/cm ota_v2_0/p1 VDD VSS ota_v2_0/p1_b
-+ transmission_gate
+Xsky130_fd_sc_hd__decap_12_14 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
+Xtransmission_gate_24 transmission_gate_25/in ota_v2_0/cm ota_v2_0/p1 VDD VSS transmission_gate_24/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p1_b transmission_gate
+Xtransmission_gate_13 ota_w_test_v2_0/on a_mux2_en_0/in1 clock_v2_0/Ad VDD VSS transmission_gate_13/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/Ad_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_30 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_41 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_52 transmission_gate_23/in transmission_gate_21/in
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_63 sky130_fd_pr__cap_mim_m3_1_CEWQ64_63/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_63/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_sc_hd__clkinv_16_1 sky130_fd_sc_hd__clkinv_4_0/Y VSS VDD d_probe_1 VSS
-+ VDD sky130_fd_sc_hd__clkinv_16
-Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_7 sky130_fd_pr__cap_mim_m3_1_CEWQ64_7/c1_n260_n210#
-+ sky130_fd_pr__cap_mim_m3_1_CEWQ64_7/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
+Xsky130_fd_sc_hd__clkinv_16_1 sky130_fd_sc_hd__clkinv_4_0/Y VSS VDD sky130_fd_sc_hd__mux4_1_4/A1
++ VSS VDD sky130_fd_sc_hd__clkinv_16
 Xota_v2_0 ota_v2_0/ip ota_v2_0/in ota_v2_0/p1 ota_v2_0/p1_b ota_v2_0/p2 ota_v2_0/p2_b
 + ota_v2_0/op i_bias_2 ota_v2_0/cm ota_v2_0/on VDD VSS ota_v2
-Xtransmission_gate_14 ota_w_test_v2_0/op a_mux2_en_0/in0 clock_v2_0/Ad VDD VSS clock_v2_0/Ad_b
-+ transmission_gate
-Xtransmission_gate_25 transmission_gate_25/in ota_v2_0/in ota_v2_0/p2 VDD VSS ota_v2_0/p2_b
-+ transmission_gate
-Xsky130_fd_sc_hd__clkinv_16_2 sky130_fd_sc_hd__clkinv_4_1/Y VSS VDD d_probe_2 VSS
-+ VDD sky130_fd_sc_hd__clkinv_16
+Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_7 sky130_fd_pr__cap_mim_m3_1_CEWQ64_7/c1_n260_n210#
++ sky130_fd_pr__cap_mim_m3_1_CEWQ64_7/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
+Xtransmission_gate_25 transmission_gate_25/in ota_v2_0/in ota_v2_0/p2 VDD VSS transmission_gate_25/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p2_b transmission_gate
+Xtransmission_gate_14 ota_w_test_v2_0/op a_mux2_en_0/in0 clock_v2_0/Ad VDD VSS transmission_gate_14/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/Ad_b transmission_gate
+Xsky130_fd_sc_hd__clkinv_16_2 sky130_fd_sc_hd__clkinv_4_1/Y VSS VDD sky130_fd_sc_hd__mux4_1_4/A2
++ VSS VDD sky130_fd_sc_hd__clkinv_16
+Xsky130_fd_sc_hd__decap_12_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_20 sky130_fd_pr__cap_mim_m3_1_CEWQ64_20/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_20/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_31 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3214,10 +3255,11 @@ Xsky130_fd_sc_hd__clkinv_4_0 sky130_fd_sc_hd__mux4_1_0/X VSS VDD sky130_fd_sc_hd
 + VSS VDD sky130_fd_sc_hd__clkinv_4
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_8 sky130_fd_pr__cap_mim_m3_1_CEWQ64_8/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_8/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xtransmission_gate_15 ota_w_test_v2_0/op a_mux2_en_0/in1 clock_v2_0/Bd VDD VSS clock_v2_0/Bd_b
-+ transmission_gate
-Xtransmission_gate_26 ota_v2_0/cm ota_v2_0/in transmission_gate_7/en VDD VSS rst_n
-+ transmission_gate
+Xsky130_fd_sc_hd__decap_12_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
+Xtransmission_gate_26 ota_v2_0/cm ota_v2_0/in transmission_gate_7/en VDD VSS transmission_gate_26/nmos_tgate_0/w_n646_n262#
++ rst_n transmission_gate
+Xtransmission_gate_15 ota_w_test_v2_0/op a_mux2_en_0/in1 clock_v2_0/Bd VDD VSS transmission_gate_15/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/Bd_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_10 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_21 sky130_fd_pr__cap_mim_m3_1_CEWQ64_21/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_21/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3227,18 +3269,18 @@ Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_43 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_54 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_65 sky130_fd_pr__cap_mim_m3_1_CEWQ64_65/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_65/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_sc_hd__clkinv_16_3 sky130_fd_sc_hd__clkinv_4_2/Y VSS VDD d_probe_3 VSS
-+ VDD sky130_fd_sc_hd__clkinv_16
+Xsky130_fd_sc_hd__clkinv_16_3 sky130_fd_sc_hd__clkinv_4_2/Y VSS VDD sky130_fd_sc_hd__mux4_1_4/A3
++ VSS VDD sky130_fd_sc_hd__clkinv_16
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_9 sky130_fd_pr__cap_mim_m3_1_CEWQ64_9/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_9/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_sc_hd__clkinv_4_1 sky130_fd_sc_hd__mux4_1_1/X VSS VDD sky130_fd_sc_hd__clkinv_4_1/Y
 + VSS VDD sky130_fd_sc_hd__clkinv_4
-Xtransmission_gate_16 a_mux2_en_0/in1 a_mux2_en_0/in0 transmission_gate_7/en VDD VSS
+Xtransmission_gate_27 ota_v2_0/cm ota_v2_0/ip transmission_gate_7/en VDD VSS transmission_gate_27/nmos_tgate_0/w_n646_n262#
 + rst_n transmission_gate
-Xtransmission_gate_27 ota_v2_0/cm ota_v2_0/ip transmission_gate_7/en VDD VSS rst_n
-+ transmission_gate
-Xsky130_fd_sc_hd__clkinv_16_4 sky130_fd_sc_hd__clkinv_4_3/Y VSS VDD d_probe_0 VSS
-+ VDD sky130_fd_sc_hd__clkinv_16
+Xtransmission_gate_16 a_mux2_en_0/in1 a_mux2_en_0/in0 transmission_gate_7/en VDD VSS
++ transmission_gate_16/nmos_tgate_0/w_n646_n262# rst_n transmission_gate
+Xsky130_fd_sc_hd__clkinv_16_4 sky130_fd_sc_hd__clkinv_4_3/Y VSS VDD sky130_fd_sc_hd__mux4_1_4/A0
++ VSS VDD sky130_fd_sc_hd__clkinv_16
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_11 sky130_fd_pr__cap_mim_m3_1_CEWQ64_11/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_11/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_22 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3250,10 +3292,10 @@ Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_66 sky130_fd_pr__cap_mim_m3_1_CEWQ64_66/c1_n2
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_66/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_sc_hd__clkinv_4_2 sky130_fd_sc_hd__mux4_1_2/X VSS VDD sky130_fd_sc_hd__clkinv_4_2/Y
 + VSS VDD sky130_fd_sc_hd__clkinv_4
+Xtransmission_gate_28 ota_v2_0/on ota_v2_0/op transmission_gate_7/en VDD VSS transmission_gate_28/nmos_tgate_0/w_n646_n262#
++ rst_n transmission_gate
 Xtransmission_gate_17 onebit_dac_0/out transmission_gate_30/out clock_v2_0/p2d VDD
-+ VSS clock_v2_0/p2d_b transmission_gate
-Xtransmission_gate_28 ota_v2_0/on ota_v2_0/op transmission_gate_7/en VDD VSS rst_n
-+ transmission_gate
++ VSS transmission_gate_17/nmos_tgate_0/w_n646_n262# clock_v2_0/p2d_b transmission_gate
 Xonebit_dac_0 VDD VSS op onebit_dac_1/v_b onebit_dac_0/out VDD VSS onebit_dac
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_12 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_23 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3265,14 +3307,16 @@ Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_56 sky130_fd_pr__cap_mim_m3_1_CEWQ64_56/c1_n2
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_56/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_67 sky130_fd_pr__cap_mim_m3_1_CEWQ64_67/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_67/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_0 sky130_fd_pr__cap_mim_m3_1_CGPBWM_0/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_0/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_0 sky130_fd_pr__cap_mim_m3_1_CGPBWM_0/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_0/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_sc_hd__clkinv_16_5 sky130_fd_sc_hd__clkinv_4_4/Y VSS VDD d_probe VSS VDD
++ sky130_fd_sc_hd__clkinv_16
 Xsky130_fd_sc_hd__clkinv_4_3 sky130_fd_sc_hd__mux4_1_3/X VSS VDD sky130_fd_sc_hd__clkinv_4_3/Y
 + VSS VDD sky130_fd_sc_hd__clkinv_4
+Xtransmission_gate_29 in transmission_gate_29/out clock_v2_0/p1d VDD VSS transmission_gate_29/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/p1d_b transmission_gate
 Xtransmission_gate_18 onebit_dac_1/out transmission_gate_29/out clock_v2_0/p2d VDD
-+ VSS clock_v2_0/p2d_b transmission_gate
-Xtransmission_gate_29 in transmission_gate_29/out clock_v2_0/p1d VDD VSS clock_v2_0/p1d_b
-+ transmission_gate
++ VSS transmission_gate_18/nmos_tgate_0/w_n646_n262# clock_v2_0/p2d_b transmission_gate
 Xa_mux2_en_0 debug a_mod_grp_ctrl_0 a_mux2_en_0/in0 a_mux2_en_0/in1 a_probe_0 VDD
 + VSS a_mux2_en
 Xonebit_dac_1 VSS VDD op onebit_dac_1/v_b onebit_dac_1/out VDD VSS onebit_dac
@@ -3287,11 +3331,13 @@ Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_57 sky130_fd_pr__cap_mim_m3_1_CEWQ64_57/c1_n2
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_68 sky130_fd_pr__cap_mim_m3_1_CEWQ64_68/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_68/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_1 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_sc_hd__clkinv_4_4 sky130_fd_sc_hd__mux4_1_4/X VSS VDD sky130_fd_sc_hd__clkinv_4_4/Y
++ VSS VDD sky130_fd_sc_hd__clkinv_4
 Xota_w_test_v2_0 ota_w_test_v2_0/ip ota_w_test_v2_0/in ota_v2_0/p1 ota_v2_0/p1_b ota_v2_0/p2
 + ota_v2_0/p2_b ota_w_test_v2_0/op i_bias_1 a_mux4_en_0/in0 a_mux4_en_1/in2 a_mux4_en_1/in1
 + a_mux4_en_0/in1 ota_w_test_v2_0/on a_mux4_en_1/in0 a_mux4_en_0/in2 VDD VSS ota_w_test_v2
 Xtransmission_gate_19 a_mux2_en_0/in0 transmission_gate_21/out clock_v2_0/p1d VDD
-+ VSS clock_v2_0/p1d_b transmission_gate
++ VSS transmission_gate_19/nmos_tgate_0/w_n646_n262# clock_v2_0/p1d_b transmission_gate
 Xa_mux2_en_1 debug a_mod_grp_ctrl_0 ota_v2_0/op ota_v2_0/on a_probe_1 VDD VSS a_mux2_en
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_14 sky130_fd_pr__cap_mim_m3_1_CEWQ64_14/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_14/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
@@ -3329,54 +3375,57 @@ Xsky130_fd_sc_hd__mux4_1_2 clock_v2_0/p2d clock_v2_0/Bd clock_v2_0/p2d_b clock_v
 + sky130_fd_sc_hd__mux4_1
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_4 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xtransmission_gate_0 transmission_gate_2/in ota_w_test_v2_0/in clock_v2_0/A VDD VSS
-+ clock_v2_0/A_b transmission_gate
++ transmission_gate_0/nmos_tgate_0/w_n646_n262# clock_v2_0/A_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_17 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_28 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_39 ota_v2_0/on ota_v2_0/ip sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_5 sky130_fd_pr__cap_mim_m3_1_CGPBWM_5/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_5/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_5 sky130_fd_pr__cap_mim_m3_1_CGPBWM_5/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_5/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_sc_hd__mux4_1_3 ota_v2_0/p1 clock_v2_0/A ota_v2_0/p1_b clock_v2_0/A_b d_clk_grp_1_ctrl_0
 + d_clk_grp_1_ctrl_1 VSS VDD sky130_fd_sc_hd__mux4_1_3/X VSS VDD sky130_fd_sc_hd__mux4_1
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_18 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_29 transmission_gate_23/in transmission_gate_21/in
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64
+Xsky130_fd_sc_hd__mux4_1_4 sky130_fd_sc_hd__mux4_1_4/A0 sky130_fd_sc_hd__mux4_1_4/A1
++ sky130_fd_sc_hd__mux4_1_4/A2 sky130_fd_sc_hd__mux4_1_4/A3 d_probe_ctrl_0 d_probe_ctrl_1
++ VSS VDD sky130_fd_sc_hd__mux4_1_4/X VSS VDD sky130_fd_sc_hd__mux4_1
 Xtransmission_gate_1 transmission_gate_3/in ota_w_test_v2_0/in clock_v2_0/B VDD VSS
-+ clock_v2_0/B_b transmission_gate
++ transmission_gate_1/nmos_tgate_0/w_n646_n262# clock_v2_0/B_b transmission_gate
 Xclock_v2_0 clk clock_v2_0/p2d_b clock_v2_0/p2d ota_v2_0/p2_b ota_v2_0/p2 clock_v2_0/p1d_b
 + clock_v2_0/p1d ota_v2_0/p1_b ota_v2_0/p1 clock_v2_0/Ad_b clock_v2_0/Ad clock_v2_0/A_b
 + clock_v2_0/A clock_v2_0/Bd_b clock_v2_0/Bd clock_v2_0/B_b clock_v2_0/B VSS VDD clock_v2
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_6 sky130_fd_pr__cap_mim_m3_1_CGPBWM_6/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_6/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_6 sky130_fd_pr__cap_mim_m3_1_CGPBWM_6/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_6/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_sc_hd__decap_12_0 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xtransmission_gate_2 transmission_gate_2/in ota_w_test_v2_0/ip clock_v2_0/B VDD VSS
-+ clock_v2_0/B_b transmission_gate
++ transmission_gate_2/nmos_tgate_0/w_n646_n262# clock_v2_0/B_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_19 ota_v2_0/op ota_v2_0/in sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_7 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_sc_hd__decap_12_1 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xtransmission_gate_3 transmission_gate_3/in ota_w_test_v2_0/ip clock_v2_0/A VDD VSS
-+ clock_v2_0/A_b transmission_gate
++ transmission_gate_3/nmos_tgate_0/w_n646_n262# clock_v2_0/A_b transmission_gate
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_8 transmission_gate_8/in transmission_gate_32/out
 + sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_sc_hd__decap_12_2 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_9 transmission_gate_8/in transmission_gate_32/out
 + sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xtransmission_gate_4 transmission_gate_8/in transmission_gate_2/in ota_v2_0/p2 VDD
-+ VSS ota_v2_0/p2_b transmission_gate
++ VSS transmission_gate_4/nmos_tgate_0/w_n646_n262# ota_v2_0/p2_b transmission_gate
 Xsky130_fd_sc_hd__decap_12_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xtransmission_gate_5 transmission_gate_9/in transmission_gate_3/in ota_v2_0/p2 VDD
-+ VSS ota_v2_0/p2_b transmission_gate
++ VSS transmission_gate_5/nmos_tgate_0/w_n646_n262# ota_v2_0/p2_b transmission_gate
 Xsky130_fd_sc_hd__decap_12_4 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xtransmission_gate_6 a_mux4_en_0/in0 transmission_gate_2/in transmission_gate_7/en
-+ VDD VSS rst_n transmission_gate
++ VDD VSS transmission_gate_6/nmos_tgate_0/w_n646_n262# rst_n transmission_gate
 Xsky130_fd_sc_hd__decap_12_5 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xtransmission_gate_7 a_mux4_en_0/in0 transmission_gate_3/in transmission_gate_7/en
-+ VDD VSS rst_n transmission_gate
++ VDD VSS transmission_gate_7/nmos_tgate_0/w_n646_n262# rst_n transmission_gate
 Xsky130_fd_sc_hd__decap_12_6 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
-Xtransmission_gate_8 transmission_gate_8/in a_mux4_en_0/in0 ota_v2_0/p1 VDD VSS ota_v2_0/p1_b
-+ transmission_gate
+Xtransmission_gate_8 transmission_gate_8/in a_mux4_en_0/in0 ota_v2_0/p1 VDD VSS transmission_gate_8/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p1_b transmission_gate
 Xsky130_fd_sc_hd__decap_12_7 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
-Xtransmission_gate_9 transmission_gate_9/in a_mux4_en_0/in0 ota_v2_0/p1 VDD VSS ota_v2_0/p1_b
-+ transmission_gate
+Xtransmission_gate_9 transmission_gate_9/in a_mux4_en_0/in0 ota_v2_0/p1 VDD VSS transmission_gate_9/nmos_tgate_0/w_n646_n262#
++ ota_v2_0/p1_b transmission_gate
 Xsky130_fd_sc_hd__decap_12_8 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xa_mux4_en_0 debug a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 a_mux4_en_0/in0 a_mux4_en_0/in1
 + a_mux4_en_0/in2 a_mux4_en_0/in3 a_probe_2 VDD VSS a_mux4_en
@@ -3384,75 +3433,75 @@ Xa_mux4_en_1 debug a_mod_grp_ctrl_0 a_mod_grp_ctrl_1 a_mux4_en_1/in0 a_mux4_en_1
 + a_mux4_en_1/in2 a_mux4_en_1/in3 a_probe_3 VDD VSS a_mux4_en
 Xsky130_fd_sc_hd__decap_12_9 VSS VDD VSS VDD sky130_fd_sc_hd__decap_12
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_40 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_30 sky130_fd_pr__cap_mim_m3_1_CGPBWM_30/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_30/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_41 sky130_fd_pr__cap_mim_m3_1_CGPBWM_41/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_41/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_20 sky130_fd_pr__cap_mim_m3_1_CGPBWM_20/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_20/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_30 sky130_fd_pr__cap_mim_m3_1_CGPBWM_30/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_30/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_41 sky130_fd_pr__cap_mim_m3_1_CGPBWM_41/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_41/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_20 sky130_fd_pr__cap_mim_m3_1_CGPBWM_20/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_20/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_31 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_42 sky130_fd_pr__cap_mim_m3_1_CGPBWM_42/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_42/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_42 sky130_fd_pr__cap_mim_m3_1_CGPBWM_42/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_42/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_10 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_21 sky130_fd_pr__cap_mim_m3_1_CGPBWM_21/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_21/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_21 sky130_fd_pr__cap_mim_m3_1_CGPBWM_21/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_21/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_32 transmission_gate_9/in transmission_gate_31/out
 + sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_43 sky130_fd_pr__cap_mim_m3_1_CGPBWM_43/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_43/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_11 sky130_fd_pr__cap_mim_m3_1_CGPBWM_11/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_11/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_22 sky130_fd_pr__cap_mim_m3_1_CGPBWM_22/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_22/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_43 sky130_fd_pr__cap_mim_m3_1_CGPBWM_43/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_43/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_11 sky130_fd_pr__cap_mim_m3_1_CGPBWM_11/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_11/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_22 sky130_fd_pr__cap_mim_m3_1_CGPBWM_22/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_22/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_33 transmission_gate_9/in transmission_gate_31/out
 + sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_44 sky130_fd_pr__cap_mim_m3_1_CGPBWM_44/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_44/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_12 sky130_fd_pr__cap_mim_m3_1_CGPBWM_12/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_12/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_23 sky130_fd_pr__cap_mim_m3_1_CGPBWM_23/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_23/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_44 sky130_fd_pr__cap_mim_m3_1_CGPBWM_44/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_44/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_12 sky130_fd_pr__cap_mim_m3_1_CGPBWM_12/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_12/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_23 sky130_fd_pr__cap_mim_m3_1_CGPBWM_23/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_23/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_34 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_45 sky130_fd_pr__cap_mim_m3_1_CGPBWM_45/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_45/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_TABSMU_0 ota_v2_0/on VSS sky130_fd_pr__cap_mim_m3_1_TABSMU
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_45 sky130_fd_pr__cap_mim_m3_1_CGPBWM_45/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_45/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xcomparator_v2_0 ota_v2_0/p1_b ota_v2_0/op ota_v2_0/on op onebit_dac_1/v_b VSS VDD
 + comparator_v2
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_13 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_24 sky130_fd_pr__cap_mim_m3_1_CGPBWM_24/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_24/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_35 sky130_fd_pr__cap_mim_m3_1_CGPBWM_35/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_35/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_46 sky130_fd_pr__cap_mim_m3_1_CGPBWM_46/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_46/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xesd_cell_0 a_probe_2 VDD VSS esd_cell_flat
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_24 sky130_fd_pr__cap_mim_m3_1_CGPBWM_24/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_24/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_35 sky130_fd_pr__cap_mim_m3_1_CGPBWM_35/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_35/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_46 sky130_fd_pr__cap_mim_m3_1_CGPBWM_46/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_46/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xesd_cell_0 a_probe_2 VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_TABSMU_1 ota_v2_0/op VSS sky130_fd_pr__cap_mim_m3_1_TABSMU
-Xesd_cell_1 a_probe_3 VDD VSS esd_cell_flat
+Xesd_cell_1 a_probe_3 VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_14 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_25 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_36 sky130_fd_pr__cap_mim_m3_1_CGPBWM_36/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_36/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_47 sky130_fd_pr__cap_mim_m3_1_CGPBWM_47/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_47/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_36 sky130_fd_pr__cap_mim_m3_1_CGPBWM_36/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_36/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_47 sky130_fd_pr__cap_mim_m3_1_CGPBWM_47/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_47/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_15 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_26 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_37 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__nfet_01v8_CFEPS5_0 VSS onebit_dac_1/v_b VSS sky130_fd_pr__nfet_01v8_CFEPS5
-Xesd_cell_2 a_probe_0 VDD VSS esd_cell_flat
-Xesd_cell_3 a_probe_1 VDD VSS esd_cell_flat
+Xesd_cell_2 a_probe_0 VDD VSS esd_cell
+Xesd_cell_3 a_probe_1 VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_0 sky130_fd_pr__cap_mim_m3_1_CEWQ64_0/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_0/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_16 transmission_gate_2/in a_mux2_en_0/in0 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_27 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_38 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_17 sky130_fd_pr__cap_mim_m3_1_CGPBWM_17/m3_n1030_n980#
-+ sky130_fd_pr__cap_mim_m3_1_CGPBWM_17/c1_n930_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
+Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_17 sky130_fd_pr__cap_mim_m3_1_CGPBWM_17/m3_n1031_n980#
++ sky130_fd_pr__cap_mim_m3_1_CGPBWM_17/c1_n931_n880# sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_28 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
 Xsky130_fd_pr__cap_mim_m3_1_CGPBWM_39 transmission_gate_3/in a_mux2_en_0/in1 sky130_fd_pr__cap_mim_m3_1_CGPBWM
-Xesd_cell_4 i_bias_1 VDD VSS esd_cell_flat
+Xesd_cell_4 i_bias_1 VDD VSS esd_cell
 Xsky130_fd_pr__cap_mim_m3_1_CEWQ64_1 sky130_fd_pr__cap_mim_m3_1_CEWQ64_1/c1_n260_n210#
 + sky130_fd_pr__cap_mim_m3_1_CEWQ64_1/m3_n360_n310# sky130_fd_pr__cap_mim_m3_1_CEWQ64
-Xtransmission_gate_30 ip transmission_gate_30/out clock_v2_0/p1d VDD VSS clock_v2_0/p1d_b
-+ transmission_gate
+Xtransmission_gate_30 ip transmission_gate_30/out clock_v2_0/p1d VDD VSS transmission_gate_30/nmos_tgate_0/w_n646_n262#
++ clock_v2_0/p1d_b transmission_gate
 .ends
 
