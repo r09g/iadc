@@ -183,10 +183,10 @@ C {sky130_stdcells/clkinv_4.sym} 610 -1740 0 0 {name=x29 VGND=VSS VNB=VSS VPB=VD
 C {sky130_stdcells/clkinv_16.sym} 690 -1740 0 0 {name=x30 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/ipin.sym} 200 -320 0 0 {name=p16 lab=d_probe_ctrl_0}
 C {devices/ipin.sym} 200 -300 0 0 {name=p17 lab=d_probe_ctrl_1}
-C {devices/lab_pin.sym} 490 -1680 0 0 {name=l107 sig_type=std_logic lab=d_probe_0}
-C {devices/lab_pin.sym} 490 -1720 0 0 {name=l108 sig_type=std_logic lab=d_probe_1}
-C {devices/lab_pin.sym} 490 -1760 0 0 {name=l109 sig_type=std_logic lab=d_probe_2}
-C {devices/lab_pin.sym} 490 -1800 0 0 {name=l110 sig_type=std_logic lab=d_probe_3
+C {devices/lab_pin.sym} 490 -1800 0 0 {name=l107 sig_type=std_logic lab=d_probe_0}
+C {devices/lab_pin.sym} 490 -1760 0 0 {name=l108 sig_type=std_logic lab=d_probe_1}
+C {devices/lab_pin.sym} 490 -1720 0 0 {name=l109 sig_type=std_logic lab=d_probe_2}
+C {devices/lab_pin.sym} 490 -1680 0 0 {name=l110 sig_type=std_logic lab=d_probe_3
 }
 C {devices/iopin.sym} 190 -270 0 0 {name=p18 lab=VDD}
 C {devices/iopin.sym} 190 -250 0 0 {name=p23 lab=VSS}

@@ -49,8 +49,8 @@ X31 c1_n12524_n25042# m3_n12624_n25192# sky130_fd_pr__cap_mim_m3_1 l=2.999e+07u 
 .ends
 
 .subckt sky130_fd_sc_hd__decap_6 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.97e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.97e+06u
+*X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.97e+06u
+*X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.97e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__ha_2 A B VGND VPWR COUT SUM VNB VPB
@@ -108,8 +108,8 @@ X23 VGND CLK a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.092e+11p ps=1
 .ends
 
 .subckt sky130_fd_sc_hd__decap_3 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=590000u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=590000u
+*X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=590000u
+*X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=590000u
 .ends
 
 .subckt sky130_fd_sc_hd__nand2_1 A B VGND VPWR Y VNB VPB
@@ -155,8 +155,8 @@ X31 a_1086_47# a_80_21# a_829_369# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u a
 .ends
 
 .subckt sky130_fd_sc_hd__decap_12 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=4.73e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=4.73e+06u
+*X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=4.73e+06u
+*X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=4.73e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__clkinv_8 A VGND VPWR Y VNB VPB
@@ -196,8 +196,8 @@ X9 a_109_47# B2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=65000
 .ends
 
 .subckt sky130_fd_sc_hd__decap_4 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.05e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.05e+06u
+*X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.05e+06u
+*X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.05e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__o21a_1 A1 A2 B1 VGND VPWR X VNB VPB
@@ -304,8 +304,8 @@ X5 VGND A1 a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000
 .ends
 
 .subckt sky130_fd_sc_hd__decap_8 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=2.89e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=2.89e+06u
+*X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=2.89e+06u
+*X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=2.89e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__nand3_1 A B C VGND VPWR Y VNB VPB
