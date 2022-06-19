@@ -5,6 +5,12 @@ This is the EE372 VLSI Design Project at Stanford University. The chip is an inc
 Chip System-Level Block Diagram
 ![sys_blk](./misc/system_block_diagram.png)
 
+Chip Top-Level Layout
+![chip_top_layout](./misc/chip_top_lres.png)
+
+Chip ADC-Core Layout
+![chip_adc_core](./misc/chip_adc_core.png)
+
 # Specifications
 | Specification | Value        |
 | ------------- | ------------- |
