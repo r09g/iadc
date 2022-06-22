@@ -1,4 +1,7 @@
 # Overview
+
+__STATUS: DESIGN SUBMITTED FOR TAPEOUT__
+
 This is the EE372 VLSI Design Project at Stanford University. The chip is an incremental Delta-Sigma ADC in Skywater 130 nm CMOS technology.
 
 
