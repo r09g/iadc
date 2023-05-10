@@ -8,7 +8,7 @@ Silicon Bringup
 ![eng_sample](./misc/engineering_sample.jpg)
 
 Chip System-Level Block Diagram
-![sys_blk](./misc/system_block_diagram.png)
+![sys_blk](./misc/chip_arch.svg)
 
 Chip Top-Level Layout
 ![chip_top_layout](./misc/chip_top_lres.png)
