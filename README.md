@@ -96,7 +96,7 @@ Chip ADC-Core Layout
 ![chip_adc_core](./misc/chip_adc_core.png)
 
 Silicon Bringup
-![eng_sample](./misc/engineering_sample.jpg)
+![eng_sample](./silicon_validation/engineering_sample.jpg)
 
 Silicon Testing: Modulator Output
 ![testchip_mod_output](./silicon_validation/modulator.png)
