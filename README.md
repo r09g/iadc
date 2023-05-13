@@ -1,20 +1,9 @@
 # Overview
 
-__STATUS: Characterizing engineering sample__
-
-This is the EE372 VLSI Design Project at Stanford University. The chip is an incremental Delta-Sigma ADC in Skywater 130 nm CMOS technology.
-
-Silicon Bringup
-![eng_sample](./misc/engineering_sample.jpg)
+This is the EE372 VLSI Design Project at Stanford University. The chip is an incremental Delta-Sigma ADC in Skywater 130nm CMOS technology.
 
 Chip System-Level Block Diagram
 ![sys_blk](./misc/chip_arch.jpg)
-
-Chip Top-Level Layout
-![chip_top_layout](./misc/chip_top_lres.png)
-
-Chip ADC-Core Layout
-![chip_adc_core](./misc/chip_adc_core.png)
 
 # Specifications
 | Specification | Value        |
@@ -99,3 +88,24 @@ Helpful make targets:
 - Raymond Yang (rhyang@stanford.edu)
 - Yaqing Xia (yaqingx@stanford.edu)
 
+# Project Snapshots
+Chip Top-Level Layout
+![chip_top_layout](./misc/chip_top_lres.png)
+
+Chip ADC-Core Layout
+![chip_adc_core](./misc/chip_adc_core.png)
+
+Silicon Bringup
+![eng_sample](./misc/engineering_sample.jpg)
+
+Silicon Testing: Modulator Output
+![testchip_mod_output](./silicon_validation/modulator.png)
+
+Silicon Testing: Digital Output Parallel Interface
+![testchip_parallel_out](./silicon_validation/parallel_out.png)
+
+Silicon Testing: Digital Output SPI
+![testchip_spi1](./silicon_validation/spi_testing1.png)
+
+Silicon Testing: Digital Output SPI (enlarged)
+![testchip_spi2](./silicon_validation/spi_testing2.png)
